@@ -1,1 +1,1 @@
-# kicad-shared-lib
+# kicad-shared-libs
