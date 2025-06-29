@@ -1,0 +1,16 @@
+{
+  "$schema": "https://go.kicad.org/pcm/repository/v1",
+  "name": "KiCad Shared Libraries",
+  "description": "A collection of shared KiCad libraries maintained by jazari-akuna.",
+  "maintainer": {
+    "name": "jazari-akuna"
+  },
+  "packages": [
+    {
+      "path": "Connector_KSL/metadata.json"
+    },
+    {
+      "path": "Fastener_KSL/metadata.json"
+    }
+  ]
+}

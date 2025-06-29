@@ -1,0 +1,32 @@
+{
+  "$schema": "https://go.kicad.org/pcm/schemas/v1",
+  "name": "Connector_KSL",
+  "description": "Connectors and contacts",
+  "identifier": "com.github.jazari-akuna.kicad-shared-libs.Connector_KSL",
+  "type": "library",
+  "license": "CC-BY-SA-4.0",
+  "author": {
+    "name": "Unknown"
+  },
+  "maintainer": {
+    "name": "jazari-akuna"
+  },
+  "content": {
+    "symbols": [
+      "Connector_KSL.kicad_sym"
+    ],
+    "footprints": [
+      "Connector_KSL.pretty"
+    ],
+    "3dmodels": [
+      "Connector_KSL.3dshapes"
+    ]
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "status": "stable",
+      "kicad_version": "9.0"
+    }
+  ]
+}
