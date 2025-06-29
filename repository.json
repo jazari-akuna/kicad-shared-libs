@@ -11,6 +11,18 @@
     },
     {
       "path": "Fastener_KSL/metadata.json"
+    },
+    {
+      "path": "Switch_KSL/metadata.json"
+    },
+    {
+      "path": "LED_Driver_KSL/metadata.json"
+    },
+    {
+      "path": "Sensor_KSL/metadata.json"
+    },
+    {
+      "path": "LED_KSL/metadata.json"
     }
   ]
 }

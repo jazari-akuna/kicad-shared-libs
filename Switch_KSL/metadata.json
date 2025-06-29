@@ -1,0 +1,32 @@
+{
+  "$schema": "https://go.kicad.org/pcm/schemas/v1",
+  "name": "Switch_KSL",
+  "description": "Switches and contactors",
+  "identifier": "com.github.jazari-akuna.kicad-shared-libs.Switch_KSL",
+  "type": "library",
+  "license": "CC-BY-SA-4.0",
+  "author": {
+    "name": "Unknown"
+  },
+  "maintainer": {
+    "name": "jazari-akuna"
+  },
+  "content": {
+    "symbols": [
+      "Switch_KSL.kicad_sym"
+    ],
+    "footprints": [
+      "Switch_KSL.pretty"
+    ],
+    "3dmodels": [
+      "Switch_KSL.3dshapes"
+    ]
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "status": "stable",
+      "kicad_version": "9.0"
+    }
+  ]
+}
