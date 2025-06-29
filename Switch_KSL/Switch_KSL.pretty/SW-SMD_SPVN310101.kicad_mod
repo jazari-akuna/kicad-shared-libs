@@ -32,7 +32,7 @@
   (fp_text user REF** (at 0.025032 4.724994) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (model ${KSL_ROOT}/Switch_KSL/Switch_KSL.3dshapes/${KSL_ROOT}/Switch_KSL/Switch_KSL.3dshapes/SW-SMD_SPVN310101.step
+  (model ${KSL_ROOT}/Switch_KSL/Switch_KSL.3dshapes/SW-SMD_SPVN310101.step
     (at (xyz 0 0.055531 -0.01378))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
