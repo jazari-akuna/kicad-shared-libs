@@ -29,6 +29,12 @@
     },
     {
       "path": "DC-DC_converter_KSL/metadata.json"
+    },
+    {
+      "path": "Protection_KSL/metadata.json"
+    },
+    {
+      "path": "Transistor_KSL/metadata.json"
     }
   ]
 }

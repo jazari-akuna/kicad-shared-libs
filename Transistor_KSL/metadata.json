@@ -1,0 +1,32 @@
+{
+  "$schema": "https://go.kicad.org/pcm/schemas/v1",
+  "name": "Transistor_KSL",
+  "description": "Transistors, MOSFETs, Thyristors...",
+  "identifier": "com.github.jazari-akuna.kicad-shared-libs.Transistor_KSL",
+  "type": "library",
+  "license": "CC-BY-SA-4.0",
+  "author": {
+    "name": "Unknown"
+  },
+  "maintainer": {
+    "name": "jazari-akuna"
+  },
+  "content": {
+    "symbols": [
+      "Transistor_KSL.kicad_sym"
+    ],
+    "footprints": [
+      "Transistor_KSL.pretty"
+    ],
+    "3dmodels": [
+      "Transistor_KSL.3dshapes"
+    ]
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "status": "stable",
+      "kicad_version": "9.0"
+    }
+  ]
+}
