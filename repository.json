@@ -23,6 +23,12 @@
     },
     {
       "path": "LED_KSL/metadata.json"
+    },
+    {
+      "path": "MCU_KSL/metadata.json"
+    },
+    {
+      "path": "DC-DC_converter_KSL/metadata.json"
     }
   ]
 }

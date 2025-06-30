@@ -1,0 +1,32 @@
+{
+  "$schema": "https://go.kicad.org/pcm/schemas/v1",
+  "name": "DC-DC_converter_KSL",
+  "description": "DC-DC converters and power modules",
+  "identifier": "com.github.jazari-akuna.kicad-shared-libs.DC-DC_converter_KSL",
+  "type": "library",
+  "license": "CC-BY-SA-4.0",
+  "author": {
+    "name": "Unknown"
+  },
+  "maintainer": {
+    "name": "jazari-akuna"
+  },
+  "content": {
+    "symbols": [
+      "DC-DC_converter_KSL.kicad_sym"
+    ],
+    "footprints": [
+      "DC-DC_converter_KSL.pretty"
+    ],
+    "3dmodels": [
+      "DC-DC_converter_KSL.3dshapes"
+    ]
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "status": "stable",
+      "kicad_version": "9.0"
+    }
+  ]
+}
