@@ -1,0 +1,32 @@
+{
+  "$schema": "https://go.kicad.org/pcm/schemas/v1",
+  "name": "Protection_KSL",
+  "description": "Protection ICs, TVS diodes, filters...",
+  "identifier": "com.github.jazari-akuna.kicad-shared-libs.Protection_KSL",
+  "type": "library",
+  "license": "CC-BY-SA-4.0",
+  "author": {
+    "name": "Unknown"
+  },
+  "maintainer": {
+    "name": "jazari-akuna"
+  },
+  "content": {
+    "symbols": [
+      "Protection_KSL.kicad_sym"
+    ],
+    "footprints": [
+      "Protection_KSL.pretty"
+    ],
+    "3dmodels": [
+      "Protection_KSL.3dshapes"
+    ]
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "status": "stable",
+      "kicad_version": "9.0"
+    }
+  ]
+}
