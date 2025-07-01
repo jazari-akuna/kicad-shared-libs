@@ -1,26 +1,134 @@
-(module "LED-ARRAY-SMD_HS-1204-RGB" (layer F.Cu) (tedit 68617855)
-  (descr "LED-ARRAY-SMD_HS-1204-RGB footprint")
-  (tags "LED-ARRAY-SMD_HS-1204-RGB footprint C965884")
-  (attr smd)
-  (fp_text reference REF** (at 0 -2.647955) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text value LED-ARRAY-SMD_HS-1204-RGB (at 0 2.139954) (layer F.Fab)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_arc (start -0.001046 -0.413664) (end -0.920142 -0.872822) (angle 129.795099) (layer F.SilkS) (width 0.254001))
-  (fp_circle (center 1.6 0.091948) (end 1.629997 0.091948) (layer F.SilkS) (width 0.059995))
-  (fp_line (start -0.762002 -0.647955) (end 0.762002 -0.647955) (layer F.SilkS) (width 0.254001))
-  (pad 3 smd rect (at 1.450089 -0.139954 180) (size 0.88001 1) (layers F.Cu F.Mask F.Paste))
-  (pad 4 smd rect (at -1.450089 -0.139954 180) (size 0.88001 1) (layers F.Cu F.Mask F.Paste))
-  (pad 2 smd rect (at -0.389891 0.139954) (size 0.529997 0.440005) (layers F.Cu F.Mask F.Paste))
-  (pad 1 smd rect (at 0.389891 0.139954) (size 0.529997 0.440005) (layers F.Cu F.Mask F.Paste))
-  (fp_text user REF** (at 0 4.139954) (layer F.Fab)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (model ${KSL_ROOT}/LED_KSL/LED_KSL.3dshapes/LED-ARRAY-SMD_HS-1204-RGB.step
-    (at (xyz 0 0.025707 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
+(footprint "LED-ARRAY-SMD_HS-1204-RGB"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "LED-ARRAY-SMD_HS-1204-RGB footprint")
+	(tags "LED-ARRAY-SMD_HS-1204-RGB footprint C965884")
+	(property "Reference" "REF**"
+		(at 0 -2.647955 0)
+		(layer "F.SilkS")
+		(uuid "ca934058-caec-47e4-ac6b-d63943602afc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "LED-ARRAY-SMD_HS-1204-RGB"
+		(at 0 2.139954 0)
+		(layer "F.Fab")
+		(uuid "d4ac2a50-d21d-424b-a8a5-8794d078721f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2811620b-3822-4d04-a62b-6eb65380d385")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4c4af6e6-034b-4311-b374-969c8e88fada")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.762002 -0.647955)
+		(end 0.762002 -0.647955)
+		(stroke
+			(width 0.254001)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "073facae-b933-4f6d-9d12-531a8533764b")
+	)
+	(fp_arc
+		(start -0.920142 -0.872822)
+		(mid 0.024829 -1.440744)
+		(end 0.940005 -0.825959)
+		(stroke
+			(width 0.254001)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5919d302-f1eb-4d66-b17b-8df783f4158b")
+	)
+	(fp_circle
+		(center 1.6 0.091948)
+		(end 1.629997 0.091948)
+		(stroke
+			(width 0.059995)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "a58e7cd3-eae3-407a-a937-13602147d3fb")
+	)
+	(fp_text user "REF**"
+		(at 0 4.139954 0)
+		(layer "F.Fab")
+		(uuid "c080e831-1e89-422b-895b-eb03e2b3a491")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0.389891 0.139954)
+		(size 0.529997 0.440005)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5e906594-f24e-4b98-9a83-0397cd722644")
+	)
+	(pad "2" smd rect
+		(at -0.389891 0.139954)
+		(size 0.529997 0.440005)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f1cefc17-e233-496c-9cc2-8b4cdf8ba62a")
+	)
+	(pad "3" smd rect
+		(at 1.450089 -0.139954 180)
+		(size 0.88001 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "1c6e6209-82da-469e-8fc8-656852c179df")
+	)
+	(pad "4" smd rect
+		(at -1.450089 -0.139954 180)
+		(size 0.88001 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7423ceb6-628d-4575-8cfc-aac1640b2d54")
+	)
+	(embedded_fonts no)
+	(model "${KSL_ROOT}/LED_KSL/LED_KSL.3dshapes/LED-ARRAY-SMD_HS-1204-RGB.step"
+		(offset
+			(xyz 0 0.152958 1)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
 )
