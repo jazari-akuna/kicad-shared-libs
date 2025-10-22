@@ -35,6 +35,9 @@
     },
     {
       "path": "Transistor_KSL/metadata.json"
+    },
+    {
+      "path": "Power_Management_IC_KSL/metadata.json"
     }
   ]
 }

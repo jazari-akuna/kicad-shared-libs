@@ -1,0 +1,32 @@
+{
+  "$schema": "https://go.kicad.org/pcm/schemas/v1",
+  "name": "Power_Management_IC_KSL",
+  "description": "PMIC manage power for USB-C, batteries etc",
+  "identifier": "com.github.jazari-akuna.kicad-shared-libs.Power_Management_IC_KSL",
+  "type": "library",
+  "license": "CC-BY-SA-4.0",
+  "author": {
+    "name": "Unknown"
+  },
+  "maintainer": {
+    "name": "jazari-akuna"
+  },
+  "content": {
+    "symbols": [
+      "Power_Management_IC_KSL.kicad_sym"
+    ],
+    "footprints": [
+      "Power_Management_IC_KSL.pretty"
+    ],
+    "3dmodels": [
+      "Power_Management_IC_KSL.3dshapes"
+    ]
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "status": "stable",
+      "kicad_version": "9.0"
+    }
+  ]
+}
