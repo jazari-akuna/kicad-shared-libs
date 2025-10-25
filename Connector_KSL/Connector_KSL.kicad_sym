@@ -1,413 +1,1209 @@
-(kicad_symbol_lib (version 20210201) (generator TousstNicolas/JLC2KiCad_lib)
-  (symbol "USB-TYPE-C-018"   (in_bom yes) (on_board yes)
-    (property "Reference" "J?" (id 0) (at 0 1.27 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "USB-TYPE-C-018" (id 1) (at 0 -2.54 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Connector_KSL:USB-C_SMD-TYPE-C-31-M-12" (id 2) (at 0 -10.16 0)
-      (effects (font (size 1.27 1.27) italic) hide)
-    )
-    (property "Datasheet" "https://so.szlcsc.com/global.html?c=&k=C165948" (id 3) (at -2.286 0.127 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "ki_keywords" "C2927038" (id 4) (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C2927038" (id 5) (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    
-    (symbol "USB-TYPE-C-018_0_1"
-      (rectangle
-        (start -8.89001778003556 12.700025400050801)
-        (end 8.89001778003556 -12.700025400050801)
-        (stroke (width 0) (type default) (color 0 0 0 0))
-        (fill (type background))
-      )
-      (circle
-        (center -7.62001524003048 11.430022860045721)
-        (radius 0.381000762001524)
-        (stroke (width 0) (type default) (color 0 0 0 0))
-        (fill (type background))
-      )
-      (pin unspecified line
-        (at -11.43 8.89 0)
-        (length 2.54)
-        (name "GND" (effects (font (size 1 1))))
-        (number "B1" (effects (font (size 1 1))))
-      )
-      (pin unspecified line
-        (at -11.43 6.35 0)
-        (length 2.54)
-        (name "VBUS" (effects (font (size 1 1))))
-        (number "B4" (effects (font (size 1 1))))
-      )
-      (pin unspecified line
-        (at -11.43 3.81 0)
-        (length 2.54)
-        (name "CC2" (effects (font (size 1 1))))
-        (number "B5" (effects (font (size 1 1))))
-      )
-      (pin unspecified line
-        (at -11.43 1.27 0)
-        (length 2.54)
-        (name "DP2" (effects (font (size 1 1))))
-        (number "B6" (effects (font (size 1 1))))
-      )
-      (pin unspecified line
-        (at -11.43 -1.27 0)
-        (length 2.54)
-        (name "DN2" (effects (font (size 1 1))))
-        (number "B7" (effects (font (size 1 1))))
-      )
-      (pin unspecified line
-        (at -11.43 -3.81 0)
-        (length 2.54)
-        (name "SBU2" (effects (font (size 1 1))))
-        (number "B8" (effects (font (size 1 1))))
-      )
-      (pin unspecified line
-        (at -11.43 -6.35 0)
-        (length 2.54)
-        (name "VBUS" (effects (font (size 1 1))))
-        (number "B9" (effects (font (size 1 1))))
-      )
-      (pin unspecified line
-        (at -11.43 -8.89 0)
-        (length 2.54)
-        (name "GND" (effects (font (size 1 1))))
-        (number "B12" (effects (font (size 1 1))))
-      )
-      (pin unspecified line
-        (at 11.43 -8.89 180)
-        (length 2.54)
-        (name "GND" (effects (font (size 1 1))))
-        (number "A1" (effects (font (size 1 1))))
-      )
-      (pin unspecified line
-        (at 11.43 -6.35 180)
-        (length 2.54)
-        (name "VBUS" (effects (font (size 1 1))))
-        (number "A4" (effects (font (size 1 1))))
-      )
-      (pin unspecified line
-        (at 11.43 -3.81 180)
-        (length 2.54)
-        (name "CC1" (effects (font (size 1 1))))
-        (number "A5" (effects (font (size 1 1))))
-      )
-      (pin unspecified line
-        (at 11.43 -1.27 180)
-        (length 2.54)
-        (name "DP1" (effects (font (size 1 1))))
-        (number "A6" (effects (font (size 1 1))))
-      )
-      (pin unspecified line
-        (at 11.43 1.27 180)
-        (length 2.54)
-        (name "DN1" (effects (font (size 1 1))))
-        (number "A7" (effects (font (size 1 1))))
-      )
-      (pin unspecified line
-        (at 11.43 3.81 180)
-        (length 2.54)
-        (name "SBU1" (effects (font (size 1 1))))
-        (number "A8" (effects (font (size 1 1))))
-      )
-      (pin unspecified line
-        (at 11.43 6.35 180)
-        (length 2.54)
-        (name "VBUS" (effects (font (size 1 1))))
-        (number "A9" (effects (font (size 1 1))))
-      )
-      (pin unspecified line
-        (at 11.43 8.89 180)
-        (length 2.54)
-        (name "GND" (effects (font (size 1 1))))
-        (number "A12" (effects (font (size 1 1))))
-      )
-      (pin unspecified line
-        (at 1.27 -15.24 90)
-        (length 2.54000508001016)
-        (name "SH" (effects (font (size 1 1))))
-        (number "13" (effects (font (size 1 1))))
-      )
-      (pin unspecified line
-        (at 1.27 15.24 270)
-        (length 2.54000508001016)
-        (name "SH" (effects (font (size 1 1))))
-        (number "2" (effects (font (size 1 1))))
-      )
-      (pin unspecified line
-        (at -1.27 15.24 270)
-        (length 2.54000508001016)
-        (name "SH" (effects (font (size 1 1))))
-        (number "3" (effects (font (size 1 1))))
-      )
-      (pin unspecified line
-        (at -1.27 -15.24 90)
-        (length 2.54000508001016)
-        (name "SH" (effects (font (size 1 1))))
-        (number "0" (effects (font (size 1 1))))
-      )
-    )
-    (property "Description" "USB-C female horizontal 16 pins 3A SMD"
-      (at 0 0 0)
-      (effects
-        (font (size 1.27 1.27))
-        (hide yes)
-      )
-    )
-  )
-
-    (symbol "GT-BTP30002-0350B-019B"   (in_bom yes) (on_board yes)
-      (property "Reference" "J?" (id 0) (at 0 1.27 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "GT-BTP30002-0350B-019B" (id 1) (at 0 -2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "Connector_KSL:CONN-SMD_GT-BTP30002-0350B-019B" (id 2) (at 0 -10.16 0)
-        (effects (font (size 1.27 1.27) italic) hide)
-      )
-      (property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20240906/62610B2B7CB81AE3778ADCA5ECBA552A.pdf" (id 3) (at -2.286 0.127 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "ki_keywords" "C41378766" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "LCSC" "C41378766" (id 5) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      
-      (symbol "GT-BTP30002-0350B-019B_0_1"
-        (rectangle
-          (start -2.54000508001016 5.08001016002032)
-          (end 2.54000508001016 -5.08001016002032)
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type background))
-        )
-        (circle
-          (center -1.27000254000508 3.81000762001524)
-          (radius 0.381000762001524)
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type background))
-        )
-        (pin unspecified line
-          (at -5.08 2.54 0)
-          (length 2.54)
-          (name "1" (effects (font (size 1 1))))
-          (number "1" (effects (font (size 1 1))))
-        )
-        (pin unspecified line
-          (at -5.08 -0.0 0)
-          (length 2.54)
-          (name "2" (effects (font (size 1 1))))
-          (number "2" (effects (font (size 1 1))))
-        )
-        (pin unspecified line
-          (at -5.08 -2.54 0)
-          (length 2.54)
-          (name "3" (effects (font (size 1 1))))
-          (number "3" (effects (font (size 1 1))))
-        )
-      )
-      (property "Description" "Battery bending blade connector pitch 3mm, 1.9mm travel, 1mm width"
-        (at 0 0 0)
-        (effects
-          (font (size 1.27 1.27))
-          (hide yes)
-        )
-      )
-    )
-
-    (symbol "TF_PUSH"   (in_bom yes) (on_board yes)
-      (property "Reference" "J?" (id 0) (at 0 1.27 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "TF_PUSH" (id 1) (at 0 -2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "Connector_KSL:TF-SMD_TF-PUSH" (id 2) (at 0 -10.16 0)
-        (effects (font (size 1.27 1.27) italic) hide)
-      )
-      (property "Datasheet" "https://item.szlcsc.com/372553.html" (id 3) (at -2.286 0.127 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "ki_keywords" "C393941" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "LCSC" "C393941" (id 5) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      
-      (symbol "TF_PUSH_0_1"
-        (rectangle
-          (start -7.62001524003048 12.700025400050801)
-          (end 12.700025400050801 -12.700025400050801)
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type background))
-        )
-        (circle
-          (center -6.350012700025401 11.430022860045721)
-          (radius 0.381000762001524)
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type background))
-        )
-        (pin unspecified line
-          (at -10.16 10.16 0)
-          (length 2.54)
-          (name "DAT2" (effects (font (size 1 1))))
-          (number "1" (effects (font (size 1 1))))
-        )
-        (pin unspecified line
-          (at -10.16 7.62 0)
-          (length 2.54)
-          (name "CD/DAT3" (effects (font (size 1 1))))
-          (number "2" (effects (font (size 1 1))))
-        )
-        (pin unspecified line
-          (at -10.16 5.08 0)
-          (length 2.54)
-          (name "CMD" (effects (font (size 1 1))))
-          (number "3" (effects (font (size 1 1))))
-        )
-        (pin unspecified line
-          (at -10.16 2.54 0)
-          (length 2.54)
-          (name "VDD" (effects (font (size 1 1))))
-          (number "4" (effects (font (size 1 1))))
-        )
-        (pin unspecified line
-          (at -10.16 -0.0 0)
-          (length 2.54)
-          (name "CLX" (effects (font (size 1 1))))
-          (number "5" (effects (font (size 1 1))))
-        )
-        (pin unspecified line
-          (at -10.16 -2.54 0)
-          (length 2.54)
-          (name "VSS" (effects (font (size 1 1))))
-          (number "6" (effects (font (size 1 1))))
-        )
-        (pin unspecified line
-          (at -10.16 -5.08 0)
-          (length 2.54)
-          (name "DAT0" (effects (font (size 1 1))))
-          (number "7" (effects (font (size 1 1))))
-        )
-        (pin unspecified line
-          (at -10.16 -7.62 0)
-          (length 2.54)
-          (name "DAT1" (effects (font (size 1 1))))
-          (number "8" (effects (font (size 1 1))))
-        )
-        (pin unspecified line
-          (at -10.16 -10.16 0)
-          (length 2.54)
-          (name "CD" (effects (font (size 1 1))))
-          (number "9" (effects (font (size 1 1))))
-        )
-        (pin unspecified line
-          (at 5.08 -15.24 90)
-          (length 2.54000508001016)
-          (name "10" (effects (font (size 1 1))))
-          (number "10" (effects (font (size 1 1))))
-        )
-        (pin unspecified line
-          (at 10.16 -15.24 90)
-          (length 2.54000508001016)
-          (name "11" (effects (font (size 1 1))))
-          (number "11" (effects (font (size 1 1))))
-        )
-        (pin unspecified line
-          (at 10.16 15.24 270)
-          (length 2.54000508001016)
-          (name "12" (effects (font (size 1 1))))
-          (number "12" (effects (font (size 1 1))))
-        )
-        (pin unspecified line
-          (at 5.08 15.24 270)
-          (length 2.54000508001016)
-          (name "13" (effects (font (size 1 1))))
-          (number "13" (effects (font (size 1 1))))
-        )
-      )
-      (property "Description" "2mm Card Slot MicroSD card (TF card) Self-bouncing SMD SD Card / Memory Card Connector ROHS"
-        (at 0 0 0)
-        (effects
-          (font (size 1.27 1.27))
-          (hide yes)
-        )
-      )
-    )
-
-    (symbol "PZ254V-11-04P_C2691448"   (in_bom yes) (on_board yes)
-      (property "Reference" "J?" (id 0) (at 0 1.27 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "PZ254V-11-04P_C2691448" (id 1) (at 0 -2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "Connector_KSL:HDR-TH_4P-P2.54-V-M" (id 2) (at 0 -10.16 0)
-        (effects (font (size 1.27 1.27) italic) hide)
-      )
-      (property "Datasheet" "https://item.szlcsc.com/502959.html" (id 3) (at -2.286 0.127 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "ki_keywords" "C2691448" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "LCSC" "C2691448" (id 5) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      
-      (symbol "PZ254V-11-04P_C2691448_0_1"
-        (rectangle
-          (start -2.54000508001016 6.350012700025401)
-          (end 2.54000508001016 -6.350012700025401)
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type background))
-        )
-        (circle
-          (center -1.27000254000508 5.08001016002032)
-          (radius 0.381000762001524)
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type background))
-        )
-        (pin unspecified line
-          (at -5.08 3.81 0)
-          (length 2.54)
-          (name "1" (effects (font (size 1 1))))
-          (number "1" (effects (font (size 1 1))))
-        )
-        (pin unspecified line
-          (at -5.08 1.27 0)
-          (length 2.54)
-          (name "2" (effects (font (size 1 1))))
-          (number "2" (effects (font (size 1 1))))
-        )
-        (pin unspecified line
-          (at -5.08 -1.27 0)
-          (length 2.54)
-          (name "3" (effects (font (size 1 1))))
-          (number "3" (effects (font (size 1 1))))
-        )
-        (pin unspecified line
-          (at -5.08 -3.81 0)
-          (length 2.54)
-          (name "4" (effects (font (size 1 1))))
-          (number "4" (effects (font (size 1 1))))
-        )
-      )
-      (property "Description" "DuPont 2.54mm 4 pin header"
-        (at 0 0 0)
-        (effects
-          (font (size 1.27 1.27))
-          (hide yes)
-        )
-      )
-    )
+(kicad_symbol_lib
+	(version 20241209)
+	(generator "kicad_symbol_editor")
+	(generator_version "9.0")
+	(symbol "GT-BTP30002-0350B-019B"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J?"
+			(at 0 1.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GT-BTP30002-0350B-019B"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_KSL:CONN-SMD_GT-BTP30002-0350B-019B"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20240906/62610B2B7CB81AE3778ADCA5ECBA552A.pdf"
+			(at -2.286 0.127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Battery bending blade connector pitch 3mm, 1.9mm travel, 1mm width"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C41378766"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "C41378766"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "GT-BTP30002-0350B-019B_0_1"
+			(rectangle
+				(start -2.54 5.08)
+				(end 2.54 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(circle
+				(center -1.27 3.81)
+				(radius 0.381)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin unspecified line
+				(at -5.08 2.54 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -5.08 -2.54 0)
+				(length 2.54)
+				(name "3"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "PZ254V-11-04P_C2691448"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J?"
+			(at 0 1.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PZ254V-11-04P_C2691448"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_KSL:HDR-TH_4P-P2.54-V-M"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/502959.html"
+			(at -2.286 0.127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "DuPont 2.54mm 4 pin header"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2691448"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "C2691448"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "PZ254V-11-04P_C2691448_0_1"
+			(rectangle
+				(start -2.54 6.35)
+				(end 2.54 -6.35)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(circle
+				(center -1.27 5.08)
+				(radius 0.381)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin unspecified line
+				(at -5.08 3.81 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -5.08 1.27 0)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -5.08 -1.27 0)
+				(length 2.54)
+				(name "3"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -5.08 -3.81 0)
+				(length 2.54)
+				(name "4"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "TF_PUSH"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J?"
+			(at 0 1.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TF_PUSH"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_KSL:TF-SMD_TF-PUSH"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/372553.html"
+			(at -2.286 0.127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "2mm Card Slot MicroSD card (TF card) Self-bouncing SMD SD Card / Memory Card Connector ROHS"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C393941"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "C393941"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TF_PUSH_0_1"
+			(rectangle
+				(start -7.62 12.7)
+				(end 12.7 -12.7)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(circle
+				(center -6.35 11.43)
+				(radius 0.381)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin unspecified line
+				(at -10.16 10.16 0)
+				(length 2.54)
+				(name "DAT2"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -10.16 7.62 0)
+				(length 2.54)
+				(name "CD/DAT3"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -10.16 5.08 0)
+				(length 2.54)
+				(name "CMD"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -10.16 0 0)
+				(length 2.54)
+				(name "CLX"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "VSS"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -10.16 -5.08 0)
+				(length 2.54)
+				(name "DAT0"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -10.16 -7.62 0)
+				(length 2.54)
+				(name "DAT1"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -10.16 -10.16 0)
+				(length 2.54)
+				(name "CD"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 5.08 15.24 270)
+				(length 2.54)
+				(name "13"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 5.08 -15.24 90)
+				(length 2.54)
+				(name "10"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 10.16 15.24 270)
+				(length 2.54)
+				(name "12"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 10.16 -15.24 90)
+				(length 2.54)
+				(name "11"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "USB-TYPE-C-018"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J?"
+			(at 0 1.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "USB-TYPE-C-018"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_KSL:USB-C_SMD-TYPE-C-31-M-12"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://so.szlcsc.com/global.html?c=&k=C165948"
+			(at -2.286 0.127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "USB-C female horizontal 16 pins 3A SMD"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2927038"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "C2927038"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "USB-TYPE-C-018_0_1"
+			(rectangle
+				(start -8.89 12.7)
+				(end 8.89 -12.7)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(circle
+				(center -7.62 11.43)
+				(radius 0.381)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin unspecified line
+				(at -11.43 8.89 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "B1"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -11.43 6.35 0)
+				(length 2.54)
+				(name "VBUS"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "B4"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -11.43 3.81 0)
+				(length 2.54)
+				(name "CC2"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "B5"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -11.43 1.27 0)
+				(length 2.54)
+				(name "DP2"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "B6"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -11.43 -1.27 0)
+				(length 2.54)
+				(name "DN2"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "B7"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -11.43 -3.81 0)
+				(length 2.54)
+				(name "SBU2"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "B8"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -11.43 -6.35 0)
+				(length 2.54)
+				(name "VBUS"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "B9"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -11.43 -8.89 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "B12"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -1.27 15.24 270)
+				(length 2.54)
+				(name "SH"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -1.27 -15.24 90)
+				(length 2.54)
+				(name "SH"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "0"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 1.27 15.24 270)
+				(length 2.54)
+				(name "SH"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 1.27 -15.24 90)
+				(length 2.54)
+				(name "SH"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 11.43 8.89 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "A12"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 11.43 6.35 180)
+				(length 2.54)
+				(name "VBUS"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "A9"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 11.43 3.81 180)
+				(length 2.54)
+				(name "SBU1"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "A8"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 11.43 1.27 180)
+				(length 2.54)
+				(name "DN1"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "A7"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 11.43 -1.27 180)
+				(length 2.54)
+				(name "DP1"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "A6"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 11.43 -3.81 180)
+				(length 2.54)
+				(name "CC1"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "A5"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 11.43 -6.35 180)
+				(length 2.54)
+				(name "VBUS"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "A4"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 11.43 -8.89 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "A1"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "YZ90415045R-01"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J?"
+			(at -0.254 4.318 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "YZ90415045R-01"
+			(at -1.016 -5.588 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_KSL:SMD-1_BD2.0-H10.0"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210628/C2842933_2FC659C9E4B13E1F46CE59B211E521AD.pdf"
+			(at -22.352 -13.081 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Pogo Pin Spring Probe 12V 1P 3.7mm 3A 4.5mm 50mΩ"
+			(at 0 -16.764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5157399"
+			(at -1.27 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "C5157399"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "YZ90415045R-01_0_1"
+			(circle
+				(center 0 0)
+				(radius 1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 0 0)
+				(radius 2.8398)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin unspecified line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 )
