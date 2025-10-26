@@ -24,7 +24,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "DC-DC_converter_KSL:TSOT-26_L2.9-W1.6-P0.95-LS2.8-BL"
+		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-6"
 			(at 0 -10.16 0)
 			(effects
 				(font
@@ -34,7 +34,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP62300_AP62301_AP62300T.pdf"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8560106476640493568"
 			(at -30.734 -20.701 0)
 			(effects
 				(font
@@ -83,6 +83,8 @@
 					(type background)
 				)
 			)
+		)
+		(symbol "AP63203WU-7_1_1"
 			(pin unspecified line
 				(at -8.89 2.54 0)
 				(length 2.54)

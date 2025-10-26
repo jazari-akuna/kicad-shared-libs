@@ -1,22 +1,106 @@
-(module "SMD-1_BD2.0-H10.0" (layer F.Cu) (tedit 68FCE7AB)
-  (descr "SMD-1_BD2.0-H10.0 footprint")
-  (tags "SMD-1_BD2.0-H10.0 footprint C5157399")
-  (attr smd)
-  (fp_text reference REF** (at 0 -2) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text value SMD-1_BD2.0-H10.0 (at 0 2) (layer F.Fab)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_circle (center 1 -1) (end 1.029972 -1) (layer F.SilkS) (width 0.059995))
-  (fp_circle (center 0 0) (end 1.430023 0) (layer F.SilkS) (width 0.2))
-  (pad 1 smd circle (at 0 0) (size 2.5 2.5) (layers F.Cu F.Mask F.Paste))
-  (fp_text user REF** (at 0 4) (layer F.Fab)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-(model ${KSL_ROOT}/Connector_KSL/Connector_KSL.3dshapes/SMD-1_BD2.0-H10.0.step
-    (at (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
+(footprint "SMD-1_BD2.0-H10.0"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "SMD-1_BD2.0-H10.0 footprint")
+	(tags "SMD-1_BD2.0-H10.0 footprint C5157399")
+	(property "Reference" "REF**"
+		(at 0 -2 0)
+		(layer "F.SilkS")
+		(uuid "77977ce6-6dc3-4d26-b9d9-fbaeaa057c13")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SMD-1_BD2.0-H10.0"
+		(at 0 2 0)
+		(layer "F.Fab")
+		(uuid "31b5a531-f648-42d5-a574-77bd2a7bad7e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4bf50b12-b803-4296-a938-8edc504ad297")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8a47b49b-455a-4d00-97c1-fae2f7ac22e5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_circle
+		(center 0 0)
+		(end 1.430023 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "ceb9a95e-4f09-4df6-b94e-13e3d92e0b2c")
+	)
+	(fp_circle
+		(center 1 -1)
+		(end 1.029972 -1)
+		(stroke
+			(width 0.059995)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "264e0f71-6c1b-44bb-97a3-8fba9dab6017")
+	)
+	(fp_text user "REF**"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "78ee58d3-3633-4707-8d31-e940f62d5d05")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd circle
+		(at 0 0)
+		(size 2.5 2.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "3f113bcd-4df3-42a0-a57d-1e4ce6678fa2")
+	)
+	(embedded_fonts no)
+	(model "${KSL_ROOT}/Connector_KSL/Connector_KSL.3dshapes/SMD-1_BD2.0-H10.0.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 0.5)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
 )
