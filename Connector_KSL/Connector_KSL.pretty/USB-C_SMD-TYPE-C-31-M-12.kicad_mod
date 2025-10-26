@@ -291,7 +291,7 @@
 	(embedded_fonts no)
 	(model "${KSL_ROOT}/Connector_KSL/Connector_KSL.3dshapes/USB-C_SMD-TYPE-C-31-M-12.step"
 		(offset
-			(xyz 0 -1.144041 0.000002)
+			(xyz 0 -2.444041 0.000002)
 		)
 		(scale
 			(xyz 1 1 1)
