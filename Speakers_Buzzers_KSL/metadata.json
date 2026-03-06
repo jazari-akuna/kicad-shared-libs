@@ -1,0 +1,32 @@
+{
+  "$schema": "https://go.kicad.org/pcm/schemas/v1",
+  "name": "Speakers_Buzzers_KSL",
+  "description": "Speakers_Buzzers_KSL",
+  "identifier": "com.github.jazari-akuna.kicad-shared-libs.Speakers_Buzzers_KSL",
+  "type": "library",
+  "license": "CC-BY-SA-4.0",
+  "author": {
+    "name": "Unknown"
+  },
+  "maintainer": {
+    "name": "jazari-akuna"
+  },
+  "content": {
+    "symbols": [
+      "Speakers_Buzzers_KSL.kicad_sym"
+    ],
+    "footprints": [
+      "Speakers_Buzzers_KSL.pretty"
+    ],
+    "3dmodels": [
+      "Speakers_Buzzers_KSL.3dshapes"
+    ]
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "status": "stable",
+      "kicad_version": "9.0"
+    }
+  ]
+}

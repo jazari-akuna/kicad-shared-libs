@@ -38,6 +38,12 @@
     },
     {
       "path": "Power_Management_IC_KSL/metadata.json"
+    },
+    {
+      "path": "LDO_KSL/metadata.json"
+    },
+    {
+      "path": "Speakers_Buzzers_KSL/metadata.json"
     }
   ]
 }
