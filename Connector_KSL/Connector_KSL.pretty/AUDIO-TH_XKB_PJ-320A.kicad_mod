@@ -194,7 +194,7 @@
 			(type solid)
 		)
 		(fill no)
-		(layer "Rescue")
+		(layer "Cmts.User")
 		(uuid "af894496-8c0e-4844-a718-329e8738ad8a")
 	)
 	(fp_poly
@@ -206,7 +206,7 @@
 			(type solid)
 		)
 		(fill yes)
-		(layer "Rescue")
+		(layer "Cmts.User")
 		(uuid "62de9a7b-7bea-41d0-b9eb-8310c5c44dbc")
 	)
 	(fp_poly
@@ -218,7 +218,7 @@
 			(type solid)
 		)
 		(fill yes)
-		(layer "Rescue")
+		(layer "Cmts.User")
 		(uuid "65ce5f42-0bd3-4a2e-a484-54d00ed00976")
 	)
 	(fp_poly
@@ -230,7 +230,7 @@
 			(type solid)
 		)
 		(fill yes)
-		(layer "Rescue")
+		(layer "Cmts.User")
 		(uuid "90872ad5-628b-4a56-a88e-d3032b5191fa")
 	)
 	(fp_poly
@@ -242,7 +242,7 @@
 			(type solid)
 		)
 		(fill yes)
-		(layer "Rescue")
+		(layer "Cmts.User")
 		(uuid "e4572cc4-b769-4f7a-906c-6c4ba01a0602")
 	)
 	(fp_poly
@@ -256,7 +256,7 @@
 			(type solid)
 		)
 		(fill yes)
-		(layer "Rescue")
+		(layer "Cmts.User")
 		(uuid "9b8cc399-07a4-470c-a1ac-08c50e115305")
 	)
 	(fp_text user "${REFERENCE}"
