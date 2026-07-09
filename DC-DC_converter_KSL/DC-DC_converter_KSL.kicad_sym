@@ -34,7 +34,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8560106476640493568"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/94820cc9e44613233ddcc1a15801eca3.pdf?productCode=C780769"
 			(at -30.734 -20.701 0)
 			(effects
 				(font
@@ -85,7 +85,7 @@
 			)
 		)
 		(symbol "AP63203WU-7_1_1"
-			(pin unspecified line
+			(pin power_in line
 				(at -8.89 2.54 0)
 				(length 2.54)
 				(name "VIN"
@@ -103,7 +103,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at -8.89 0 0)
 				(length 2.54)
 				(name "EN"
@@ -121,7 +121,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at 0 -7.62 90)
 				(length 2.54)
 				(name "GND"
@@ -139,7 +139,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 8.89 2.54 180)
 				(length 2.54)
 				(name "BST"
@@ -157,7 +157,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin output line
 				(at 8.89 0 180)
 				(length 2.54)
 				(name "SW"
@@ -175,7 +175,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at 8.89 -2.54 180)
 				(length 2.54)
 				(name "FB"
@@ -226,7 +226,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/480473.html"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/28d4e70ecc61b5d86df611d17040a222.pdf?productCode=C473914"
 			(at -2.286 0.127 0)
 			(effects
 				(font
@@ -434,6 +434,205 @@
 				(at 11.43 -5.08 180)
 				(length 2.54)
 				(name "VOUT"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "TLV62569DBVR"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U?"
+			(at 0 1.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TLV62569DBVR"
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "DC-DC_converter_KSL:SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR"
+			(at 0 -10.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/17b330e62cea45956cc310f229e6bb45.pdf?productCode=C141836"
+			(at -2.286 0.127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "1.5MHz Step-down type Adjustable 600mV~5.5V 2A SOT-23-5 Voltage Regulators - DC DC Switching Regulators RoHS"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C141836"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "C141836"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "TLV62569DBVR_0_1"
+			(rectangle
+				(start -7.62 5.08)
+				(end 7.62 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(circle
+				(center -6.985 4.445)
+				(radius 0.381)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin input line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "EN"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -10.16 0 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "SW"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "VIN"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "FB"
 					(effects
 						(font
 							(size 1 1)

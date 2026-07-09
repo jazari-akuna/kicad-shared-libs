@@ -32,7 +32,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/partdetail/Slkor_SLKORMICRO_Elec-DW01A/C42380662"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/7c412cac0dea0278008492f4ad08dd26.pdf?productCode=C42380662"
 			(at -2.286 0.127 0)
 			(effects
 				(font
@@ -233,7 +233,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/169042.html"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/fc4eb899b8e4021ee1843f8c3ea5a928.pdf?productCode=C2827654"
 			(at -2.286 0.127 0)
 			(effects
 				(font
@@ -293,7 +293,7 @@
 					(type background)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -10.16 2.54 0)
 				(length 2.54)
 				(name "IO1"
@@ -311,7 +311,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at -10.16 0 0)
 				(length 2.54)
 				(name "GND"
@@ -329,7 +329,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -10.16 -2.54 0)
 				(length 2.54)
 				(name "IO2"
@@ -347,7 +347,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 10.16 2.54 180)
 				(length 2.54)
 				(name "IO1"
@@ -365,7 +365,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at 10.16 0 180)
 				(length 2.54)
 				(name "VBUS"
@@ -383,7 +383,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 10.16 -2.54 180)
 				(length 2.54)
 				(name "IO2"

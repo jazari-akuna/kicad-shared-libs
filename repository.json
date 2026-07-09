@@ -44,6 +44,15 @@
     },
     {
       "path": "Speakers_Buzzers_KSL/metadata.json"
+    },
+    {
+      "path": "Memory_KSL/metadata.json"
+    },
+    {
+      "path": "Audio_KSL/metadata.json"
+    },
+    {
+      "path": "Microphone_KSL/metadata.json"
     }
   ]
 }

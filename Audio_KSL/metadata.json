@@ -1,0 +1,32 @@
+{
+  "$schema": "https://go.kicad.org/pcm/schemas/v1",
+  "name": "Audio_KSL",
+  "description": "Audio ICs (DACs, ADCs, codecs, amplifiers)",
+  "identifier": "com.github.jazari-akuna.kicad-shared-libs.Audio_KSL",
+  "type": "library",
+  "license": "CC-BY-SA-4.0",
+  "author": {
+    "name": "Unknown"
+  },
+  "maintainer": {
+    "name": "jazari-akuna"
+  },
+  "content": {
+    "symbols": [
+      "Audio_KSL.kicad_sym"
+    ],
+    "footprints": [
+      "Audio_KSL.pretty"
+    ],
+    "3dmodels": [
+      "Audio_KSL.3dshapes"
+    ]
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "status": "stable",
+      "kicad_version": "9.0"
+    }
+  ]
+}
