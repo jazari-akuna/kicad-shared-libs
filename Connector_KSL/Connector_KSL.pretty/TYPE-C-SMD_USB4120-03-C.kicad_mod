@@ -478,39 +478,6 @@
 		(uuid "b254fb49-db14-425b-ab8e-05d03fecfa68")
 	)
 	(fp_circle
-		(center -3.750064 0.000127)
-		(end -3.649987 0.000127)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(fill no)
-		(layer "F.Fab")
-		(uuid "60965a03-f85b-498d-b9ec-02a0e5ca2733")
-	)
-	(fp_circle
-		(center -2.870003 -0.949987)
-		(end -2.71999 -0.949987)
-		(stroke
-			(width 0.3)
-			(type solid)
-		)
-		(fill no)
-		(layer "F.Fab")
-		(uuid "8c8776c0-c2ca-4fed-9724-2593eb6c498c")
-	)
-	(fp_circle
-		(center 3.750064 0.000127)
-		(end 3.85014 0.000127)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(fill no)
-		(layer "F.Fab")
-		(uuid "e8a5b0ce-e4c0-47cf-afce-b09d559d491b")
-	)
-	(fp_circle
 		(center -4.470028 -2.3)
 		(end -4.44003 -2.3)
 		(stroke
@@ -820,6 +787,39 @@
 		(fill yes)
 		(layer "Cmts.User")
 		(uuid "752e99fb-dcf9-41b1-92cf-608279d1be41")
+	)
+	(fp_circle
+		(center -3.750064 0.000127)
+		(end -3.649987 0.000127)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "60965a03-f85b-498d-b9ec-02a0e5ca2733")
+	)
+	(fp_circle
+		(center -2.870003 -0.949987)
+		(end -2.71999 -0.949987)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "8c8776c0-c2ca-4fed-9724-2593eb6c498c")
+	)
+	(fp_circle
+		(center 3.750064 0.000127)
+		(end 3.85014 0.000127)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "e8a5b0ce-e4c0-47cf-afce-b09d559d491b")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)

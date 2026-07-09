@@ -1,7 +1,7 @@
 (footprint "USB-C_SMD-TYPE-C-31-M-12"
-	(version 20241229)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(layer "F.Cu")
 	(descr "USB-C_SMD-TYPE-C-31-M-12 footprint")
 	(tags "USB-C_SMD-TYPE-C-31-M-12 footprint C2927038")
@@ -52,6 +52,7 @@
 		)
 	)
 	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start -4.468987 1.375667)
 		(end -4.468987 -0.487249)

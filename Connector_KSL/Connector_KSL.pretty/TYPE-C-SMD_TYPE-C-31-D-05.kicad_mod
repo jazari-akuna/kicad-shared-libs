@@ -291,17 +291,6 @@
 		(uuid "6eddd5eb-c2fc-42e6-bdbb-e4719e756ad2")
 	)
 	(fp_circle
-		(center -3.020066 1.440056)
-		(end -2.91999 1.440056)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(fill no)
-		(layer "F.Fab")
-		(uuid "72740bc9-1f2e-4654-ae53-0e28db65d149")
-	)
-	(fp_circle
 		(center 5 -2.320422)
 		(end 5.029972 -2.320422)
 		(stroke
@@ -419,6 +408,17 @@
 		(fill yes)
 		(layer "Cmts.User")
 		(uuid "dbddc206-205b-4aaa-8cdb-ac501a0871ee")
+	)
+	(fp_circle
+		(center -3.020066 1.440056)
+		(end -2.91999 1.440056)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "72740bc9-1f2e-4654-ae53-0e28db65d149")
 	)
 	(fp_text user "${REFERENCE}"
 		(at -0.014999 -0.694996 0)
