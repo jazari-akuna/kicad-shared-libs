@@ -13,6 +13,9 @@
       "path": "Fastener_KSL/metadata.json"
     },
     {
+      "path": "TestPoint_KSL/metadata.json"
+    },
+    {
       "path": "Switch_KSL/metadata.json"
     },
     {
@@ -53,6 +56,24 @@
     },
     {
       "path": "Microphone_KSL/metadata.json"
+    },
+    {
+      "path": "Inductor_KSL/metadata.json"
+    },
+    {
+      "path": "RF_Wireless_KSL/metadata.json"
+    },
+    {
+      "path": "Crystal_Oscillator_KSL/metadata.json"
+    },
+    {
+      "path": "Interface_KSL/metadata.json"
+    },
+    {
+      "path": "Video_Interface_KSL/metadata.json"
+    },
+    {
+      "path": "Diode_KSL/metadata.json"
     }
   ]
 }
