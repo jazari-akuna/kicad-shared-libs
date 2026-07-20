@@ -324,6 +324,17 @@
 			)
 		)
 	)
+  (fp_rect
+    (start -1.95 -1.37)
+    (end 1.95 1.37)
+    (stroke
+      (width 0.05)
+      (type solid)
+    )
+    (fill no)
+    (layer "F.CrtYd")
+  )
+
 	(pad "1" smd rect
 		(at 1.300102 0.949962)
 		(size 1.1 0.6)
