@@ -1,0 +1,32 @@
+{
+  "$schema": "https://go.kicad.org/pcm/schemas/v1",
+  "name": "Crystal_Oscillator_KSL",
+  "description": "Crystals, oscillators and resonators",
+  "identifier": "com.github.jazari-akuna.kicad-shared-libs.Crystal_Oscillator_KSL",
+  "type": "library",
+  "license": "CC-BY-SA-4.0",
+  "author": {
+    "name": "Unknown"
+  },
+  "maintainer": {
+    "name": "jazari-akuna"
+  },
+  "content": {
+    "symbols": [
+      "Crystal_Oscillator_KSL.kicad_sym"
+    ],
+    "footprints": [
+      "Crystal_Oscillator_KSL.pretty"
+    ],
+    "3dmodels": [
+      "Crystal_Oscillator_KSL.3dshapes"
+    ]
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "status": "stable",
+      "kicad_version": "9.0"
+    }
+  ]
+}
