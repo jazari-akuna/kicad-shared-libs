@@ -761,7 +761,7 @@
 	(embedded_fonts no)
 	(model "${KSL_ROOT}/Audio_KSL/Audio_KSL.3dshapes/TSSOP-20_L6.5-W4.4-P0.65-LS6.4-BL.step"
 		(offset
-			(xyz -911.4749223 683.7208727 0)
+			(xyz 0 0 0)
 		)
 		(scale
 			(xyz 1 1 1)

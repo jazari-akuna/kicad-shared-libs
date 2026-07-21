@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "kicad_target": null,
+  "git": {
+    "enabled": true,
+    "auto_commit": true,
+    "commit_template": "Add {lcsc} ({description}) to {library}"
+  },
+  "concurrency": 4
+}

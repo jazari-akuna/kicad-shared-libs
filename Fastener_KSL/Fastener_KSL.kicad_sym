@@ -9,7 +9,7 @@
     (property "Footprint" "Fastener_KSL:SMD-1_BD5.5-D4.0" (id 2) (at 0 -10.16 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://img.jlc.com/image//data/smt-stock-produce/componentSizePhoto/2022-08-23/08908392e2e94805ab2f9320ac7cc7c6/BG2208221643_D22081801090_back.png" (id 3) (at -2.286 0.127 0)
+    (property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/ece43b9c9581dc6ca2141ce7cea61a1e.pdf?productCode=C2915635" (id 3) (at -2.286 0.127 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "ki_keywords" "C2915635" (id 4) (at 0 0 0)

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://go.kicad.org/pcm/schemas/v1",
+  "name": "Diode_KSL",
+  "description": "Diodes: rectifier, schottky, switching, zener",
+  "identifier": "com.github.jazari-akuna.kicad-shared-libs.Diode_KSL",
+  "type": "library",
+  "license": "CC-BY-SA-4.0",
+  "author": {
+    "name": "Unknown"
+  },
+  "maintainer": {
+    "name": "jazari-akuna"
+  },
+  "content": {
+    "symbols": [
+      "Diode_KSL.kicad_sym"
+    ],
+    "footprints": [
+      "Diode_KSL.pretty"
+    ],
+    "3dmodels": [
+      "Diode_KSL.3dshapes"
+    ]
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "status": "stable",
+      "kicad_version": "9.0"
+    }
+  ]
+}

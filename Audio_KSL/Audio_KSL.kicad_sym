@@ -40,7 +40,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/427cb50cd71d4fa092a8afe7bc909457.pdf?productCode=C107671"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/pcm5102a.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://go.kicad.org/pcm/schemas/v1",
+  "name": "Inductor_KSL",
+  "description": "Inductors, power inductors and ferrite beads",
+  "identifier": "com.github.jazari-akuna.kicad-shared-libs.Inductor_KSL",
+  "type": "library",
+  "license": "CC-BY-SA-4.0",
+  "author": {
+    "name": "Unknown"
+  },
+  "maintainer": {
+    "name": "jazari-akuna"
+  },
+  "content": {
+    "symbols": [
+      "Inductor_KSL.kicad_sym"
+    ],
+    "footprints": [
+      "Inductor_KSL.pretty"
+    ],
+    "3dmodels": [
+      "Inductor_KSL.3dshapes"
+    ]
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "status": "stable",
+      "kicad_version": "9.0"
+    }
+  ]
+}

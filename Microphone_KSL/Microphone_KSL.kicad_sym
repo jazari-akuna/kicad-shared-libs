@@ -40,7 +40,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/515749.html"
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/mp34dt05-a.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://go.kicad.org/pcm/schemas/v1",
+  "name": "Video_Interface_KSL",
+  "description": "Video interface ICs: MIPI DSI/CSI to HDMI bridges, display serializers and similar",
+  "identifier": "com.github.jazari-akuna.kicad-shared-libs.Video_Interface_KSL",
+  "type": "library",
+  "license": "CC-BY-SA-4.0",
+  "author": {
+    "name": "Unknown"
+  },
+  "maintainer": {
+    "name": "jazari-akuna"
+  },
+  "content": {
+    "symbols": [
+      "Video_Interface_KSL.kicad_sym"
+    ],
+    "footprints": [
+      "Video_Interface_KSL.pretty"
+    ],
+    "3dmodels": [
+      "Video_Interface_KSL.3dshapes"
+    ]
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "status": "stable",
+      "kicad_version": "9.0"
+    }
+  ]
+}

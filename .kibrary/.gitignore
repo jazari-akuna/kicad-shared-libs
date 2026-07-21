@@ -1,0 +1,5 @@
+# kibrary-automator scratch space — auto-generated, safe to keep tracked.
+# These directories hold in-progress downloads, render caches, and 3D blobs
+# that don't belong in the library's git history.
+staging/
+cache/
