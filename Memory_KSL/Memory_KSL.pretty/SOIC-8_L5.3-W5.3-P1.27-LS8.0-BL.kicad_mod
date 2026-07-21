@@ -401,7 +401,7 @@
 	(embedded_fonts no)
 	(model "${KSL_ROOT}/Memory_KSL/Memory_KSL.3dshapes/SOIC-8_L5.3-W5.3-P1.27-LS8.0-BL.step"
 		(offset
-			(xyz 1.650999975 -2.844799957 0)
+			(xyz 0 0 0)
 		)
 		(scale
 			(xyz 1 1 1)
