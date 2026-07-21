@@ -1,0 +1,32 @@
+{
+  "$schema": "https://go.kicad.org/pcm/schemas/v1",
+  "name": "Interface_KSL",
+  "description": "Interface ICs: redrivers, mux/analog switches, level translators...",
+  "identifier": "com.github.jazari-akuna.kicad-shared-libs.Interface_KSL",
+  "type": "library",
+  "license": "CC-BY-SA-4.0",
+  "author": {
+    "name": "Unknown"
+  },
+  "maintainer": {
+    "name": "jazari-akuna"
+  },
+  "content": {
+    "symbols": [
+      "Interface_KSL.kicad_sym"
+    ],
+    "footprints": [
+      "Interface_KSL.pretty"
+    ],
+    "3dmodels": [
+      "Interface_KSL.3dshapes"
+    ]
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "status": "stable",
+      "kicad_version": "9.0"
+    }
+  ]
+}
