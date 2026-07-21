@@ -30,8 +30,8 @@
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (model ${KSL_ROOT}/Diode_KSL/Diode_KSL.3dshapes/SOD-123_L2.7-W1.6-LS3.7-RD.step
-    (at (xyz -36.004 27 0))
+    (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 -180))
+    (rotate (xyz 0 0 0))
   )
 )
