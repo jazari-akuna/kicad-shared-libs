@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(descr "onsemi X2QFN32 2.85x4.5mm 0.4p, CASE 722AF ISSUE B recommended mounting footprint (NB7VPQ904M)")
+	(descr "X2QFN-32 4.5x2.85 P0.40 (NB7VPQ904M). CAVEAT: 3D body is a PLACEHOLDER - no vendor/EasyEDA model exists anywhere (onsemi ships no STEP; C42890162 sibling also modelless); a WQFN-20 2.5x4.5 body is used (right length/portrait axis, pin-1 corner matches; true package 2.85x4.5x0.4). Documented a consuming board 3D audit 2026-07-21.")
 	(tags "X2QFN-32_L4.5-W2.85-P0.40-EP1.85X3.50 footprint C891919 X2QFN QFN")
 	(attr smd)
 	(property "Reference" "REF**"

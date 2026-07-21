@@ -32,7 +32,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (model ${KSL_ROOT}/Inductor_KSL/Inductor_KSL.3dshapes/L0603.step
-    (at (xyz 0.065529 -0.019371 0))
+    (at (xyz 0 0 0.009843))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 -180))
   )

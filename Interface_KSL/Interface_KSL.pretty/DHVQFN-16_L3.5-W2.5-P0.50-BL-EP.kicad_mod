@@ -1,5 +1,5 @@
 (module "DHVQFN-16_L3.5-W2.5-P0.50-BL-EP" (layer F.Cu) (tedit 6A5F0CDD)
-  (descr "DHVQFN-16_L3.5-W2.5-P0.50-BL-EP footprint")
+  (descr "DHVQFN-16_L3.5-W2.5-P0.50-BL-EP footprint (SN74AXC4T245BQBR C3754250). CAVEAT: the EasyEDA STEP's molded pin-1 dot is on the WRONG corner - cosmetic model defect only; pads/silk/pin-1 marking on the footprint are authoritative (verified against TI drawing, a consuming board shrink campaign 2026-07-21).")
   (tags "DHVQFN-16_L3.5-W2.5-P0.50-BL-EP footprint C3754250")
   (attr smd)
   (fp_text reference REF** (at 0 -3.326213) (layer F.SilkS)

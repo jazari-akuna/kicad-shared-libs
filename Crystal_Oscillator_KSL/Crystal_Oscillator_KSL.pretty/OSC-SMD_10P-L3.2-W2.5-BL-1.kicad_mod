@@ -51,7 +51,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (model ${KSL_ROOT}/Crystal_Oscillator_KSL/Crystal_Oscillator_KSL.3dshapes/OSC-SMD_10P-L3.2-W2.5-BL-1.step
-    (at (xyz 0 0.000003 0))
+    (at (xyz 0 0 0.03937))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
