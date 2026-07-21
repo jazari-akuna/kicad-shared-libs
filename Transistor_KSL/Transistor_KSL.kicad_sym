@@ -202,7 +202,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "G"
@@ -220,7 +220,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 2.54 5.08 270)
 				(length 2.54)
 				(name "D"
@@ -238,7 +238,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 2.54 -5.08 90)
 				(length 2.54)
 				(name "S"
@@ -295,7 +295,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/partdetail/TF-TF8205/C52287136"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/571b603245764297d61dc2e47d726d5f.pdf?productCode=C3015230"
 			(at -2.286 0.127 0)
 			(effects
 				(font
