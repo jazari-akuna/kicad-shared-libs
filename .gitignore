@@ -23,3 +23,7 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+
+# NDA-derived parts - keep local only, never publish (vendor docs under NDA)
+SOM_KSL/
+Video_Interface_NDA_KSL/
