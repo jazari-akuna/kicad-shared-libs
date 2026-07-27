@@ -12,6 +12,9 @@
     "name": "jazari-akuna"
   },
   "content": {
+    "symbols": [
+      "TestPoint_KSL.kicad_sym"
+    ],
     "footprints": [
       "TestPoint_KSL.pretty"
     ]
