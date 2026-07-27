@@ -7360,7 +7360,7 @@
     (property "LCSC" "C403840" (id 5) (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Description" "DIOO 2.7-5.5V 2.5A load switch, programmable current limit (ISET), EN active-HIGH (A variant), SOT-23-5" (id 6) (at 0 0 0)
+    (property "Description" "DIOO 2.7-5.5V 2.5A load switch, programmable current limit (ISET), EN active-HIGH (A variant), per BRIDGE-A EVB U7 HDMI 5V limit, SOT-23-5" (id 6) (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Stock" "LCSC 9910 (2026-07-16)" (id 7) (at 0 0 0)
@@ -7369,14 +7369,14 @@
     
     (symbol "DIO7002AST5_0_1"
       (rectangle
-        (start -10.16002032004064 5.08001016002032)
-        (end 10.16002032004064 -5.08001016002032)
+        (start -10.16 5.08)
+        (end 10.16 -5.08)
         (stroke (width 0) (type default) (color 0 0 0 0))
         (fill (type background))
       )
       (circle
-        (center -8.89001778003556 3.81000762001524)
-        (radius 0.381000762001524)
+        (center -8.89 3.81)
+        (radius 0.381)
         (stroke (width 0) (type default) (color 0 0 0 0))
         (fill (type background))
       )
