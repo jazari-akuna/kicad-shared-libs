@@ -24,6 +24,6 @@ fp-info-cache
 *.xml
 *.csv
 
-# NDA-derived parts - keep local only, never publish (vendor docs under NDA)
-SOM_KSL/
-Video_Interface_NDA_KSL/
+# NDA-derived parts used to be gitignored here. They now live in their own
+# private repository, kicad-nda-libs, addressed by the ${KNL_ROOT} path
+# variable. Nothing NDA belongs in this repo.
