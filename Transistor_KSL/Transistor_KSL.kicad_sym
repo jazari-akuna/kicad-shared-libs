@@ -32,7 +32,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Package-Files/SOT23.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/2N7002.pdf"
 			(at -2.286 0.127 0)
 			(effects
 				(font
@@ -295,7 +295,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/571b603245764297d61dc2e47d726d5f.pdf?productCode=C3015230"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/TF8205.pdf"
 			(at -2.286 0.127 0)
 			(effects
 				(font

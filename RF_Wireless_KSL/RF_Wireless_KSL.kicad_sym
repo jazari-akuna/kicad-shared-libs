@@ -18,7 +18,7 @@
 			(at 0 -46 0)
 			(effects (font (size 1.27 1.27)) (hide yes))
 		)
-		(property "Datasheet" "${KIPRJMOD}/../../datasheets/WiFi AMPAK/AMPAK_AP6276P_Datasheet_EN.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/AP6276P.pdf"
 			(at 0 -48 0)
 			(effects (font (size 1.27 1.27)) (hide yes))
 		)

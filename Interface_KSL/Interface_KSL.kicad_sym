@@ -43,7 +43,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0bcfbc78ab5946639ddffe2b4625af7e.pdf?productCode=C57525"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/0466005_NRHF.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -203,7 +203,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Package-Files/SOT23.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/2N7002.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -482,7 +482,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/275ffff9a5a30e490c8e8f45891955b2.pdf?productCode=C2981708"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/3225-37.4-12-10-10-A.pdf"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -749,7 +749,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}/../../datasheets/WiFi AMPAK/AMPAK_AP6276P_Datasheet_EN.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/AP6276P.pdf"
 			(at 0 -48 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1838,7 +1838,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.hirose.com/en/product/document?clcode=CL0673-5040-0-51&documentid=en_BM28_CAT&documenttype=Catalog&lang=en&productname=BM28B0.6-20DS%2F2-0.35V(51)&series=BM28"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/BM28B0.6-20DS_2-0.35V_51.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2390,7 +2390,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.hirose.com/en/product/document?clcode=CL0673-5025-0-51&documentid=en_BM28_CAT&documenttype=Catalog&lang=en&productname=BM28B0.6-24DS%2F2-0.35V(51)&series=BM28"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/BM28B0.6-24DS_2-0.35V_51.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3014,7 +3014,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.hirose.com/en/product/document?clcode=CL0673-5021-0-51&documentid=en_BM28_CAT&documenttype=Catalog&lang=en&productname=BM28B0.6-30DS%2F2-0.35V(51)&series=BM28"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/BM28B0.6-30DS_2-0.35V_51.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3746,7 +3746,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.hirose.com/en/product/document?clcode=CL0673-5038-0-51&documentid=en_BM28_CAT&documenttype=Catalog&lang=en&productname=BM28B0.6-60DS%2F2-0.35V(51)&series=BM28"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/BM28B0.6-60DS_2-0.35V_51.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4996,7 +4996,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.hirose.com/en/product/document?clcode=CL0673-5048-0-51&documentid=en_BM28_CAT&documenttype=Catalog&lang=en&productname=BM28B0.6-6DS%2F2-0.35V(51)&series=BM28"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/BM28B0.6-6DS_2-0.35V_51.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5779,7 +5779,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/9072344370debcf88f3b085e450e71ce.pdf?productCode=C167218"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/FXL0630-2R2-M.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6052,7 +6052,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2009171411_TAI-TECH-HCB2012KF-121T50_C304323.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/HCB2012KF-121T50.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6225,7 +6225,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/017b0bccdc680ddf69f59a4af83026c2.pdf?productCode=C2892492"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/KESD8V0R1B.pdf"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6584,7 +6584,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2401291245_Monolithic-Power-Systems-MP8759GD-Z_C3187827.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/MP8759GD-Z.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7008,7 +7008,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KSL_ROOT}/datasheets/NB7VPQ904M_Product_Overview.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/NB7VPQ904M.pdf"
 			(at 0 -34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7982,7 +7982,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/08471cf77c647e08773290eb548e0842.pdf?productCode=C700224"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/SGM44599YTQ16_TR.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8450,7 +8450,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/82c461b905225ff344e885083d94bbf3.pdf?productCode=C123790"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/SMF6.0A.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8597,7 +8597,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/74b1f7dfbe12452e8a365e0596ae902b.pdf?productCode=C7484"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/SN74AHCT1G125DBVR.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8807,7 +8807,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74axc4t245.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/SN74AXC4T245BQBR.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9233,7 +9233,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74axc4t245.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/SN74AXC4T245PWR.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9641,7 +9641,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g14.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/SN74LVC1G14DBVR.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9851,7 +9851,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/SN74LVC1T45DCKR.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10257,7 +10257,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/17b330e62cea45956cc310f229e6bb45.pdf?productCode=C141836"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/TLV62569DBVR.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10456,7 +10456,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd4e02b04.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/TPD4E02B04DQAR.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11164,7 +11164,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/TPD4E05U06DQAR.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11475,7 +11475,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps65987d.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/TPS65987DDHRSHR.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12648,7 +12648,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps7a16.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/TPS7A1601DRBR.pdf"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12897,7 +12897,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1810271112_Texas-Instruments-TPS7A7001DDAR_C60719.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/TPS7A7001DDAR.pdf"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13156,7 +13156,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0475ac02febf455ca9ddcfb380b0df0d.pdf?productCode=C720477"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/TS-1088-AR02016.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13337,7 +13337,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tusb2e11.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/TUSB2E111YCGR.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13727,7 +13727,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tvs2200.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/TVS2200DRVR.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13962,7 +13962,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/txs0102.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/TXS0102DCUR.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14342,7 +14342,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.hirose.com/en/product/document?clcode=CL0331-0472-2-01&documentid=ed_U.FL_CAT&documenttype=Catalog&lang=en&productname=U.FL-R-SMT-1(01)&series=U.FL"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/U.FL-R-SMT-1.pdf"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14544,7 +14544,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/d009d960f1daec6149edaa35b7dae856.pdf?productCode=C97521"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/W25Q128JVSIQTR.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14807,7 +14807,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1912111437_Seiko-Epson-X1B0003510002_C383430.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/X1B0003510002.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15079,7 +15079,7 @@
     (property "Footprint" "Interface_KSL:UQFN-12_L2.0-W1.7-P0.40-BL" (id 2) (at 0 -10.16 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/txu0304.pdf" (id 3) (at -2.286 0.127 0)
+    (property "Datasheet" "${KSL_ROOT}/datasheets/TXU0304RUTR.pdf" (id 3) (at -2.286 0.127 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "ki_keywords" "C2959768" (id 4) (at 0 0 0)

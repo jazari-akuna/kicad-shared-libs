@@ -27,3 +27,7 @@ fp-info-cache
 # NDA-derived parts used to be gitignored here. They now live in their own
 # private repository, kicad-nda-libs, addressed by the ${KNL_ROOT} path
 # variable. Nothing NDA belongs in this repo.
+
+# Transient working state of scripts/datasheets.py (.state.json IS tracked -
+# it is the audit record of every language/document judgement).
+datasheets/.queue.json

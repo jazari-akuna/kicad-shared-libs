@@ -31,7 +31,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "${KSL_ROOT}/datasheets/CH224DS1_EN.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/CH221K.pdf"
 			(at -2.032 -7.62 0)
 			(effects
 				(font
@@ -5995,7 +5995,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/4ea6514a52a5c41dd654270022eda65d.pdf?productCode=C24833806"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/HUSB238A-BB001-QN16R.pdf"
 			(at -2.286 0.127 0)
 			(effects
 				(font
@@ -6375,7 +6375,7 @@
       (property "Footprint" "Power_Management_IC_KSL:ESOP-8_L4.9-W3.9-P1.27-LS6.0-BL-EP3.1" (id 2) (at 0 -10.16 0)
         (effects (font (size 1.27 1.27) italic) hide)
       )
-      (property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20220118/191EA0F9861A1DCF55765E8E2252C9E3.pdf" (id 3) (at -2.286 0.127 0)
+      (property "Datasheet" "${KSL_ROOT}/datasheets/TP4056_C21713961.pdf" (id 3) (at -2.286 0.127 0)
         (effects (font (size 1.27 1.27)) (justify left) hide)
       )
       (property "ki_keywords" "C21713961" (id 4) (at 0 0 0)
@@ -6499,7 +6499,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KSL_ROOT}/datasheets/CH224DS1_EN.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/CH224D_C3975094.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6958,7 +6958,7 @@
       (property "Footprint" "Power_Management_IC_KSL:VQFN-56_L7.0-W7.0-P0.40-TL-EP_TI_RSH" (id 2) (at 0 -10.16 0)
         (effects (font (size 1.27 1.27) italic) hide)
       )
-      (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps65987d.pdf" (id 3) (at -2.286 0.127 0)
+      (property "Datasheet" "${KSL_ROOT}/datasheets/TPS65987DDHRSHR.pdf" (id 3) (at -2.286 0.127 0)
         (effects (font (size 1.27 1.27)) (justify left) hide)
       )
       (property "ki_keywords" "C2868843" (id 4) (at 0 0 0)
@@ -7351,7 +7351,7 @@
     (property "Footprint" "Power_Management_IC_KSL:SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR" (id 2) (at 0 -10.16 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/65782cbe9a783ad75bc35023bf65ec87.pdf?productCode=C403840" (id 3) (at -2.286 0.127 0)
+    (property "Datasheet" "${KSL_ROOT}/datasheets/DIO7002AST5.pdf" (id 3) (at -2.286 0.127 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "ki_keywords" "C403840" (id 4) (at 0 0 0)
@@ -7422,7 +7422,7 @@
     (property "Footprint" "Power_Management_IC_KSL:SOT-363_L2.0-W1.3-P0.65-LS2.1-BR" (id 2) (at 0 -10.16 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/07ae4c8c014345c2a0f871e8972d6f3d.pdf?productCode=C141606" (id 3) (at -2.286 0.127 0)
+    (property "Datasheet" "${KSL_ROOT}/datasheets/SIP32431DR3-T1GE3.pdf" (id 3) (at -2.286 0.127 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "ki_keywords" "C141606" (id 4) (at 0 0 0)

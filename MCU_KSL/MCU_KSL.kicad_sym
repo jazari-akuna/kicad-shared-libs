@@ -32,7 +32,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/ESP32-S3-WROOM-1_N16R8.pdf"
 			(at -2.286 0.127 0)
 			(effects
 				(font
@@ -862,7 +862,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.padauk.com.tw/upload/doc/PMS15B,PMS150G%C2%A0datasheet_EN_V008_20230216.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/PMS150G-U06.pdf"
 			(at 23.114 -14.478 0)
 			(effects
 				(font
@@ -1042,7 +1042,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.puyasemi.com/download_path/%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C/MCU%20%E5%BE%AE%E5%A4%84%E7%90%86%E5%99%A8/PY32F002B_Datasheet_V1.8.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/PY32F002BW15S6TU.pdf"
 			(at -2.286 0.127 0)
 			(effects
 				(font
@@ -1404,7 +1404,7 @@
       (property "Footprint" "MCU_KSL:SOP-8_L4.9-W3.9-P1.27-LS6.0-BL" (id 2) (at 0 -10.16 0)
         (effects (font (size 1.27 1.27) italic) hide)
       )
-      (property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/6d4d432bfdaf0a63a0bdc1e1c0e45b56.pdf?productCode=C3646910" (id 3) (at -2.286 0.127 0)
+      (property "Datasheet" "${KSL_ROOT}/datasheets/PFS122-S08.pdf" (id 3) (at -2.286 0.127 0)
         (effects (font (size 1.27 1.27)) (justify left) hide)
       )
       (property "ki_keywords" "C3646910" (id 4) (at 0 0 0)
@@ -1514,7 +1514,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.xmos.com/download/XU316-1024-QF60A-xcore_ai-Datasheet(2_0_0).pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/XU316-1024-QF60A-C24.pdf"
 			(at 0 -43.18 0)
 			(effects
 				(font
@@ -2756,7 +2756,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-c6-mini-1_mini-1u_datasheet_en.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/ESP32-C6-MINI-1-N4.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3816,7 +3816,7 @@
 			(at 0 0 0)
 			(effects (font (size 1.27 1.27)) (hide yes))
 		)
-		(property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-p4_datasheet_en.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/ESP32-P4NRW32.pdf"
 			(at 0 0 0)
 			(effects (font (size 1.27 1.27)) (hide yes))
 		)

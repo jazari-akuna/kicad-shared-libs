@@ -1,0 +1,98 @@
+(footprint "TestPoint_Pad_D2.0mm_KSL"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "KSL SMD test point, bare pad diameter 2.0mm for higher-current nets (speaker/power); courtyard R1.20")
+	(tags "test point SMD pad 2mm high current KSL")
+	(property "Reference" "REF**"
+		(at 0 -1.9 0)
+		(layer "F.SilkS")
+		(uuid "24b8c5e3-6f49-4b4c-a070-5b4cc8beb346")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TestPoint_Pad_D2.0mm_KSL"
+		(at 0 2.0 0)
+		(layer "F.Fab")
+		(uuid "ab4bda02-0d94-41fb-8ddf-e809f5e52a20")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "505d172c-0187-4d15-8165-96716c99fd3c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "105e1d8f-3f6f-4647-938c-f9382db67a91")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_circle
+		(center 0 0)
+		(end 0 1.2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "d6d55e47-417e-4596-a35e-1f64af081e8d")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 1.2 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "95b3060c-ff0b-411b-9911-ec1114ef2fd7")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -1.9 0)
+		(layer "F.Fab")
+		(uuid "297971c7-4148-4c0f-b974-d8222e829447")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd circle
+		(at 0 0)
+		(size 2 2)
+		(layers "F.Cu" "F.Mask")
+		(uuid "5869577b-dd7b-4984-bbbd-37c4b5f014d4")
+	)
+	(embedded_fonts no)
+)

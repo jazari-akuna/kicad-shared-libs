@@ -32,7 +32,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20190124/C367058_14D69432DC1F903CB9A2023051493EEC.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/SIT1533AI-H4-DCC-32.768E.pdf"
 			(at 0 0 0)
 			(effects
 				(font
@@ -194,7 +194,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/275ffff9a5a30e490c8e8f45891955b2.pdf?productCode=C2981708"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/3225-37.4-12-10-10-A.pdf"
 			(at 0 0 0)
 			(effects
 				(font
@@ -427,7 +427,7 @@
       (property "Footprint" "Crystal_Oscillator_KSL:CRYSTAL-SMD_4P-L3.2-W2.5-BL" (id 2) (at 0 -10.16 0)
         (effects (font (size 1.27 1.27) italic) hide)
       )
-      (property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/a84bd8d530dd46e4b0f6d0ee59d8a89c.pdf?productCode=C70590" (id 3) (at -2.286 0.127 0)
+      (property "Datasheet" "${KSL_ROOT}/datasheets/X322524MOB4SI.pdf" (id 3) (at -2.286 0.127 0)
         (effects (font (size 1.27 1.27)) (justify left) hide)
       )
       (property "ki_keywords" "C70590" (id 4) (at 0 0 0)
@@ -595,7 +595,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1912111437_Seiko-Epson-X1B0003510002_C383430.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/X1B0003510002.pdf"
 			(at -2.286 0.127 0)
 			(hide yes)
 			(show_name no)

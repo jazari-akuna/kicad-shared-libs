@@ -34,7 +34,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/94820cc9e44613233ddcc1a15801eca3.pdf?productCode=C780769"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/AP63203WU-7.pdf"
 			(at -30.734 -20.701 0)
 			(effects
 				(font
@@ -226,7 +226,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/28d4e70ecc61b5d86df611d17040a222.pdf?productCode=C473914"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/TPS82130SILR.pdf"
 			(at -2.286 0.127 0)
 			(effects
 				(font
@@ -489,7 +489,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/17b330e62cea45956cc310f229e6bb45.pdf?productCode=C141836"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/TLV62569DBVR.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -660,7 +660,7 @@
       (property "Footprint" "DC-DC_converter_KSL:QFN-12_L3.0-W2.0-P0.5-TL_NB680" (id 2) (at 0 -10.16 0)
         (effects (font (size 1.27 1.27) italic) hide)
       )
-      (property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2401291245_Monolithic-Power-Systems-MP8759GD-Z_C3187827.pdf" (id 3) (at -2.286 0.127 0)
+      (property "Datasheet" "${KSL_ROOT}/datasheets/MP8759GD-Z.pdf" (id 3) (at -2.286 0.127 0)
         (effects (font (size 1.27 1.27)) (justify left) hide)
       )
       (property "ki_keywords" "C3187827" (id 4) (at 0 0 0)
@@ -771,7 +771,7 @@
     (property "Footprint" "DC-DC_converter_KSL:SOT-23-5_L2.9-W1.6-P0.95-LS2.8-BL" (id 2) (at 0 -10.16 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/4178e367ffaeb0919ed11c5d98a7fb29.pdf?productCode=C478952" (id 3) (at -2.286 0.127 0)
+    (property "Datasheet" "${KSL_ROOT}/datasheets/TMI3411.pdf" (id 3) (at -2.286 0.127 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "ki_keywords" "C478952" (id 4) (at 0 0 0)
@@ -842,7 +842,7 @@
     (property "Footprint" "DC-DC_converter_KSL:SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL" (id 2) (at 0 -10.16 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv61046a.pdf" (id 3) (at -2.286 0.127 0)
+    (property "Datasheet" "${KSL_ROOT}/datasheets/TLV61046ADBVR.pdf" (id 3) (at -2.286 0.127 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "ki_keywords" "C464815" (id 4) (at 0 0 0)
@@ -916,7 +916,7 @@
     (property "Footprint" "DC-DC_converter_KSL:VQFN-7_L2.0-W2.0-P0.55-TL_RWU" (id 2) (at 0 -10.16 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps61022.pdf" (id 3) (at -2.286 0.127 0)
+    (property "Datasheet" "${KSL_ROOT}/datasheets/TPS61022RWUR.pdf" (id 3) (at -2.286 0.127 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "ki_keywords" "C915088" (id 4) (at 0 0 0)

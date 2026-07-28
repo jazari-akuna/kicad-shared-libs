@@ -9,7 +9,7 @@
     (property "Footprint" "Fastener_KSL:SMD-1_BD5.5-D4.0" (id 2) (at 0 -10.16 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/ece43b9c9581dc6ca2141ce7cea61a1e.pdf?productCode=C2915635" (id 3) (at -2.286 0.127 0)
+    (property "Datasheet" "${KSL_ROOT}/datasheets/SMTSO3040CTJ.pdf" (id 3) (at -2.286 0.127 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "ki_keywords" "C2915635" (id 4) (at 0 0 0)

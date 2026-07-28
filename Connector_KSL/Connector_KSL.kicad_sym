@@ -32,7 +32,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/c708e270ac8372d53e114da0b08e5203.pdf?productCode=C22074"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/1_25T-2PWT.pdf"
 			(at 7.112 -5.207 0)
 			(effects
 				(font
@@ -197,7 +197,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20240906/62610B2B7CB81AE3778ADCA5ECBA552A.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/GT-BTP30002-0350B-019B.pdf"
 			(at -2.286 0.127 0)
 			(effects
 				(font
@@ -344,7 +344,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/1740bfb40640706cf0eb424582357e72.pdf?productCode=C2691448"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/PZ254V-11-04P_C2691448.pdf"
 			(at -2.286 0.127 0)
 			(effects
 				(font
@@ -509,7 +509,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/dc83ceb7bc09989eab2815b685da60e4.pdf?productCode=C393941"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/TF_PUSH.pdf"
 			(at -2.286 0.127 0)
 			(effects
 				(font
@@ -836,7 +836,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20220920/BF06884331D01DFE402612204A4D078C.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/TYPE-C_6PIN.pdf"
 			(at -13.462 -19.431 0)
 			(effects
 				(font
@@ -1057,7 +1057,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/fb93658e4010a801730ab438b22e8cc0.pdf?productCode=C2927038"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/USB-TYPE-C-018.pdf"
 			(at -2.286 0.127 0)
 			(effects
 				(font
@@ -1511,7 +1511,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210628/C2842933_2FC659C9E4B13E1F46CE59B211E521AD.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/YZ90415045R-01.pdf"
 			(at -22.352 -13.081 0)
 			(effects
 				(font
@@ -1603,7 +1603,7 @@
       (property "Footprint" "Connector_KSL:CONN-SMD_S2B-ZR-SM4A" (id 2) (at 0 -10.16 0)
         (effects (font (size 1.27 1.27) italic) hide)
       )
-      (property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/ee11eec35af3440ad4d1ace47f551ec3.pdf?productCode=C265329" (id 3) (at -2.286 0.127 0)
+      (property "Datasheet" "${KSL_ROOT}/datasheets/S2B-ZR-SM4A-TF_LF_SN.pdf" (id 3) (at -2.286 0.127 0)
         (effects (font (size 1.27 1.27)) (justify left) hide)
       )
       (property "ki_keywords" "C265329" (id 4) (at 0 0 0)
@@ -1658,7 +1658,7 @@
       (property "Footprint" "Connector_KSL:CONN-SMD_260P-P0.50_TE-CONNECTIVITY_2309407-1" (id 2) (at 0 -10.16 0)
         (effects (font (size 1.27 1.27) italic) hide)
       )
-      (property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20211020/1FBF80E5F0B4BF035CC782614AFE22BB.pdf" (id 3) (at -2.286 0.127 0)
+      (property "Datasheet" "${KSL_ROOT}/datasheets/2309407-1.pdf" (id 3) (at -2.286 0.127 0)
         (effects (font (size 1.27 1.27)) (justify left) hide)
       )
       (property "ki_keywords" "C592559" (id 4) (at 0 0 0)
@@ -3294,7 +3294,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/e4525ca12a24d304cef395a867826913.pdf?productCode=C3151749"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/TYPE-C_16PLT-H10_0.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3712,7 +3712,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/c4dd16602cc327ec4181ae05af736ca3.pdf?productCode=C2884926"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/PJ-320A.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3930,7 +3930,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/00b328575d1bf6f6888ec7481be02dc3.pdf?productCode=C5156600"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/TYPE-C_6PLTH6_8-DJ.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4183,7 +4183,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/310a5f40e88669ed101e3f91212f0b47.pdf?productCode=C5142093"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/HX_2_54-2P_LT.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4360,7 +4360,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.hirose.com/en/product/document?clcode=CL0331-0472-2-01&documentid=ed_U.FL_CAT&documenttype=Catalog&lang=en&productname=U.FL-R-SMT-1(01)&series=U.FL"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/U.FL-R-SMT-1.pdf"
 			(at 0 0 0)
 			(effects
 				(font
@@ -4509,7 +4509,7 @@
       (property "Footprint" "Connector_KSL:IDC-TH_10P-P2.54_C5665" (id 2) (at 0 -10.16 0)
         (effects (font (size 1.27 1.27) italic) hide)
       )
-      (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810281612_BOOMELE-Boom-Precision-Elec-2-54-2-5P_C5665.pdf" (id 3) (at -2.286 0.127 0)
+      (property "Datasheet" "${KSL_ROOT}/datasheets/HDR-IDC-2_54-2X5P.pdf" (id 3) (at -2.286 0.127 0)
         (effects (font (size 1.27 1.27)) (justify left) hide)
       )
       (property "ki_keywords" "C5665" (id 4) (at 0 0 0)
@@ -4606,7 +4606,7 @@
     (property "Footprint" "Connector_KSL:CONN-SMD_BM28B0.6-30DS-2-0.35V-51" (id 2) (at 0 -10.16 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.hirose.com/en/product/document?clcode=CL0673-5021-0-51&documentid=en_BM28_CAT&documenttype=Catalog&lang=en&productname=BM28B0.6-30DS%2F2-0.35V(51)&series=BM28" (id 3) (at -2.286 0.127 0)
+    (property "Datasheet" "${KSL_ROOT}/datasheets/BM28B0.6-30DS_2-0.35V_51.pdf" (id 3) (at -2.286 0.127 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "ki_keywords" "C424571" (id 4) (at 0 0 0)
@@ -4852,7 +4852,7 @@
     (property "Footprint" "Connector_KSL:CONN-SMD_BM28B0.6-30DP-2-0.35V-51" (id 2) (at 0 -10.16 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.hirose.com/en/product/document?clcode=CL0673-5020-0-51&documentid=en_BM28_CAT&documenttype=Catalog&lang=en&productname=BM28B0.6-30DP%2F2-0.35V(51)&series=BM28" (id 3) (at -2.286 0.127 0)
+    (property "Datasheet" "${KSL_ROOT}/datasheets/BM28B0.6-30DP_2-0.35V_51.pdf" (id 3) (at -2.286 0.127 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "ki_keywords" "C424570" (id 4) (at 0 0 0)
@@ -5098,7 +5098,7 @@
     (property "Footprint" "Connector_KSL:FPC-SMD_FH35C-45S-0.3SHW-50" (id 2) (at 0 -10.16 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.hirose.com/en/product/document?clcode=CL0580-2909-6-50&documentid=D49358_en&documenttype=Catalog&lang=en&productname=FH35C-45S-0.3SHW(50)&series=FH35C" (id 3) (at -2.286 0.127 0)
+    (property "Datasheet" "${KSL_ROOT}/datasheets/FH35C-45S-0.3SHW_50.pdf" (id 3) (at -2.286 0.127 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "ki_keywords" "C424664" (id 4) (at 0 0 0)
@@ -5422,7 +5422,7 @@
     (property "Footprint" "Connector_KSL:CONN-SMD_FH52K-18S-0.5SH" (id 2) (at 0 -10.16 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.hirose.com/en/product/document?clcode=CL0580-4636-0-00&documentid=en_FH52_CAT&documenttype=Catalog&lang=en&productname=FH52K-18S-0.5SH&series=FH52K" (id 3) (at -2.286 0.127 0)
+    (property "Datasheet" "${KSL_ROOT}/datasheets/FH52K-18S-0.5SH.pdf" (id 3) (at -2.286 0.127 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "ki_keywords" "C3168652" (id 4) (at 0 0 0)
@@ -5584,7 +5584,7 @@
     (property "Footprint" "Connector_KSL:CONN-SMD_30P-P0.50_FH52K-30S-0.5SH" (id 2) (at 0 -10.16 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.hirose.com/en/product/document?clcode=CL0580-4631-0-00&documentid=en_FH52_CAT&documenttype=Catalog&lang=en&productname=FH52K-30S-0.5SH&series=FH52K" (id 3) (at -2.286 0.127 0)
+    (property "Datasheet" "${KSL_ROOT}/datasheets/FH52K-30S-0.5SH.pdf" (id 3) (at -2.286 0.127 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "ki_keywords" "C3169108" (id 4) (at 0 0 0)
@@ -5812,7 +5812,7 @@
     (property "Footprint" "Connector_KSL:FPC-SMD_8P-P0.50-FH34SRJ" (id 2) (at 0 -10.16 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.hirose.com/en/product/document?clcode=CL0580-1231-8-50&documentid=en_FH34_CAT&documenttype=Catalog&lang=en&productname=FH34SRJ-8S-0.5SH(50)&series=FH34SRJ" (id 3) (at -2.286 0.127 0)
+    (property "Datasheet" "${KSL_ROOT}/datasheets/FH34SRJ-8S-0.5SH_50.pdf" (id 3) (at -2.286 0.127 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "ki_keywords" "C88372" (id 4) (at 0 0 0)
@@ -5908,7 +5908,7 @@
     (property "Footprint" "Connector_KSL:USB-C_TYPE-C-24PLT-H10.5-1" (id 2) (at 0 -10.16 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/97f34aadc9e0172d46e1083958f08505.pdf?productCode=C3151750" (id 3) (at -2.286 0.127 0)
+    (property "Datasheet" "${KSL_ROOT}/datasheets/TYPE-C_24PLT-H10.5.pdf" (id 3) (at -2.286 0.127 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "ki_keywords" "C3151750" (id 4) (at 0 0 0)
@@ -6118,7 +6118,7 @@
     (property "Footprint" "Connector_KSL:CONN-SMD_4P-P1.27_XKB-CONNECTIVITY_X1311FVS-04-C43D35R1" (id 2) (at 0 -10.16 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/fb7fb8eda0331a609c535108a468c72e.pdf?productCode=C2881494" (id 3) (at -2.286 0.127 0)
+    (property "Datasheet" "${KSL_ROOT}/datasheets/X1311FVS-04-C43D35R1.pdf" (id 3) (at -2.286 0.127 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "ki_keywords" "C2881494" (id 4) (at 0 0 0)
@@ -6184,7 +6184,7 @@
     (property "Footprint" "Connector_KSL:HDMI-SMD_10029449-001RLF" (id 2) (at 0 -10.16 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/1aae7dc5e3063d422210d6710d93b178.pdf?productCode=C427307" (id 3) (at -2.286 0.127 0)
+    (property "Datasheet" "${KSL_ROOT}/datasheets/10029449-111RLF.pdf" (id 3) (at -2.286 0.127 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "ki_keywords" "C427307" (id 4) (at 0 0 0)
@@ -6345,7 +6345,7 @@
       (property "Footprint" "Connector_KSL:CONN-SMD_BM28B0.6-60DS-2-0.35V-51_LINKB-ICD" (id 2) (at 0 -10.16 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" "https://www.hirose.com/en/product/document?clcode=CL0673-5038-0-51&documentid=en_BM28_CAT&documenttype=Catalog&lang=en&productname=BM28B0.6-60DS%2F2-0.35V(51)&series=BM28" (id 3) (at -2.286 0.127 0)
+      (property "Datasheet" "${KSL_ROOT}/datasheets/BM28B0.6-60DS_2-0.35V_51.pdf" (id 3) (at -2.286 0.127 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_keywords" "C3640863" (id 4) (at 0 0 0)
@@ -6767,7 +6767,7 @@
       (property "Footprint" "Connector_KSL:CONN-SMD_BM28B0.6-60DP-2-0.35V-51_LINKB-ICD" (id 2) (at 0 -10.16 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" "https://www.hirose.com/en/product/document?clcode=CL0673-5037-0-51&documentid=en_BM28_CAT&documenttype=Catalog&lang=en&productname=BM28B0.6-60DP%2F2-0.35V(51)&series=BM28" (id 3) (at -2.286 0.127 0)
+      (property "Datasheet" "${KSL_ROOT}/datasheets/BM28B0.6-60DP_2-0.35V_51.pdf" (id 3) (at -2.286 0.127 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_keywords" "C3652293" (id 4) (at 0 0 0)
@@ -7190,7 +7190,7 @@
     (property "Footprint" "Connector_KSL:CONN-SMD_BM28B0.6-24DS-2-0.35V-51" (id 2) (at 0 -10.16 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.hirose.com/en/product/document?clcode=CL0673-5025-0-51&documentid=en_BM28_CAT&documenttype=Catalog&lang=en&productname=BM28B0.6-24DS%2F2-0.35V(51)&series=BM28" (id 3) (at -2.286 0.127 0)
+    (property "Datasheet" "${KSL_ROOT}/datasheets/BM28B0.6-24DS_2-0.35V_51.pdf" (id 3) (at -2.286 0.127 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "ki_keywords" "C424569" (id 4) (at 0 0 0)
@@ -7400,7 +7400,7 @@
     (property "Footprint" "Connector_KSL:CONN-SMD_BM28B0.6-20DS-2-0.35V-51" (id 2) (at 0 -10.16 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.hirose.com/en/product/document?clcode=CL0673-5040-0-51&documentid=en_BM28_CAT&documenttype=Catalog&lang=en&productname=BM28B0.6-20DS%2F2-0.35V(51)&series=BM28" (id 3) (at -2.286 0.127 0)
+    (property "Datasheet" "${KSL_ROOT}/datasheets/BM28B0.6-20DS_2-0.35V_51.pdf" (id 3) (at -2.286 0.127 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "ki_keywords" "C424567" (id 4) (at 0 0 0)
@@ -7586,7 +7586,7 @@
     (property "Footprint" "Connector_KSL:CONN-SMD_BM28B0.6-6DS-2-0.35V-51" (id 2) (at 0 -10.16 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.hirose.com/en/product/document?clcode=CL0673-5048-0-51&documentid=en_BM28_CAT&documenttype=Catalog&lang=en&productname=BM28B0.6-6DS%2F2-0.35V(51)&series=BM28" (id 3) (at -2.286 0.127 0)
+    (property "Datasheet" "${KSL_ROOT}/datasheets/BM28B0.6-6DS_2-0.35V_51.pdf" (id 3) (at -2.286 0.127 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "ki_keywords" "C3646686" (id 4) (at 0 0 0)

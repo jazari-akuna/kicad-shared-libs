@@ -32,7 +32,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/4f5f08105ffd7c7cc4cb39b339912d04.pdf?productCode=C41785564"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/LSM6DSVETR.pdf"
 			(at -2.286 0.127 0)
 			(effects
 				(font
@@ -377,7 +377,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/82470/tssp770.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/TSSP77038TR.pdf"
 			(at -2.286 0.127 0)
 			(effects
 				(font
@@ -548,7 +548,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20190716/C396644_ED7B678E136A97D010E06D32919FE271.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/ZSPT-Z1608C-06F-Z4.pdf"
 			(at -2.286 0.127 0)
 			(effects
 				(font
@@ -767,7 +767,7 @@
     (property "Footprint" "Sensor_KSL:LGA-14_L3.0-W2.5-P0.50-BR" (id 2) (at 0 -10.16 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmi270-ds000.pdf" (id 3) (at -2.286 0.127 0)
+    (property "Datasheet" "${KSL_ROOT}/datasheets/BMI270.pdf" (id 3) (at -2.286 0.127 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "ki_keywords" "C2836813" (id 4) (at 0 0 0)

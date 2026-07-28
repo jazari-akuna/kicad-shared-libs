@@ -40,7 +40,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/mp34dt05-a.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/MP34DT05TR-A.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -239,7 +239,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2401301651_TDK-InvenSense-MMICT5838-00-012_C7230692.pdf"
+		(property "Datasheet" "${KSL_ROOT}/datasheets/MMICT5838-00-012.pdf"
 			(at -2.286 0.127 0)
 			(show_name no)
 			(do_not_autoplace no)
