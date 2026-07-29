@@ -45,3 +45,32 @@ If you would rather not carry the LFS objects, `scripts/datasheets.py relink
 ## Checking the libraries
 
     scripts/datasheets.py verify     # every part resolves to an English PDF
+    scripts/check_models.py          # every 3D model is placed where it belongs
+
+`check_models.py` grades three things a 2D review, DRC, ERC and a netlist
+comparison all pass clean:
+
+- **units** — in the legacy `(module ...)` format KiCad reads
+  `(model ... (at (xyz ...)))` in **inches**; the modern `(footprint ...)`
+  format spells it `(offset (xyz ...))` and reads it in **millimetres**. A
+  legacy footprint carrying `(at (xyz 0 0 -0.074803))` therefore drops its model
+  1.900 mm, not 0.075 mm — straight through a 1.6 mm board. The JLC/EasyEDA
+  converter means inches and mostly gets them right, but the file cannot say so,
+  and the next hand-edit types millimetres. Re-save the footprint in the modern
+  format and the ambiguity is gone permanently.
+- **transform** — missing or unresolvable model, hidden model, scale ≠ 1, or an
+  absurd offset. Stale EasyEDA canvas coordinates have shipped here as
+  `(at (xyz -37.465 32.335 0))`, which is 951 mm off-board.
+- **seating** — geometry. The STEP is placed exactly as KiCad places it, sliced
+  at board depth, and every remaining cross-section must fit inside a drilled
+  hole. Anything else is a body sunk into the substrate, a leg fatter or longer
+  than its hole, or a model rotated with respect to its own land pattern — all
+  of which mean the part cannot be assembled. Needs FreeCAD; the script says so
+  and grades the rest rather than reporting a false green if it is absent.
+
+Pre-existing seating defects are listed in
+`scripts/model_seating_backlog.txt` (and `${KNL_ROOT}/model_seating_backlog.txt`,
+kept out of this repo because it names an NDA part) so a new regression fails
+immediately instead of hiding in the backlog. Delete a line as you fix one.
+Add `--repo knl` for the NDA libraries, `-v` to see the clean footprints too.
+Exit 0 clean, 1 violations, 2 the check could not run.
