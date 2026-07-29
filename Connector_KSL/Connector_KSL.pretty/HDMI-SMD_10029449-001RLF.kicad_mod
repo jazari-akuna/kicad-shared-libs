@@ -1101,7 +1101,7 @@
 	(embedded_fonts no)
 	(model "${KSL_ROOT}/Connector_KSL/Connector_KSL.3dshapes/HDMI-SMD_10029449-001RLF.step"
 		(offset
-			(xyz 0 -0.731 0)
+			(xyz 0 -1.7312 0)
 		)
 		(scale
 			(xyz 1 1 1)
