@@ -1,0 +1,109 @@
+(footprint "TestPoint_Pad_1.0x1.0mm_KSL"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "KSL bare SMD wire-attach pad, square 1.0 x 1.0 mm; mask opening matched to copper, NO paste (wire is hand-soldered, not assembled). Value is placed on silkscreen so the board legend reads the terminal name. Excluded from BOM and position files.")
+	(tags "test point SMD pad square 1mm wire solder terminal KSL")
+	(property "Reference" "REF**"
+		(at 0 -1.55 0)
+		(layer "F.Fab")
+		(uuid "1a2b3c4d-5e6f-4a7b-8c9d-0e1f2a3b4c5d")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "TestPoint_Pad_1.0x1.0mm_KSL"
+		(at 0 1.6 0)
+		(layer "F.SilkS")
+		(uuid "2b3c4d5e-6f7a-4b8c-9d0e-1f2a3b4c5d6e")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.13)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3c4d5e6f-7a8b-4c9d-0e1f-2a3b4c5d6e7f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Square 1x1 mm bare solder pad for a speaker wire"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4d5e6f7a-8b9c-4d0e-1f2a-3b4c5d6e7f8a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -0.72 -0.72)
+		(end 0.72 0.72)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "5e6f7a8b-9c0d-4e1f-2a3b-4c5d6e7f8a9b")
+	)
+	(fp_rect
+		(start -0.75 -0.75)
+		(end 0.75 0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "6f7a8b9c-0d1e-4f2a-3b4c-5d6e7f8a9b0c")
+	)
+	(fp_rect
+		(start -0.5 -0.5)
+		(end 0.5 0.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "7a8b9c0d-1e2f-4a3b-4c5d-6e7f8a9b0c1d")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -1.55 0)
+		(layer "F.Fab")
+		(uuid "8b9c0d1e-2f3a-4b4c-5d6e-7f8a9b0c1d2e")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 0)
+		(size 1 1)
+		(layers "F.Cu" "F.Mask")
+		(uuid "9c0d1e2f-3a4b-4c5d-6e7f-8a9b0c1d2e3f")
+	)
+	(embedded_fonts no)
+)

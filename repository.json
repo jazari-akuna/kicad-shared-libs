@@ -10,6 +10,9 @@
       "path": "Connector_KSL/metadata.json"
     },
     {
+      "path": "Motor_KSL/metadata.json"
+    },
+    {
       "path": "Fastener_KSL/metadata.json"
     },
     {
