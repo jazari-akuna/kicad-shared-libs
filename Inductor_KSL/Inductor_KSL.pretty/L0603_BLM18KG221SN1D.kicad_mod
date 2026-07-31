@@ -1,0 +1,262 @@
+(footprint "L0603_BLM18KG221SN1D"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Murata BLM18KG221SN1D ferrite bead, 220R@100MHz 0603. Same L0603 land pattern; part-specific body 1.60 x 0.80 x 0.80 mm (datasheet 4. Style and Dimensions) instead of the generic 0.50 mm 0603 chip.")
+	(tags "ferrite bead 0603 BLM18KG221SN1D C88980")
+	(property "Reference" "REF**"
+		(at 0.000025 -2.649987 0)
+		(layer "F.SilkS")
+		(uuid "6f61e88e-d5fc-4dce-9edc-5b25a0f377b2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "L0603_BLM18KG221SN1D"
+		(at 0.000025 2.651359 0)
+		(layer "F.Fab")
+		(uuid "ac8b221d-c8ac-4c48-9c12-5bc64e415b2a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "70a32868-eb0e-4b72-89e9-761b8b0fd33e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "faddd0d1-0a99-4c8f-80a6-4f67cab5fd28")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.424105 -0.517424)
+		(end -1.270003 -0.649987)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9a2ad461-ae37-4502-8226-bfd7cd5c409a")
+	)
+	(fp_line
+		(start -1.424105 0.499009)
+		(end -1.424105 -0.517424)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "58304cb5-ad30-4e97-abf8-3940019f7ece")
+	)
+	(fp_line
+		(start -1.272009 -0.649987)
+		(end -0.510008 -0.649987)
+		(stroke
+			(width 0.151994)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bd232166-31fc-4ccc-b348-3bbf61507ec9")
+	)
+	(fp_line
+		(start -1.272009 0.650013)
+		(end -0.510008 0.650013)
+		(stroke
+			(width 0.151994)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "675911fe-d352-4073-ba0a-6efeb093b624")
+	)
+	(fp_line
+		(start -1.270003 0.651359)
+		(end -1.424105 0.499009)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "38937dcb-0802-40ac-8407-ab68b58bfbc1")
+	)
+	(fp_line
+		(start 1.270003 -0.649987)
+		(end 1.424155 -0.498984)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "db275032-dfde-4ce0-9776-bd8126c3baab")
+	)
+	(fp_line
+		(start 1.27206 -0.649987)
+		(end 0.510058 -0.649987)
+		(stroke
+			(width 0.151994)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "95a69f62-a66c-4237-bc12-845754b764de")
+	)
+	(fp_line
+		(start 1.27206 0.650013)
+		(end 0.510058 0.650013)
+		(stroke
+			(width 0.151994)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "13ed8296-1cf7-487b-b4da-ed545cbea852")
+	)
+	(fp_line
+		(start 1.424155 -0.498984)
+		(end 1.424155 0.51745)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3a5cf553-50a5-4a2c-bef5-e9aa45994422")
+	)
+	(fp_line
+		(start 1.424155 0.51745)
+		(end 1.270003 0.650013)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5e81f8cf-56d7-46f9-99c2-d8c99ca9e996")
+	)
+	(fp_poly
+		(pts
+			(xy -0.251613 -0.142977) (xy -0.251613 0.133528) (xy -0.525806 0.42728) (xy -1.029083 0.42728) (xy -1.093091 0.363272)
+			(xy -1.093091 -0.37272) (xy -1.029083 -0.436728) (xy -0.525806 -0.436728)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "378ced68-914d-42ba-bb9d-dd79eb580b39")
+	)
+	(fp_poly
+		(pts
+			(xy 0.264034 -0.154229) (xy 0.264034 0.122276) (xy 0.538227 0.416027) (xy 1.041504 0.416027) (xy 1.105512 0.352019)
+			(xy 1.105512 -0.383973) (xy 1.041504 -0.447981) (xy 0.538227 -0.447981)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "52a4c8ed-8f78-4a3d-8a57-88922a580efd")
+	)
+	(fp_circle
+		(center -0.799975 0.400051)
+		(end -0.770003 0.400051)
+		(stroke
+			(width 0.059995)
+			(type solid)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "846cb438-4e6c-46be-bcaf-def3d6dd426c")
+	)
+	(fp_poly
+		(pts
+			(xy -0.499873 0.4) (xy -0.799898 0.4) (xy -0.799898 -0.4) (xy -0.499873 -0.4)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill yes)
+		(layer "Cmts.User")
+		(uuid "d22dd87b-e6e2-4a75-bcf1-30b2054fb5ab")
+	)
+	(fp_poly
+		(pts
+			(xy 0.799898 0.4) (xy 0.499873 0.4) (xy 0.499873 -0.4) (xy 0.799898 -0.4)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill yes)
+		(layer "Cmts.User")
+		(uuid "64e60359-9227-467a-ae21-994b52f19950")
+	)
+	(fp_poly
+		(pts
+			(xy 0.8 0.399873) (xy -0.8 0.399873) (xy -0.8 -0.400127) (xy 0.8 -0.400127)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill yes)
+		(layer "Cmts.User")
+		(uuid "e76223d1-a8ad-4aa4-a4c5-980feaa99eac")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.000025 0.000686 0)
+		(layer "F.Fab")
+		(uuid "8f382a50-d688-4c72-8d21-542339599480")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.699898 0 180)
+		(size 0.8 0.864008)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "6fbdf0d4-2292-4048-bfaa-35f4515e8b9d")
+	)
+	(pad "2" smd rect
+		(at 0.699898 0 180)
+		(size 0.8 0.864008)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f7e13a56-2978-49ab-a333-a40637525dfc")
+	)
+	(embedded_fonts no)
+	(model "${KSL_ROOT}/Inductor_KSL/Inductor_KSL.3dshapes/L0603_BLM18KG221SN1D.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

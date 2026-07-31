@@ -1,0 +1,302 @@
+(footprint "L0805_HCB2012KF-121T50"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Chilisin HCB2012KF-121T50 ferrite bead, 120R@100MHz 0805. Same L0805 land pattern; part-specific body 2.00 x 1.25 x 0.85 mm (datasheet 2. Dimensions) instead of the generic 0.61 mm 0805 chip.")
+	(tags "ferrite bead 0805 HCB2012KF-121T50")
+	(property "Reference" "REF**"
+		(at -0.040259 -3.015951 0)
+		(layer "F.SilkS")
+		(uuid "1e220e7b-79f6-4714-9e41-c67389e4e8cf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "L0805_HCB2012KF-121T50"
+		(at -0.040259 3.016053 0)
+		(layer "F.Fab")
+		(uuid "d0d3b9bf-2463-4e97-b174-645a750b01e9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6eebe883-ba7a-4695-8750-0fc8a6be5a83")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "06cc98c5-e237-42fd-9f97-aba83703ea35")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.945263 -0.761951)
+		(end -1.945263 0.635052)
+		(stroke
+			(width 0.254001)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c3a3a125-10a3-46e5-bfd9-49948b3dec78")
+	)
+	(fp_line
+		(start -1.945263 0.635052)
+		(end -1.945263 0.762052)
+		(stroke
+			(width 0.254001)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "dbbb6c37-54f2-4f99-9e5e-5414e7f51efb")
+	)
+	(fp_line
+		(start -1.945263 0.762052)
+		(end -1.691262 1.016053)
+		(stroke
+			(width 0.254001)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "203c4613-36c8-438f-8f7e-bb10946b20c3")
+	)
+	(fp_line
+		(start -1.691262 -1.015951)
+		(end -1.945263 -0.761951)
+		(stroke
+			(width 0.254001)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d36e02d2-88aa-4590-8a88-a9fc2a1a16f9")
+	)
+	(fp_line
+		(start -1.691262 1.016053)
+		(end -0.42126 1.016053)
+		(stroke
+			(width 0.254001)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "95f21bf1-ce4f-48b8-ac27-3b1892af1960")
+	)
+	(fp_line
+		(start -1.564262 -1.015951)
+		(end -1.691262 -1.015951)
+		(stroke
+			(width 0.254001)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "09fafc75-54cf-4835-8fea-42405616b954")
+	)
+	(fp_line
+		(start -0.42126 -1.015951)
+		(end -1.564262 -1.015951)
+		(stroke
+			(width 0.254001)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d86e8db6-6fa4-43b4-a5dc-16b5c7e18d11")
+	)
+	(fp_line
+		(start 0.340742 1.016053)
+		(end 1.483744 1.016053)
+		(stroke
+			(width 0.254001)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8432c869-12d9-4a4b-960f-0673650dd8f2")
+	)
+	(fp_line
+		(start 1.483744 1.016053)
+		(end 1.610744 1.016053)
+		(stroke
+			(width 0.254001)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6ce202a8-38ff-4426-a208-5d6524e5ed1f")
+	)
+	(fp_line
+		(start 1.610744 -1.015951)
+		(end 0.340742 -1.015951)
+		(stroke
+			(width 0.254001)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "df22ec99-9f77-4122-b76a-c98a49ce0451")
+	)
+	(fp_line
+		(start 1.610744 1.016053)
+		(end 1.864745 0.762052)
+		(stroke
+			(width 0.254001)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "67fdb1f8-af7a-44d9-817b-feb240cd40cb")
+	)
+	(fp_line
+		(start 1.864745 -0.761951)
+		(end 1.610744 -1.015951)
+		(stroke
+			(width 0.254001)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "dbf304f9-f3c0-4bd6-9978-a5e57eea9d25")
+	)
+	(fp_line
+		(start 1.864745 -0.63495)
+		(end 1.864745 -0.761951)
+		(stroke
+			(width 0.254001)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "65bbb946-476f-4d96-b75b-7b5d01aea988")
+	)
+	(fp_line
+		(start 1.864745 0.762052)
+		(end 1.864745 -0.63495)
+		(stroke
+			(width 0.254001)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d8918c4a-c60f-406f-aab0-5e30b0f05b8e")
+	)
+	(fp_poly
+		(pts
+			(xy -0.359995 0.220244) (xy -0.359995 -0.220371) (xy -0.74506 -0.688519) (xy -1.432537 -0.688519)
+			(xy -1.532537 -0.588519) (xy -1.532537 0.588443) (xy -1.432537 0.688443) (xy -0.74506 0.688443)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "5184cbb6-085d-4362-a6da-58f1dd6acc20")
+	)
+	(fp_poly
+		(pts
+			(xy 0.359995 0.220244) (xy 0.359995 -0.220371) (xy 0.74506 -0.688519) (xy 1.432537 -0.688519) (xy 1.532537 -0.588519)
+			(xy 1.532537 0.588443) (xy 1.432537 0.688443) (xy 0.74506 0.688443)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "f15ac46c-cae1-45b4-93f6-faaeee5f485e")
+	)
+	(fp_circle
+		(center -1 0.63744)
+		(end -0.970003 0.63744)
+		(stroke
+			(width 0.059995)
+			(type solid)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "0c18ccf0-49b1-41d0-9e4e-6b09fa9d86b8")
+	)
+	(fp_poly
+		(pts
+			(xy -1 0.63744) (xy -1 -0.637516) (xy -0.6 -0.637516) (xy -0.6 0.63744)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill yes)
+		(layer "Cmts.User")
+		(uuid "d5cdd15b-e4fd-4bef-9ae8-3ed77bf96fa3")
+	)
+	(fp_poly
+		(pts
+			(xy -1 0.63744) (xy -1 -0.637516) (xy 1 -0.637516) (xy 1 0.63744)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill yes)
+		(layer "Cmts.User")
+		(uuid "64769bb0-d274-4293-ae9e-219de5b73dfc")
+	)
+	(fp_poly
+		(pts
+			(xy 1 0.63744) (xy 1 -0.637516) (xy 0.6 -0.637516) (xy 0.6 0.63744)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill yes)
+		(layer "Cmts.User")
+		(uuid "72f5561d-7a16-463f-968a-1a7a82250a60")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.040259 0.000051 0)
+		(layer "F.Fab")
+		(uuid "6010526e-82b9-42d1-8c61-eba57985ca31")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.966218 0)
+		(size 1.132537 1.377013)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "eb18cc81-0ffa-4313-aec7-bdec160e8fa2")
+	)
+	(pad "2" smd rect
+		(at 0.966218 0)
+		(size 1.132537 1.377013)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "24d6c860-4b80-46f9-a62c-179a89ca78c7")
+	)
+	(embedded_fonts no)
+	(model "${KSL_ROOT}/Inductor_KSL/Inductor_KSL.3dshapes/L0805_HCB2012KF-121T50.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
