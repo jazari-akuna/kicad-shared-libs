@@ -46,6 +46,7 @@ If you would rather not carry the LFS objects, `scripts/datasheets.py relink
 
     scripts/datasheets.py verify     # every part resolves to an English PDF
     scripts/check_models.py          # every 3D model is placed where it belongs
+    scripts/check_nda.py             # no NDA-restricted document is in this repo
 
 `check_models.py` grades three things a 2D review, DRC, ERC and a netlist
 comparison all pass clean:
@@ -67,6 +68,38 @@ comparison all pass clean:
   than its hole, or a model rotated with respect to its own land pattern — all
   of which mean the part cannot be assembled. Needs FreeCAD; the script says so
   and grades the rest rather than reporting a false green if it is absent.
+
+`check_nda.py` gates the one mistake this repo cannot take back. It has a public
+remote, so a restricted document committed here is disclosed by the next push,
+and that has happened once: the vendor' SENSOR-FAMILY product specification was
+committed as `datasheets/SENSOR-A.pdf` and had to be purged from history. The
+check looks three ways, because a document arrives by more than one route:
+
+- **hash** — sha256 against `scripts/nda_denylist.json`. Immune to renaming, and
+  it reads a **git-lfs pointer** without needing the object, since the pointer
+  states the sha256 of the real file. That is what makes `--scope history` work
+  on a fresh clone.
+- **content** — text of any PDF, matched against the vendors and part families
+  known to be restricted. The FPC document carries no "Confidential" stamp, only
+  a legal notice, so grepping for the stamp would have passed it.
+- **reference** — a `Datasheet` property pointing a restricted document at
+  `${KSL_ROOT}`. The file can be correctly absent while the link still claims it
+  lives here. Restricted parts link to `${KNL_ROOT}/datasheets/<MPN>.pdf`.
+
+`--scope history` is the one that matters before a push: deleting a file in a new
+commit does not unpublish the blob. `--self-test` is a negative control — it
+plants material each layer must reject and a clean control each must accept, and
+fails if any layer stays quiet, because a check nobody has watched fail is not
+evidence. Refresh the digests from the private repo with `--sync`.
+
+`hooks/pre-push` runs it at the only moment that counts. Git does not carry hooks
+through a clone, so install it by hand:
+
+    install -m 755 hooks/pre-push .git/hooks/pre-push
+
+It **replaces** the stock git-lfs pre-push hook and calls `git lfs pre-push`
+itself, because git allows only one. Keep that line or datasheet LFS objects
+stop being uploaded.
 
 Pre-existing seating defects are listed in
 `scripts/model_seating_backlog.txt` (and `${KNL_ROOT}/model_seating_backlog.txt`,
