@@ -7558,7 +7558,7 @@
 			)
 		)
 		(property "ki_keywords" "C131941 TPS22918 load switch high-side power switch soft start inrush QOD SOT-23-6 DBV"
-			(at 0 -24.13 0)
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)

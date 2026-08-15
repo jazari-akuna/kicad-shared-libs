@@ -15248,7 +15248,7 @@
 			)
 		)
 		(property "ki_keywords" "C2873603 TUSB1044 redriver USB-C DisplayPort alt mode 10Gbps TI"
-			(at 0 -46.99 0)
+			(at 0 0 0)
 			(hide yes)
 			(effects
 				(font

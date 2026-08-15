@@ -31,7 +31,7 @@
 			(effects (font (size 1.27 1.27)) (hide yes))
 		)
 		(property "ki_keywords" "C2984107 AP6275P AP6276P wifi bluetooth PCIe AMPAK"
-			(at 0 -54 0)
+			(at 0 0 0)
 			(effects (font (size 1.27 1.27)) (hide yes))
 		)
 		(symbol "AP6276P_0_1"
