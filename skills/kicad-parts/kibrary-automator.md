@@ -1,7 +1,8 @@
 # kibrary-automator reference
 
-Single self-contained script at
-`/Users/raph/Projects/kibrary-automator/kibrary_automator.py`. It wraps
+Single self-contained script, `kibrary_automator.py`, living in its own
+checkout (referred to below as `$KIBRARY`) — it is a separate tool, not part of
+this repository. It wraps
 [JLC2KiCadLib](https://github.com/TousstNicolas/JLC2KiCad_lib) to download a
 part from the JLC/EasyEDA API, previews it in the terminal, fills
 Description + Datasheet from the LCSC API, files it into a `*_KSL` library,
@@ -12,16 +13,18 @@ On first launch it bootstraps a private venv (Rich + JLC2KiCadLib) at
 `~/Library/Application Support/kibrary-automator/config.yaml`:
 
 ```yaml
-library_root: /Users/raph/Projects/kicad-shared-libs
+library_root: <path to the kicad-shared-libs checkout>
 lib_suffix: _KSL
-github_user: jazari-akuna
+github_user: <github account owning the remote>
 model_var: ${KSL_ROOT}
 ```
 
 New parts land in `kicad-shared-libs`, so `${KSL_ROOT}` is the right
-`model_var`. A part whose documentation is under NDA belongs in the separate
-`kicad-nda-libs` repo instead — move it there after import and rewrite its
-model path to `${KNL_ROOT}/<Lib>/<Lib>.3dshapes/<Model>.step`.
+`model_var`. A **restricted** part belongs in the separate `kicad-nda-libs`
+repo instead — move it there after import and rewrite its model path to
+`${KNL_ROOT}/<Lib>/<Lib>.3dshapes/<Model>.step`. If only the *document* is
+restricted and the part is not, leave the part here and move just the PDF; see
+the two tiers in [SKILL.md](SKILL.md).
 
 ## Commands
 
@@ -63,7 +66,7 @@ After the loop it always runs the install step. Example (merge C1525 into
 the 2nd library alphabetically, accepting defaults):
 
 ```bash
-printf '\nC\n3\nn\n' | python3 /Users/raph/Projects/kibrary-automator/kibrary_automator.py add C1525
+printf '\nC\n3\nn\n' | python3 "$KIBRARY/kibrary_automator.py" add C1525
 ```
 
 Caution: if the run is aborted, loose files stay in the library root and the
@@ -100,9 +103,10 @@ Produces loose files: `<MPN>.kicad_sym`, `<Footprint>.kicad_mod`,
    Reference like `U?` (must end in `?`); Description and Datasheet from the
    LCSC API below (raw downloads often have an empty Description and a
    non-PDF Datasheet like `https://item.szlcsc.com/15869.html`).
-6. **New library only**: create `<Lib>/metadata.json` (copy an existing
-   one, e.g. `Audio_KSL/metadata.json`, adjust name/description/identifier
-   `com.github.jazari-akuna.kicad-shared-libs.<Lib>`) and append
+6. **New library only**: create `<Lib>/metadata.json` by copying an existing
+   one (e.g. `Audio_KSL/metadata.json`) and adjusting name, description and
+   `identifier` — keep the identifier prefix the other libraries use and only
+   swap the trailing `<Lib>`, since KiCad's PCM keys off it. Then append
    `{"path": "<Lib>/metadata.json"}` to the repo-root `repository.json`.
 7. **Register in KiCad**: `python3 kibrary_automator.py install`.
 

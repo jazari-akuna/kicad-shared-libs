@@ -2,7 +2,7 @@
 name: kicad-parts
 description: >-
   Create, download, and verify KiCad parts (symbols, footprints, 3D models)
-  for the shared KSL libraries in ~/Projects/kicad-shared-libs. Use when
+  for the shared KSL libraries in the kicad-shared-libs repository. Use when
   creating KiCad parts, symbols, footprints, or 3D models; downloading parts
   from JLC/JLCPCB/LCSC/EasyEDA (LCSC part numbers like C1525); managing or
   fixing KSL libraries, KSL_ROOT paths, datasheet links, or 3D model offsets;
@@ -34,18 +34,36 @@ requirements are non-negotiable:
 
 ## Key paths
 
+Two path variables address the two repositories, and **everything in this skill
+is written in terms of them** — never a literal checkout path, because the
+libraries are shared and no two machines agree on where they sit.
+
+| Variable | Repository | Notes |
+|----------|------------|-------|
+| `${KSL_ROOT}` | `kicad-shared-libs` (this repo) | Public remote. Everything here may be published. |
+| `${KNL_ROOT}` | `kicad-nda-libs` | Private, **no remote by design** — never push it. |
+
+Both are declared to KiCad in Preferences → Configure Paths, which writes them
+to `kicad_common.json` under the KiCad settings directory
+(`~/Library/Preferences/kicad/<ver>/` on macOS). Export them in your shell too,
+so the commands below can be pasted as-is:
+
+```bash
+export KSL_ROOT=<path to this checkout>
+export KNL_ROOT=<path to the kicad-nda-libs checkout>
+```
+
 | What | Path |
 |------|------|
-| Library repo (`${KSL_ROOT}`) | `/Users/raph/Projects/kicad-shared-libs` |
-| NDA library repo (`${KNL_ROOT}`) | `/Users/raph/Projects/kicad-nda-libs` (private, never push) |
-| Datasheets (git-lfs) | `${KSL_ROOT}/datasheets/<MPN>.pdf`, `${KNL_ROOT}/datasheets/` for NDA |
+| Datasheets (git-lfs) | `${KSL_ROOT}/datasheets/<MPN>.pdf`, `${KNL_ROOT}/datasheets/` for restricted ones |
 | Datasheet pipeline | `${KSL_ROOT}/scripts/datasheets.py` |
-| This skill's source of truth | `${KSL_ROOT}/skills/kicad-parts/` (`~/.cursor/skills/kicad-parts` symlinks here) |
-| kibrary-automator | `/Users/raph/Projects/kibrary-automator/kibrary_automator.py` |
+| 3D model gate | `${KSL_ROOT}/scripts/check_models.py` |
+| Publication gate | `${KSL_ROOT}/scripts/check_nda.py`, run by `${KSL_ROOT}/hooks/pre-push` |
+| This skill's source of truth | `${KSL_ROOT}/skills/kicad-parts/` (see `${KSL_ROOT}/skills/README.md` for the symlink wiring) |
+| kibrary-automator | `kibrary_automator.py` in its own checkout — a separate tool, not part of this repo |
 | Its venv (has `JLC2KiCadLib`) | `~/Library/Application Support/kibrary-automator/venv/bin/` |
-| kicad-cli | `/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli` |
+| kicad-cli | `/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli` (macOS default install) |
 | KiCad python (has `pcbnew`) | `/Applications/KiCad/KiCad.app/Contents/Frameworks/Python.framework/Versions/Current/bin/python3` |
-| KiCad settings | `~/Library/Preferences/kicad/<ver>/` (defines `KSL_ROOT` and `KNL_ROOT` in `kicad_common.json`) |
 
 ## Library conventions
 
@@ -62,8 +80,9 @@ Audio_KSL/
 
 - Symbols are named after the full MPN (`PCM5102APWR`) and carry properties:
   `Reference` (`U?` — always ends in `?`), `Value` (= MPN), `Footprint`,
-  `Datasheet` (direct PDF URL), `Description`, `LCSC` (e.g. `C107671`),
-  `ki_keywords` (contains the LCSC code).
+  `Datasheet` (a path under `${KSL_ROOT}/datasheets/`, **not** a URL — see
+  below), `Description`, `LCSC` (e.g. `C107671`), `ki_keywords` (contains the
+  LCSC code).
 - Symbol → footprint reference is `LibraryName:FootprintName`, e.g.
   `"Footprint" "Audio_KSL:TSSOP-20_L6.5-W4.4-P0.65-LS6.4-BL"`.
 - Footprint → 3D model reference always uses the path variable of the repo that
@@ -96,8 +115,7 @@ Audio_KSL/
 BOTH to every command that resolves models or symbols and accepts the flag:
 
 ```
--D KSL_ROOT=/Users/raph/Projects/kicad-shared-libs \
--D KNL_ROOT=/Users/raph/Projects/kicad-nda-libs
+-D KSL_ROOT="$KSL_ROOT" -D KNL_ROOT="$KNL_ROOT"
 ```
 
 Not all commands accept it: `sch export netlist` rejects `-D` outright
@@ -105,23 +123,36 @@ Not all commands accept it: `sch export netlist` rejects `-D` outright
 embedded `lib_symbols` cache.
 
 **Forgetting `-D KNL_ROOT` fails silently.** An unresolved model is a warning,
-not an error, so a STEP or render export simply comes out missing the NDA parts
-(on the carrier project: the SOM; on hdmi: the BRIDGE-A) while the command
-still exits 0. Always confirm the expected bodies are present in the output
-rather than trusting the exit code.
+not an error, so a STEP or render export simply comes out missing every part
+whose model lives in the restricted repo, while the command still exits 0.
+Always confirm the expected bodies are present in the output rather than
+trusting the exit code.
 
 ## Library hygiene and restricted parts
 
-**Parts that must stay out of the published library set** (no public datasheet,
-NDA'd design guide) get their own library in a **separate private repository**,
-`~/Projects/kicad-nda-libs`, addressed by the `${KNL_ROOT}` path variable.
-Currently `SOM_KSL` and `Video_Interface_NDA_KSL`. They are registered in the
+This repo has a **public remote**. The private `kicad-nda-libs` repo,
+addressed by `${KNL_ROOT}`, has **no remote configured, by design** — do not
+add one, and do not push it. Sort restricted material into one of two tiers,
+because they are not the same problem:
+
+**Tier 1 — the document is restricted, the part is not.** The maker sells the
+component openly but will not publish its specification. Symbol, footprint and
+3D model stay in the normal public `<Category>_KSL` library; only the PDF moves
+to `${KNL_ROOT}/datasheets/`, the symbol's `Datasheet` property points there,
+and the filename is added to this repo's `.gitignore` so the datasheet pipeline
+cannot re-fetch it from the URL still recorded in `datasheets/.state.json`. This
+is the common case, and the `reference` layer of `check_nda.py` exists precisely
+because the file can be correctly absent while a stale link still claims it
+lives under `${KSL_ROOT}`.
+
+**Tier 2 — the part itself is restricted.** Pinout and land pattern come from a
+document that may not be redistributed, so the symbol and footprint are derived
+works. The whole library moves to `${KNL_ROOT}` and is registered in the
 consuming board's project `sym-lib-table`/`fp-lib-table` via `${KNL_ROOT}`, so
 the design records exactly which library it needs while the content stays out
 of the public repo.
 
-That repo has **no remote configured, by design** — do not add one, and do not
-push it.
+When you cannot tell which tier applies, treat the part as Tier 2 and ask.
 
 > **Superseded pattern — do not reintroduce.** These libraries used to sit
 > inside `kicad-shared-libs` as *gitignored* directories. That kept them off the
@@ -129,9 +160,11 @@ push it.
 > fresh clone or a stray `git clean -x`. If you find an NDA library gitignored
 > in place, move it to `${KNL_ROOT}` rather than perpetuating this.
 
-Library **nicknames do not encode the repo**. `SOM_KSL:MODULE-A-SOM` stayed
-spelled exactly that way through the move; only the lib-table URIs and the
-`(model ...)` paths changed. When relocating a library, rewrite the URIs and
+Library **nicknames do not encode the repo**. A reference such as
+`<Lib>_KSL:<PartName>` stays spelled exactly that way when the library moves
+between repos — the `_KSL` suffix is part of the nickname, not a claim about
+which checkout holds it. Only the lib-table URIs and the `(model ...)` paths
+change. When relocating a library, rewrite the URIs and
 model paths and leave every nickname alone — a blanket find-and-replace on the
 library name will corrupt symbol and footprint links across every sheet.
 
@@ -152,6 +185,54 @@ library update silently reverts it. Mirror every such edit into the
 `<Lib>.kicad_sym` master (or edit the master and re-sync the sheet), and say
 which one you did in the report.
 
+## The three gates
+
+The repo checks itself. Run all three before you claim a part is done; each
+exits 0 clean, 1 on violations, 2 when it could not run at all.
+
+```bash
+scripts/datasheets.py verify   # every non-generic symbol resolves to an English PDF on disk
+scripts/check_models.py        # every 3D model is placed where its footprint says
+scripts/check_nda.py --scope all
+```
+
+`check_models.py` grades **units**, **transform** and **seating** — the last by
+slicing the STEP where KiCad places it and requiring every cross-section below
+the board surface to fit inside a drilled hole. Seating needs FreeCAD and says
+so rather than reporting a false green without it. Defects that predate the
+checker are baselined in `scripts/model_seating_backlog.txt` so a *new*
+regression fails today; delete a line as you fix one, and never add one to
+silence your own work.
+
+`check_nda.py` is the gate that cannot be undone if it is skipped, because this
+repo has a public remote. It looks three ways — **hash** (sha256 against
+`scripts/nda_denylist.json`, which also reads a git-lfs *pointer* without
+needing the object, since the pointer states the digest), **content** (PDF text
+against known-restricted vendors and part families) and **reference** (a
+`Datasheet` property pointing a restricted document at `${KSL_ROOT}`).
+
+- `--scope history` is the one that matters before a push: deleting a file in a
+  new commit does not unpublish the blob.
+- `--self-test` is a negative control. It plants material each layer must
+  reject plus a clean control each must accept, and fails if any layer stays
+  quiet — a check nobody has watched fail is not evidence.
+- `--sync` refreshes the digests from the private repo.
+
+`hooks/pre-push` runs `check_nda.py --scope all` at the only moment that
+counts. **Git does not carry hooks through a clone**, so install it by hand on
+every checkout:
+
+```bash
+install -m 755 hooks/pre-push .git/hooks/pre-push
+```
+
+It deliberately **replaces** the stock git-lfs pre-push hook and calls
+`git lfs pre-push` itself, because git allows only one. Keep that line or
+datasheet LFS objects silently stop being uploaded and the remote ends up
+holding pointers to blobs nobody can fetch. There is no environment-variable
+override and `--no-verify` is not an answer: if the check is wrong, fix the
+check or the denylist in a commit.
+
 ## Workflow for a new part
 
 ### Step 1 — Download from the JLC/LCSC API (always first)
@@ -160,7 +241,7 @@ Use kibrary-automator. Two ways, detailed in
 [kibrary-automator.md](kibrary-automator.md):
 
 - **Interactive tool** (preferred when the user is present):
-  `python3 /Users/raph/Projects/kibrary-automator/kibrary_automator.py add C1525`
+  `python3 <kibrary-automator checkout>/kibrary_automator.py add C1525`
 - **Its code directly** (preferred for unattended agent runs): call
   `JLC2KiCadLib` from the tool's venv into a temp dir, then merge into the
   target `*_KSL` library replicating what the tool does (rewrite footprint
@@ -197,11 +278,12 @@ a checkout without the LFS objects; `--mode local` flips back, losslessly.
 libraries does *not* make **D** open a local file. A `.kicad_sch` carries its
 own copy of every symbol — in the `lib_symbols` cache and again on each placed
 instance — and D reads those copies. Sync also matches on the part *value*,
-because boards place real components on stock generic symbols: all four buck
-inductors on this project are `Device:L_Small` and the SOM's ESD diodes are
-`Device:D_TVS`, with the MPN in the Value field. Keying only on `lib_id` leaves
-exactly those parts opening a browser. Never let it walk into `.history/` or
-`design/handoff/` — those are point-in-time snapshots.
+because boards routinely place real components on stock generic symbols: a
+whole set of buck inductors drawn as `Device:L_Small`, ESD diodes as
+`Device:D_TVS`, each with the real MPN in the Value field. Keying only on
+`lib_id` leaves exactly those parts opening a browser. Never let it walk into a
+project's `.history/` or handoff-snapshot directories — those are point-in-time
+copies and rewriting them falsifies the record.
 
 Storage is **git-lfs** (`datasheets/*.pdf`), roughly 160 MB. The NDA repo stays
 plain git: it is small, and `git lfs install` wants to overwrite the pre-push
@@ -223,8 +305,8 @@ hook that refuses publication, which must not happen.
 3. **Language.** The script's heuristic decides `en` only when confident and
    sends everything else to the queue. Thresholds that took real tuning:
    ≥30% CJK is Chinese; <1% CJK is English with an incidental note (a 46-page
-   English AMPAK datasheet carries two Chinese sentences in the stencil note);
-   a CJK vocabulary under ~25 distinct glyphs is a company name in a page
+   English datasheet in this repo carries exactly two Chinese sentences, in the
+   stencil note); a CJK vocabulary under ~25 distinct glyphs is a company name in a page
    footer, however many pages it appears on. Between those, a human or agent
    looks. **Ratio alone is not enough** — TI's *Chinese* edition of a part
    (`ti.com.cn`, doc `ZHCS...`) sits near 10% CJK because part numbers, units
@@ -244,12 +326,20 @@ hook that refuses publication, which must not happen.
    original: append the source pages after the translation so the dimensioned
    drawings survive and can be cross-checked, and mark the file plainly as an
    unofficial machine translation with its source and date.
-7. **NDA/restricted documents never enter KSL** — it may be published. They
-   go in `${KNL_ROOT}/datasheets/`. Test before deciding: render the first
-   pages and grep for *Confidential* / *Proprietary* / *NDA*. the vendor's
-   SOM datasheet and the vendor's BRIDGE-A design guide are both stamped
-   Confidential; AMPAK's AP6276P has no marking and is published openly on
-   `ampak.com.tw`, so it is public. When genuinely unsure, treat as NDA.
+7. **Restricted documents never enter KSL** — it may be published. They go in
+   `${KNL_ROOT}/datasheets/`, and the filename goes in this repo's
+   `.gitignore`. Test before deciding: render the first pages and grep for
+   *Confidential* / *Proprietary* / *NDA*. Two traps, both seen here:
+   - A **stamp is sufficient but not necessary**. At least one restricted
+     document in the set carries no marking at all, only a legal notice in the
+     front matter forbidding reproduction and disclosure. Read the notice, do
+     not just grep for the word.
+   - **Absence of a stamp does not make it public** — but publication does. If
+     the maker serves the PDF from its own public website with no login, it is
+     public whatever it looks like. Check the source, not the styling.
+
+   When genuinely unsure, treat it as restricted. Adding a document to the
+   private repo is reversible; a push is not.
 8. **Coverage: every part with a public datasheet must have one** —
    connectors, switches and passives included, not just ICs. The only exempt
    symbols are generic drafting ones with no maker at all (`R`, `C`,
@@ -355,8 +445,7 @@ Then render top (X/Y check), front (Z check), and isometric views:
 
 ```bash
 "$CLI" pcb render /tmp/fp_test.kicad_pcb -o /tmp/out/top.png \
-  -D KSL_ROOT=/Users/raph/Projects/kicad-shared-libs \
-  -D KNL_ROOT=/Users/raph/Projects/kicad-nda-libs --side top --zoom 2
+  -D KSL_ROOT="$KSL_ROOT" -D KNL_ROOT="$KNL_ROOT" --side top --zoom 2
 "$CLI" pcb render ... -o /tmp/out/front.png --side front --zoom 2
 "$CLI" pcb render ... -o /tmp/out/iso.png --rotate '-45,0,45' --zoom 3
 ```

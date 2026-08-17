@@ -12,8 +12,9 @@ owns the KSL library conventions, file naming, symbol properties, datasheet
 handling, and render/verification commands — read it alongside this one;
 nothing here repeats it.
 
-Both skills live in the `kicad-shared-libs` repo and are symlinked into
-`~/.cursor/skills/`, so edit them in the repo and commit the change.
+Both skills live in the `kicad-shared-libs` repo, so edit them there and commit
+the change — see `${KSL_ROOT}/skills/README.md` for how they are wired into an
+agent's skills directory.
 
 ## Workflow order
 
@@ -119,8 +120,10 @@ bindings under `/usr/bin/python3` (pip user site:
 `~/Library/Python/3.9/lib/python/site-packages/`); FreeCAD's bundled OCC
 also has them.
 
-Known-good reference script (shipped the colored SENSOR-A model,
-`${KSL_ROOT}/Sensor_KSL/Sensor_KSL.3dshapes/LGA-47_D11.0-P1.00.step`):
+Known-good reference script — it produced
+`${KSL_ROOT}/Sensor_KSL/Sensor_KSL.3dshapes/LGA-47_D11.0-P1.00.step`, a round
+LGA package with a protruding pin-1 tab, so it exercises the colouring, the
+fillet-then-fuse ordering and the tab geometry all at once:
 [scripts/make_step_colored_example.py](scripts/make_step_colored_example.py)
 — run with `/usr/bin/python3`.
 
@@ -203,9 +206,9 @@ hundreds-of-mm offset, not for micron checks.
 Use the render commands from the **kicad-parts** skill verbatim: footprint
 SVG → PNG, symbol SVG → PNG, one-footprint test board +
 `kicad-cli pcb render` top/front/iso with
-`-D KSL_ROOT=/Users/raph/Projects/kicad-shared-libs` and
-`-D KNL_ROOT=/Users/raph/Projects/kicad-nda-libs` (the NDA library repo — pass
-both; a missing root drops the model silently, with a warning but exit 0).
+`-D KSL_ROOT="$KSL_ROOT" -D KNL_ROOT="$KNL_ROOT"`. Pass **both** roots even
+when the part is public: a missing root drops the model silently, with a
+warning but exit 0.
 
 Two things bite here:
 
