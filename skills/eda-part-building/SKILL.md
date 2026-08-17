@@ -120,12 +120,14 @@ bindings under `/usr/bin/python3` (pip user site:
 `~/Library/Python/3.9/lib/python/site-packages/`); FreeCAD's bundled OCC
 also has them.
 
-Known-good reference script — it produced
-`${KSL_ROOT}/Sensor_KSL/Sensor_KSL.3dshapes/LGA-47_D11.0-P1.00.step`, a round
-LGA package with a protruding pin-1 tab, so it exercises the colouring, the
-fillet-then-fuse ordering and the tab geometry all at once:
-[scripts/make_step_colored_example.py](scripts/make_step_colored_example.py)
-— run with `/usr/bin/python3`.
+A known-good reference script exists and is worth reading before writing your
+own, because it exercises the colouring, the fillet-then-fuse ordering and a
+protruding pin-1 tab all at once. It is not in this repository: its dimensions
+are a restricted package's geometry, so it lives beside the part it builds at
+`${KNL_ROOT}/Sensor_NDA_KSL/scripts/make_step_colored_example.py` — run with
+`/usr/bin/python3`. The gotchas below are the transferable part of it and are
+reproduced here in full, so this section stands on its own if you cannot reach
+that repository.
 
 Gotchas verified the hard way:
 
