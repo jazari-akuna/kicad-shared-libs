@@ -1,5 +1,5 @@
 (module "CONN-SMD_BM28B0.6-60DP-2-0.35V-51_LINKB-ICD" (layer F.Cu) (tedit 6A6D0001)
-  (descr "BM28 DP plug 60pos, LINK-B/ICD numbering mirrored about the connector short axis so pad N mates pad N on the _LINKB-ICD DS receptacle. Nails 61/62 pin-1/60 end (GND), 63/64 pin-30/31 end (a battery rail, a designator).")
+  (descr "BM28 DP plug 60pos, numbering mirrored about the connector short axis so pad N mates pad N on the matching DS receptacle variant. Power nails 61/62 at the pin-1/60 end, 63/64 at the pin-30/31 end.")
   (tags "CONN-SMD_BM28B0.6-60DP-2-0.35V-51 footprint C3652293 ICD-numbered")
   (attr smd)
   (fp_text reference REF** (at 0 -2.05) (layer F.SilkS)

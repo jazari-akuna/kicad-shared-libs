@@ -46,7 +46,7 @@ restricted parts stop resolving.
 a public remote and a guard that refuses to push restricted material, and that
 guard is inert until you install it:
 
-    install -m 755 hooks/pre-push .git/hooks/pre-push
+    install -m 755 ${KNL_ROOT}/hooks/ksl-pre-push ${KSL_ROOT}/.git/hooks/pre-push
 
 It replaces the stock git-lfs pre-push hook and calls `git lfs pre-push` itself,
 because git allows only one. Without it you get no NDA gate; without its
@@ -54,7 +54,7 @@ git-lfs line you get no datasheet uploads.
 
 Then fetch the datasheets, which are stored with git-lfs:
 
-    scripts/datasheets.py setup
+    git lfs install && git lfs pull
 
 ## Using them as agent skills
 

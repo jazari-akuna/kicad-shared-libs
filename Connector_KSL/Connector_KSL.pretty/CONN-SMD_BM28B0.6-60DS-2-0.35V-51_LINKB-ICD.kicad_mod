@@ -1,5 +1,5 @@
 (module "CONN-SMD_BM28B0.6-60DS-2-0.35V-51_LINKB-ICD" (layer F.Cu) (tedit 6A6D0001)
-  (descr "BM28 DS receptacle 60pos, LINK-B/ICD numbering: rows 1-30 (+y, W-E) / 31-60 (-y, E-W), nails 61/62 at pin-1/60 end (GND), 63/64 at pin-30/31 end (a battery rail, a designator). Numbering matches the _LINKA-ICD convention, NOT Hirose cavity marks; mate ONLY with the _LINKB-ICD DP plug variant.")
+  (descr "BM28 DS receptacle 60pos, custom numbering: rows 1-30 (+y, W-E) / 31-60 (-y, E-W), power nails 61/62 at the pin-1/60 end, 63/64 at the pin-30/31 end. Numbering is NOT Hirose cavity marks; mate ONLY with the matching DP plug variant.")
   (tags "CONN-SMD_BM28B0.6-60DS-2-0.35V-51 footprint C3640863 ICD-numbered")
   (attr smd)
   (fp_text reference REF** (at 0 -2.15) (layer F.SilkS)

@@ -1,5 +1,5 @@
 (module "CONN-SMD_BM28B0.6-30DS-2-0.35V-51_LINKA-ICD" (layer F.Cu) (tedit 6A579C0E)
-  (descr "BM28 DS receptacle, LINK-A/ICD nail numbering: 31/32 at pin-1/30 end (GND), 33/34 at pin-15/16 end (VBUS). Nails renumbered vs Hirose stock; mate ONLY with the _LINKA-ICD DP plug variant.")
+  (descr "BM28 DS receptacle, custom nail numbering: 31/32 at the pin-1/30 end, 33/34 at the pin-15/16 end. Nails renumbered vs Hirose stock; mate ONLY with the matching DP plug variant.")
   (tags "CONN-SMD_BM28B0.6-30DS-2-0.35V-51 footprint C424571 ICD-numbered")
   (attr smd)
   (fp_text reference REF** (at -0.008509 -2.899975) (layer F.SilkS)

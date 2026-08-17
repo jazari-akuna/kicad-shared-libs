@@ -3758,7 +3758,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" "Hirose BM28B0.6 board-to-board/FPC receptacle, 60 signal contacts 0.35mm pitch + 2x2 power nails (61-64, 5A), 0.6mm stacking, 20Gbps. LINK-B B2B (owner 2026-07-20). Mate ONLY with the _LINKB-ICD DP plug; verify pad-1-to-pad-1 incl. nails."
+		(property "Description" "Hirose BM28B0.6 board-to-board/FPC receptacle, 60 signal contacts 0.35mm pitch + 2x2 power nails (61-64, 5A), 0.6mm stacking, 20Gbps. Mate ONLY with the matching DP plug variant; verify pad-1-to-pad-1 incl. nails."
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)

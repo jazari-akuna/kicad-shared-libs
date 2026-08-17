@@ -24,63 +24,45 @@ project. The variable is set in KiCad under Preferences → Configure Paths.
 - **English.** Bilingual is fine when the English is complete — many LCSC
   connector and switch drawings are Chinese and English side by side. Chinese-only
   substance is not acceptable.
-- **Public only.** NDA or Confidential documents never go in this repo, which may
-  be published. They live in `${KNL_ROOT}/datasheets/` in the private
-  `kicad-nda-libs` repo. If you are unsure, treat the document as NDA.
+- **Public only.** A document supplied under NDA, or marked Confidential, never
+  goes in this repo. Those live under `${KNL_ROOT}/datasheets/` in the private
+  library. If you are unsure, treat the document as restricted.
 - **Right part, not just right language.** A datasheet for a different part is a
   worse defect than one in the wrong language, and it happens: this library had
-  `2N7002` pointing at a generic SOT23 package drawing with no electrical specs.
+  `2N7002` (small-signal N-channel MOSFET) pointing at a generic SOT-23 package
+  drawing with no electrical specs.
 - One file may serve a family covered by one document.
 
 ## Getting them after a clone
 
 The PDFs are stored with **git-lfs**, so a plain clone without git-lfs installed
 leaves 100-byte pointer files here. That failure is silent — the paths still
-resolve and the files still exist, they just are not PDFs — so check for it:
+resolve and the files still exist, they just are not PDFs:
 
-    scripts/datasheets.py setup      # enables LFS, pulls the PDFs, verifies each one
+    git lfs install && git lfs pull
 
-If you would rather not carry ~160 MB of LFS objects, switch every link back to
-its upstream URL instead:
-
-    scripts/datasheets.py relink --mode url
-    scripts/datasheets.py sync-project --project <board-repo> --mode url
-
-`--mode local` switches back. The round trip is lossless. Four parts can never
-go back to a URL: `CH221K`, `CH224D`, `NB7VPQ904M` (only ever local copies of
-documents with no stable direct link) and `YZ90415045R-01` (a translation that
-exists nowhere else). Those stay local in either mode, and the script says so.
+Four parts have no stable upstream link and exist here only as local copies:
+`CH221K` (USB Type-C configuration channel controller), `CH224D` (USB PD sink
+controller), `NB7VPQ904M` (USB 3.1 / DisplayPort redriver-mux) and
+`YZ90415045R-01` (a translated connector drawing that exists nowhere else).
 
 ## Maintaining it
 
-Do not curate by hand. `../scripts/datasheets.py` runs the pipeline:
+Do not curate by hand. The datasheet pipeline lives with the rest of the
+library tooling in the private repository, `${KNL_ROOT}/scripts/datasheets.py`,
+and is run from there against this one. It fetches, detects wrong-language and
+wrong-part documents, rewrites the symbol `Datasheet` properties, and gates on
+every part resolving to an English PDF.
 
-    datasheets.py fetch      # download, rejecting HTML pages saved as .pdf
-    datasheets.py triage     # language + wrong-document detection
-    datasheets.py queue      # what needs a human or agent judgement
-    datasheets.py apply --results verdicts.json
-    datasheets.py relink     # rewrite the symbol properties
-    datasheets.py verify     # gate: every part resolves to an English PDF
+One thing to know if you consume this library from a board repo: a `.kicad_sch`
+carries its **own copy** of every symbol — in the `lib_symbols` cache and again
+on each placed instance — and **D** reads those copies, not the library.
+Relinking here alone leaves the boards opening URLs, so the pipeline has a
+`sync-project` step for them. It matches on the part *value* as well as the
+symbol name, because boards routinely place real components on stock generic
+symbols such as `Device:L_Small` and `Device:D_TVS`, with the MPN in the Value
+field.
 
-Add `--repo knl` for the NDA repo (which stays plain git — it is small, and its
-pre-push guard must not be replaced by the LFS hook).
-
-Two steps concern a consuming board repo rather than this one:
-
-    datasheets.py sync-project --project <board-repo>
-    datasheets.py harvest     --project <board-repo>
-
-`sync-project` is not optional. A `.kicad_sch` carries its own copy of every
-symbol — in the `lib_symbols` cache and again on each placed instance — and
-**D** reads those copies, not the library. Relinking here alone leaves the
-boards opening URLs. It also matches on the part *value*, because boards place
-real components on stock generic symbols: all four buck inductors are
-`Device:L_Small` and the SOM's ESD diodes are `Device:D_TVS`, with the MPN in
-the Value field.
-
-`harvest` collects datasheets for parts a board uses that no library defines,
-taking the URL straight off the schematic.
-
-`.state.json` records, per part, where the file came from, its language
-statistics and why any non-obvious call was made. It is how a future reader
-knows a bilingual document was reviewed and accepted rather than missed.
+Per-part bookkeeping (where each file came from, its language statistics, and
+why any non-obvious call was made) is kept in `.state.json`, which is
+deliberately **not tracked** here: it is fetch bookkeeping, not a part.

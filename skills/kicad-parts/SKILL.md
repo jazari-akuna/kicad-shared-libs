@@ -21,7 +21,7 @@ requirements are non-negotiable:
   the kibrary-automator project or its code.
 - Then check everything, especially:
   - The datasheet. Every part links to a **local English PDF** in the repo,
-    never a URL — run `scripts/datasheets.py` rather than editing links by
+    never a URL — run `${KNL_ROOT}/scripts/datasheets.py` rather than editing links by
     hand, and check the document is for the right part, not just the right
     language. See "Datasheets are local files" below.
   - If the 3D model has the correct offsets to sit on top of the footprint
@@ -56,9 +56,9 @@ export KNL_ROOT=<path to the kicad-nda-libs checkout>
 | What | Path |
 |------|------|
 | Datasheets (git-lfs) | `${KSL_ROOT}/datasheets/<MPN>.pdf`, `${KNL_ROOT}/datasheets/` for restricted ones |
-| Datasheet pipeline | `${KSL_ROOT}/scripts/datasheets.py` |
-| 3D model gate | `${KSL_ROOT}/scripts/check_models.py` |
-| Publication gate | `${KSL_ROOT}/scripts/check_nda.py`, run by `${KSL_ROOT}/hooks/pre-push` |
+| Datasheet pipeline | `${KNL_ROOT}/scripts/datasheets.py` |
+| 3D model gate | `${KNL_ROOT}/scripts/check_models.py` |
+| Publication gate | `${KNL_ROOT}/scripts/check_nda.py`, run by `${KNL_ROOT}/hooks/ksl-pre-push` |
 | This skill's source of truth | `${KSL_ROOT}/skills/kicad-parts/` (see `${KSL_ROOT}/skills/README.md` for the symlink wiring) |
 | kibrary-automator | `kibrary_automator.py` in its own checkout — a separate tool, not part of this repo |
 | Its venv (has `JLC2KiCadLib`) | `~/Library/Application Support/kibrary-automator/venv/bin/` |
@@ -191,22 +191,22 @@ The repo checks itself. Run all three before you claim a part is done; each
 exits 0 clean, 1 on violations, 2 when it could not run at all.
 
 ```bash
-scripts/datasheets.py verify   # every non-generic symbol resolves to an English PDF on disk
-scripts/check_models.py        # every 3D model is placed where its footprint says
-scripts/check_nda.py --scope all
+${KNL_ROOT}/scripts/datasheets.py verify   # every non-generic symbol resolves to an English PDF on disk
+${KNL_ROOT}/scripts/check_models.py        # every 3D model is placed where its footprint says
+${KNL_ROOT}/scripts/check_nda.py --scope all
 ```
 
 `check_models.py` grades **units**, **transform** and **seating** — the last by
 slicing the STEP where KiCad places it and requiring every cross-section below
 the board surface to fit inside a drilled hole. Seating needs FreeCAD and says
 so rather than reporting a false green without it. Defects that predate the
-checker are baselined in `scripts/model_seating_backlog.txt` so a *new*
+checker are baselined in `${KNL_ROOT}/scripts/ksl_model_seating_backlog.txt` so a *new*
 regression fails today; delete a line as you fix one, and never add one to
 silence your own work.
 
 `check_nda.py` is the gate that cannot be undone if it is skipped, because this
 repo has a public remote. It looks three ways — **hash** (sha256 against
-`scripts/nda_denylist.json`, which also reads a git-lfs *pointer* without
+`${KNL_ROOT}/scripts/nda_denylist.json`, which also reads a git-lfs *pointer* without
 needing the object, since the pointer states the digest), **content** (PDF text
 against known-restricted vendors and part families) and **reference** (a
 `Datasheet` property pointing a restricted document at `${KSL_ROOT}`).
@@ -218,12 +218,12 @@ against known-restricted vendors and part families) and **reference** (a
   quiet — a check nobody has watched fail is not evidence.
 - `--sync` refreshes the digests from the private repo.
 
-`hooks/pre-push` runs `check_nda.py --scope all` at the only moment that
+`${KNL_ROOT}/hooks/ksl-pre-push` runs `check_nda.py --scope all` at the only moment that
 counts. **Git does not carry hooks through a clone**, so install it by hand on
 every checkout:
 
 ```bash
-install -m 755 hooks/pre-push .git/hooks/pre-push
+install -m 755 ${KNL_ROOT}/hooks/ksl-pre-push ${KSL_ROOT}/.git/hooks/pre-push
 ```
 
 It deliberately **replaces** the stock git-lfs pre-push hook and calls
@@ -254,7 +254,7 @@ Find the LCSC part number first if you only have an MPN (search LCSC/JLCPCB).
 
 **Datasheets are local files (must be an English PDF).**
 
-Do not hand-roll this. `${KSL_ROOT}/scripts/datasheets.py` does the whole
+Do not hand-roll this. `${KNL_ROOT}/scripts/datasheets.py` does the whole
 pipeline and is the source of truth:
 
 ```

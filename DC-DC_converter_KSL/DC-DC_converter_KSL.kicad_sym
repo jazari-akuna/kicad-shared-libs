@@ -780,7 +780,7 @@
     (property "LCSC" "C478952" (id 5) (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Description" "TMI 2A 1MHz synchronous buck, 2.5-6V in, adj FB 0.6V, per BRIDGE-A EVB U8 3.3V/1.2V rails, SOT-23-5" (id 6) (at 0 0 0)
+    (property "Description" "TMI 2A 1MHz synchronous buck, 2.5-6V in, adj FB 0.6V, suits 3.3V and 1.2V rails, SOT-23-5" (id 6) (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Stock" "LCSC 27264 / JLC 27876 (2026-07-16)" (id 7) (at 0 0 0)
