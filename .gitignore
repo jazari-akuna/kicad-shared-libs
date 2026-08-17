@@ -31,6 +31,13 @@ fp-info-cache
 # private repository, kicad-nda-libs, addressed by the ${KNL_ROOT} path
 # variable. Nothing NDA belongs in this repo.
 
+# the vendor' SENSOR-FAMILY product specification forbids reproduction and
+# disclosure to unauthorised persons, and FPC do not publish it. It lives in
+# ${KNL_ROOT}/datasheets/. Without this entry scripts/datasheets.py would
+# re-fetch it from the source URL still recorded in datasheets/.state.json
+# and .gitattributes would commit it to LFS on a repo with a public remote.
+datasheets/SENSOR-A.pdf
+
 # Transient working state of scripts/datasheets.py (.state.json IS tracked -
 # it is the audit record of every language/document judgement).
 datasheets/.queue.json
