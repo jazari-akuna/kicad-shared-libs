@@ -28,19 +28,19 @@ Every path is written against one of two variables:
 | `${KSL_ROOT}` | this repository, `kicad-shared-libs` — public remote |
 | `${KNL_ROOT}` | `kicad-nda-libs` — private, holds documents and parts that may not be published |
 
-Declare both to KiCad in Preferences → Configure Paths, and export them in your
-shell so the commands in the skills can be pasted as written:
+Register both with the installed KiCad **and** export them in your shell so
+the commands in the skills can be pasted as written:
 
     export KSL_ROOT="$PWD"
     export KNL_ROOT=<path to the kicad-nda-libs checkout>
 
-`${KNL_ROOT}` is optional if you only work on public parts, but `kicad-cli`
-resolves an unset variable to a *silently missing 3D model*, with a warning and
-exit 0 — so set it, or check your renders rather than your exit codes.
-
-Note that KiCad **rewrites `kicad_common.json` on exit**, so a hand-added
-variable can vanish. Edit it with KiCad closed, and re-check it whenever
-restricted parts stop resolving.
+The canonical setup instructions live in `kicad-parts/SKILL.md`, section
+**"Set up the roots"**: the KiCad GUI route (Preferences → Configure Paths),
+the headless route (the `environment.vars` key of `kicad_common.json`, edited
+with KiCad closed — KiCad rewrites that file on exit), and which `kicad-cli`
+commands want `-D` flags versus environment variables. Do that setup before
+running anything: `${KNL_ROOT}` unset does not error, it just drops every NDA
+3D model from renders and STEP exports with a warning and exit 0.
 
 **2. The pre-push hook.** `git clone` does not carry hooks. This repository has
 a public remote and a guard that refuses to push restricted material, and that

@@ -43,15 +43,74 @@ libraries are shared and no two machines agree on where they sit.
 | `${KSL_ROOT}` | `kicad-shared-libs` (this repo) | Public remote. Everything here may be published. |
 | `${KNL_ROOT}` | `kicad-nda-libs` | Private, **no remote by design** — never push it. |
 
-Both are declared to KiCad in Preferences → Configure Paths, which writes them
-to `kicad_common.json` under the KiCad settings directory
-(`~/Library/Preferences/kicad/<ver>/` on macOS). Export them in your shell too,
-so the commands below can be pasted as-is:
+### Set up the roots (once per machine — canonical instructions)
+
+Nothing resolves until both the installed KiCad and your shell know the two
+roots. On a fresh machine, do all three of these before any other step in
+this skill:
+
+**1. Export them in your shell**, so the commands below can be pasted as-is
+and `kicad-cli` picks them up from the environment:
 
 ```bash
 export KSL_ROOT=<path to this checkout>
 export KNL_ROOT=<path to the kicad-nda-libs checkout>
 ```
+
+**2. Register them in the installed KiCad** as path-substitution variables,
+so the GUI resolves `${KSL_ROOT}` in lib-table URIs, footprint `(model ...)`
+paths and `Datasheet` links. Either route writes the same setting:
+
+- GUI: **Preferences → Configure Paths**, add `KSL_ROOT` and `KNL_ROOT` with
+  the absolute checkout paths.
+- Headless/scripted: write them into `kicad_common.json` in the KiCad
+  settings directory (`~/Library/Preferences/kicad/<ver>/kicad_common.json`
+  on macOS — layout verified against the installed 10.0), under the JSON key
+  `environment.vars`:
+
+  ```json
+  { "environment": { "vars": {
+      "KSL_ROOT": "/abs/path/to/kicad-shared-libs",
+      "KNL_ROOT": "/abs/path/to/kicad-nda-libs" } } }
+  ```
+
+  Edit it **only with KiCad closed**: KiCad rewrites the file on exit, so a
+  variable added while it runs can vanish. `KNL_ROOT` was silently lost
+  exactly this way; the symptom is NDA libraries failing to resolve while
+  everything else works. Re-check the file whenever NDA parts go missing.
+
+**3. Pass them to `kicad-cli` runs explicitly.** `kicad-cli` resolves the
+variables from any of three sources — `-D` flags, the process environment,
+or `kicad_common.json` (verified on v10.0.2: a render with only the prefs
+set is byte-identical to the `-D` render, and a virgin-config render loses
+the model). Scripted runs must NOT lean on the prefs, which are absent on a
+fresh machine or CI and can be rewritten away as above — pass BOTH roots per
+command, in the form that command needs:
+
+- `pcb render`, `pcb export step`, and anything else that resolves 3D
+  models or libraries and accepts the flag:
+  `-D KSL_ROOT="$KSL_ROOT" -D KNL_ROOT="$KNL_ROOT"`.
+- `sch export pdf`: put the roots in the **environment, not `-D`**. `-D`
+  also substitutes the variable in the sheet's displayed text, rewriting
+  every datasheet popup to an absolute machine-local path and planting a
+  spurious diff in committed PDFs; the environment resolves the embedded
+  `file://` link targets while the visible text keeps `${KSL_ROOT}`
+  (measured on the carrier boards, all four combinations).
+- `sch export netlist`: rejects `-D` outright ("Unknown argument") and needs
+  nothing — symbols resolve from the schematic's embedded `lib_symbols`
+  cache.
+
+**Forgetting `-D KNL_ROOT` fails silently.** An unresolved model is a
+warning, not an error, so a STEP or render export simply comes out missing
+every part whose model lives in the restricted repo, while the command still
+exits 0. Always confirm the expected bodies are present in the output rather
+than trusting the exit code.
+
+This section is the canonical reference for the variables;
+`${KSL_ROOT}/skills/README.md` points here and adds the rest of the
+fresh-clone setup (pre-push hook, git-lfs).
+
+### Where things live
 
 | What | Path |
 |------|------|
@@ -111,22 +170,8 @@ Audio_KSL/
   A `Datasheet` property holding a URL is now a defect, not a normal state —
   see "Datasheets are local files" below.
 
-`kicad-cli` does not inherit these variables from the KiCad GUI prefs, so pass
-BOTH to every command that resolves models or symbols and accepts the flag:
-
-```
--D KSL_ROOT="$KSL_ROOT" -D KNL_ROOT="$KNL_ROOT"
-```
-
-Not all commands accept it: `sch export netlist` rejects `-D` outright
-("Unknown argument"), and needs nothing — symbols resolve from the schematic's
-embedded `lib_symbols` cache.
-
-**Forgetting `-D KNL_ROOT` fails silently.** An unresolved model is a warning,
-not an error, so a STEP or render export simply comes out missing every part
-whose model lives in the restricted repo, while the command still exits 0.
-Always confirm the expected bodies are present in the output rather than
-trusting the exit code.
+`kicad-cli` needs the roots passed explicitly — the flag/environment rules
+per command are in "Set up the roots" above.
 
 ## Library hygiene and restricted parts
 
@@ -250,12 +295,42 @@ Use kibrary-automator. Two ways, detailed in
 
 Find the LCSC part number first if you only have an MPN (search LCSC/JLCPCB).
 
+Either route leaves the `Datasheet` property as a URL at best. That is not
+the finished state — Step 2 turns it into a local PDF under
+`${KSL_ROOT}/datasheets/` and a `${KSL_ROOT}` link, always.
+
 ### Step 2 — Check everything
 
 **Datasheets are local files (must be an English PDF).**
 
-Do not hand-roll this. `${KNL_ROOT}/scripts/datasheets.py` does the whole
-pipeline and is the source of truth:
+After Step 1 the new symbol's `Datasheet` property holds whatever the LCSC
+API returned — usually a bare URL, sometimes nothing. Both are defects to fix
+now, not ship. For EVERY part you add, do this, in order:
+
+1. **Download the datasheet PDF into `${KSL_ROOT}/datasheets/`**
+   (`${KNL_ROOT}/datasheets/` if the document is restricted — Tier 1 above,
+   decision criteria in item 7 below). `datasheets.py fetch` does this from
+   the URL in the property; fetch manually only when there is no usable URL,
+   and put the file in the same folder.
+2. **Name the file after the MPN**: `<MPN>.pdf`, with every run of
+   characters outside `A-Za-z0-9._+-` collapsed to a single `_` — the
+   `slug()` rule in `datasheets.py`, e.g. `ESD5311N-2/TR` →
+   `ESD5311N-2_TR.pdf`. The MPN is the symbol's `Value`. `fetch` names files
+   this way itself; match it exactly when placing a file by hand, or
+   `verify` will not find the document.
+3. **Check it is English and the right document** (`datasheets.py triage`,
+   then `queue`/`apply` for anything it cannot decide — judgement criteria
+   are items 3–6 below).
+4. **Set the symbol's `Datasheet` property to the literal string
+   `${KSL_ROOT}/datasheets/<file>.pdf`** (`${KNL_ROOT}/...` for a restricted
+   document) — the path-variable spelling, verbatim. Never an absolute
+   machine-local path, never a bare URL, never a project-relative path.
+   `datasheets.py relink` writes this form; prefer it over hand-editing.
+5. **Run `${KNL_ROOT}/scripts/datasheets.py verify` and get exit 0** before
+   calling the part done — it is one of the three gates.
+
+Beyond the single-part flow, `datasheets.py` is the source of truth for the
+whole pipeline — do not hand-roll any of it:
 
 ```
 datasheets.py setup        # fresh clone: enable git-lfs, pull PDFs, check them
@@ -296,12 +371,10 @@ hook that refuses publication, which must not happen.
    offline and is versioned alongside the symbol.
 2. **Link form is `${KSL_ROOT}/datasheets/<MPN>.pdf`** (`${KNL_ROOT}/...` for
    NDA). Not a bare relative path: KiCad resolves those against the *project*,
-   and a shared library has no single project. The variable must exist in
-   `kicad_common.json` — and note KiCad **rewrites that file on exit**, so a
-   hand-added variable can vanish. `KNL_ROOT` was silently lost exactly this
-   way; the symptom is NDA libraries failing to resolve while everything else
-   works. Re-check it whenever NDA parts go missing, and edit it only with
-   KiCad closed.
+   and a shared library has no single project. The variable must be
+   registered with the installed KiCad or the link opens nothing — see "Set
+   up the roots" above, including the trap where KiCad rewrites
+   `kicad_common.json` on exit and silently drops a hand-added variable.
 3. **Language.** The script's heuristic decides `en` only when confident and
    sends everything else to the queue. Thresholds that took real tuning:
    ≥30% CJK is Chinese; <1% CJK is English with an incidental note (a 46-page
@@ -397,7 +470,7 @@ Write a short markdown report (in the chat, plus save renders under
 ```markdown
 ## <MPN> (<LCSC#>) → <Library>_KSL
 - Source: JLC API via kibrary-automator | drawn from datasheet
-- Datasheet: <final URL> (English: yes/no→fixed, NDA: local path)
+- Datasheet: <final `Datasheet` property value — `${KSL_ROOT}/datasheets/<file>.pdf`, or `${KNL_ROOT}/...` if restricted> (English: yes/no→fixed)
 - Checks: footprint ✓/✗, symbol ✓/✗, 3D offsets ✓/✗ (what was wrong, what was changed)
 - Modifications: none | list each edit — with before/after images
 ![symbol](sym.png) ![footprint](fp.png) ![3D iso](render_iso.png) ![3D front](render_front.png)
