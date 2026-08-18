@@ -62,7 +62,10 @@ line-based prompt, so answers can be piped. Prompt sequence per part:
    `Library description`.
 6. `Add another component?` — `n`.
 
-After the loop it always runs the install step. Example (merge C1525 into
+After the loop it always runs the install step — note it registers the
+libraries with absolute-path URIs; follow up with
+`python3 "${KSL_ROOT}/scripts/update_kicad_libraries.py"` (KiCad closed) to
+normalise them to the `${KSL_ROOT}` form. Example (merge C1525 into
 the 2nd library alphabetically, accepting defaults):
 
 ```bash
@@ -108,7 +111,13 @@ Produces loose files: `<MPN>.kicad_sym`, `<Footprint>.kicad_mod`,
    `identifier` — keep the identifier prefix the other libraries use and only
    swap the trailing `<Lib>`, since KiCad's PCM keys off it. Then append
    `{"path": "<Lib>/metadata.json"}` to the repo-root `repository.json`.
-7. **Register in KiCad**: `python3 kibrary_automator.py install`.
+7. **Register in KiCad**: run
+   `python3 "${KSL_ROOT}/scripts/update_kicad_libraries.py"` with KiCad
+   closed. (kibrary-automator's own `install` also registers, but writes
+   absolute-path URIs into the global tables; the update tool writes the
+   `${KSL_ROOT}` variable form and normalises whatever `install` left.)
+   Mandatory whenever the merge created a **new** library — the global
+   tables never pick one up on their own.
 
 ## LCSC / EasyEDA / JLC API endpoints (as used by the tool)
 

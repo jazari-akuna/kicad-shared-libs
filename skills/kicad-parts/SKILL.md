@@ -46,7 +46,7 @@ libraries are shared and no two machines agree on where they sit.
 ### Set up the roots (once per machine — canonical instructions)
 
 Nothing resolves until both the installed KiCad and your shell know the two
-roots. On a fresh machine, do all three of these before any other step in
+roots. On a fresh machine, do all four of these before any other step in
 this skill:
 
 **1. Export them in your shell**, so the commands below can be pasted as-is
@@ -79,7 +79,31 @@ paths and `Datasheet` links. Either route writes the same setting:
   exactly this way; the symptom is NDA libraries failing to resolve while
   everything else works. Re-check the file whenever NDA parts go missing.
 
-**3. Pass them to `kicad-cli` runs explicitly.** `kicad-cli` resolves the
+**3. Register the libraries in KiCad's global tables** by running the
+update tool, with KiCad closed:
+
+```bash
+python3 "${KSL_ROOT}/scripts/update_kicad_libraries.py"           # add + fix
+python3 "${KSL_ROOT}/scripts/update_kicad_libraries.py" --check   # drift gate, exit 1 on drift
+```
+
+It registers every `<Lib>_KSL` symbol and footprint library from this repo
+(and from `${KNL_ROOT}` when that checkout is found — it degrades gracefully
+when it is not) in the global `sym-lib-table` / `fp-lib-table`, always with
+`${KSL_ROOT}`/`${KNL_ROOT}`-form URIs, and verifies the step-2 variables
+(`--set-vars` writes them). It is idempotent, manages only `_KSL`-suffixed
+entries and leaves everything else byte-identical, backs each table up
+before writing, and refuses to write while a KiCad GUI process is running.
+`--prune` additionally removes managed entries whose library no longer
+exists on disk (never on by default).
+
+**Re-run this tool every time a NEW library is created** — a new
+`<Lib>_KSL.kicad_sym` or a new `.pretty` directory, as opposed to adding
+parts to an existing library. The global tables are a static list: KiCad
+will not see the new library until the tool has registered it and KiCad has
+been restarted.
+
+**4. Pass them to `kicad-cli` runs explicitly.** `kicad-cli` resolves the
 variables from any of three sources — `-D` flags, the process environment,
 or `kicad_common.json` (verified on v10.0.2: a render with only the prefs
 set is byte-identical to the `-D` render, and a virgin-config render loses
@@ -115,6 +139,7 @@ fresh-clone setup (pre-push hook, git-lfs).
 | What | Path |
 |------|------|
 | Datasheets (git-lfs) | `${KSL_ROOT}/datasheets/<MPN>.pdf`, `${KNL_ROOT}/datasheets/` for restricted ones |
+| KiCad table installer/updater | `${KSL_ROOT}/scripts/update_kicad_libraries.py` |
 | Datasheet pipeline | `${KNL_ROOT}/scripts/datasheets.py` |
 | 3D model gate | `${KNL_ROOT}/scripts/check_models.py` |
 | Publication gate | `${KNL_ROOT}/scripts/check_nda.py`, run by `${KNL_ROOT}/hooks/ksl-pre-push` |
@@ -299,6 +324,13 @@ Either route leaves the `Datasheet` property as a URL at best. That is not
 the finished state — Step 2 turns it into a local PDF under
 `${KSL_ROOT}/datasheets/` and a `${KSL_ROOT}` link, always.
 
+**Did this create a NEW library** (a `<Lib>_KSL.kicad_sym` or `.pretty` that
+did not exist before)? Then run
+`python3 "${KSL_ROOT}/scripts/update_kicad_libraries.py"` with KiCad closed,
+or KiCad will never see it — the global tables are a static list. Run it
+even if kibrary-automator's own `install` step ran: that step writes
+absolute-path URIs, which the tool normalises to the `${KSL_ROOT}` form.
+
 ### Step 2 — Check everything
 
 **Datasheets are local files (must be an English PDF).**
@@ -460,6 +492,10 @@ Create it from the datasheet:
 - 3D model: reuse a generic package STEP from another KSL library or KiCad's
   3dmodels when the package matches; otherwise ship without a model and say
   so in the report.
+- If the part warranted a brand-new `<Lib>_KSL` library, register it: run
+  `python3 "${KSL_ROOT}/scripts/update_kicad_libraries.py"` with KiCad
+  closed (see "Set up the roots"), and add the library to `metadata.json` /
+  `repository.json` as in Step 1's merge checklist.
 - Verify with the same Step 2 checks and renders.
 
 ### Step 4 — Report (always, one per part)

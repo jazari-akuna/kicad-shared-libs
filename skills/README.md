@@ -17,7 +17,7 @@ deliberately does not repeat them and assumes you have read it.
 
 ## Before you use them
 
-Two things a fresh clone does not give you.
+Three things a fresh clone does not give you.
 
 **1. Path variables.** Nothing in these skills names a checkout location,
 because the libraries are shared and no two machines agree on where they sit.
@@ -42,7 +42,18 @@ commands want `-D` flags versus environment variables. Do that setup before
 running anything: `${KNL_ROOT}` unset does not error, it just drops every NDA
 3D model from renders and STEP exports with a warning and exit 0.
 
-**2. The pre-push hook.** `git clone` does not carry hooks. This repository has
+**2. Library registration.** KiCad's global library tables do not know these
+libraries until they are registered:
+
+    python3 "$PWD/scripts/update_kicad_libraries.py"
+
+Run it with KiCad closed, and run it **again after every new `*_KSL` library
+is created** — the tables are a static list and never pick a new library up
+on their own. It is idempotent, only touches `_KSL` entries, backs the
+tables up first, and has a `--check` drift gate; details in the skill's
+"Set up the roots" section and the tool's own docstring.
+
+**3. The pre-push hook.** `git clone` does not carry hooks. This repository has
 a public remote and a guard that refuses to push restricted material, and that
 guard is inert until you install it:
 
