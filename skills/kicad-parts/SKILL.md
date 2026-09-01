@@ -17,8 +17,11 @@ description: >-
 Make new parts for the user's shared KiCad libraries and verify them. These
 requirements are non-negotiable:
 
-- When you need a new part, start by downloading it from the JLC API using
-  the kibrary-automator project or its code.
+- When you need a part, FIRST check whether it already exists in the
+  libraries — under any of its names (see "Step 0" below). Only a confirmed
+  absence justifies downloading, and only a confirmed download failure
+  justifies drawing from scratch. The priority order is always:
+  **exists → download + verify/correct → create**.
 - Then check everything, especially:
   - The datasheet. Every part links to a **local English PDF** in the repo,
     never a URL — run `${KNL_ROOT}/scripts/datasheets.py` rather than editing links by
@@ -305,7 +308,35 @@ check or the denylist in a commit.
 
 ## Workflow for a new part
 
-### Step 1 — Download from the JLC/LCSC API (always first)
+### Step 0 — Check it doesn't already exist (always, before anything)
+
+A part is often already here under a name you didn't search for. A TDK
+"T5838" lives in Microphone_KSL as its orderable MPN `MMICT5838-00-012`;
+an agent that greps only the marketing name will launch a duplicate build
+(this happened — 2026-08-28). Search ALL of these before touching a
+download tool:
+
+```bash
+grep -ril "<mpn-or-family-stem>" "$KSL_ROOT" --include="*.kicad_sym" --include="*.kicad_mod"
+grep -ril "<mpn-or-family-stem>" "$KNL_ROOT" 2>/dev/null | grep -v scripts
+ls "$KSL_ROOT/_attic" | grep -i "<stem>"
+git -C "$KSL_ROOT" log --all --oneline -S "<stem>"
+```
+
+Use the shortest distinctive stem (`5838`, not `T5838`): orderable MPNs
+wrap marketing names in prefixes/suffixes (`MMICT5838-00-012`), and
+footprints may be named after a sibling part sharing the package.
+
+- **Found live in a library** → do NOT re-create. Verify it against the
+  Step 2 checklist (datasheet local + English + right document, footprint
+  vs land pattern, 3D offsets/seating, pin/pad parity) and fix defects in
+  place. Report "existing part verified" with any fixes.
+- **Found only in `_attic/` or git history** → treat as a lead, not a part:
+  read it, salvage what is correct, and rebuild properly into the live
+  library.
+- **Confirmed absent** → proceed to Step 1.
+
+### Step 1 — Download from the JLC/LCSC API (before any from-scratch work)
 
 Use kibrary-automator. Two ways, detailed in
 [kibrary-automator.md](kibrary-automator.md):
@@ -480,6 +511,13 @@ hook that refuses publication, which must not happen.
   and flag the change prominently in the report.
 
 ### Step 3 — Part not available from LCSC/JLC or online
+
+Creation is the LAST resort, not a shortcut: exhaust Step 0 (already
+exists?) and Step 1 (JLC/EasyEDA download — and when JLC has nothing, other
+CAD sources such as the vendor's own site, SnapEDA or Ultra Librarian are
+acceptable inputs, subject to exactly the same Step 2 verify-and-correct
+discipline; treat third-party CAD as guilty until rendered and compared to
+the datasheet) before drawing anything by hand.
 
 Create it from the datasheet:
 

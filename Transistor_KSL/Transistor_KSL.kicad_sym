@@ -264,19 +264,21 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "Q?"
-			(at 0 1.27 0)
+			(at 6.985 1.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "AO3400A"
-			(at 0 -2.54 0)
+			(at 6.985 -1.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Transistor_KSL:SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR"

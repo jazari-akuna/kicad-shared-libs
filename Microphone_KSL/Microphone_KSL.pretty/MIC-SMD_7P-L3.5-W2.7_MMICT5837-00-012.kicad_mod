@@ -27,7 +27,7 @@
 			)
 		)
 	)
-	(property "Datasheet" "https://invensense.tdk.com/download-pdf/t5838-datasheet/"
+	(property "Datasheet" "${KSL_ROOT}/datasheets/MMICT5838-00-012.pdf"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
