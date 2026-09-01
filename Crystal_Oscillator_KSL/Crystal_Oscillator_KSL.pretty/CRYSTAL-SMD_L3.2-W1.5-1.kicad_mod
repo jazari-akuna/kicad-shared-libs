@@ -1,0 +1,176 @@
+(footprint "CRYSTAL-SMD_L3.2-W1.5-1"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "CRYSTAL-SMD_L3.2-W1.5-1 footprint")
+	(tags "CRYSTAL-SMD_L3.2-W1.5-1 footprint C6554955")
+	(property "Reference" "REF**"
+		(at 0 -3.078613 0)
+		(layer "F.SilkS")
+		(uuid "4f7155b5-fb80-4ac3-8714-6f963abc1604")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "CRYSTAL-SMD_L3.2-W1.5-1"
+		(at 0 3.078613 0)
+		(layer "F.Fab")
+		(uuid "df76f899-a1c2-4278-afef-0a68a48d9568")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5db730e0-76c3-4a19-8bea-3e535cc2e2dc")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b8295059-8315-416f-972b-d89792dae49e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.0286 -1.078613)
+		(end 2.0286 -1.078613)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ff05aac0-ce69-4afe-8231-8929acc2de15")
+	)
+	(fp_line
+		(start -2.0286 1.078613)
+		(end -2.0286 -1.078613)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d7ddc7e3-c8c2-4c02-9c2a-8c0af4477783")
+	)
+	(fp_line
+		(start 2.0286 -1.078613)
+		(end 2.0286 1.078613)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "18670264-2455-40ee-a821-4640a6c709dd")
+	)
+	(fp_line
+		(start 2.0286 1.078613)
+		(end -2.0286 1.078613)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "adf3cebf-b218-4e93-8734-8dc55c95db81")
+	)
+	(fp_circle
+		(center -1.599848 0.750191)
+		(end -1.569876 0.750191)
+		(stroke
+			(width 0.059995)
+			(type solid)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "5a28abe9-44b2-4089-ae9b-74083eb9154b")
+	)
+	(fp_poly
+		(pts
+			(xy -1.6 0.750013) (xy -1.6 -0.750013) (xy 1.6 -0.750013) (xy 1.6 0.750013)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill yes)
+		(layer "Cmts.User")
+		(uuid "147f2cab-155a-4f59-88a2-a278fce75aa6")
+	)
+	(fp_poly
+		(pts
+			(xy -1.450089 -0.650013) (xy -0.850089 -0.650013) (xy -0.850089 0.650013) (xy -1.450089 0.650013)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill yes)
+		(layer "Cmts.User")
+		(uuid "7e68e538-f4c7-4a65-ba53-087975283ca8")
+	)
+	(fp_poly
+		(pts
+			(xy 0.850089 -0.650013) (xy 1.450089 -0.650013) (xy 1.450089 0.650013) (xy 0.850089 0.650013)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill yes)
+		(layer "Cmts.User")
+		(uuid "2d8fa6cb-8b08-45c2-beb3-a64296214025")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "49f26ca8-98aa-4590-84c3-180534ea4379")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.274981 0.000127)
+		(size 1.050013 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "b06992c7-6763-4fd6-8742-340f03cff924")
+	)
+	(pad "2" smd rect
+		(at 1.27493 0.000127)
+		(size 1.050013 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "dc362908-3904-4156-9d69-444ccb8bddb5")
+	)
+	(embedded_fonts no)
+	(model "${KSL_ROOT}/Crystal_Oscillator_KSL/Crystal_Oscillator_KSL.3dshapes/CRYSTAL-SMD_L3.2-W1.5-1.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
