@@ -8348,4 +8348,232 @@
 		)
 		(embedded_fonts no)
 	)
+
+  (symbol "FPC-05F-12PH20"   (in_bom yes) (on_board yes)
+    (property "Reference" "J?" (id 0) (at 0 1.27 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "FPC-05F-12PH20" (id 1) (at 0 -2.54 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_KSL:FPC-SMD_12P-P0.50_FPC-05F-12PH20" (id 2) (at 0 -10.16 0)
+      (effects (font (size 1.27 1.27) italic) hide)
+    )
+    (property "Datasheet" "${KSL_ROOT}/datasheets/FPC-05F-12PH20.pdf" (id 3) (at -2.286 0.127 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (property "ki_keywords" "C2856799" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C2856799" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Description" "XUNPU FPC-05F FFC/FPC ZIF connector, 12 position 0.5mm pitch, bottom contact, hinged lid (flip lock), H2.0mm, SMD right angle, shell pads 13/14, 50V 0.5A, -25~+85C" (id 6) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    
+    (symbol "FPC-05F-12PH20_0_1"
+      (pin passive line
+        (at 2.54 17.78 270)
+        (length 2.54000508001016)
+        (name "14" (effects (font (size 1 1))))
+        (number "14" (effects (font (size 1 1))))
+      )
+      (pin passive line
+        (at 2.54 -20.32 90)
+        (length 2.54000508001016)
+        (name "13" (effects (font (size 1 1))))
+        (number "13" (effects (font (size 1 1))))
+      )
+      (pin passive line
+        (at -7.62 -15.24 0)
+        (length 2.54)
+        (name "12" (effects (font (size 1 1))))
+        (number "12" (effects (font (size 1 1))))
+      )
+      (pin passive line
+        (at -7.62 -12.7 0)
+        (length 2.54)
+        (name "11" (effects (font (size 1 1))))
+        (number "11" (effects (font (size 1 1))))
+      )
+      (pin passive line
+        (at -7.62 -10.16 0)
+        (length 2.54)
+        (name "10" (effects (font (size 1 1))))
+        (number "10" (effects (font (size 1 1))))
+      )
+      (pin passive line
+        (at -7.62 -7.62 0)
+        (length 2.54)
+        (name "9" (effects (font (size 1 1))))
+        (number "9" (effects (font (size 1 1))))
+      )
+      (pin passive line
+        (at -7.62 -5.08 0)
+        (length 2.54)
+        (name "8" (effects (font (size 1 1))))
+        (number "8" (effects (font (size 1 1))))
+      )
+      (pin passive line
+        (at -7.62 -2.54 0)
+        (length 2.54)
+        (name "7" (effects (font (size 1 1))))
+        (number "7" (effects (font (size 1 1))))
+      )
+      (pin passive line
+        (at -7.62 -0.0 0)
+        (length 2.54)
+        (name "6" (effects (font (size 1 1))))
+        (number "6" (effects (font (size 1 1))))
+      )
+      (pin passive line
+        (at -7.62 2.54 0)
+        (length 2.54)
+        (name "5" (effects (font (size 1 1))))
+        (number "5" (effects (font (size 1 1))))
+      )
+      (pin passive line
+        (at -7.62 5.08 0)
+        (length 2.54)
+        (name "4" (effects (font (size 1 1))))
+        (number "4" (effects (font (size 1 1))))
+      )
+      (pin passive line
+        (at -7.62 7.62 0)
+        (length 2.54)
+        (name "3" (effects (font (size 1 1))))
+        (number "3" (effects (font (size 1 1))))
+      )
+      (pin passive line
+        (at -7.62 10.16 0)
+        (length 2.54)
+        (name "2" (effects (font (size 1 1))))
+        (number "2" (effects (font (size 1 1))))
+      )
+      (pin passive line
+        (at -7.62 12.7 0)
+        (length 2.54)
+        (name "1" (effects (font (size 1 1))))
+        (number "1" (effects (font (size 1 1))))
+      )
+      (circle
+        (center -3.81000762001524 13.97002794005588)
+        (radius 0.381000762001524)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type background))
+      )
+      (rectangle
+        (start -5.08001016002032 15.24003048006096)
+        (end 5.08001016002032 -17.78003556007112)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type background))
+      )
+    )
+  )
+
+	(symbol "1746854-1"
+		(pin_names
+			(offset 1.016)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J?"
+			(at -7.62 3.302 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "1746854-1"
+			(at -7.62 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Connector_KSL:TE_1746854-1"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "${KSL_ROOT}/datasheets/1746854-1.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "PCB shield finger / spring contact, BeCu gold plated, TE 2411 anti-overstress; pads SH1/SH2 are two solder lands of a single electrical shield contact"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "1746854-1_0_0"
+			(rectangle
+				(start -7.62 -5.08)
+				(end 7.62 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin passive line
+				(at 12.7 0 180)
+				(length 5.08)
+				(name "SHIELD"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "SH1"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 -2.54 180)
+				(length 5.08)
+				(name "SHIELD__1"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "SH2"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 )
