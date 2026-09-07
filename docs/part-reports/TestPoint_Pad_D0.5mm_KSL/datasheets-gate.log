@@ -1,0 +1,3 @@
+verify: 230 OK, 22 generic (exempt), 0 no published datasheet (reviewed), 2 problem(s)
+  Capacitor_KSL/Capacitor_KSL.kicad_sym :: GRM155R61C475ME15D  no Datasheet link
+  Capacitor_KSL/Capacitor_KSL.kicad_sym :: GRM188R61A226ME15D  no Datasheet link
