@@ -63,6 +63,36 @@ automatic reason to stop useful work.
   the remaining validation needed for its intended use without withholding the
   provisional deliverable merely because a source is missing.
 
+## Source facts and derived artifacts
+
+Apply these checks when importing/building parts, recording ratings or presenting
+dimensional evidence. Reuse the part report or generator inputs; a separate data
+system is not required for a simple part.
+
+- Bind critical facts to the exact orderable variant and source revision/page/
+  table. Preserve applicable conditions and units in descriptions/reports:
+  package, contact count, mating part, wire size or operating mode may change a
+  family rating. Distinguish typical, guaranteed and absolute-maximum values.
+- Label geometry by what it represents: component body/terminals, unmated or
+  mated assembly, recommended copper lands, courtyard or assembly clearance.
+  Record frame/view, dimension order, tolerances and source-backed versus
+  assumed values. Do not substitute a body envelope for a land pattern or
+  present a sibling variant's dimensions as verified for this part.
+- Where practical, derive symbol, footprint, model and repeated report values
+  from shared, source-referenced inputs. Keep supplied dimensions separate from
+  derived geometry and illustrative detail. Matching generated artifacts prove
+  consistency, not source accuracy; cross-check critical dimensions and pin
+  identities against the original drawing/table where available.
+- Identify simplified models and their intended use. A nominal envelope and
+  correct seating do not verify mating engagement, insertion/extraction travel
+  or assembled product fit. For dimensional comparisons use orthographic views
+  at a verified common scale; label independently zoomed renders as illustrations.
+- When a discrepancy is reported, verify the source, exact variant, units and
+  rendered state before editing canonical CAD. Correct demonstrated defects;
+  if the problem is labeling or comparison context, correct that evidence and
+  its generator without inventing a geometry defect. Retain source gaps and
+  assumptions under the provisional-work policy above.
+
 ## Key paths
 
 Two path variables address the two repositories, and **everything in this skill
@@ -585,6 +615,7 @@ Write a short markdown report (in the chat, plus save renders under
 ```markdown
 ## <MPN> (<LCSC#>) → <Library>_KSL
 - Source: <CAD/drawing/measurement references; sources searched and unavailable/not found/insufficient details>
+- Basis: <exact variant; critical rating conditions; geometry/state/frame; source page/table and assumptions>
 - Datasheet: <actual local property value, or missing/unavailable; language and limitations>
 - Status: <checked details; provisional assumptions; missing items and validation still needed>
 - Checks: <pass/fail/not checked per applicable check; reasons for unavailable checks>

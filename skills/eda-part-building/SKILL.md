@@ -30,8 +30,12 @@ agent's skills directory.
 2. **Build ONE shared pad-map data structure** — pad name → grid position →
    function/electrical type — and generate the footprint, symbol, and STEP
    model programmatically from it where practical. Record the evidence or
-   assumption for uncertain entries. A shared map helps keep the artifacts
-   consistent; it does not prove an assumed pinout or dimension is correct.
+   assumption for uncertain entries. Keep body, terminal, land-pattern and
+   mated/clearance dimensions distinct in those inputs, with their source views
+   and units; see **Source facts and derived artifacts** in `kicad-parts`.
+   A shared map helps keep the artifacts consistent; verify critical inputs
+   against the original drawing/table separately, since the same wrong input
+   can produce a mutually consistent symbol, footprint, model and report.
 3. Generate and check the applicable artifacts, correcting observed defects.
    Report what is verified, assumed, missing or not checked; lack of a source
    need not prevent delivery of a useful draft.
