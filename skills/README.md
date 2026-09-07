@@ -9,8 +9,8 @@ both are in the same history.
 
 | Skill | Covers |
 |-------|--------|
-| `kicad-parts/` | Library conventions: downloading from LCSC/JLC, naming, symbol properties, footprint and 3D verification, datasheet policy, restricted-part handling, and the three gates that check all of it |
-| `eda-part-building/` | Building a part from scratch off a datasheet when it is not available anywhere: land patterns, FreeCAD/OCC STEP generation, symbol and fab-text legibility, the orientation trap |
+| `kicad-parts/` | Entry point for library conventions, part search, source-gap alerts and provisional work, footprint/model verification, datasheets, restricted-part handling and applicable checks |
+| `eda-part-building/` | Construction from a datasheet or other available evidence when usable CAD is not found: land patterns, FreeCAD/OCC STEP generation, symbol/fab-text legibility and orientation |
 
 Read `kicad-parts/` first. It owns the conventions; `eda-part-building/`
 deliberately does not repeat them and assumes you have read it.

@@ -1,16 +1,16 @@
 ---
 name: eda-part-building
-description: Build KiCad parts (symbol, footprint, 3D STEP model) from scratch from a datasheet when a part is not available from LCSC/JLC or online CAD libraries. Use when drawing a footprint from a datasheet land pattern, generating a 3D model with FreeCAD or OCC, sizing symbol bodies, pin stubs and pin-number text so they stay legible on a sheet, or verifying footprint/symbol/3D alignment and orientation. Complements the kicad-parts skill (KSL library conventions).
+description: Build KiCad parts (symbol, footprint, 3D STEP model) from a datasheet or other available evidence when usable CAD is not available. Use for footprint construction, provisional parts with disclosed assumptions, FreeCAD/OCC models, legible symbols and footprint/symbol/model alignment. Complements kicad-parts, which owns KSL conventions and source-gap handling.
 ---
 
 # Building KiCad Parts from Scratch
 
-Lessons from building a part (footprint + symbol + STEP model) purely from a
-datasheet. All commands verified on this machine (macOS, KiCad 10.0.2,
-FreeCAD 1.1.1). The **kicad-parts** skill (`${KSL_ROOT}/skills/kicad-parts/`)
-owns the KSL library conventions, file naming, symbol properties, datasheet
-handling, and render/verification commands — read it alongside this one;
-nothing here repeats it.
+Build a part from a datasheet where possible, or use other available evidence
+with explicit assumptions. Commands below were tested on macOS, KiCad 10.0.2
+and FreeCAD 1.1.1. Read [kicad-parts](../kicad-parts/SKILL.md) alongside this
+skill: it owns library conventions, datasheets and verification, including the
+**Evidence and provisional parts** policy. Missing sources should trigger a
+clear user alert and useful provisional work, not an automatic stop.
 
 Both skills live in the `kicad-shared-libs` repo, so edit them there and commit
 the change — see `${KSL_ROOT}/skills/README.md` for how they are wired into an
@@ -18,7 +18,9 @@ agent's skills directory.
 
 ## Workflow order
 
-1. **Extract the package drawing and pin table from the datasheet PDF:**
+1. **Collect the available package and pin information.** Prefer the datasheet
+   drawing and pin table; if missing or insufficient, disclose the gap and use
+   the entry skill's provisional-work policy.
    - Pin tables: `pdftotext -layout ds.pdf -` (plain `pdftotext` scrambles
      columns).
    - Mechanical/land-pattern drawings: rarely survive pdftotext. Render the
@@ -27,10 +29,12 @@ agent's skills directory.
      the PNGs.
 2. **Build ONE shared pad-map data structure** — pad name → grid position →
    function/electrical type — and generate the footprint, symbol, and STEP
-   model programmatically from it. A single source of truth means the three
-   artifacts cannot drift apart (pad counts, positions, missing pads).
-3. Generate, then run the verification loop (below) until every render is
-   actually correct.
+   model programmatically from it where practical. Record the evidence or
+   assumption for uncertain entries. A shared map helps keep the artifacts
+   consistent; it does not prove an assumed pinout or dimension is correct.
+3. Generate and check the applicable artifacts, correcting observed defects.
+   Report what is verified, assumed, missing or not checked; lack of a source
+   need not prevent delivery of a useful draft.
 
 ## The orientation trap (the big one)
 
@@ -49,14 +53,16 @@ that looks plausible in isolation.
   "recommended solder pattern" / "land pattern" page, it is drawn as PCB top
   view and is **authoritative** — use it, and check where pin 1/A1 lands.
 
-After generating, cross-check that pin 1 is in the SAME corner in all of:
+After generating, cross-check identifiable pin-1 features across:
 
 - footprint pads (pad "1"/"A1" position in the `.kicad_mod`),
 - silkscreen pin-1 dot,
 - fab-layer pin-1 dot,
 - the STEP model's pin-1 feature (notch/dot/chamfer).
 
-Render and LOOK. Coordinates that "seem right" are not verification.
+Render and LOOK. Where polarity or orientation cannot be verified from a
+source, alert the user and mark the chosen convention as provisional; do not
+present a generated marker as independent evidence for that choice.
 
 ## Fab/silk text placement (tiny packages especially)
 
@@ -107,7 +113,7 @@ Model spec (what KiCad expects for a seated model with zero offsets):
 - Z=0 is the board surface; body seated at Z=0.
 - Pads flush/coplanar at Z=0 — never protruding below (renders sunken).
 - Bounding box centered on the origin in X/Y.
-- Real body height from the datasheet side view.
+- Body height from the datasheet or other available evidence; label estimates.
 
 ### Colored STEP (preferred)
 
@@ -212,7 +218,9 @@ SVG → PNG, symbol SVG → PNG, one-footprint test board +
 when the part is public: a missing root drops the model silently, with a
 warning but exit 0.
 
-Two things bite here:
+Run the views applicable to the available artifacts. If a model or source is
+missing, say which checks could not be completed and continue with the useful
+ones. Two things bite here:
 
 - The test board embeds a **COPY** of the footprint (including the model
   block). Rebuild the board with the pcbnew snippet after **every**
@@ -257,12 +265,10 @@ Two things bite here:
 - For LGA/BGA, pin number = pad name (e.g. `"A1"`).
 - Electrical types from the pin table: `power_in` for supplies, `passive`
   for DNC/ESD pins (avoids ERC noise from unconnected `unspecified` pins).
-- **Symbol pin set must equal footprint pad set exactly.** Diff them
-  programmatically:
-
-```python
-import re
-pads = set(re.findall(r'\(pad "([^"]+)"', open("fp.kicad_mod").read()))
-pins = set(re.findall(r'\(number "([^"]+)"', open("lib.kicad_sym").read()))
-print("fp-only:", pads - pins, "sym-only:", pins - pads)  # both must be empty
-```
+- **Compare electrical pin identities with numbered copper pads.** Scope the
+  comparison to the selected symbol, including its units/inheritance, using
+  KiCad's API or a scoped S-expression parser. Repeated copper lands may share
+  one pad number; drawing graphics, blank pad numbers, paste-only pads and NPTH
+  holes do not satisfy an electrical pin. Report missing/extra identities and
+  explain intentional non-electrical features. Preserve unresolved findings on
+  a provisional part rather than changing numbers merely to make a check pass.

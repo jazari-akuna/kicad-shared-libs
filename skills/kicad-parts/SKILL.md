@@ -14,26 +14,54 @@ description: >-
 
 # KiCad Parts (KSL Libraries)
 
-Make new parts for the user's shared KiCad libraries and verify them. These
-requirements are non-negotiable:
+Create and improve parts for the user's shared KiCad libraries. Aim for a
+complete symbol, footprint and model using the best evidence available:
 
 - When you need a part, FIRST check whether it already exists in the
   libraries — under any of its names (see "Step 0" below). Only a confirmed
   absence justifies downloading, and only a confirmed download failure
   justifies drawing from scratch. The priority order is always:
   **exists → download + verify/correct → create**.
-- Then check everything, especially:
-  - The datasheet. Every part links to a **local English PDF** in the repo,
-    never a URL — run `${KNL_ROOT}/scripts/datasheets.py` rather than editing links by
-    hand, and check the document is for the right part, not just the right
-    language. See "Datasheets are local files" below.
+- Check the applicable details, especially:
+  - The datasheet. Prefer a **local English PDF** for the correct part when
+    obtainable; use `${KNL_ROOT}/scripts/datasheets.py` when available. If no
+    suitable source is found, follow the provisional-work policy below.
   - If the 3D model has the correct offsets to sit on top of the footprint
     in X, Y, and Z.
   - If the footprint and symbol are correct. Be very careful with this and
     flag it with visuals if you make modifications.
-- If the part is not available via the LCSC/JLC API or online, create it
-  from the datasheet.
+- If usable CAD is not available, use the companion
+  [eda-part-building](../eda-part-building/SKILL.md) skill with the datasheet or
+  other available evidence.
 - Make a small report of what was done, with visuals, for each new part.
+
+## Evidence and provisional parts
+
+Where possible, provide a linked symbol and footprint with matching numbered
+copper pads, source-backed geometry, verified polarity/orientation and consistent
+model placement. Missing sources are a reason to **alert the user**, not an
+automatic reason to stop useful work.
+
+- Make a reasonable search of supplied files, existing libraries, manufacturer
+  information and relevant CAD providers. Distinguish **not found**, **unavailable**
+  and **found but insufficient**; a failed search does not prove no source exists.
+- Tell the user which part/detail lacks evidence, where you looked, what remains
+  unverified and what assumption or fallback you will use. Include this in the
+  part report as well as the response; do not bury it only in a tool log.
+- Continue the requested work provisionally where reasonable, using supplied
+  CAD, measurements, standard packages or documented engineering estimates.
+  Mark assumed dimensions, pin assignments or orientation as provisional in the
+  part description/report. Preserve useful partial work and name missing items.
+  Ask only when a material choice cannot reasonably be inferred; missing source
+  material alone does not require confirmation or an exhaustive search.
+- Check what can be checked directly: library resolution, actual copper-pad
+  numbering, symbol/cache consistency, geometry and renders. Drawing-layer
+  graphics do not provide electrical connections. Report missing copper or
+  mismatched pins as defects even when a provisional part is still useful.
+- Separate **checked**, **assumed**, **not checked** and **missing**. An internally
+  consistent draft is not manufacturer-verified or production-qualified. State
+  the remaining validation needed for its intended use without withholding the
+  provisional deliverable merely because a source is missing.
 
 ## Key paths
 
@@ -167,8 +195,8 @@ Audio_KSL/
 
 - Symbols are named after the full MPN (`PCM5102APWR`) and carry properties:
   `Reference` (`U?` — always ends in `?`), `Value` (= MPN), `Footprint`,
-  `Datasheet` (a path under `${KSL_ROOT}/datasheets/`, **not** a URL — see
-  below), `Description`, `LCSC` (e.g. `C107671`), `ki_keywords` (contains the
+  `Datasheet` (an actual local path when available; otherwise disclose the
+  source gap — see below), `Description`, `LCSC` (e.g. `C107671`), `ki_keywords` (contains the
   LCSC code).
 - Symbol → footprint reference is `LibraryName:FootprintName`, e.g.
   `"Footprint" "Audio_KSL:TSSOP-20_L6.5-W4.4-P0.65-LS6.4-BL"`.
@@ -260,11 +288,15 @@ which one you did in the report.
 
 ## The three gates
 
-The repo checks itself. Run all three before you claim a part is done; each
-exits 0 clean, 1 on violations, 2 when it could not run at all.
+For part-artifact changes, run these checks when the tools are available and
+report their actual results. An unavailable dependency is **not checked**; a
+missing-source finding can remain open on a provisional deliverable. Do not
+call an unverified part fully verified or alter checks to manufacture a pass.
+Documentation-only skill edits do not require this hardware suite.
+Publication restrictions and pre-push protections still apply.
 
 ```bash
-${KNL_ROOT}/scripts/datasheets.py verify   # every non-generic symbol resolves to an English PDF on disk
+${KNL_ROOT}/scripts/datasheets.py verify   # local datasheet coverage and recorded exceptions
 ${KNL_ROOT}/scripts/check_models.py        # every 3D model is placed where its footprint says
 ${KNL_ROOT}/scripts/check_nda.py --scope all
 ```
@@ -330,7 +362,7 @@ footprints may be named after a sibling part sharing the package.
 - **Found live in a library** → do NOT re-create. Verify it against the
   Step 2 checklist (datasheet local + English + right document, footprint
   vs land pattern, 3D offsets/seating, pin/pad parity) and fix defects in
-  place. Report "existing part verified" with any fixes.
+  place. Report what was verified, corrected or left provisional.
 - **Found only in `_attic/` or git history** → treat as a lead, not a part:
   read it, salvage what is correct, and rebuild properly into the live
   library.
@@ -351,9 +383,9 @@ Use kibrary-automator. Two ways, detailed in
 
 Find the LCSC part number first if you only have an MPN (search LCSC/JLCPCB).
 
-Either route leaves the `Datasheet` property as a URL at best. That is not
-the finished state — Step 2 turns it into a local PDF under
-`${KSL_ROOT}/datasheets/` and a `${KSL_ROOT}` link, always.
+Either route may leave the `Datasheet` property as a URL or empty. Step 2
+stores an obtainable PDF locally and links it through the correct root. If
+it cannot be obtained, disclose that gap and continue provisionally.
 
 **Did this create a NEW library** (a `<Lib>_KSL.kicad_sym` or `.pretty` that
 did not exist before)? Then run
@@ -364,11 +396,14 @@ absolute-path URIs, which the tool normalises to the `${KSL_ROOT}` form.
 
 ### Step 2 — Check everything
 
-**Datasheets are local files (must be an English PDF).**
+**Datasheets: local English PDF where obtainable.**
 
 After Step 1 the new symbol's `Datasheet` property holds whatever the LCSC
-API returned — usually a bare URL, sometimes nothing. Both are defects to fix
-now, not ship. For EVERY part you add, do this, in order:
+API returned — usually a bare URL, sometimes nothing. Try to obtain the correct
+document and follow the storage steps below. If it is unavailable or not found,
+leave a truthful missing-source status rather than a link to a nonexistent PDF
+or an unrelated document. Record source URLs/searches in the report; this gap
+does not prevent a clearly marked provisional part.
 
 1. **Download the datasheet PDF into `${KSL_ROOT}/datasheets/`**
    (`${KNL_ROOT}/datasheets/` if the document is restricted — Tier 1 above,
@@ -389,8 +424,9 @@ now, not ship. For EVERY part you add, do this, in order:
    document) — the path-variable spelling, verbatim. Never an absolute
    machine-local path, never a bare URL, never a project-relative path.
    `datasheets.py relink` writes this form; prefer it over hand-editing.
-5. **Run `${KNL_ROOT}/scripts/datasheets.py verify` and get exit 0** before
-   calling the part done — it is one of the three gates.
+5. **Run `${KNL_ROOT}/scripts/datasheets.py verify` when available** and report
+   its result, including unresolved coverage. Do not classify a real part as
+   generic or claim that no datasheet is published merely to silence a finding.
 
 Beyond the single-part flow, `datasheets.py` is the source of truth for the
 whole pipeline — do not hand-roll any of it:
@@ -450,7 +486,9 @@ hook that refuses publication, which must not happen.
 4. **Bilingual is acceptable** when a competent English-only engineer can use
    the document: dimensions, pin assignments and ratings all legible in
    English. Many LCSC connector/switch drawings are like this. Chinese
-   *alongside* complete English is fine; Chinese-only substance is not.
+   *alongside* complete English is fine. If only another language is available,
+   retain it as evidence, disclose the limitation and translate the relevant
+   details where useful; do not claim an English verification pass.
 5. **Check it is the right document, not just the right language.** The
    script flags PDFs whose MPN never appears in the text, and that catches
    real defects that language checks never would: `2N7002` linked to a generic
@@ -458,10 +496,10 @@ hook that refuses publication, which must not happen.
    linked to a different maker's part entirely. Expect false positives on
    family datasheets (`PZ254V-11-XX` covering the `-04P`), which is why a
    human confirms rather than the script auto-replacing.
-6. **No English edition anywhere?** Translate as a last resort, and keep the
-   original: append the source pages after the translation so the dimensioned
-   drawings survive and can be cross-checked, and mark the file plainly as an
-   unofficial machine translation with its source and date.
+6. **No English edition found?** Use the available source provisionally and
+   translate relevant sections as needed. Preserve the original pages so the
+   drawings can be cross-checked; label any translation as unofficial with its
+   source and date. Disclose any technical details you could not interpret.
 7. **Restricted documents never enter KSL** — it may be published. They go in
    `${KNL_ROOT}/datasheets/`, and the filename goes in this repo's
    `.gitignore`. Test before deciding: render the first pages and grep for
@@ -476,11 +514,11 @@ hook that refuses publication, which must not happen.
 
    When genuinely unsure, treat it as restricted. Adding a document to the
    private repo is reversible; a push is not.
-8. **Coverage: every part with a public datasheet must have one** —
-   connectors, switches and passives included, not just ICs. The only exempt
-   symbols are generic drafting ones with no maker at all (`R`, `C`,
-   `TestPoint`, `Fiducial`, `MountingHole`); `verify` counts these separately
-   so an empty field on a real part cannot hide among them.
+8. **Coverage:** seek datasheets for connectors, switches and passives too,
+   not just ICs. Generic drafting symbols (`R`, `C`, `TestPoint`, `Fiducial`,
+   `MountingHole`) are different from real parts with missing sources. Report
+   those states separately, including any supported recorded exception; an empty
+   field on a real part must remain visible as a source gap.
 
 **3D model offsets (X, Y, Z):**
 
@@ -502,9 +540,10 @@ hook that refuses publication, which must not happen.
 
 **Footprint and symbol correctness (be very careful):**
 
-- Compare pad numbering/geometry and the symbol pin list against the
-  datasheet: pad count, pitch, pad sizes, pin-1 marker location, exposed
-  pad, pin names/numbers/electrical types on the symbol.
+- Compare pad numbering/geometry and the symbol pin list against available
+  sources where possible: pad count, pitch, pad sizes, pin-1 marker location,
+  exposed pad, pin names/numbers/electrical types. Identify assumptions and
+  unverified details under "Evidence and provisional parts" above.
 - Render SVGs (below) and *look* at them; compare against the datasheet
   land pattern drawing.
 - If you modify a footprint or symbol, render **before and after** images
@@ -512,14 +551,16 @@ hook that refuses publication, which must not happen.
 
 ### Step 3 — Part not available from LCSC/JLC or online
 
-Creation is the LAST resort, not a shortcut: exhaust Step 0 (already
-exists?) and Step 1 (JLC/EasyEDA download — and when JLC has nothing, other
+Prefer reuse before creation: check Step 0 (already exists?) and make a
+reasonable Step 1 search (JLC/EasyEDA download — and when JLC has nothing, other
 CAD sources such as the vendor's own site, SnapEDA or Ultra Librarian are
-acceptable inputs, subject to exactly the same Step 2 verify-and-correct
-discipline; treat third-party CAD as guilty until rendered and compared to
-the datasheet) before drawing anything by hand.
+acceptable inputs). Inspect imported CAD and compare it with authoritative
+sources where possible. Do not repeatedly search unavailable sources instead
+of producing a useful provisional part.
 
-Create it from the datasheet:
+Use [eda-part-building](../eda-part-building/SKILL.md) to create it from the
+datasheet where possible, otherwise from the best available evidence with
+explicit assumptions:
 
 - Footprint: write the `.kicad_mod` from the datasheet's recommended land
   pattern (use an existing KSL footprint as a format template; KiCad's
@@ -543,9 +584,10 @@ Write a short markdown report (in the chat, plus save renders under
 
 ```markdown
 ## <MPN> (<LCSC#>) → <Library>_KSL
-- Source: JLC API via kibrary-automator | drawn from datasheet
-- Datasheet: <final `Datasheet` property value — `${KSL_ROOT}/datasheets/<file>.pdf`, or `${KNL_ROOT}/...` if restricted> (English: yes/no→fixed)
-- Checks: footprint ✓/✗, symbol ✓/✗, 3D offsets ✓/✗ (what was wrong, what was changed)
+- Source: <CAD/drawing/measurement references; sources searched and unavailable/not found/insufficient details>
+- Datasheet: <actual local property value, or missing/unavailable; language and limitations>
+- Status: <checked details; provisional assumptions; missing items and validation still needed>
+- Checks: <pass/fail/not checked per applicable check; reasons for unavailable checks>
 - Modifications: none | list each edit — with before/after images
 ![symbol](sym.png) ![footprint](fp.png) ![3D iso](render_iso.png) ![3D front](render_front.png)
 ```
