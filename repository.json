@@ -77,6 +77,9 @@
     },
     {
       "path": "Diode_KSL/metadata.json"
+    },
+    {
+      "path": "Capacitor_KSL/metadata.json"
     }
   ]
 }
