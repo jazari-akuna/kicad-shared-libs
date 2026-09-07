@@ -1525,7 +1525,7 @@
     (property "LCSC" "C7508613" (id 5) (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    
+
     (property "Description" "Nexperia NPN resistor-equipped transistor, R1=2.2k R2=47k; SOT323; 50V 100mA; PDTC123JU-Q datasheet 2022-03-07. Application temperature/drive qualification required." (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
     (symbol "PDTC123JU-QX_0_1"
       (polyline
