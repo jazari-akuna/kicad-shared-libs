@@ -3,9 +3,9 @@
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
-	(descr "HDF-151108ZA-1 waterproof dynamic speaker/receiver, 15x11x2.5mm body. DOCUMENTATION footprint: the datasheet defines no PCB land pattern; the two solder terminals on the rear are wire-solder tabs whose positions are drawn but not dimensioned. No copper pads on purpose.")
-	(tags "speaker receiver dynamic HDF-151108ZA-1 documentation")
-	(attr smd exclude_from_pos_files)
+	(descr "INCOMPLETE ELECTRICAL FOOTPRINT: HDF-151108ZA-1, 15x11x2.5mm body preview only. Missing numbered copper pads. Supplier PDF has no dimensioned PCB land pattern or terminal polarity locations; connection method, mating plane and terminal mapping must be established before electrical use. Hand-soldering conditions do not establish wire-only or reflow mounting.")
+	(tags "speaker receiver dynamic HDF-151108ZA-1 incomplete body-preview")
+	(attr exclude_from_pos_files)
 	(property "Reference" "REF**"
 		(at 0 -8.8 0)
 		(layer "F.SilkS")
@@ -182,43 +182,13 @@
 		(fill no)
 		(layer "F.Fab")
 	)
-	(fp_rect
-		(start -2.000 -7.100)
-		(end -0.400 -6.550)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Cmts.User")
-	)
-	(fp_rect
-		(start 0.400 -7.100)
-		(end 2.000 -6.550)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Cmts.User")
-	)
-	(fp_text user "solder terminals (approx.)"
-		(at 0.000 -5.400 0)
+	(fp_text user "INCOMPLETE\nNO COPPER PADS"
+		(at 0.000 -3.800 0)
 		(layer "Cmts.User")
 		(effects
 			(font
 				(size 0.6 0.6)
 				(thickness 0.1)
-			)
-		)
-	)
-	(fp_text user "+"
-		(at -2.900 -6.800 0)
-		(layer "Cmts.User")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.12)
 			)
 		)
 	)

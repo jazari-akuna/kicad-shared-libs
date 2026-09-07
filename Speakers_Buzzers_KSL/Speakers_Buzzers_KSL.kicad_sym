@@ -111,7 +111,7 @@
     (property "Datasheet" "${KSL_ROOT}/datasheets/HDF-151108ZA-1.pdf" (id 3) (at -2.286 0.127 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "Description" "Waterproof dynamic speaker/receiver, 15x11x2.5mm, 8 Ohm, 1W SPK mode / 30mW RCV mode, 100Hz-10kHz, wire-solder terminals" (id 4) (at 0 0 0)
+    (property "Description" "Waterproof dynamic speaker/receiver, 15x11x2.5mm, 8 Ohm, 1W SPK mode / 30mW RCV mode, 100Hz-10kHz, hand-solderable terminals; PCB interface unqualified" (id 4) (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "ki_keywords" "speaker receiver dynamic waterproof 8ohm HDF-151108ZA-1" (id 5) (at 0 0 0)
@@ -120,27 +120,24 @@
     (symbol "HDF-151108ZA-1_0_1"
       (polyline
         (pts
-          (xy -2.54 1.27)
-          (xy 0 1.27)
-          (xy 0 -1.27)
-          (xy -2.54 -1.27)
-          (xy -2.54 1.27)
+          (xy -2.54 2.54)
+          (xy 0 2.54)
+          (xy 0 -2.54)
+          (xy -2.54 -2.54)
+          (xy -2.54 2.54)
         )
         (stroke (width 0.254) (type default) (color 0 0 0 0))
         (fill (type none))
       )
       (polyline
         (pts
-          (xy 0 1.27)
+          (xy 0 2.54)
           (xy 2.54 3.81)
           (xy 2.54 -3.81)
-          (xy 0 -1.27)
+          (xy 0 -2.54)
         )
         (stroke (width 0.254) (type default) (color 0 0 0 0))
         (fill (type none))
-      )
-      (text "+" (at -1.905 2.032 0)
-        (effects (font (size 1.016 1.016)))
       )
       (pin passive line
         (at -5.08 1.27 0)
