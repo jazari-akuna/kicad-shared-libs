@@ -1,0 +1,26 @@
+kicad-shared-libs: 176 footprints
+
+units      64 legacy / 112 modern footprints; 55 carry a legacy (at ...) node, 55 of them below 0.005 mm (rounding noise)
+transform  165 footprints reference a 3D model
+seating    slicing 165 models at z = -0.3, -0.8 mm (this takes a minute)
+seating    148/165 models clear the board cleanly; 17 known-bad (baselined in ksl_model_seating_backlog.txt), 0 new
+           known-bad, not failing the build — work these off:
+             Connector_KSL/Connector_KSL.pretty/AUDIO-TH_XKB_PJ-320A.kicad_mod
+             Connector_KSL/Connector_KSL.pretty/CONN-SMD_2P-P2.54_HX-2.54-2P-LT.kicad_mod
+             Connector_KSL/Connector_KSL.pretty/HDR-TH_4P-P2.54-V-M.kicad_mod
+             Connector_KSL/Connector_KSL.pretty/IDC-TH_10P-P2.54_C5665.kicad_mod
+             Connector_KSL/Connector_KSL.pretty/TF-SMD_TF-PUSH.kicad_mod
+             Connector_KSL/Connector_KSL.pretty/TYPE-C-SMD_TYPE-C-24P-QCHT.kicad_mod
+             Connector_KSL/Connector_KSL.pretty/TYPE-C-SMD_TYPE-C-31-D-05.kicad_mod
+             DC-DC_converter_KSL/DC-DC_converter_KSL.pretty/TSOT-26_L2.9-W1.6-P0.95-LS2.8-BL.kicad_mod
+             Diode_KSL/Diode_KSL.pretty/SOD-123_L2.7-W1.6-LS3.7-RD.kicad_mod
+             Fastener_KSL/Fastener_KSL.pretty/SMD-1_BD5.5-D4.0.kicad_mod
+             LED_Driver_KSL/LED_Driver_KSL.pretty/SOP-8_L4.9-W3.9-P1.27-LS6.0-BL.kicad_mod
+             LED_KSL/LED_KSL.pretty/LED-SMD_L3.2-W2.8-LS5.9-RD-EH.kicad_mod
+             MCU_KSL/MCU_KSL.pretty/SOP-8_L4.9-W3.9-P1.27-LS6.0-BL.kicad_mod
+             Power_Management_IC_KSL/Power_Management_IC_KSL.pretty/ESOP-8_L4.9-W3.9-P1.27-LS6.0-BL-EP3.1.kicad_mod
+             Switch_KSL/Switch_KSL.pretty/SW-SMD_SPVN310101.kicad_mod
+             Switch_KSL/Switch_KSL.pretty/SW-TH_SS-12D11G5R.kicad_mod
+             Switch_KSL/Switch_KSL.pretty/SW-TH_XKB_SS-12D11L7.kicad_mod
+
+no model-placement violations

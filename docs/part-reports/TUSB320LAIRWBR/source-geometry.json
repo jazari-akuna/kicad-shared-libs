@@ -1,0 +1,141 @@
+{
+  "source": "TI SLLSEQ8D pp3,35\u201336; RWB0012A drawing 4221631/B 03/2015",
+  "frame": "PCB top; Y downward; package drawing bottom view must be reflected",
+  "body_mm": [
+    1.6,
+    1.6,
+    0.4
+  ],
+  "body_xy_minmax_mm": [
+    1.55,
+    1.65
+  ],
+  "height_max_mm": 0.4,
+  "pitch_mm": 0.4,
+  "pads": {
+    "1": {
+      "x": -0.65,
+      "y": -0.2,
+      "w": 0.7,
+      "h": 0.2
+    },
+    "2": {
+      "x": -0.65,
+      "y": 0.2,
+      "w": 0.7,
+      "h": 0.2
+    },
+    "7": {
+      "x": 0.65,
+      "y": 0.2,
+      "w": 0.7,
+      "h": 0.2
+    },
+    "8": {
+      "x": 0.65,
+      "y": -0.2,
+      "w": 0.7,
+      "h": 0.2
+    },
+    "12": {
+      "x": -0.6,
+      "y": -0.75,
+      "w": 0.2,
+      "h": 0.5
+    },
+    "11": {
+      "x": -0.2,
+      "y": -0.75,
+      "w": 0.2,
+      "h": 0.5
+    },
+    "10": {
+      "x": 0.2,
+      "y": -0.75,
+      "w": 0.2,
+      "h": 0.5
+    },
+    "9": {
+      "x": 0.6,
+      "y": -0.75,
+      "w": 0.2,
+      "h": 0.5
+    },
+    "3": {
+      "x": -0.6,
+      "y": 0.75,
+      "w": 0.2,
+      "h": 0.5
+    },
+    "4": {
+      "x": -0.2,
+      "y": 0.75,
+      "w": 0.2,
+      "h": 0.5
+    },
+    "5": {
+      "x": 0.2,
+      "y": 0.75,
+      "w": 0.2,
+      "h": 0.5
+    },
+    "6": {
+      "x": 0.6,
+      "y": 0.75,
+      "w": 0.2,
+      "h": 0.5
+    }
+  },
+  "pins": {
+    "1": {
+      "name": "CC1",
+      "type": "bidirectional"
+    },
+    "2": {
+      "name": "CC2",
+      "type": "bidirectional"
+    },
+    "3": {
+      "name": "PORT",
+      "type": "input"
+    },
+    "4": {
+      "name": "VBUS_DET",
+      "type": "input"
+    },
+    "5": {
+      "name": "ADDR",
+      "type": "input"
+    },
+    "6": {
+      "name": "INT_N/OUT3",
+      "type": "open_collector"
+    },
+    "7": {
+      "name": "SDA/OUT1",
+      "type": "bidirectional"
+    },
+    "8": {
+      "name": "SCL/OUT2",
+      "type": "bidirectional"
+    },
+    "9": {
+      "name": "ID",
+      "type": "open_collector"
+    },
+    "10": {
+      "name": "GND",
+      "type": "power_in"
+    },
+    "11": {
+      "name": "EN_N",
+      "type": "input"
+    },
+    "12": {
+      "name": "VDD",
+      "type": "power_in"
+    }
+  },
+  "pad_corner_radius_mm": 0.05,
+  "import_correction": "Four side lands were 0.505x0.2 at X +/-0.750; TI example is 0.7x0.2 at X +/-0.650. Top/bottom lands normalized from 0.505 to 0.5. Symbol pin types/source corrected."
+}

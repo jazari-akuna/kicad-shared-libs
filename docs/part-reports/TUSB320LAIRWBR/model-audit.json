@@ -1,0 +1,22 @@
+{
+  "source": "Retained JLC/EasyEDA C132554 provider STEP",
+  "sha256": "bc8323808fbaedca3c408bf3f4e330a33df2f765f095efcd89cb497947f409a4",
+  "bbox_mm": [
+    -0.8000001,
+    -0.8000001,
+    -1e-07,
+    0.8000001,
+    0.8000001,
+    0.4010001
+  ],
+  "neutral_model_transform": true,
+  "illustrative_marking_height_mm": 0.001,
+  "source_package_height_max_mm": 0.4,
+  "actual_render_views_inspected": [
+    "top",
+    "front",
+    "iso"
+  ],
+  "provider_original_sha256": "6a4387df221fa6c89a57d63a77a0a9a035a77980841c085ffe1c794b9b254fab",
+  "normalization": "CRLF to LF only, geometry unchanged"
+}

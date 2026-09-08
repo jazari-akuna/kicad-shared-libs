@@ -1,0 +1,10 @@
+[
+  {
+    "slug": "TUSB320LAIRWBR",
+    "action": "local-file",
+    "path": "/Users/raph/Projects/remote-hardware/review-evidence/schematic-completion-2026-09-08/usb-source-controller/TUSB320LAIRWBR.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/tusb320lai.pdf",
+    "mpn": "TUSB320LAI",
+    "note": "Public English TI SLLSEQ8D; exact LAIRWBR package RWB0012A. Pin table p3 and source lands pp35\u201336 visually checked."
+  }
+]
