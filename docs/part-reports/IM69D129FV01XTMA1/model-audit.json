@@ -1,0 +1,18 @@
+{
+  "nominal_bbox_mm": [
+    -1.75000015,
+    -1.32500015,
+    -1.5e-07,
+    1.75000015,
+    1.32500015,
+    0.98000015
+  ],
+  "STEP_bytes": 97563,
+  "footprint_offset_xyz_mm": [
+    0,
+    0,
+    0
+  ],
+  "model_y_is_negative_footprint_y": true,
+  "height_max_clearance_mm": 1.08
+}

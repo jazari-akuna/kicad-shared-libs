@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "IM69D129FV01XTMA1",
+    "action": "local-file",
+    "path": "/Users/raph/Projects/remote-hardware/review-evidence/schematic-completion-2026-09-08/microphone-approved/IM69D129FV01XTMA1.pdf",
+    "url": "https://www.infineon.com/assets/row/public/documents/24/49/infineon-im69d129f-datasheet-en.pdf",
+    "mpn": "IM69D129FV01",
+    "note": "Public English Infineon datasheet v1.0 2025-02-21; visually inspected pp8\u201313 and exact electrical/pin/land drawings."
+  },
+  {
+    "slug": "RT0402BRD0751K1L",
+    "action": "keep",
+    "note": "Public English Yageo exact-MPN specification verified by battery_nfc_implementation agent; connector_audit corroborated text and exact order code on2026-09-08."
+  },
+  {
+    "slug": "RT0402BRD079K09L",
+    "action": "keep",
+    "note": "Public English Yageo exact-MPN specification verified by battery_nfc_implementation agent; connector_audit corroborated text and exact order code on2026-09-08."
+  }
+]

@@ -1,0 +1,221 @@
+{
+  "numbered_copper_ids": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+  ],
+  "pads": [
+    {
+      "number": "1",
+      "xy_mm": [
+        -1.364,
+        0.838
+      ],
+      "size_mm": [
+        0.54,
+        0.75
+      ],
+      "drill_mm": 0.0,
+      "copper": true
+    },
+    {
+      "number": "",
+      "xy_mm": [
+        -1.364,
+        0.838
+      ],
+      "size_mm": [
+        0.47,
+        0.63
+      ],
+      "drill_mm": 0.0,
+      "copper": false
+    },
+    {
+      "number": "2",
+      "xy_mm": [
+        -0.542,
+        0.838
+      ],
+      "size_mm": [
+        0.54,
+        0.75
+      ],
+      "drill_mm": 0.0,
+      "copper": true
+    },
+    {
+      "number": "",
+      "xy_mm": [
+        -0.542,
+        0.838
+      ],
+      "size_mm": [
+        0.47,
+        0.63
+      ],
+      "drill_mm": 0.0,
+      "copper": false
+    },
+    {
+      "number": "4",
+      "xy_mm": [
+        -0.542,
+        -0.838
+      ],
+      "size_mm": [
+        0.54,
+        0.75
+      ],
+      "drill_mm": 0.0,
+      "copper": true
+    },
+    {
+      "number": "",
+      "xy_mm": [
+        -0.542,
+        -0.838
+      ],
+      "size_mm": [
+        0.47,
+        0.63
+      ],
+      "drill_mm": 0.0,
+      "copper": false
+    },
+    {
+      "number": "5",
+      "xy_mm": [
+        -1.364,
+        -0.838
+      ],
+      "size_mm": [
+        0.54,
+        0.75
+      ],
+      "drill_mm": 0.0,
+      "copper": true
+    },
+    {
+      "number": "",
+      "xy_mm": [
+        -1.364,
+        -0.838
+      ],
+      "size_mm": [
+        0.47,
+        0.63
+      ],
+      "drill_mm": 0.0,
+      "copper": false
+    },
+    {
+      "number": "3",
+      "xy_mm": [
+        1.189065,
+        0.479065
+      ],
+      "size_mm": [
+        0.01,
+        0.01
+      ],
+      "drill_mm": 0.0,
+      "copper": true
+    },
+    {
+      "number": "3",
+      "xy_mm": [
+        0.230935,
+        0.479065
+      ],
+      "size_mm": [
+        0.01,
+        0.01
+      ],
+      "drill_mm": 0.0,
+      "copper": true
+    },
+    {
+      "number": "3",
+      "xy_mm": [
+        0.230935,
+        -0.479065
+      ],
+      "size_mm": [
+        0.01,
+        0.01
+      ],
+      "drill_mm": 0.0,
+      "copper": true
+    },
+    {
+      "number": "3",
+      "xy_mm": [
+        1.189065,
+        -0.479065
+      ],
+      "size_mm": [
+        0.01,
+        0.01
+      ],
+      "drill_mm": 0.0,
+      "copper": true
+    },
+    {
+      "number": "",
+      "xy_mm": [
+        1.394999,
+        2.4e-05
+      ],
+      "size_mm": [
+        0.01,
+        0.01
+      ],
+      "drill_mm": 0.0,
+      "copper": false
+    },
+    {
+      "number": "",
+      "xy_mm": [
+        0.206447,
+        -0.444719
+      ],
+      "size_mm": [
+        0.01,
+        0.01
+      ],
+      "drill_mm": 0.0,
+      "copper": false
+    },
+    {
+      "number": "",
+      "xy_mm": [
+        0.206601,
+        0.444865
+      ],
+      "size_mm": [
+        0.01,
+        0.01
+      ],
+      "drill_mm": 0.0,
+      "copper": false
+    },
+    {
+      "number": "",
+      "xy_mm": [
+        0.71,
+        0.0
+      ],
+      "size_mm": [
+        0.6,
+        0.6
+      ],
+      "drill_mm": 0.6,
+      "copper": false
+    }
+  ],
+  "repeated_ground_pad": "four touching annular sectors, all pad3; a single electrical terminal",
+  "npth_acoustic_hole_mm": 0.6
+}

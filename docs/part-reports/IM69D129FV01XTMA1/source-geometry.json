@@ -1,0 +1,58 @@
+{
+  "source": "Infineon IM69D129FV01 datasheet v1.0, 2025-02-21, pp12\u201313",
+  "body_mm": [
+    3.5,
+    2.65,
+    0.98
+  ],
+  "height_max_mm": 1.08,
+  "signal_lands_mm": [
+    0.54,
+    0.75
+  ],
+  "ground_land_outer_inner_diameter_mm": [
+    1.725,
+    0.985
+  ],
+  "pcb_acoustic_hole_diameter_mm": 0.6,
+  "device_acoustic_port_diameter_mm": 0.325,
+  "package_signal_terminal_mm": [
+    0.522,
+    0.725
+  ],
+  "package_terminal_row_pitch_mm": 1.675,
+  "pads_pcb_top": {
+    "1": {
+      "name": "DATA",
+      "type": "output",
+      "x": -1.364,
+      "y": 0.838
+    },
+    "2": {
+      "name": "LR_SELECT",
+      "type": "input",
+      "x": -0.542,
+      "y": 0.838
+    },
+    "3": {
+      "name": "GND",
+      "type": "power_in",
+      "x": 0.71,
+      "y": 0
+    },
+    "4": {
+      "name": "CLOCK",
+      "type": "input",
+      "x": -0.542,
+      "y": -0.838
+    },
+    "5": {
+      "name": "VDD",
+      "type": "power_in",
+      "x": -1.364,
+      "y": -0.838
+    }
+  },
+  "silk_courtyard_mask": "engineering allowances; not manufacturer dimensions",
+  "model": "simplified nominal body, terminals and bottom acoustic port; not internal construction"
+}
