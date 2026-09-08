@@ -1,0 +1,44 @@
+{
+  "source": "Infineon BGS12P2L6 Rev2.1 2025-08-12, pp8-9 figures2-4/Table12",
+  "top_view": "Applicationfigure2 pin1lower-right; packagefigure3top is same partrotated180deg. Bottomview mustbe mirrored beforecomparison.",
+  "pads": {
+    "1": [
+      0.2,
+      0.4
+    ],
+    "2": [
+      0.2,
+      0
+    ],
+    "3": [
+      0.2,
+      -0.4
+    ],
+    "4": [
+      -0.2,
+      -0.4
+    ],
+    "5": [
+      -0.2,
+      0
+    ],
+    "6": [
+      -0.2,
+      0.4
+    ]
+  },
+  "copper_square_mm": 0.25,
+  "paste_circle_diameter_mm": 0.25,
+  "stencil_thickness_mm": 0.1,
+  "pitch_xy_mm": 0.4,
+  "body_nominal_mm": [
+    0.7,
+    1.1,
+    0.31
+  ],
+  "body_xy_tolerance_mm": 0.05,
+  "height_limits_mm": [
+    0.29,
+    0.32
+  ]
+}

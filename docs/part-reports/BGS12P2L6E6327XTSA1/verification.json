@@ -1,0 +1,23 @@
+{
+  "pin_pad_parity": "PASS",
+  "numbered_copper_pads": 6,
+  "separate_unnumbered_paste_apertures": 6,
+  "source_lands_and_pin1": "PASS",
+  "body_nominal_mm": [
+    0.7,
+    1.1,
+    0.31
+  ],
+  "height_max_mm": 0.32,
+  "render_views_inspected": [
+    "symbol",
+    "footprint",
+    "top",
+    "front",
+    "iso"
+  ],
+  "model_gate": "0 new issues,17 baseline",
+  "nda_tree": "PASS",
+  "datasheets": "235 OK,2 baseline missing capacitor links",
+  "model": "source-backed simplified nominal, not vendor CAD; zero transform"
+}
