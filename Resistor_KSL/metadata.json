@@ -1,0 +1,32 @@
+{
+  "$schema": "https://go.kicad.org/pcm/schemas/v1",
+  "name": "Resistor_KSL",
+  "description": "Exact precision resistors with source-backed parameters and disclosed IPC land basis",
+  "identifier": "com.github.jazari-akuna.kicad-shared-libs.Resistor_KSL",
+  "type": "library",
+  "license": "CC-BY-SA-4.0",
+  "author": {
+    "name": "Unknown"
+  },
+  "maintainer": {
+    "name": "jazari-akuna"
+  },
+  "content": {
+    "symbols": [
+      "Resistor_KSL.kicad_sym"
+    ],
+    "footprints": [
+      "Resistor_KSL.pretty"
+    ],
+    "3dmodels": [
+      "Resistor_KSL.3dshapes"
+    ]
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "status": "stable",
+      "kicad_version": "9.0"
+    }
+  ]
+}

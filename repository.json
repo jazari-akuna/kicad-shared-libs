@@ -80,6 +80,9 @@
     },
     {
       "path": "Capacitor_KSL/metadata.json"
+    },
+    {
+      "path": "Resistor_KSL/metadata.json"
     }
   ]
 }
