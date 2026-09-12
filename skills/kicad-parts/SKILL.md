@@ -565,7 +565,10 @@ hook that refuses publication, which must not happen.
    source-backed datum (pad/terminal centres, pin-1 feature and seating plane)
    to the footprint origin and numbered pads; do not assume that a vendor model
    is centered or that zero offset is correct merely because its raw extrema
-   look symmetric.
+   look symmetric. For OpenCascade dimensions use a tight/optimal bound such as
+   `BRepBndLib.AddOptimal_s(shape, box, False, False)`; the ordinary `Add_s`
+   bounding box includes triangulation/tolerance enlargement and can falsely
+   make a nominal dimension look out of tolerance.
 3. Verify visually with a 3D render (see "Visuals" below): top view for X/Y
    centering over the pads, front/side views for Z seating (body must rest
    on the board, pins meeting the pads — not floating or sunken).

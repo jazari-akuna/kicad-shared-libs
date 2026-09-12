@@ -201,7 +201,11 @@ placement authority because it includes construction points and does not apply
 the STEP assembly-placement hierarchy. Use a CAD kernel (FreeCAD/OCC) to
 measure the fully transformed shape and align source-backed pad/terminal,
 pin-1 and seating datums. Do not derive production offsets from the parser
-below or assume zero offset from apparently symmetric raw extrema:
+below or assume zero offset from apparently symmetric raw extrema. In
+OpenCascade, use a tight bound such as
+`BRepBndLib.AddOptimal_s(shape, box, False, False)` for dimensions; `Add_s`
+includes tolerance/triangulation enlargement and can report a materially larger
+envelope than the physical geometry:
 
 ```python
 import re
