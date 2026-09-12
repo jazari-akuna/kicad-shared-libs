@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(descr "TE Connectivity 2108614-5 PCB spring contact; single 2.4 x 1.2 mm copper land from customer drawing C-2108614 rev C2; model normalized from TE CVM_2108614-5")
+	(descr "TE Connectivity 2108614-5 PCB spring contact; single 2.4 x 1.2 mm copper land from customer drawing C-2108614 rev C2; restricted-provenance placement model normalized from the current mechanical assembly")
 	(tags "TE Connectivity 2108614-5 spring finger contact")
 	(attr smd)
 	(property "Reference" "REF**"
@@ -43,7 +43,7 @@
 		(uuid "8e48c0de-5c38-4a24-b420-75618921d501")
 	)
 	(embedded_fonts no)
-	(model "${KSL_ROOT}/Connector_KSL/Connector_KSL.3dshapes/TE2108614-5.step"
+	(model "${KNL_ROOT}/Connector_NDA_KSL/Connector_NDA_KSL.3dshapes/TE2108614-5.step"
 		(offset (xyz 0 0 0))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 0))

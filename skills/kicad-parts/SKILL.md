@@ -557,11 +557,15 @@ hook that refuses publication, which must not happen.
    mm) are a known EasyEDA-conversion failure — the model renders hundreds
    of mm off-board. Example of a broken one in the wild:
    `(offset (xyz -911.47 683.72 0))`.
-2. To compute the correct offset without guessing, get the STEP model's own
-   bounding box: parse `CARTESIAN_POINT` coordinates from the `.step` file
-   (open with `errors="ignore"` — STEP files may contain non-UTF-8 bytes).
-   JLC/EasyEDA models are usually already centered at X=Y=0, so the fix is
-   typically `(offset (xyz 0 0 0))` with the existing rotate kept.
+2. To compute the correct transform without guessing, load the STEP through a
+   CAD kernel (FreeCAD/OCC) and inspect the fully transformed shape, including
+   assembly placements. Raw `CARTESIAN_POINT` extrema include construction
+   geometry and ignore the STEP placement hierarchy, so they are only a coarse
+   corruption check and are not an offset or dimension authority. Align a
+   source-backed datum (pad/terminal centres, pin-1 feature and seating plane)
+   to the footprint origin and numbered pads; do not assume that a vendor model
+   is centered or that zero offset is correct merely because its raw extrema
+   look symmetric.
 3. Verify visually with a 3D render (see "Visuals" below): top view for X/Y
    centering over the pads, front/side views for Z seating (body must rest
    on the board, pins meeting the pads — not floating or sunken).

@@ -195,9 +195,13 @@ part report.
 
 ### Numeric geometry check
 
-Catch offset/mirroring bugs without rendering by parsing the STEP's
-coordinates (open with `errors="ignore"` — STEP files may contain
-non-UTF-8 bytes):
+Raw STEP-coordinate parsing is only a coarse corruption check. It can catch a
+hundreds-of-millimetres conversion error, but it is not a measurement or
+placement authority because it includes construction points and does not apply
+the STEP assembly-placement hierarchy. Use a CAD kernel (FreeCAD/OCC) to
+measure the fully transformed shape and align source-backed pad/terminal,
+pin-1 and seating datums. Do not derive production offsets from the parser
+below or assume zero offset from apparently symmetric raw extrema:
 
 ```python
 import re
