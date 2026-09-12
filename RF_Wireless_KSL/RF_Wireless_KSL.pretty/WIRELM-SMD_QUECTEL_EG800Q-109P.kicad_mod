@@ -142,8 +142,18 @@
 	(pad "107" smd rect (at -1.2 4.15) (size 0.7 1) (layers "F.Cu" "F.Paste" "F.Mask"))
 	(pad "108" smd rect (at 0 4.15) (size 0.7 1) (layers "F.Cu" "F.Paste" "F.Mask"))
 	(pad "109" smd rect (at 1.2 4.15) (size 0.7 1) (layers "F.Cu" "F.Paste" "F.Mask"))
-	(model "${KNL_ROOT}/RF_Wireless_NDA_KSL/RF_Wireless_NDA_KSL.3dshapes/WIRELM-SMD_QUECTEL_EG800Q-109P.step"
+	(model "${KNL_ROOT}/RF_Wireless_NDA_KSL/RF_Wireless_NDA_KSL.3dshapes/WIRELM-SMD_QUECTEL_EG800Q-109P-BASE.step"
 		(offset (xyz 0 0 0))
+		(scale (xyz 1 1 1))
+		(rotate (xyz 0 0 0))
+	)
+	(model "${KNL_ROOT}/RF_Wireless_NDA_KSL/RF_Wireless_NDA_KSL.3dshapes/EG800XX-COVER.step"
+		(offset (xyz -7.9 -8.85 0.8))
+		(scale (xyz 1 1 1))
+		(rotate (xyz 0 0 0))
+	)
+	(model "${KNL_ROOT}/RF_Wireless_NDA_KSL/RF_Wireless_NDA_KSL.3dshapes/EG800XX-COVER-PRINT.step"
+		(offset (xyz -7.9 -8.85 0.801))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 0))
 	)
