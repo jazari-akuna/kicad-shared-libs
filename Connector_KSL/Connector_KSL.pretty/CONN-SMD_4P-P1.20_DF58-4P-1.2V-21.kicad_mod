@@ -16,5 +16,5 @@
   (pad "MP2" smd roundrect (at 3.225 1.8525) (size 0.85 1.34) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.058824))
   (zone (net 0) (net_name "") (layer "F.Cu") (hatch edge 0.5) (connect_pads (clearance 0)) (min_thickness 0.25) (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour not_allowed) (footprints allowed)) (fill (thermal_gap 0.3) (thermal_bridge_width 0.3)) (polygon (pts (xy -1.85 -1.5275) (xy 1.85 -1.5275) (xy 1.85 -0.0275) (xy -1.85 -0.0275))))
   (fp_rect (start -1.85 -1.5275) (end 1.85 -0.0275) (stroke (width 0.05) (type default)) (fill none) (layer "Dwgs.User"))
-  (model "${KSL_ROOT}/Connector_KSL/Connector_KSL.3dshapes/CONN-SMD_4P-P1.20_DF58-4P-1.2V-21.step" (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
+  (model "${KSL_ROOT}/Connector_KSL/Connector_KSL.3dshapes/CONN-SMD_4P-P1.20_DF58-4P-1.2V-21.step" (offset (xyz 0 0.3575 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
 )
