@@ -1895,4 +1895,62 @@
         )
       )
     )
+	(symbol "TPD2E2U06DRLR"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D?"
+			(at 0 5.08 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "TPD2E2U06DRLR"
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Protection_KSL:SOT-553-5_L1.6-W1.2-P0.50-LS1.48_TPD2E2U06DRLR"
+			(at 0 -7.62 0)
+			(effects (font (size 1.27 1.27) (italic yes)) (hide yes))
+		)
+		(property "Datasheet" "${KSL_ROOT}/datasheets/TPD2E2U06DRLR.pdf"
+			(at 0 -10.16 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Description" "TI dual-channel unidirectional 5.5V ESD array for USB 2.0, 1.5pF typ/1.9pF max per line, IEC 61000-4-2 +/-25kV contact, SOT-5X3 DRL"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "LCSC" "C1972959"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "ki_keywords" "C1972959 USB2 USB ESD TVS dual"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(symbol "TPD2E2U06DRLR_0_1"
+			(rectangle
+				(start -3.81 3.81)
+				(end 3.81 -3.81)
+				(stroke (width 0) (type default))
+				(fill (type background))
+			)
+		)
+		(symbol "TPD2E2U06DRLR_1_1"
+			(pin no_connect line (at -6.35 2.54 0) (length 2.54)
+				(name "NC" (effects (font (size 1 1))))
+				(number "1" (effects (font (size 1 1)))))
+			(pin no_connect line (at -6.35 0 0) (length 2.54)
+				(name "NC" (effects (font (size 1 1))))
+				(number "2" (effects (font (size 1 1)))))
+			(pin passive line (at -6.35 -2.54 0) (length 2.54)
+				(name "IO1" (effects (font (size 1 1))))
+				(number "3" (effects (font (size 1 1)))))
+			(pin power_in line (at 6.35 -2.54 180) (length 2.54)
+				(name "GND" (effects (font (size 1 1))))
+				(number "4" (effects (font (size 1 1)))))
+			(pin passive line (at 6.35 2.54 180) (length 2.54)
+				(name "IO2" (effects (font (size 1 1))))
+				(number "5" (effects (font (size 1 1)))))
+		)
+	)
 )
