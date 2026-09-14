@@ -87,6 +87,16 @@ system is not required for a simple part.
   correct seating do not verify mating engagement, insertion/extraction travel
   or assembled product fit. For dimensional comparisons use orthographic views
   at a verified common scale; label independently zoomed renders as illustrations.
+- Model placement checks do not prove model fidelity. For connectors, contacts,
+  sensors and other mechanical interfaces, inspect the cavities, keys, latches,
+  terminals, spring shape or optical/acoustic openings needed to assess fit.
+  Use available exact manufacturer CAD instead of an envelope; do not silently
+  reuse a different pin-count variant. Preserve the original source and verify
+  its terminal/pin-1 datums against the footprint in top, front and isometric views.
+- Screen selected models for missing files, bare boxes and sibling reuse, then
+  inspect the evidence before declaring a defect: simple IC/passive packages can
+  be legitimate. Keep remaining simplifications visible in the part report and
+  consuming placement review, with their limitations and proposed remedy.
 - When a discrepancy is reported, verify the source, exact variant, units and
   rendered state before editing canonical CAD. Correct demonstrated defects;
   if the problem is labeling or comparison context, correct that evidence and

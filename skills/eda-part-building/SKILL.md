@@ -96,28 +96,26 @@ Run scripts **as files** — inline code crashes:
 # freecadcmd -c "..." → "Application unexpectedly terminated"
 ```
 
-Export with `shape.exportStep(path)` on the fused Part shape.
-`Part.export([compound], path)` **silently writes a near-empty file**
-(~1.6 KB header shell) — if the output STEP is a few KB with no
-`CARTESIAN_POINT`s, this is why.
+For generated geometry, `shape.exportStep(path)` exports a Part shape.
+Validate every export by reopening it through the CAD kernel and checking shape
+count and bounds; a file existing or a small STEP header alone proves nothing.
+Some FreeCAD versions/export paths require document objects for `Part.export`;
+do not assume a raw-shape list is accepted.
 
-Fuse everything into one solid; don't export loose compounds:
+Fuse touching pieces only when appropriate to the generated physical body.
+Valid models may contain multiple solids. Preserve manufacturer assembly parts,
+colors and detailed geometry; do not fuse or simplify imported CAD just to fit a
+single-solid exporter. Prefer the unmodified exact source STEP plus a verified
+footprint transform; use STEPCAF/XCAF when a colored assembly export is needed.
 
-```python
-import FreeCAD as App, Part
-shape = body                      # main package body
-for pad in pads:                  # thin pad plates, Z = 0..0.03
-    shape = shape.fuse(pad)
-shape = shape.removeSplitter()
-shape.exportStep(OUT)             # NOT Part.export([...], OUT)
-```
+Model datum and seating:
 
-Model spec (what KiCad expects for a seated model with zero offsets):
-
-- Z=0 is the board surface; body seated at Z=0.
-- Pads flush/coplanar at Z=0 — never protruding below (renders sunken).
-- Bounding box centered on the origin in X/Y.
-- Body height from the datasheet or other available evidence; label estimates.
+- Z=0 is the PCB surface after applying the footprint model transform. Verify
+  terminal seating and any intentionally recessed features against the source.
+- Use a documented terminal/land-pattern datum, not an assumed bounding-box
+  center. Asymmetric parts may require nonzero X/Y offsets.
+- Keep scale at 1 for correctly unitized STEP geometry. Verify body height,
+  terminal pitch/count and orientation against the exact source; label estimates.
 
 ### Colored STEP (preferred)
 
