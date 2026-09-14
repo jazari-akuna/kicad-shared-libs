@@ -8888,7 +8888,7 @@
     (property "Reference" "J?" (at 0 10.16 0) (effects (font (size 1.27 1.27))))
     (property "Value" "DF58-4P-1.2V(21)" (at 0 7.62 0) (effects (font (size 1.27 1.27))))
     (property "Footprint" "Connector_KSL:CONN-SMD_4P-P1.20_DF58-4P-1.2V-21" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
-    (property "Datasheet" "https://www.hirose.com/product/p/CL0666-1003-0-21" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Datasheet" "${KSL_ROOT}/datasheets/DF58-4P-1.2V_21.pdf" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
     (property "Description" "Hirose DF58-4P-1.2V(21), 4-position board connector; mates DF58-4S-1.2C. Rated current 2.0 A at 28 AWG / 1.5 A at 30 AWG under catalog conditions; nominal 2 A limit requires load qualification." (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
     (property "Manufacturer" "Hirose" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
     (symbol "DF58-4P-1.2V(21)_0_1" (rectangle (start -5.08 5.08) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type background))))
