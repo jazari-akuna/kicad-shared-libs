@@ -117,7 +117,7 @@ libraries are shared and no two machines agree on where they sit.
 | Variable | Repository | Notes |
 |----------|------------|-------|
 | `${KSL_ROOT}` | `kicad-shared-libs` (this repo) | Public remote. Everything here may be published. |
-| `${KNL_ROOT}` | `kicad-nda-libs` | Private, **no remote by design** — never push it. |
+| `${KNL_ROOT}` | `kicad-nda-libs` | Restricted; follow its local AGENTS.md and guarded, explicitly authorized private destination policy. |
 
 ### Set up the roots (once per machine — canonical instructions)
 
@@ -277,8 +277,10 @@ per command are in "Set up the roots" above.
 ## Library hygiene and restricted parts
 
 This repo has a **public remote**. The private `kicad-nda-libs` repo,
-addressed by `${KNL_ROOT}`, has **no remote configured, by design** — do not
-add one, and do not push it. Sort restricted material into one of two tiers,
+addressed by `${KNL_ROOT}`, controls its authorized private destination in its
+local AGENTS.md and publication guards. Do not add or repoint remotes, publish
+restricted material publicly, or bypass those guards. Verify the approved
+destination remains private before an authorized push. Sort restricted material into one of two tiers,
 because they are not the same problem:
 
 **Tier 1 — the document is restricted, the part is not.** The maker sells the
