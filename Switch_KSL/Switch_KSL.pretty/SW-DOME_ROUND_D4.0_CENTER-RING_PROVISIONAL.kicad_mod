@@ -13,7 +13,7 @@
 	(property "Datasheet" "https://www.snaptron.com/products/pcb-pads/double-sided-contact-pad/" (at 0 0 0) (layer "F.Fab") hide
 		(effects (font (size 1.27 1.27)))
 	)
-	(property "Description" "PROVISIONAL: 4 mm round metal dome, 160-250 gf and 0.16-0.20 mm travel target; center/ring contact geometry follows Snaptron 4 mm double-sided pad guidance; exact purchasing MPN pending supplier qualification" (at 0 0 0) (layer "F.Fab") hide
+	(property "Description" "PROVISIONAL: 4 mm round metal dome, source image force marking 160-250 with unit not shown, and 0.16-0.20 mm travel target; center/ring contact geometry follows Snaptron 4 mm double-sided pad guidance; exact purchasing MPN pending supplier qualification" (at 0 0 0) (layer "F.Fab") hide
 		(effects (font (size 1.27 1.27)))
 	)
 	(attr smd exclude_from_pos_files)
@@ -32,10 +32,10 @@
 	(fp_text user "DOME Ø4.0" (at 0 0 0) (layer "F.Fab")
 		(effects (font (size 0.65 0.65) (thickness 0.1)))
 	)
-	(pad "1" smd custom (at 0 0) (size 0.1 0.1) (layers "F.Cu" "F.Mask")
+	(pad "1" smd custom (at 1.8675 0) (size 0.1 0.1) (layers "F.Cu" "F.Mask")
 		(options (clearance outline) (anchor circle))
 		(primitives
-			(gr_circle (center 0 0) (end 1.8675 0) (width 1.025) (fill no))
+			(gr_circle (center -1.8675 0) (end 0 0) (width 1.025) (fill no))
 		)
 	)
 	(pad "2" smd circle (at 0 0) (size 1.70 1.70) (layers "F.Cu" "F.Mask"))

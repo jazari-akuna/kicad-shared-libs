@@ -58,6 +58,11 @@ automatic reason to stop useful work.
   numbering, symbol/cache consistency, geometry and renders. Drawing-layer
   graphics do not provide electrical connections. Report missing copper or
   mismatched pins as defects even when a provisional part is still useful.
+- For custom or compound copper pads, render inspection and visible pin labels
+  are insufficient. Put each numbered pad on a different net in a minimal board
+  fixture and run the KiCad CLI DRC. Require zero `padstack_invalid` and
+  `shorting_items` findings, and place the custom-pad anchor on its intended
+  copper polygon rather than in an isolated clearance or void.
 - Separate **checked**, **assumed**, **not checked** and **missing**. An internally
   consistent draft is not manufacturer-verified or production-qualified. State
   the remaining validation needed for its intended use without withholding the
