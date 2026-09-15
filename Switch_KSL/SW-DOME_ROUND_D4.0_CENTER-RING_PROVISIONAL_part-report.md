@@ -9,7 +9,7 @@ The PCB contact follows the published Snaptron 4 mm double-sided contact-pad dim
 Sources:
 
 - [Snaptron double-sided PCB contact pad](https://www.snaptron.com/products/pcb-pads/double-sided-contact-pad/)
-- [Snaptron P-series round-dome reference](https://www.snaptron.com/products/standard-domes/p-series/) (shape/family reference only; P15150's 150 gf force is outside the selected 160–250 gf range and is not claimed as the selected part)
+- [Snaptron P-series round-dome reference](https://www.snaptron.com/products/standard-domes/p-series/) (shape/family reference only; Snaptron lists P15150 at 150 gf, while the selected source image does not show a force unit, so no force comparison or exact-part claim is made)
 
 ## Source model identity
 
@@ -28,6 +28,13 @@ Sources:
 - A filled 4.76 mm mask opening clears the entire contact region, matching Snaptron's instruction to keep the circuit area beneath the dome free of solder mask.
 - The shared mask opening intentionally bridges the mask definitions of pads 1 and 2; the copper remains separated by a 0.505 mm radial gap. A two-net KiCad DRC fixture is required because a render alone does not prove custom-pad anchor connectivity or absence of shorts.
 - The footprint is excluded from pick-and-place output because the dome/tape assembly process must be qualified separately.
+
+## Reusable symbol link
+
+- Symbol: `Switch_KSL:SW-DOME_ROUND_D4.0_CENTER-RING_PROVISIONAL`
+- Default footprint: `Switch_KSL:SW-DOME_ROUND_D4.0_CENTER-RING_PROVISIONAL`
+- Footprint model: `${KSL_ROOT}/Switch_KSL/Switch_KSL.3dshapes/SW-DOME_ROUND_D4.0_CENTER-RING_PROVISIONAL.step`
+- Pins 1 and 2 are passive and use the standard pushbutton endpoints at X=−5.08 mm and X=+5.08 mm. The graphics and endpoints match KiCad's generic `Switch:SW_Push`, allowing placed schematic instances to be rebound without moving their wires or text.
 
 ## Known boundary
 
