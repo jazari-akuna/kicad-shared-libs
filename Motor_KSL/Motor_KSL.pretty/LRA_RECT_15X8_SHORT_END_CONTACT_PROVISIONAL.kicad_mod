@@ -2,7 +2,7 @@
   (version 20240108)
   (generator "hand_drawn")
   (layer "F.Cu")
-  (descr "PROVISIONAL mechanical-only off-board rectangular LRA: source body envelope 15 x 8 x 2.4 mm; photographed short-end contacts estimated as 2 x 2.3 x 1.2 mm on 1.85 mm pitch. No copper pads. Not a supplier-qualified actuator or solder footprint.")
+  (descr "PROVISIONAL mechanical-only off-board rectangular LRA: source body envelope 15 x 8 x 2.4 mm; photographed short-end contacts estimated as 2 x 2.3 x 1.2 x 0.25 mm on 1.85 mm pitch, contact undersides at body base Z=0. No copper pads. Not a supplier-qualified actuator or solder footprint.")
   (tags "LRA mechanical provisional short-end spring contacts off-board")
   (attr board_only exclude_from_pos_files exclude_from_bom)
   (fp_text reference "REF**" (at 0 -5 0) (layer "F.SilkS")
