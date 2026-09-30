@@ -27,7 +27,11 @@ not yet demonstrated.
   numbered-pin positions and electrical types as the SOIC symbol. Its
   footprint property points to the existing
   `Memory_KSL:WSON-8_L6.0-W5.0-P1.27-BL-EP`.
-- The existing footprint and simplified STEP model are reused unchanged.
+- The existing shared footprint and simplified STEP model are reused; the
+  silkscreen pin-1 dot is moved inside the package to local center
+  (−2.25, +2.15) mm with 0.10 mm radius. This is the board-validated
+  position that clears a neighboring U601 silkscreen collision. No copper
+  pad or 3D model geometry changed.
   Pads 1–8 have the same functions as the old part: 1 CS#, 2 DO/IO1, 3
   WP#/IO2, 4 GND, 5 DI/IO0, 6 CLK, 7 HOLD#/IO3, 8 VCC. The exposed center
   land is a second copper pad numbered **4**, so it shares GND. Winbond says
@@ -44,7 +48,7 @@ not yet demonstrated.
 
 - [Symbol export](symbol.svg) and [footprint export](footprint.svg) were
   generated with KiCad CLI and inspected. The footprint includes a visible
-  pin-1 dot beside pad 1.
+  pin-1 dot inside the body beside pad 1.
 - A parsed library comparison found all eight pin numbers, positions, names,
   and electrical types identical to `W25Q128JWSIQTR`; the parsed WSON
   footprint has numbered copper pads 1–8 and the second pad 4.
