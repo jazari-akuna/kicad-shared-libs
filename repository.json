@@ -83,6 +83,9 @@
     },
     {
       "path": "Resistor_KSL/metadata.json"
+    },
+    {
+      "path": "Amplifier_Comparator_KSL/metadata.json"
     }
   ]
 }

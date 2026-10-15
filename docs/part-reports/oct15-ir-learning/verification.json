@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-15",
+  "new_symbol_count": 16,
+  "new_footprint_count": 5,
+  "sources": "Manufacturer PDFs: TI TLV9062 RevN, TLV7021 RevF, Vishay81960 Rev1.3, Uniroyal chip-resistor family, Samsung MLCC family",
+  "pad_geometry": "Exact TI/Vishay manufacturer recommended lands; passives KiCad IPC nominal",
+  "symbol_pad_numbers_checked": true,
+  "new_model_placement_failures": 0,
+  "global_model_known_baseline_exceptions": 17,
+  "all_new_datasheets_confirmed_english": true,
+  "global_unrelated_datasheet_failures": 51,
+  "nda_tree_gate": "PASS",
+  "model_views_inspected": [
+    "top",
+    "front",
+    "isometric"
+  ],
+  "fixture_shorting_or_invalid_padstack": 0,
+  "not_qualified": [
+    "optical distance",
+    "IR ambient overload recovery",
+    "assembled-flex bus capacitance/noise",
+    "maximum package-height envelope for generic passive models"
+  ]
+}

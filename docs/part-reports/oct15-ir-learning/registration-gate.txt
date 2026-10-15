@@ -1,0 +1,17 @@
+KiCad settings : /Users/raph/Library/Preferences/kicad/10.0
+KSL_ROOT       : /Users/raph/Projects/kicad-shared-libs
+KNL_ROOT       : /Users/raph/Projects/kicad-nda-libs
+libraries found: 31 (30 symbol, 30 footprint)
+
+sym-lib-table:
+  = in sync
+
+fp-lib-table:
+  ! Video_Interface_KSL: stale (target missing: '${KSL_ROOT}/Video_Interface_KSL/Video_Interface_KSL.pretty') — would remove with --prune
+  = in sync
+
+kicad_common.json environment.vars:
+  KSL_ROOT: ok
+  KNL_ROOT: ok
+
+check: clean

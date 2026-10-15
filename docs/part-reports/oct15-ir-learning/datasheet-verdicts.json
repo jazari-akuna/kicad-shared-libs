@@ -1,0 +1,114 @@
+[
+  {
+    "slug": "0402WGF220JTCE",
+    "action": "keep",
+    "url": "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579705910383595520",
+    "verdict": "en",
+    "note": "English manufacturer family datasheet; exact variant identified by ordering-code table, checked against JLC SKU C25092. Uniroyal WG=1/16W F=1%; Samsung CL05=1005 metric, dielectric/capacitance/voltage from family ordering code. IPC nominal land pattern and simplified stock package model."
+  },
+  {
+    "slug": "0402WGF1002TCE",
+    "action": "keep",
+    "url": "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8556212101498380288",
+    "verdict": "en",
+    "note": "English manufacturer family datasheet; exact variant identified by ordering-code table, checked against JLC SKU C25744. Uniroyal WG=1/16W F=1%; Samsung CL05=1005 metric, dielectric/capacitance/voltage from family ordering code. IPC nominal land pattern and simplified stock package model."
+  },
+  {
+    "slug": "0402WGF3302TCE",
+    "action": "keep",
+    "url": "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706021431853056",
+    "verdict": "en",
+    "note": "English manufacturer family datasheet; exact variant identified by ordering-code table, checked against JLC SKU C25779. Uniroyal WG=1/16W F=1%; Samsung CL05=1005 metric, dielectric/capacitance/voltage from family ordering code. IPC nominal land pattern and simplified stock package model."
+  },
+  {
+    "slug": "0402WGF1001TCE",
+    "action": "keep",
+    "url": "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579705924167974912",
+    "verdict": "en",
+    "note": "English manufacturer family datasheet; exact variant identified by ordering-code table, checked against JLC SKU C11702. Uniroyal WG=1/16W F=1%; Samsung CL05=1005 metric, dielectric/capacitance/voltage from family ordering code. IPC nominal land pattern and simplified stock package model."
+  },
+  {
+    "slug": "0402WGF1003TCE",
+    "action": "keep",
+    "url": "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579705919464263680",
+    "verdict": "en",
+    "note": "English manufacturer family datasheet; exact variant identified by ordering-code table, checked against JLC SKU C25741. Uniroyal WG=1/16W F=1%; Samsung CL05=1005 metric, dielectric/capacitance/voltage from family ordering code. IPC nominal land pattern and simplified stock package model."
+  },
+  {
+    "slug": "0402WGF4704TCE",
+    "action": "keep",
+    "url": "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588885145399410688",
+    "verdict": "en",
+    "note": "English manufacturer family datasheet; exact variant identified by ordering-code table, checked against JLC SKU C474132. Uniroyal WG=1/16W F=1%; Samsung CL05=1005 metric, dielectric/capacitance/voltage from family ordering code. IPC nominal land pattern and simplified stock package model."
+  },
+  {
+    "slug": "0402WGF2201TCE",
+    "action": "keep",
+    "url": "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579705935700279296",
+    "verdict": "en",
+    "note": "English manufacturer family datasheet; exact variant identified by ordering-code table, checked against JLC SKU C25879. Uniroyal WG=1/16W F=1%; Samsung CL05=1005 metric, dielectric/capacitance/voltage from family ordering code. IPC nominal land pattern and simplified stock package model."
+  },
+  {
+    "slug": "CL05B104KO5NNNC",
+    "action": "keep",
+    "url": "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707269996871680",
+    "verdict": "en",
+    "note": "English manufacturer family datasheet; exact variant identified by ordering-code table, checked against JLC SKU C1525. Uniroyal WG=1/16W F=1%; Samsung CL05=1005 metric, dielectric/capacitance/voltage from family ordering code. IPC nominal land pattern and simplified stock package model."
+  },
+  {
+    "slug": "CL05A105KA5NQNC",
+    "action": "keep",
+    "url": "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707174974914560",
+    "verdict": "en",
+    "note": "English manufacturer family datasheet; exact variant identified by ordering-code table, checked against JLC SKU C52923. Uniroyal WG=1/16W F=1%; Samsung CL05=1005 metric, dielectric/capacitance/voltage from family ordering code. IPC nominal land pattern and simplified stock package model."
+  },
+  {
+    "slug": "CL05C220JB5NNNC",
+    "action": "keep",
+    "url": "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586178734751277056",
+    "verdict": "en",
+    "note": "English manufacturer family datasheet; exact variant identified by ordering-code table, checked against JLC SKU C70464. Uniroyal WG=1/16W F=1%; Samsung CL05=1005 metric, dielectric/capacitance/voltage from family ordering code. IPC nominal land pattern and simplified stock package model."
+  },
+  {
+    "slug": "CL05C102JB5NNNC",
+    "action": "keep",
+    "url": "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588947035773423616",
+    "verdict": "en",
+    "note": "English manufacturer family datasheet; exact variant identified by ordering-code table, checked against JLC SKU C307441. Uniroyal WG=1/16W F=1%; Samsung CL05=1005 metric, dielectric/capacitance/voltage from family ordering code. IPC nominal land pattern and simplified stock package model."
+  },
+  {
+    "slug": "CL05C100JB5NNNC",
+    "action": "keep",
+    "url": "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707322534723585",
+    "verdict": "en",
+    "note": "English manufacturer family datasheet; exact variant identified by ordering-code table, checked against JLC SKU C32949. Uniroyal WG=1/16W F=1%; Samsung CL05=1005 metric, dielectric/capacitance/voltage from family ordering code. IPC nominal land pattern and simplified stock package model."
+  },
+  {
+    "slug": "CL05A475MP5NRNC",
+    "action": "keep",
+    "url": "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707315714920448",
+    "verdict": "en",
+    "note": "English manufacturer family datasheet; exact variant identified by ordering-code table, checked against JLC SKU C23733. Uniroyal WG=1/16W F=1%; Samsung CL05=1005 metric, dielectric/capacitance/voltage from family ordering code. IPC nominal land pattern and simplified stock package model."
+  },
+  {
+    "slug": "TLV9062IDGKR",
+    "action": "keep",
+    "url": "https://www.ti.com/lit/ds/symlink/tlv9062.pdf",
+    "verdict": "en",
+    "note": "English manufacturer datasheet; exact variant package and pin mapping checked."
+  },
+  {
+    "slug": "TLV7021DBVR",
+    "action": "keep",
+    "url": "https://www.ti.com/lit/ds/symlink/tlv7021.pdf",
+    "verdict": "en",
+    "note": "English manufacturer datasheet; exact variant package and pin mapping checked."
+  },
+  {
+    "slug": "TEMD7100X01",
+    "action": "keep",
+    "url": "https://www.vishay.com/docs/81960/temd7100.pdf",
+    "verdict": "en",
+    "note": "English manufacturer datasheet; exact variant package and pin mapping checked."
+  }
+]
