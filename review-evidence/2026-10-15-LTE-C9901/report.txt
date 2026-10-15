@@ -4,7 +4,7 @@ Source: fresh JLC2KiCadLib download, corrected against the public English Lite-O
 
 Symbol: LED_KSL:LTE-C9901; pin 1 cathode, pin 2 anode. Changed imported unspecified pins to passive, moved reference/value clear of the symbol, and added Description, LCSC and local Datasheet properties.
 
-Footprint: LED_KSL:LED-SMD_2P-L1.6-W0.8-LTE-C9901. Changed imported ~0.8 mm square lands at ±0.749 mm to manufacturer-recommended 0.55 × 0.80 mm lands at ±0.725 mm. Body: 1.6 × 0.8 mm. The 2.2 × 1.1 mm courtyard is designer-defined, with 0.10 mm beyond copper and 0.10 mm beyond the maximum-width body. The consuming flex design must define its board-level coverlay.
+Footprint: LED_KSL:LED-SMD_2P-L1.6-W0.8-LTE-C9901. Changed imported ~0.8 mm square lands at ±0.749 mm to manufacturer-recommended 0.55 × 0.80 mm lands at ±0.725 mm. Body: 1.6 × 0.8 mm. The 2.1 × 1.1 mm courtyard is designer-defined, with 0.05 mm beyond copper in X, 0.15 mm in Y, and 0.20 mm beyond the maximum-length body in X. The compact courtyard is an explicit assembly allowance: at 2.16 mm horizontal pitch the maximum bodies remain 0.46 mm apart. Removed the cathode silkscreen stroke beside the lands; polarity remains on F.Fab and in the 3D model. The consuming flex design must define its board-level coverlay.
 
 Datasheet property: ${KSL_ROOT}/datasheets/LTE-C9901.pdf. English, exact part. Optical intensity: minimum 5 / typical 8 mW/sr at 20 mA; 65° full viewing angle; 940 nm peak. The absolute maximum 60 mA DC rating is not an operating target.
 
