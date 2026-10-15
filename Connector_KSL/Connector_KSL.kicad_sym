@@ -8901,4 +8901,13 @@
       (pin passive line (at 8.89 0 180) (length 3.81) (name "MP2" (effects (font (size 1.27 1.27)))) (number "MP2" (effects (font (size 1 1)))))
     )
   )
+
+(symbol "50208-0040N-001" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+(property "Reference" "J" (at 0 7.62 0) (effects (font (size 1.27 1.27))))
+(property "Value" "50208-0040N-001" (at 0 -7.62 0) (effects (font (size 1.27 1.27))))
+(property "Footprint" "Connector_KSL:ACES_50208_1x04_P0.8mm_Horizontal" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Datasheet" "${KSL_ROOT}/datasheets/50208-0040N-001.pdf" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Description" "ACES 0.8mm 4-position right-angle header, mates 50375 AWG32" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(symbol "50208-0040N-001_0_1" (rectangle (start 0 6.35) (end 15.24 -6.35) (stroke (width 0.254) (type default)) (fill (type background))))
+(symbol "50208-0040N-001_1_1" (pin passive line (at -5.08 3.81 0) (length 5.08) (name "GND" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))(pin passive line (at -5.08 1.27 0) (length 5.08) (name "FG" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))(pin passive line (at -5.08 -1.27 0) (length 5.08) (name "PWM" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))(pin passive line (at -5.08 -3.81 0) (length 5.08) (name "5V" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))))
 )
