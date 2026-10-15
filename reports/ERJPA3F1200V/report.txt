@@ -1,0 +1,17 @@
+ERJPA3F1200V / C543338 → Resistor_KSL (2026-10-15)
+
+120 Ω, 1%, 0603 Panasonic anti-surge ballast resistor.
+Manufacturer rating: 0.25 W at 105°C ambient or 0.33 W at 130°C terminal; derate above these temperatures. Design uses the conservative 0.25 W rating.
+
+Source: Panasonic ERJP family datasheet, 28-Mar-2026, pages 1–4; exact model page confirms value and tolerance. Local datasheet: ${KSL_ROOT}/datasheets/ERJPA3F1200V.pdf
+https://industrial.panasonic.com/ww/products/pt/small-and-high-power-chip-resistors/models/ERJPA3F1200V
+https://industrial.panasonic.com/cdbs/www-data/pdf/RDO0000/AOA0000C331.pdf
+Land pattern: Panasonic DMM0000COL17, 24-Dec-2025, page 1 (saved alongside this report).
+
+Existing libraries/history did not contain the exact part. Downloaded C543338 CAD before correction. Imported symbol incorrectly linked a Yageo thin-film datasheet; replaced with Panasonic documentation. Canonical symbol uses the established KiCad resistor convention and passive pin types. Canonical footprint reuses the already verified project Panasonic 0603 land pattern: 0.65 × 0.90 mm lands centered at x = ±0.725 mm. Inner gap = 0.80 mm; outer span = 2.10 mm. Both are within the manufacturer's recommended ranges. Same copper geometry as the consuming strip; no density change.
+
+Generic KiCad 1608 resistor STEP reused: kernel bounds 1.60 × 0.80 × 0.45 mm, lowest terminal at Z = 0. No offset or scale. Generic package appearance is illustrative; resistor color/marking is not manufacturer CAD. Top/front/isometric views checked for pad alignment and seating.
+
+Checks: symbol parses, pins 1/2 match copper lands; fixture DRC reports 0 violations and 0 opens; model units/transform gate passes. Datasheet accepted as English exact family coverage through the canonical pipeline. Scope excludes optical/thermal bench qualification. Model and source remain independent evidence.
+
+Visuals: symbol.png, footprint.png, top.png, front.png, iso.png.

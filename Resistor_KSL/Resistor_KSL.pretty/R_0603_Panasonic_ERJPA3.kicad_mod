@@ -1,0 +1,150 @@
+(footprint "R_0603_Panasonic_ERJPA3"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Panasonic recommended1608 lands: innergap0.8, outerspan2.1, width0.9mm; familyDMM0000COL17p1. Generic1608resistorSTEP.")
+	(property "Reference" "REF**"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "fd9c8367-3645-4cda-a1b0-d4cb3ebe551c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" "ERJPA3F1200V"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6ea10195-f78d-46a7-b80d-88dba05d86ad")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7c412237-acaa-40b9-aa85-bbf709ae7e1f")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4fd2d4b3-7b4c-4758-b3de-8819b6f87bfe")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.246602 -0.54)
+		(end -1.246602 0.54)
+		(stroke
+			(width 0.025)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "2f9f6332-0aac-40ca-9393-1a4386ffe3d4")
+	)
+	(fp_line
+		(start -1.246602 0.54)
+		(end 1.246602 0.54)
+		(stroke
+			(width 0.025)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "652a0b3c-ffb7-4590-a96c-2e8258d7925a")
+	)
+	(fp_line
+		(start 1.246602 -0.54)
+		(end -1.246602 -0.54)
+		(stroke
+			(width 0.025)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "191db37c-675c-4b3f-be9a-e1f59508ea92")
+	)
+	(fp_line
+		(start 1.246602 0.54)
+		(end 1.246602 -0.54)
+		(stroke
+			(width 0.025)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "13a0a158-06ac-419a-9796-eabb54b24168")
+	)
+	(fp_line
+		(start -0.799998 -0.399999)
+		(end 0.799998 -0.399999)
+		(stroke
+			(width 0.025)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "525b96a8-c7c2-4db2-9a2a-ce1150c2efad")
+	)
+	(fp_line
+		(start -0.799998 0.399999)
+		(end -0.799998 -0.399999)
+		(stroke
+			(width 0.025)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "6a5377f1-e81c-403f-8126-3ac3a3591f54")
+	)
+	(fp_line
+		(start 0.799998 -0.399999)
+		(end 0.799998 0.399999)
+		(stroke
+			(width 0.025)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "21c0e93d-bdbf-4139-9871-f38552aab5fc")
+	)
+	(fp_line
+		(start 0.799998 0.399999)
+		(end -0.799998 0.399999)
+		(stroke
+			(width 0.025)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "94dfc4cc-297c-421c-8165-d6ae09b1d64d")
+	)
+	(pad "1" smd rect
+		(at -0.725 0)
+		(size 0.65 0.9)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "d0083b03-e03a-4d42-a7a3-723516b2346e")
+	)
+	(pad "2" smd rect
+		(at 0.725 0)
+		(size 0.65 0.9)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "4ff74c4d-ccd4-4696-b562-35237eae7422")
+	)
+	(embedded_fonts no)
+
+ (model "${KSL_ROOT}/Resistor_KSL/Resistor_KSL.3dshapes/R_0603_Panasonic_ERJPA3.step" (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
+)
