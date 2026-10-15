@@ -1,0 +1,13 @@
+XL-1010RGBC-2812B DenseFlex footprint variant — 2026-10-15
+
+Action: add a dense-flex footprint with a 1.45 x 1.45 mm assumed assembly courtyard. Keep the existing general-purpose 1.50 mm footprint unchanged.
+
+Source: original manufacturer datasheet p10 in ${KSL_ROOT}/datasheets/XL-1010RGBC-2812B.pdf. Body nominal1.00 mm square, maximum1.10 mm square; lands0.45 mm square centered at +/-0.425 mm. Source recommended copper envelope1.30 mm square. No manufacturer courtyard specified.
+
+Assumption: dense-flex courtyard extends0.075 mm beyond copper and0.175 mm beyond maximum body per side. At1.46 mm center pitch, copper gap0.16 mm, maximum-body gap0.36 mm, courtyard gap0.01 mm. This is a dense assembly assumption, not a vendor recommendation. Placement, paste and support process require assembly qualification.
+
+Checked: native numbered pad geometry identical to base footprint; model URI/offset/rotation byte-identical; symbol and local English/bilingual datasheet unchanged. Native two-pixel fixture uses the intended0.15 mm JLC exposed-pad clearance; no padstack invalidity, shorts or courtyard overlap. Default KiCad0.20 mm clearance produces2 findings as expected; dedicated fixture rule reflects the actual project process and does not lower the original0.15 mm requirement.
+
+Visuals: before.png and after.png are native footprint plots. Only courtyard and explanatory description/name change. Existing base part top/front/iso model evidence remains applicable because electrical lands, body artwork and model transform are unchanged. No new model fidelity claim.
+
+Library hygiene: NDA tree gate passed. Datasheet verification still reports unrelated existing library backlog; this variant reuses the original accepted bilingual XL-1010 document and does not change any symbol datasheet field.

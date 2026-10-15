@@ -1,0 +1,2 @@
+(version 1)
+(rule "JLC exposed pad spacing used by dense flex" (constraint clearance (min 0.15mm)))
