@@ -333,6 +333,10 @@ isolated configuration. A generic S-expression parse and filesystem URI check
 are insufficient: a compact generated table can pass both yet be skipped by
 KiCad as type `UNINITIALIZED`. Require no skipped/missing project libraries;
 embedded symbols and board models can still render while the tables are broken.
+Preserve a generic symbol's intentionally blank default footprint. Do not fill
+it from the placed instances merely to package a project: that creates cache vs
+library mismatches. If a named part's default footprint is stale, correct its
+project/master definition and embedded cache together, then rerun native ERC.
 
 **A cached symbol is not the master.** Editing the copy in a sheet's
 `lib_symbols` block changes the design but not the library, so a future
