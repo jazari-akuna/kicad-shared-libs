@@ -1,0 +1,53 @@
+{
+  "checked_at": "2026-10-15T19:32:40.610007+00:00",
+  "manufacturer": "Vishay",
+  "mpn": "CRCW060368R0FKEAHP",
+  "lcsc": "C242566",
+  "jlc_live_stock": 1992,
+  "jlc_assembly_process": "SMT",
+  "jlc_library": "expand",
+  "required_per_strip": 101,
+  "manufacturer_datasheet": "https://www.vishay.com/docs/20043/crcwhpe3.pdf",
+  "datasheet_revision": "17-Mar-2026",
+  "datasheet_pages": {
+    "ratings": 1,
+    "part_number": 3,
+    "derating": 6,
+    "dimensions_and_lands": 9
+  },
+  "p70_W": 0.33,
+  "ambient100C_derated_W": 0.2135294117647059,
+  "worst_case_ballast_W_supplied_by_power_analysis": 0.0976,
+  "power_margin_at100C": 2.187801350048216,
+  "rating_condition": "Rated dissipation applies only while permissible assembled resistor film temperature155C is not exceeded. Board thermal resistance must be verified. Do not substitute the0.75W terminal-temperature105C rating for P70.",
+  "canonical_lands_mm": {
+    "pad": [
+      0.75,
+      1.0
+    ],
+    "centers": [
+      -0.75,
+      0.75
+    ],
+    "gap": 0.75,
+    "outer_span": 2.25
+  },
+  "placed_dense_override_mm": {
+    "pad": [
+      0.6,
+      0.8
+    ],
+    "centers": [
+      -0.75,
+      0.75
+    ],
+    "gap": 0.9,
+    "outer_span": 2.1
+  },
+  "holds": [
+    "Placed dense lands differ from manufacturer general-purpose recommendation; JLC assembly and flex thermal qualification required.",
+    "Existing simple0603 model width0.80mm instead of nominal0.85mm retained; bounding-body clearances checked separately."
+  ],
+  "api_url": "https://cart.jlcpcb.com/shoppingCart/smtGood/getComponentDetail?componentCode=C242566",
+  "stock_not_reserved": true
+}

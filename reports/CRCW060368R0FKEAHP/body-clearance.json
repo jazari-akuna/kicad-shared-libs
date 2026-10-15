@@ -1,0 +1,520 @@
+{
+  "ballast_max_body_mm": [
+    1.7,
+    0.95,
+    0.55
+  ],
+  "capacitor_max_body_mm": [
+    0.65,
+    0.35
+  ],
+  "minimum_body_gap_mm": 0.8499999999999995,
+  "measurements": [
+    {
+      "ref": "RIR33",
+      "closest": "C101",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR4",
+      "closest": "C13",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR48",
+      "closest": "C148",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR17",
+      "closest": "C51",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR78",
+      "closest": "C241",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR6",
+      "closest": "C19",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR68",
+      "closest": "C210",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR96",
+      "closest": "C294",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR12",
+      "closest": "C36",
+      "gap_mm": 0.8499999999999998
+    },
+    {
+      "ref": "RIR11",
+      "closest": "C33",
+      "gap_mm": 0.8499999999999998
+    },
+    {
+      "ref": "RIR62",
+      "closest": "C192",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR93",
+      "closest": "C285",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR36",
+      "closest": "C110",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR53",
+      "closest": "C165",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR94",
+      "closest": "C288",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR60",
+      "closest": "C186",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR37",
+      "closest": "C113",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR8",
+      "closest": "C24",
+      "gap_mm": 0.8499999999999998
+    },
+    {
+      "ref": "RIR90",
+      "closest": "C276",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR7",
+      "closest": "C22",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR100",
+      "closest": "C307",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR40",
+      "closest": "C123",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR74",
+      "closest": "C227",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR80",
+      "closest": "C247",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR27",
+      "closest": "C84",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR35",
+      "closest": "C107",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR18",
+      "closest": "C54",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR38",
+      "closest": "C116",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR55",
+      "closest": "C171",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR30",
+      "closest": "C92",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR64",
+      "closest": "C198",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR52",
+      "closest": "C162",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR81",
+      "closest": "C250",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR63",
+      "closest": "C195",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR49",
+      "closest": "C150",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR86",
+      "closest": "C265",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR97",
+      "closest": "C297",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR88",
+      "closest": "C270",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR67",
+      "closest": "C207",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR92",
+      "closest": "C282",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR25",
+      "closest": "C75",
+      "gap_mm": 1.2099999999999997
+    },
+    {
+      "ref": "RIR1",
+      "closest": "C3",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR31",
+      "closest": "C95",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR99",
+      "closest": "C304",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR26",
+      "closest": "C80",
+      "gap_mm": 1.2099999999999997
+    },
+    {
+      "ref": "RIR95",
+      "closest": "C291",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR58",
+      "closest": "C180",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR29",
+      "closest": "C90",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR47",
+      "closest": "C144",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR19",
+      "closest": "C57",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR89",
+      "closest": "C273",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR66",
+      "closest": "C204",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR76",
+      "closest": "C235",
+      "gap_mm": 1.2099999999999997
+    },
+    {
+      "ref": "RIR24",
+      "closest": "C72",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR9",
+      "closest": "C27",
+      "gap_mm": 0.8499999999999998
+    },
+    {
+      "ref": "RIR50",
+      "closest": "C153",
+      "gap_mm": 1.2099999999999997
+    },
+    {
+      "ref": "RIR71",
+      "closest": "C219",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR23",
+      "closest": "C69",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR3",
+      "closest": "C10",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR65",
+      "closest": "C201",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR82",
+      "closest": "C253",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR42",
+      "closest": "C129",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR41",
+      "closest": "C126",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR16",
+      "closest": "C48",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR59",
+      "closest": "C183",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR44",
+      "closest": "C135",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR98",
+      "closest": "C300",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR61",
+      "closest": "C189",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR85",
+      "closest": "C262",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR69",
+      "closest": "C213",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR5",
+      "closest": "C16",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR46",
+      "closest": "C141",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR75",
+      "closest": "C230",
+      "gap_mm": 1.2099999999999997
+    },
+    {
+      "ref": "RIR15",
+      "closest": "C45",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR13",
+      "closest": "C39",
+      "gap_mm": 0.8499999999999998
+    },
+    {
+      "ref": "RIR84",
+      "closest": "C259",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR28",
+      "closest": "C86",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR91",
+      "closest": "C279",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR14",
+      "closest": "C42",
+      "gap_mm": 0.8499999999999998
+    },
+    {
+      "ref": "RIR72",
+      "closest": "C222",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR83",
+      "closest": "C256",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR79",
+      "closest": "C244",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR54",
+      "closest": "C168",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR56",
+      "closest": "C174",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR10",
+      "closest": "C30",
+      "gap_mm": 0.8499999999999998
+    },
+    {
+      "ref": "RIR22",
+      "closest": "C66",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR87",
+      "closest": "C267",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR34",
+      "closest": "C104",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR73",
+      "closest": "C225",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR43",
+      "closest": "C132",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR39",
+      "closest": "C119",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR21",
+      "closest": "C63",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR51",
+      "closest": "C158",
+      "gap_mm": 1.2099999999999997
+    },
+    {
+      "ref": "RIR20",
+      "closest": "C60",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR45",
+      "closest": "C138",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR101",
+      "closest": "C309",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR2",
+      "closest": "C6",
+      "gap_mm": 0.8499999999999996
+    },
+    {
+      "ref": "RIR32",
+      "closest": "C98",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR70",
+      "closest": "C216",
+      "gap_mm": 0.8499999999999995
+    },
+    {
+      "ref": "RIR77",
+      "closest": "C239",
+      "gap_mm": 0.8519997392018368
+    },
+    {
+      "ref": "RIR57",
+      "closest": "C177",
+      "gap_mm": 0.8499999999999995
+    }
+  ],
+  "scope": "All rear array components; test pads have no purchased body. Dimensions include manufacturer tolerances."
+}
