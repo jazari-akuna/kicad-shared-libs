@@ -1,0 +1,1576 @@
+(kicad_pcb
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(general
+		(thickness 1.6)
+		(legacy_teardrops no)
+	)
+	(paper "A4")
+	(layers
+		(0 "F.Cu" signal)
+		(2 "B.Cu" signal)
+		(9 "F.Adhes" user "F.Adhesive")
+		(11 "B.Adhes" user "B.Adhesive")
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user "User.Drawings")
+		(19 "Cmts.User" user "User.Comments")
+		(21 "Eco1.User" user "User.Eco1")
+		(23 "Eco2.User" user "User.Eco2")
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
+		(33 "B.Fab" user)
+		(39 "User.1" user)
+		(41 "User.2" user)
+		(43 "User.3" user)
+		(45 "User.4" user)
+	)
+	(setup
+		(pad_to_mask_clearance 0)
+		(allow_soldermask_bridges_in_footprints no)
+		(tenting
+			(front yes)
+			(back yes)
+		)
+		(covering
+			(front no)
+			(back no)
+		)
+		(plugging
+			(front no)
+			(back no)
+		)
+		(capping no)
+		(filling no)
+		(pcbplotparams
+			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
+			(disableapertmacros no)
+			(usegerberextensions no)
+			(usegerberattributes yes)
+			(usegerberadvancedattributes yes)
+			(creategerberjobfile yes)
+			(dashed_line_dash_ratio 12)
+			(dashed_line_gap_ratio 3)
+			(svgprecision 4)
+			(plotframeref no)
+			(mode 1)
+			(useauxorigin no)
+			(pdf_front_fp_property_popups yes)
+			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
+			(dxfpolygonmode yes)
+			(dxfimperialunits yes)
+			(dxfusepcbnewfont yes)
+			(psnegative no)
+			(psa4output no)
+			(plot_black_and_white yes)
+			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
+			(subtractmaskfromsilk no)
+			(outputformat 1)
+			(mirror no)
+			(drillshape 1)
+			(scaleselection 1)
+			(outputdirectory "")
+		)
+	)
+	(footprint "Sensor_KSL:PHOTODIODE-0805_TEMD7100X01-DenseFlex"
+		(layer "F.Cu")
+		(uuid "02b12e73-ac87-4ee3-819b-e2c39c61f2f0")
+		(at 10 12.325)
+		(descr "Dense-flex2.78x1.58mm courtyard is an assembly assumption; original Vishay2.6x1.45mm recommended land envelope retained.")
+		(property "Reference" "PD1"
+			(at 0 -1.475 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "ad9fb3d1-ae5e-48f3-b53e-02b073d1a929")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "TEMD7100X01"
+			(at 0 1.475 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c4b84499-d4bc-4dc2-ae42-05de2867bcee")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8103002c-d2a6-4144-a740-118f635114b4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "71ff4103-b770-414a-a738-717a6e3ab401")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_rect
+			(start -1.39 -0.79)
+			(end 1.39 0.79)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "b2550c78-f1bf-4945-88d0-46abffac0ebc")
+		)
+		(fp_rect
+			(start -1 -0.625)
+			(end 1 0.625)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "0e615b3e-e2b5-452d-90e1-2828dcf10648")
+		)
+		(fp_circle
+			(center -0.8 -0.425)
+			(end -0.72 -0.425)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "0fb8eba5-6210-4a79-8e21-e914767041dc")
+		)
+		(pad "1" smd roundrect
+			(at -0.8 0)
+			(size 1 1.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.1)
+			(net "PD1_1")
+			(uuid "8d9223bb-2410-4743-8708-76996c369c34")
+		)
+		(pad "2" smd roundrect
+			(at 0.8 0)
+			(size 1 1.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.1)
+			(net "PD1_2")
+			(uuid "f0efae58-63cf-4c6d-b4c0-2508baf6a885")
+		)
+		(embedded_fonts no)
+		(model "${KSL_ROOT}/Sensor_KSL/Sensor_KSL.3dshapes/PHOTODIODE-0805_TEMD7100X01.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "LED_KSL:LED-SMD_2P-L1.6-W0.8-LTE-C9901-DenseFlex"
+		(layer "F.Cu")
+		(uuid "208d18a1-907a-4b62-9d07-49c83cec4564")
+		(at 5.4 12.2 180)
+		(descr "Lite-On LTE-C9901 C2683614. Manufacturer suggested lands p5: 0.55x0.80 centres +/-0.725. Body nominal1.6x0.8x0.98, tolerance +/-0.1. Dense-flex 2.10x1.00mm courtyard is an assembly assumption. Simplified datasheet-envelope model, not manufacturer CAD. Cathode1 -X; anode2 +X.")
+		(tags "C2683614 LTE-C9901 940nm IR LED")
+		(property "Reference" "D1"
+			(at 0 -1.35 180)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "90f15ee8-ca86-4e5a-9a6b-eb55f0f7de07")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+			)
+		)
+		(property "Value" "LTE-C9901"
+			(at 0 1.35 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "653b46aa-f15b-4bb9-bd71-f1c6ace0dcde")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.08)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f2640300-ea60-4da5-af85-d24353f43571")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e089b3bc-f9aa-43cb-9e65-56a9e356bc70")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_rect
+			(start -1.05 -0.5)
+			(end 1.05 0.5)
+			(stroke
+				(width 0.025)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "272cffc7-3a88-43b9-b669-b0471189fd44")
+		)
+		(fp_line
+			(start -0.5 -0.4)
+			(end -0.5 0.4)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "F.Fab")
+			(uuid "1f4d2ccb-fd95-48b9-a47b-4dd9d1716a57")
+		)
+		(fp_rect
+			(start -0.8 -0.4)
+			(end 0.8 0.4)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "84006be9-3e28-4cc9-a7ce-be7425a36c53")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 0.35 0)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "78c2bf77-6fb2-405f-998b-9ef9f6bf5994")
+		)
+		(pad "1" smd rect
+			(at -0.725 0 180)
+			(size 0.55 0.8)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "D1_1")
+			(uuid "c811b065-d1a2-402e-ace7-17395ab66aac")
+		)
+		(pad "2" smd rect
+			(at 0.725 0 180)
+			(size 0.55 0.8)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "D1_2")
+			(uuid "00db99a3-906a-42fc-a0a3-66ebc70b4b5b")
+		)
+		(embedded_fonts no)
+		(model "${KSL_ROOT}/LED_KSL/LED_KSL.3dshapes/LED-SMD_2P-L1.6-W0.8-LTE-C9901.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "LED_KSL:LED-SMD_4P-L1.0-W1.0-TL_XL-1010RGBC-2812B-DenseFlex"
+		(layer "F.Cu")
+		(uuid "266adf36-5bf8-4c0c-85eb-153f4ca4f327")
+		(at 7.61 11 180)
+		(descr "C5349953: manufacturer p10 1.0x1.0 body; four 0.45mm lands, 0.85mm pitch; dense-flex courtyard 1.45x1.39mm is assembly assumption (0.075mm X/0.045mm Y beyond lands); assembly process qualification required")
+		(tags "C5349953 XL-1010RGBC-WS2812B RGB")
+		(property "Reference" "LED2"
+			(at 0 -1.1 180)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "2fc0caf2-0535-404d-b57f-9a4a065aedd4")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "XL-1010RGBC-2812B"
+			(at 0 1.1 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "598ebfe6-7c12-4561-8e86-b52d8a22590f")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5f371500-afcf-4923-bec8-4a4b2013e692")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "43e24a95-e8ff-481a-a621-d4492858f777")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_rect
+			(start -0.695 -0.695)
+			(end 0.695 0.695)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "f51b7643-cbe8-4980-a50f-3caa70cd1edb")
+		)
+		(fp_rect
+			(start -0.5 -0.5)
+			(end 0.5 0.5)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "387fea82-cff9-49e2-bc17-3210284aceb4")
+		)
+		(fp_circle
+			(center -0.3 -0.3)
+			(end -0.25 -0.3)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "1e9d6968-17dd-4fab-9dbd-8c3e50454778")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.1 180)
+			(layer "F.Fab")
+			(uuid "cf83ade4-a6bb-4b49-96ed-b2f5f26a9b95")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.425 -0.425 180)
+			(size 0.45 0.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "LED2_1")
+			(uuid "04356249-034f-4aca-a7c6-cf9905d26c63")
+		)
+		(pad "2" smd rect
+			(at 0.425 -0.425 180)
+			(size 0.45 0.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "LED2_2")
+			(uuid "6f27b50f-93f4-4329-851f-e917347c22a1")
+		)
+		(pad "3" smd rect
+			(at -0.425 0.425 180)
+			(size 0.45 0.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "LED2_3")
+			(uuid "4bc261e0-d294-4aab-b543-a9bbc16811b5")
+		)
+		(pad "4" smd rect
+			(at 0.425 0.425 180)
+			(size 0.45 0.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "LED2_4")
+			(uuid "4a4a59df-633e-4f38-adb8-7369fe639aad")
+		)
+		(embedded_fonts no)
+		(model "${KSL_ROOT}/LED_KSL/LED_KSL.3dshapes/LED-SMD_4P-L1.0-W1.0-TL_XL-1010RGBC-2812B.step"
+			(offset
+				(xyz 0 0 0.01)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "LED_KSL:LED-SMD_4P-L1.0-W1.0-TL_XL-1010RGBC-2812B-DenseFlex"
+		(layer "F.Cu")
+		(uuid "2c22f015-04f0-4450-a50e-36019ebd5217")
+		(at 12.19 11 -90)
+		(descr "C5349953: manufacturer p10 1.0x1.0 body; four 0.45mm lands, 0.85mm pitch; dense-flex courtyard 1.45x1.39mm is assembly assumption (0.075mm X/0.045mm Y beyond lands); assembly process qualification required")
+		(tags "C5349953 XL-1010RGBC-WS2812B RGB")
+		(property "Reference" "LED5"
+			(at 0 -1.1 270)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "16e6910e-0bea-4f37-b7dc-091a6f69e407")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "XL-1010RGBC-2812B"
+			(at 0 1.1 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8bad63e7-85b5-4c6a-81ee-d70583f00c6f")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f496fa59-f3fa-415b-bf20-c56d93c3bb62")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4d8b4c35-a099-4ea4-ab82-3b5062cba56b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_rect
+			(start -0.695 -0.695)
+			(end 0.695 0.695)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "7ca946f0-ed3d-4615-9007-7a19ae9f772c")
+		)
+		(fp_rect
+			(start -0.5 -0.5)
+			(end 0.5 0.5)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "eaa48e03-0ead-43cd-bb2f-53348f0b11a0")
+		)
+		(fp_circle
+			(center -0.3 -0.3)
+			(end -0.25 -0.3)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "8bc0ac74-fd80-47cf-862e-abc44488f9d0")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.1 270)
+			(layer "F.Fab")
+			(uuid "53c0ee88-deec-4e7f-8d3b-c4650f47114d")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.425 -0.425 270)
+			(size 0.45 0.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "LED5_1")
+			(uuid "b321c8a9-1197-4452-ae70-128bd7d4c2c5")
+		)
+		(pad "2" smd rect
+			(at 0.425 -0.425 270)
+			(size 0.45 0.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "LED5_2")
+			(uuid "b07ab5cd-7b97-4ad0-82b8-40dc0b510abf")
+		)
+		(pad "3" smd rect
+			(at -0.425 0.425 270)
+			(size 0.45 0.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "LED5_3")
+			(uuid "a37e5029-225e-4ed6-b986-ad3354caace8")
+		)
+		(pad "4" smd rect
+			(at 0.425 0.425 270)
+			(size 0.45 0.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "LED5_4")
+			(uuid "7efcdd18-e28c-41c5-9fee-8521b529b465")
+		)
+		(embedded_fonts no)
+		(model "${KSL_ROOT}/LED_KSL/LED_KSL.3dshapes/LED-SMD_4P-L1.0-W1.0-TL_XL-1010RGBC-2812B.step"
+			(offset
+				(xyz 0 0 0.01)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "LED_KSL:LED-SMD_4P-L1.0-W1.0-TL_XL-1010RGBC-2812B-DenseFlex"
+		(layer "F.Cu")
+		(uuid "8d5e25e3-e0d3-45d0-a9db-fc35b0c1f5e9")
+		(at 6.15 11 180)
+		(descr "C5349953: manufacturer p10 1.0x1.0 body; four 0.45mm lands, 0.85mm pitch; dense-flex courtyard 1.45x1.39mm is assembly assumption (0.075mm X/0.045mm Y beyond lands); assembly process qualification required")
+		(tags "C5349953 XL-1010RGBC-WS2812B RGB")
+		(property "Reference" "LED1"
+			(at 0 -1.1 180)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "7ed9ebf4-20bb-40bf-b952-62b804f0d765")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "XL-1010RGBC-2812B"
+			(at 0 1.1 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e0ae5558-694d-4852-804c-dd533e1eadc2")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3a212de5-aa1e-4313-8d96-d26c7332f941")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f8ffb8c3-de9f-48cb-a7b9-2511c15359b0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_rect
+			(start -0.695 -0.695)
+			(end 0.695 0.695)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "7ec1563c-f41e-45a7-9642-a862b3a01232")
+		)
+		(fp_rect
+			(start -0.5 -0.5)
+			(end 0.5 0.5)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "9071e4ea-95cd-4bac-96ba-269a9667d541")
+		)
+		(fp_circle
+			(center -0.3 -0.3)
+			(end -0.25 -0.3)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "2d4aa1eb-d88b-4f21-8829-ef5135d144d3")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.1 180)
+			(layer "F.Fab")
+			(uuid "c94b7b56-9415-47db-9ba9-abb25072bf43")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.425 -0.425 180)
+			(size 0.45 0.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "LED1_1")
+			(uuid "4438ce3f-d0cb-4152-b8e0-4627374889f7")
+		)
+		(pad "2" smd rect
+			(at 0.425 -0.425 180)
+			(size 0.45 0.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "LED1_2")
+			(uuid "8c9f05e4-819a-40dc-9ca0-7a3fca5896d0")
+		)
+		(pad "3" smd rect
+			(at -0.425 0.425 180)
+			(size 0.45 0.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "LED1_3")
+			(uuid "b00e3c12-3c10-4a3f-a2cc-671a792e2145")
+		)
+		(pad "4" smd rect
+			(at 0.425 0.425 180)
+			(size 0.45 0.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "LED1_4")
+			(uuid "63180145-0a35-4083-92e3-855ab60c2014")
+		)
+		(embedded_fonts no)
+		(model "${KSL_ROOT}/LED_KSL/LED_KSL.3dshapes/LED-SMD_4P-L1.0-W1.0-TL_XL-1010RGBC-2812B.step"
+			(offset
+				(xyz 0 0 0.01)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "LED_KSL:LED-SMD_2P-L1.6-W0.8-LTE-C9901-DenseFlex"
+		(layer "F.Cu")
+		(uuid "9d1953f6-4a2b-49d3-a80f-0f4761fa3ab7")
+		(at 7.55 12.2 180)
+		(descr "Lite-On LTE-C9901 C2683614. Manufacturer suggested lands p5: 0.55x0.80 centres +/-0.725. Body nominal1.6x0.8x0.98, tolerance +/-0.1. Dense-flex 2.10x1.00mm courtyard is an assembly assumption. Simplified datasheet-envelope model, not manufacturer CAD. Cathode1 -X; anode2 +X.")
+		(tags "C2683614 LTE-C9901 940nm IR LED")
+		(property "Reference" "D2"
+			(at 0 -1.35 180)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "8c6271e4-3555-4905-8b50-72d3147a653e")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+			)
+		)
+		(property "Value" "LTE-C9901"
+			(at 0 1.35 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "12904f71-b224-4edf-a289-f82503ac25d0")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.08)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ec929e70-0949-46f4-8630-53814d35e7fa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4b3a9098-08d5-4110-b2e0-19e15e84c1ca")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_rect
+			(start -1.05 -0.5)
+			(end 1.05 0.5)
+			(stroke
+				(width 0.025)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "ba9de1cb-7fa7-43f7-bfdd-6c8556f97f45")
+		)
+		(fp_line
+			(start -0.5 -0.4)
+			(end -0.5 0.4)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "F.Fab")
+			(uuid "17f3bd5f-7559-4269-90ed-20f3f8832449")
+		)
+		(fp_rect
+			(start -0.8 -0.4)
+			(end 0.8 0.4)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "898876f5-b71c-4d8d-91f6-65ffecc3a09b")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 0.35 0)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "35675657-9c4a-4100-a7ff-69e38be5ad56")
+		)
+		(pad "1" smd rect
+			(at -0.725 0 180)
+			(size 0.55 0.8)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "D2_1")
+			(uuid "68fbba5f-f8ae-40e8-a20c-8ac06f1ea099")
+		)
+		(pad "2" smd rect
+			(at 0.725 0 180)
+			(size 0.55 0.8)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "D2_2")
+			(uuid "49194ab4-4042-4ea4-a675-b3ed569957f6")
+		)
+		(embedded_fonts no)
+		(model "${KSL_ROOT}/LED_KSL/LED_KSL.3dshapes/LED-SMD_2P-L1.6-W0.8-LTE-C9901.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "LED_KSL:LED-SMD_4P-L1.0-W1.0-TL_XL-1010RGBC-2812B-DenseFlex"
+		(layer "F.Cu")
+		(uuid "a9e749e5-6361-43e9-b55e-04a5fa499903")
+		(at 9.27 10.8 -90)
+		(descr "C5349953: manufacturer p10 1.0x1.0 body; four 0.45mm lands, 0.85mm pitch; dense-flex courtyard 1.45x1.39mm is assembly assumption (0.075mm X/0.045mm Y beyond lands); assembly process qualification required")
+		(tags "C5349953 XL-1010RGBC-WS2812B RGB")
+		(property "Reference" "LED3"
+			(at 0 -1.1 270)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "4e5dc569-6a75-4f70-bc35-9597caba67f5")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "XL-1010RGBC-2812B"
+			(at 0 1.1 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "09619459-a861-48ab-babf-a17293d936bb")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2d1e8d28-d72b-405e-961a-ce3e3b2ecb03")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "46ea2d89-16a6-4716-8fda-84a46c3b77d7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_rect
+			(start -0.695 -0.695)
+			(end 0.695 0.695)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "ef8dc18d-ea2c-4679-a36f-7262b570a82e")
+		)
+		(fp_rect
+			(start -0.5 -0.5)
+			(end 0.5 0.5)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "cf55414c-c770-4b5a-9ce9-b5ad0e85efbc")
+		)
+		(fp_circle
+			(center -0.3 -0.3)
+			(end -0.25 -0.3)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "ac22ae26-6cb4-427f-98fc-f5284f35280e")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.1 270)
+			(layer "F.Fab")
+			(uuid "112c2752-dec7-488a-a5da-d695fa4c3aff")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.425 -0.425 270)
+			(size 0.45 0.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "LED3_1")
+			(uuid "06e54e05-53e7-4cd1-bb59-9fbf40321ed3")
+		)
+		(pad "2" smd rect
+			(at 0.425 -0.425 270)
+			(size 0.45 0.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "LED3_2")
+			(uuid "3cb5b419-a073-4d37-ae17-919632106e33")
+		)
+		(pad "3" smd rect
+			(at -0.425 0.425 270)
+			(size 0.45 0.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "LED3_3")
+			(uuid "52244b61-e945-4329-a295-e24ba36de5d1")
+		)
+		(pad "4" smd rect
+			(at 0.425 0.425 270)
+			(size 0.45 0.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "LED3_4")
+			(uuid "a67ea261-91f4-4788-bf37-e9f6414b2c62")
+		)
+		(embedded_fonts no)
+		(model "${KSL_ROOT}/LED_KSL/LED_KSL.3dshapes/LED-SMD_4P-L1.0-W1.0-TL_XL-1010RGBC-2812B.step"
+			(offset
+				(xyz 0 0 0.01)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "LED_KSL:LED-SMD_4P-L1.0-W1.0-TL_XL-1010RGBC-2812B-DenseFlex"
+		(layer "F.Cu")
+		(uuid "d7c5df91-fb93-42df-8011-20f317e1e120")
+		(at 10.73 10.8 180)
+		(descr "C5349953: manufacturer p10 1.0x1.0 body; four 0.45mm lands, 0.85mm pitch; dense-flex courtyard 1.45x1.39mm is assembly assumption (0.075mm X/0.045mm Y beyond lands); assembly process qualification required")
+		(tags "C5349953 XL-1010RGBC-WS2812B RGB")
+		(property "Reference" "LED4"
+			(at 0 -1.1 180)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "477bd04e-7f7b-4de5-9da2-678be7341d91")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "XL-1010RGBC-2812B"
+			(at 0 1.1 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "21c2222c-e8ba-4dee-b979-e4a8458f5461")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fbfef3ae-d5ea-42ea-aa39-90dff2937937")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ec4295bb-42ec-42eb-a925-ce14be28a7b6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_rect
+			(start -0.695 -0.695)
+			(end 0.695 0.695)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "a3e03832-f7f2-4633-8a01-cf15fbc7d929")
+		)
+		(fp_rect
+			(start -0.5 -0.5)
+			(end 0.5 0.5)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "c48d9304-513c-4b69-858f-928f65c6ca66")
+		)
+		(fp_circle
+			(center -0.3 -0.3)
+			(end -0.25 -0.3)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "b2f9ebbf-ec06-43ad-9bc8-de72ccfb3282")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.1 180)
+			(layer "F.Fab")
+			(uuid "b05d0c8a-04f4-40bd-b50c-4aa55eb71dd4")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.425 -0.425 180)
+			(size 0.45 0.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "LED4_1")
+			(uuid "61cd3081-c314-4a40-9100-310108bdf1d9")
+		)
+		(pad "2" smd rect
+			(at 0.425 -0.425 180)
+			(size 0.45 0.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "LED4_2")
+			(uuid "95e10e61-fcef-4585-a361-6c64bdc46677")
+		)
+		(pad "3" smd rect
+			(at -0.425 0.425 180)
+			(size 0.45 0.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "LED4_3")
+			(uuid "42b9c7ca-7677-4eba-b3d7-1c92d7387616")
+		)
+		(pad "4" smd rect
+			(at 0.425 0.425 180)
+			(size 0.45 0.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "LED4_4")
+			(uuid "5fad8aab-9125-41dc-9735-fa88da5c51b8")
+		)
+		(embedded_fonts no)
+		(model "${KSL_ROOT}/LED_KSL/LED_KSL.3dshapes/LED-SMD_4P-L1.0-W1.0-TL_XL-1010RGBC-2812B.step"
+			(offset
+				(xyz 0 0 0.01)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "LED_KSL:LED-SMD_4P-L1.0-W1.0-TL_XL-1010RGBC-2812B-DenseFlex"
+		(layer "F.Cu")
+		(uuid "dec258e6-c211-4a19-8550-25ee9de38bdf")
+		(at 13.65 11 -90)
+		(descr "C5349953: manufacturer p10 1.0x1.0 body; four 0.45mm lands, 0.85mm pitch; dense-flex courtyard 1.45x1.39mm is assembly assumption (0.075mm X/0.045mm Y beyond lands); assembly process qualification required")
+		(tags "C5349953 XL-1010RGBC-WS2812B RGB")
+		(property "Reference" "LED6"
+			(at 0 -1.1 270)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "0ea2f98c-4d84-4af2-994d-19fbd0a2f805")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "XL-1010RGBC-2812B"
+			(at 0 1.1 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bd92ea75-4846-4149-89c8-8b3de7bdc72f")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "72d176e1-3004-4913-b53c-6a0384bfdfe1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a8934c4c-7787-4605-8a58-0b523363b336")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_rect
+			(start -0.695 -0.695)
+			(end 0.695 0.695)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "66b49519-81be-4a54-934a-4576975043e3")
+		)
+		(fp_rect
+			(start -0.5 -0.5)
+			(end 0.5 0.5)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "1f67a671-8096-415a-a986-e13a44cf3e0a")
+		)
+		(fp_circle
+			(center -0.3 -0.3)
+			(end -0.25 -0.3)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "48be1a52-7c44-4030-8013-10824ebdf230")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.1 270)
+			(layer "F.Fab")
+			(uuid "cab09278-f906-48ca-92b0-999dbecdd90a")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.425 -0.425 270)
+			(size 0.45 0.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "LED6_1")
+			(uuid "70e420d7-7c08-4892-b3b9-b53295e49ffa")
+		)
+		(pad "2" smd rect
+			(at 0.425 -0.425 270)
+			(size 0.45 0.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "LED6_2")
+			(uuid "ffbab75b-f536-4212-b182-72f0f4a3f43a")
+		)
+		(pad "3" smd rect
+			(at -0.425 0.425 270)
+			(size 0.45 0.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "LED6_3")
+			(uuid "05a9ee3c-56ce-4ad1-9bf6-b7ad55a3293d")
+		)
+		(pad "4" smd rect
+			(at 0.425 0.425 270)
+			(size 0.45 0.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "LED6_4")
+			(uuid "0cb68253-5383-4a1e-a594-159df09b59e8")
+		)
+		(embedded_fonts no)
+		(model "${KSL_ROOT}/LED_KSL/LED_KSL.3dshapes/LED-SMD_4P-L1.0-W1.0-TL_XL-1010RGBC-2812B.step"
+			(offset
+				(xyz 0 0 0.01)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "LED_KSL:LED-SMD_2P-L1.6-W0.8-LTE-C9901-DenseFlex"
+		(layer "F.Cu")
+		(uuid "e16b82c1-a0a6-44e9-a4a1-41b3cae627ae")
+		(at 12.45 12.2 180)
+		(descr "Lite-On LTE-C9901 C2683614. Manufacturer suggested lands p5: 0.55x0.80 centres +/-0.725. Body nominal1.6x0.8x0.98, tolerance +/-0.1. Dense-flex 2.10x1.00mm courtyard is an assembly assumption. Simplified datasheet-envelope model, not manufacturer CAD. Cathode1 -X; anode2 +X.")
+		(tags "C2683614 LTE-C9901 940nm IR LED")
+		(property "Reference" "D3"
+			(at 0 -1.35 180)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a1ef38bc-9b53-466e-b12e-7c921975b12f")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+			)
+		)
+		(property "Value" "LTE-C9901"
+			(at 0 1.35 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "720c25ed-0dae-4f24-826e-5ad202a3b5dc")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.08)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "42f8f58e-31d8-4bca-bd0c-18248e9eba81")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "837fd383-fd4e-4c50-8581-2ecc26c31843")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_rect
+			(start -1.05 -0.5)
+			(end 1.05 0.5)
+			(stroke
+				(width 0.025)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "9a5516be-8641-44a0-8975-dd64325432b6")
+		)
+		(fp_line
+			(start -0.5 -0.4)
+			(end -0.5 0.4)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "F.Fab")
+			(uuid "e45ecc10-6140-4964-89d7-1db55a1d45a2")
+		)
+		(fp_rect
+			(start -0.8 -0.4)
+			(end 0.8 0.4)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "031a2727-eea1-4b5d-bb95-e140e922b312")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 0.35 0)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "526d0570-b972-4e31-a673-76bf8b403a6d")
+		)
+		(pad "1" smd rect
+			(at -0.725 0 180)
+			(size 0.55 0.8)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "D3_1")
+			(uuid "476e3c62-a408-4831-85c0-249ed69ba1e9")
+		)
+		(pad "2" smd rect
+			(at 0.725 0 180)
+			(size 0.55 0.8)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "D3_2")
+			(uuid "af141ca6-08f9-4d37-b231-6a6512049885")
+		)
+		(embedded_fonts no)
+		(model "${KSL_ROOT}/LED_KSL/LED_KSL.3dshapes/LED-SMD_2P-L1.6-W0.8-LTE-C9901.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "LED_KSL:LED-SMD_2P-L1.6-W0.8-LTE-C9901-DenseFlex"
+		(layer "F.Cu")
+		(uuid "f605f97d-44d8-49d0-bcb3-c5ad9cc63091")
+		(at 14.6 12.2 180)
+		(descr "Lite-On LTE-C9901 C2683614. Manufacturer suggested lands p5: 0.55x0.80 centres +/-0.725. Body nominal1.6x0.8x0.98, tolerance +/-0.1. Dense-flex 2.10x1.00mm courtyard is an assembly assumption. Simplified datasheet-envelope model, not manufacturer CAD. Cathode1 -X; anode2 +X.")
+		(tags "C2683614 LTE-C9901 940nm IR LED")
+		(property "Reference" "D4"
+			(at 0 -1.35 180)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "e1d59a11-dd38-482f-b864-e1d52e26f285")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+			)
+		)
+		(property "Value" "LTE-C9901"
+			(at 0 1.35 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "276cd27e-261d-450e-b988-e48fe349721d")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.08)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "94c7d40a-fd5a-448e-9166-9d90941ffba0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fe13b2e5-da56-44a9-8a61-1eafdc9a6708")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_rect
+			(start -1.05 -0.5)
+			(end 1.05 0.5)
+			(stroke
+				(width 0.025)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "1a69c809-4c41-40c3-9200-8ed014ea2b6c")
+		)
+		(fp_line
+			(start -0.5 -0.4)
+			(end -0.5 0.4)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "F.Fab")
+			(uuid "3349ad9a-3e6e-43d7-b518-342f7acdddf3")
+		)
+		(fp_rect
+			(start -0.8 -0.4)
+			(end 0.8 0.4)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "a699d94d-e996-4ff3-9e69-ec69e50282c3")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 0.35 0)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "744a3058-d3bf-433f-80c2-9f1fc54d4b37")
+		)
+		(pad "1" smd rect
+			(at -0.725 0 180)
+			(size 0.55 0.8)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "D4_1")
+			(uuid "4fc5b63b-bd6a-4386-be43-c3ae21b8a5a3")
+		)
+		(pad "2" smd rect
+			(at 0.725 0 180)
+			(size 0.55 0.8)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "D4_2")
+			(uuid "ec6f472f-5a19-4a91-82c0-0f77eb9beab1")
+		)
+		(embedded_fonts no)
+		(model "${KSL_ROOT}/LED_KSL/LED_KSL.3dshapes/LED-SMD_2P-L1.6-W0.8-LTE-C9901.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(gr_line
+		(start 3 8)
+		(end 17 8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "9ac3da05-6665-455f-919a-e188b522251c")
+	)
+	(gr_line
+		(start 3 15)
+		(end 3 8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "c91e46a2-34ab-4cbf-8dc7-38d2b6f7129d")
+	)
+	(gr_line
+		(start 17 8)
+		(end 17 15)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "e489ecbd-51d1-41a3-b16b-73da5f5cead9")
+	)
+	(gr_line
+		(start 17 15)
+		(end 3 15)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "33a200eb-dd6f-420d-8ebe-367508293e31")
+	)
+	(embedded_fonts no)
+)

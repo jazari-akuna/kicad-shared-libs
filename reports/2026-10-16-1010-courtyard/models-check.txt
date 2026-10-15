@@ -1,0 +1,9 @@
+kicad-shared-libs: 201 footprints
+
+units      65 legacy / 136 modern footprints; 56 carry a legacy (at ...) node, 56 of them below 0.005 mm (rounding noise)
+transform  189 footprints reference a 3D model
+
+TRANSFORM reports/0603WAF820JT5E/downloaded-footprint.kicad_mod
+          - model file missing: ./R0603.step
+
+1 violation(s)

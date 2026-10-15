@@ -1,0 +1,13 @@
+XL-1010RGBC-2812B (C5349953) — square DenseFlex courtyard
+
+Change: 1.45 × 1.39 mm courtyard → 1.39 × 1.39 mm. This permits quarter-turn placement without changing the reserved Y envelope. The minimum land-to-courtyard margin remains 0.045 mm. This dense assembly allowance is an engineering assumption requiring assembler approval; it is not a manufacturer recommendation.
+
+Checked: four 0.45 mm copper lands on 0.85 mm pitch, pin numbers, body graphics, symbol, datasheet link and 3D transform unchanged. Manufacturer drawing p10 gives a maximum 1.10 × 1.10 mm body; the copper envelope is 1.30 × 1.30 mm. Existing source and 3D review from the Oct15 dense optical row remain applicable. No new model geometry or seating claim.
+
+Native KiCad before/after plots: before.png, after.png. Visually inspected: only the two courtyard X boundaries move inward by 0.030 mm each. No copper or body changes.
+
+Native mixed-orientation fixture: six RGB, four IR emitters, one receiver, independent nets on every pad. Three RGB rotated 90 degrees. DRC: 0 violations, 0 unconnected items. This checks land separation and courtyard geometry, not assembly yield.
+
+Shared-library checks are retained alongside this report. Any repository-wide findings refer to the broader library inventory and are not silently fixed by this one-part change. No publication or remote push performed.
+
+Gate results: model units/transform checks found one unrelated pre-existing downloaded-footprint model path; this RGB footprint passed. Datasheet inventory: 216 OK, 22 generic, 56 unresolved elsewhere; this part is not flagged. Publication tree check passed. Full repository checks are not represented as clean.
