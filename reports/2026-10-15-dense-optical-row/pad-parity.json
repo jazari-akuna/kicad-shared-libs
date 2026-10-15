@@ -1,0 +1,57 @@
+[
+  {
+    "ref": "LED1",
+    "numbered_pads_unchanged": true,
+    "footprint": "LED_KSL:LED-SMD_4P-L1.0-W1.0-TL_XL-1010RGBC-2812B-DenseFlex"
+  },
+  {
+    "ref": "LED2",
+    "numbered_pads_unchanged": true,
+    "footprint": "LED_KSL:LED-SMD_4P-L1.0-W1.0-TL_XL-1010RGBC-2812B-DenseFlex"
+  },
+  {
+    "ref": "LED3",
+    "numbered_pads_unchanged": true,
+    "footprint": "LED_KSL:LED-SMD_4P-L1.0-W1.0-TL_XL-1010RGBC-2812B-DenseFlex"
+  },
+  {
+    "ref": "LED4",
+    "numbered_pads_unchanged": true,
+    "footprint": "LED_KSL:LED-SMD_4P-L1.0-W1.0-TL_XL-1010RGBC-2812B-DenseFlex"
+  },
+  {
+    "ref": "LED5",
+    "numbered_pads_unchanged": true,
+    "footprint": "LED_KSL:LED-SMD_4P-L1.0-W1.0-TL_XL-1010RGBC-2812B-DenseFlex"
+  },
+  {
+    "ref": "LED6",
+    "numbered_pads_unchanged": true,
+    "footprint": "LED_KSL:LED-SMD_4P-L1.0-W1.0-TL_XL-1010RGBC-2812B-DenseFlex"
+  },
+  {
+    "ref": "D1",
+    "numbered_pads_unchanged": true,
+    "footprint": "LED_KSL:LED-SMD_2P-L1.6-W0.8-LTE-C9901-DenseFlex"
+  },
+  {
+    "ref": "D2",
+    "numbered_pads_unchanged": true,
+    "footprint": "LED_KSL:LED-SMD_2P-L1.6-W0.8-LTE-C9901-DenseFlex"
+  },
+  {
+    "ref": "D3",
+    "numbered_pads_unchanged": true,
+    "footprint": "LED_KSL:LED-SMD_2P-L1.6-W0.8-LTE-C9901-DenseFlex"
+  },
+  {
+    "ref": "D4",
+    "numbered_pads_unchanged": true,
+    "footprint": "LED_KSL:LED-SMD_2P-L1.6-W0.8-LTE-C9901-DenseFlex"
+  },
+  {
+    "ref": "PD1",
+    "numbered_pads_unchanged": true,
+    "footprint": "Sensor_KSL:PHOTODIODE-0805_TEMD7100X01-DenseFlex"
+  }
+]

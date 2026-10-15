@@ -1,0 +1,11 @@
+Dense optical row courtyard variants —2026-10-15
+
+Action: retain the original general-purpose footprints, and use explicit DenseFlex variants for compact two-row LED assembly. No source copper pad, numbering, body graphic, symbol, datasheet or model transform changes.
+
+Source facts: XL-1010RGBC-2812B p10: max body1.10x1.10 mm;1.30x1.30 mm copper envelope. LTE-C9901 p1/p5: max body1.70x0.90 mm;2.00x0.80 mm copper envelope. TEMD7100X01 p4: max body2.10x1.35 mm;2.60x1.45 mm copper envelope. All local source PDFs already reviewed; no manufacturer specifies the assumed courtyards.
+
+Assumed dense courtyards: RGB1.45x1.39 mm; IR2.10x1.00 mm; PD2.78x1.58 mm. These contain all recommended lands and maximum bodies; they reserve less assembly space than generic footprints and require assembly-process qualification. At normal RGB y1.00/IR y2.20, maximum body gap0.20 mm, copper gap0.15 mm and courtyard gap0.005 mm. At receiver y2.325 under raised RGB y0.80, copper gap0.15 mm and maximum body gap0.30 mm. Receiver-to-IR center spacing2.45 mm leaves0.01 mm courtyard gap.
+
+Native fixture: six RGB pixels including two raised by0.20 mm, four IR emitters and one receiver. Separate nets on every pad; process clearance0.15 mm. Completed KiCad DRC:0 violations and0 unconnected items. Reference/value text hidden as on actual strip. Native numbered-pad parity verified for all11 instances. Before/after native footprint plots supplied for all3 parts. Model URI/offset/rotation unchanged byte-for-byte; existing model fidelity evidence remains applicable.
+
+Not checked: assembly yield, machine tolerances, optical sensitivity through the clipped receiver, RF or thermal performance. Visible package fraction is not a sensor sensitivity estimate.

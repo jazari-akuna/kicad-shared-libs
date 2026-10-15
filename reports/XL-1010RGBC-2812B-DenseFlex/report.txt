@@ -11,3 +11,5 @@ Checked: native numbered pad geometry identical to base footprint; model URI/off
 Visuals: before.png and after.png are native footprint plots. Only courtyard and explanatory description/name change. Existing base part top/front/iso model evidence remains applicable because electrical lands, body artwork and model transform are unchanged. No new model fidelity claim.
 
 Library hygiene: NDA tree gate passed. Datasheet verification still reports unrelated existing library backlog; this variant reuses the original accepted bilingual XL-1010 document and does not change any symbol datasheet field.
+
+Superseded courtyard revision: the subsequent approved two-row arrangement uses DenseFlex1.45x1.39 mm (X unchanged, Y reduced). Current geometry and native combined-fixture evidence are in ../2026-10-15-dense-optical-row/. Earlier1.45 mm-square fixture is historical.
