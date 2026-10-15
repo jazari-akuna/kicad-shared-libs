@@ -1,0 +1,15 @@
+LTE-C9901 (C2683614) → LED_KSL — 2026-10-15
+
+Source: fresh JLC2KiCadLib download, corrected against the public English Lite-On datasheet, pages 1, 3 and 5. The original download remains in /tmp/kicad-part-reports/C2683614/source. Shared-library searches found no live LTE-C9901.
+
+Symbol: LED_KSL:LTE-C9901; pin 1 cathode, pin 2 anode. Changed imported unspecified pins to passive, moved reference/value clear of the symbol, and added Description, LCSC and local Datasheet properties.
+
+Footprint: LED_KSL:LED-SMD_2P-L1.6-W0.8-LTE-C9901. Changed imported ~0.8 mm square lands at ±0.749 mm to manufacturer-recommended 0.55 × 0.80 mm lands at ±0.725 mm. Body: 1.6 × 0.8 mm. The 2.2 × 1.1 mm courtyard is designer-defined, with 0.10 mm beyond copper and 0.10 mm beyond the maximum-width body. The consuming flex design must define its board-level coverlay.
+
+Datasheet property: ${KSL_ROOT}/datasheets/LTE-C9901.pdf. English, exact part. Optical intensity: minimum 5 / typical 8 mW/sr at 20 mA; 65° full viewing angle; 940 nm peak. The absolute maximum 60 mA DC rating is not an operating target.
+
+3D: the fresh JLC model measured 1.62 × 0.82 × 0.56 mm, missing the correct 0.98 mm lens height. Replaced it with the previously verified project model: nominal 1.60 × 0.80 × 0.98 mm, CAD-kernel checked. Seating Z = 0; cathode -X, anode +X. This is a simplified datasheet-envelope model: lens taper, terminal thickness, materials and mark detail are illustrative, not manufacturer STEP.
+
+Checks: two numbered copper pads match two symbol pins; native footprint reload passed. The distinct-pad-net fixture has zero shorts, invalid pads or opens. One fixture-only silkscreen-edge warning occurs because the small test board clips its reference text. Top, front and isometric renders were inspected; the model seats on the copper. Symbol and footprint renders were inspected. LED_KSL was already registered; no new global library entry was needed.
+
+Visuals: compare before-footprint.png with after-footprint.png; also see after-symbol.png, after-top.png, after-front.png and after-iso.png.

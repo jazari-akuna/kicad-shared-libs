@@ -1,0 +1,23 @@
+XL-1010RGBC-2812B (C5349953) -> LED_KSL | 2026-10-15
+
+Checked: C5349953 exact LCSC/EasyEDA CAD downloaded; original XINGLIGHT bilingual PDF includes complete English engineering information. C5349953 original document calls this XL-1010RGBC-WS2812B; current LCSC MPN is XL-1010RGBC-2812B. Distinct from existing -S variant C51900942; no replacement of that part.
+
+Sources:
+https://www.lcsc.com/product-detail/RGB-LEDs-Built-in-IC_XINGLIGHT-XL-1010RGBC-WS2812B_C5349953.html
+https://atta.szlcsc.com/upload/public/pdf/source/20230111/7F92487BABF607E2EE42D1D66EFE1A21.pdf
+Local: ${KSL_ROOT}/datasheets/XL-1010RGBC-2812B.pdf
+Search snapshot: 382,010 stock, USD0.0533 at1000 (live availability recheck before purchase).
+
+Manufacturer p10: body1.0x1.0x0.8mm, ±0.10mm unless specified; four recommended0.45x0.45mm copper lands, centre pitch0.85mm. Top view:1DOUT upper-left,2VDD upper-right,3GND lower-left,4DIN lower-right. These agree with pin tablep11. Copper envelope1.30x1.30mm; 1.50mm courtyard is an assembly assumption (0.10mm beyond lands), not manufacturer clearance. Minimum source-land copper-only pitch1.45mm at0.15mm clearance; actual routing and flexcoverlay impose additional spacing.
+
+Electrical p5/6/7/11:5mA/channel typical,0.35mA idle typical,800kbit/s,24-bit GRB,1kHzPWM typical. Datasheet supply tables conflict across sections (2.5/3.5V lowerbounds); design assumes4.5–5.5V operation. 5V system as requested. RGB only; no dedicated white. Perpixel100nF decoupling per applicationp7; input/output protection resistance recommended20ohm–2kohm depending link, around500ohm typical guidance. Exact bit timing beyond800kbit/s not specified; validate selected controller waveform on samples.
+
+Changes to imported CAD:
+- Round submicron conversion noise to exact nominal ±0.425mm centres and0.450mm lands.
+- Remove oversized imported silk and opaque decorative drawing polygons; add proper1mm fabbody and compactcourtyard.
+- Keep exact numberedpad identity; correct symbol electricaltypes (DINinput,DOUToutput,VDD/GNDpower_in), rearrange readable logicalpinpositions.
+- LinklocalPDF and canonicalfootprint/model paths. Importedmodel sixsolids: tightbodybounds1x1x0.8mm with0.001mm illustrative surfaceart. Fourterminalbottoms at-0.010mm; apply+0.010mmZ offset for boardseating. Simplified CAD includes a supplierlogo, not realpackagebranding. Modelenvelope aftertranslation0.810mmhigh within source±0.1 tolerance.
+
+Checks: symbolparse and numberedpin/padparity pass. FixtureDRC0padstack_invalid/shorting_items; fourboardedgewarnings are fixtureoutline only (0.35 vsdefault0.5mm). Top/front/isometric renders checked for centering, pinmarkerorientation andseating. Globalmodelgate passes withpreexistingbacklog; publicNDAgate allscopepasses. Datasheetgate199passed/22generic/51unrelatedorother-agentpendingfindings; thispartacceptedbilingualengineeringcontent usingofficialpipeline.
+
+Images: symbol-before.png -> symbol.png; footprint-before.png -> footprint.png; top.png/front.png/iso.png showactualimportedSTEP; datasheet-dimensions.png isoriginalsourcep10. Source drawing pins andlands checkedvisually; opticalperformance andproductionassemblynotbenchqualified.
