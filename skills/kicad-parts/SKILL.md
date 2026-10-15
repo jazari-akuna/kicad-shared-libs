@@ -327,6 +327,13 @@ Symbols from Library" that breaks the design. The same bug exists one level
 down on footprints via the `Footprint` property, and is easier to miss and
 costlier to fix, because the correction touches both the netlist and the PCB.
 
+For portable snapshots, write project library tables in the installed KiCad
+version's native spaced, versioned format, and run the native loader with an
+isolated configuration. A generic S-expression parse and filesystem URI check
+are insufficient: a compact generated table can pass both yet be skipped by
+KiCad as type `UNINITIALIZED`. Require no skipped/missing project libraries;
+embedded symbols and board models can still render while the tables are broken.
+
 **A cached symbol is not the master.** Editing the copy in a sheet's
 `lib_symbols` block changes the design but not the library, so a future
 library update silently reverts it. Mirror every such edit into the
