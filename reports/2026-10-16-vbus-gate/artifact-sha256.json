@@ -1,0 +1,12 @@
+{
+  "Power_Management_IC_KSL/Power_Management_IC_KSL.kicad_sym": "1fc3ede8d3e3c1c661abf9e43fbb390cd7609b2e3803007f4c61503aec65f775",
+  "Transistor_KSL/Transistor_KSL.kicad_sym": "7afc42b67c9e8f10f2250a1faa2011f276b5c89c46d201f8f062d2848b691011",
+  "Power_Management_IC_KSL/Power_Management_IC_KSL.pretty/VQFN-HR-10_RPW0010A_2x2mm.kicad_mod": "d0b0b16e7b2d39009ab995614db24b71354c9db6677434af49407c8c0c9968eb",
+  "Power_Management_IC_KSL/Power_Management_IC_KSL.3dshapes/VQFN-HR-10_RPW0010A_2x2mm.step": "d7a805b97e8c24cc388b72ed83b5ae958a63b7f9920c710381bf13da05fc5dd2",
+  "Transistor_KSL/Transistor_KSL.pretty/SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR.kicad_mod": "f2957437b26a9a34ea5b3bc09dd55f4ef352074a9166160ad8c35aea8a59aab0",
+  "Transistor_KSL/Transistor_KSL.3dshapes/SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR.step": "5dcb6e5e088c8891b321686a6eb872c57d71b75753aac8519a866feb21821607",
+  "datasheets/TPS2552DBVR.pdf": "88e453700cea2b263cdb5b44fce1e883e0f6d3b975457f879ac1423eeea42071",
+  "datasheets/MMBT3904LT1G.pdf": "4b6e35033d04749744557f94dc6c5201952c1400d4e768c613c3441cd76ac592",
+  "datasheets/TPS259470LRPWR.pdf": "8f96de389903091650d4f462dcfad3210071c3ae7093623a7978f34baf8a65b4",
+  "datasheets/TPS22919DCKR.pdf": "743c59b01fb0891d2d0f1faba779161cd2d2b6c18edf68e6d5b3279016240c84"
+}
