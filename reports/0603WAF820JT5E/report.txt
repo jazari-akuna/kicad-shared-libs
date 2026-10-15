@@ -1,0 +1,32 @@
+0603WAF820JT5E / C23255 — 82 ohm 1% 0603 ballast
+
+Verified source: Uniroyal Thick Film Chip Resistors,12-Feb-2019 V3,pages2,4,5.
+Local English datasheet: ${KSL_ROOT}/datasheets/0603WAF820JT5E.pdf
+Existing authenticated family PDF reused; exact-part LCSC PDF endpoints returned HTML/403.
+Live JLC API on15-Oct-2026:457258 in stock,416687 presale,SMT enabled,minPurchase1.
+https://cart.jlcpcb.com/shoppingCart/smtGood/getComponentDetail?componentCode=C23255
+Manufacturer body1.60+/-0.10 by0.80+/-0.10 by0.45+/-0.10mm.
+Power100mW through70C ambient,linearly derated to0 at155C;64.7mW at100C.
+
+Downloaded exact C23255 JLC CAD first. Corrected both symbol pin types from input
+to passive and replaced an erroneous Yageo thin-film datasheet link. Moved reference
+above body to remove overlap. Downloaded footprint had additional paste polygons,
+oversized lands and comment-layer terminal blocks; replaced with clean source-backed
+lands and existing checked generic1608 package geometry.
+
+Footprint Resistor_KSL:R_0603_Uniroyal_WA_DenseFlex:
+pad1/2 at x=-/+0.750mm,pads0.600x0.800mm,innergap0.900,outerspan2.100mm.
+All fit manufacturer page5 tolerances A=.90+/-.05,B=.65+/-.05,C=.80+/-.05,D=2.10+/-.05.
+The table nominal A+2B=2.20 differs from nominalD2.10; B=.60 uses the stated lower
+limit so all four independent dimensions agree. This ambiguity is explicit.
+No extra paste-only polygons. Existing dense courtyard retained. Factory must approve
+actual flex land/paste/coverlay context; a catalog part does not prove assembly yield.
+Generic KiCad1608 STEP reused,previous kernel-verified1.60x0.80x0.45mm,Zmin0;
+zerooffset/unit scale. Appearance/marking illustrative,not manufacturer CAD.
+
+Checks: symbol parses,passivepins1/2 match copper; native-loaded pad dimensions;
+part fixture DRC zero violations and zero opens; top/front/iso and symbol/footprint renders inspected.
+Report shows downloaded source artifacts for before/after; no existing part modified.
+Application estimate~39.5mW mean ballast at full IR output with82ohm;64.7mW derated
+rating at100C is not a measured component temperature qualification. Supply/Vf extremes
+and actual trace losses require final routed and thermal validation.
