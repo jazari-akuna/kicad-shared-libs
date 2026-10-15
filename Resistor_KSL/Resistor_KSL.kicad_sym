@@ -1579,7 +1579,7 @@
     (property "LCSC" "C23255" (id 5) (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    
+
     (symbol "0603WAF820JT5E_0_1"
       (pin passive line
         (at 5.08 -0.0 180)
