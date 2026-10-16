@@ -14,3 +14,5 @@ Native fixture DRC and images below are explicitly reused from the10k member bec
 Shared-library gates: NDA scan passes. Model gate has no newpart fault; one existing unrelated missing model reports/0603WAF820JT5E/R0603.step remains. Datasheet verification resolves this exact English PDF; unrelated pre-existing global findings remain.
 
 ![Symbol](symbol.png)
+
+Metadata correction2026-10-17: replaced inherited10k supplier code C106225 with exact2.2k C142018 in canonical symbol. Electrical value and geometry unchanged.

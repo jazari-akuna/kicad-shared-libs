@@ -1,0 +1,31 @@
+{
+  "part": "RC0201FR-071KL",
+  "lcsc": "C138165",
+  "stock_observed": 1772319,
+  "date": "2026-10-17 Asia/Shanghai",
+  "source_url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0201FR-071KL",
+  "source_page": 1,
+  "source_generated": "2026-10-16",
+  "ohms": 1000,
+  "tolerance_pct": 1,
+  "power70C_W": 0.05,
+  "limiting_voltage_V": 25,
+  "body_max_mm": [
+    0.63,
+    0.33,
+    0.26
+  ],
+  "lands_mm": [
+    0.303124,
+    0.324003
+  ],
+  "pad_centers_x_mm": [
+    -0.241554,
+    0.241554
+  ],
+  "step_sha256": "340557b6687e9bf9418d4966954d8428734dd064f7fb31db1c22a761bdeece4d",
+  "full5V_resistor_power_W": 0.025252525252525252,
+  "geometry_evidence": "Exact part downloaded JLC lands and STEP checked equal to shared qualified RC0201 geometry. Images/native fixture DRC explicitly reused unchanged; symbol independently rendered.",
+  "limitations": "JLC land pattern is assembly-specific, not manufacturer-recommended pattern. Dense flex and coverlay supplier approval remains pending.",
+  "normal_half5p25V_power_W": 0.0069602272727272724
+}

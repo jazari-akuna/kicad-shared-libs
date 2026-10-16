@@ -1,0 +1,8 @@
+{
+  "new_part_datasheet": "English exact manufacturer PDF verified; no new part findings in global gate",
+  "library_parse": "KiCad symbol SVG export exit0; PNG visually inspected",
+  "native_geometry": "Identical downloaded exact-part STEP SHA and pad geometry to shared fixture; reused native DRC/top/front/iso evidence explicitly",
+  "global_datasheet_gate": "52 pre-existing unrelated findings, not claimed global pass",
+  "global_model_gate": "1 pre-existing missing ./R0603.step in downloaded reference report; zero new seating findings",
+  "publication_gate": "PASS"
+}
