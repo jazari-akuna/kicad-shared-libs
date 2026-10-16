@@ -1,0 +1,22 @@
+{
+  "part": "RC0201FR-0722RL",
+  "lcsc": "C155743",
+  "stock": 1049561,
+  "date": "2026-10-17",
+  "source": "Exact Yageo English specsheet p1 generated2026-10-16.",
+  "source_url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0201FR-0722RL",
+  "ohms": 22,
+  "tolerance_pct": 1,
+  "power70C_W": 0.05,
+  "voltage_max_V": 25,
+  "body_max_mm": [
+    0.63,
+    0.33,
+    0.26
+  ],
+  "model_sha256": "340557b6687e9bf9418d4966954d8428734dd064f7fb31db1c22a761bdeece4d",
+  "normal10mA_W": 0.002222,
+  "geometry": "Exact JLC CAD lands and STEP match shared verified RC0201. Fixture DRC and images explicitly reused, new symbol rendered independently.",
+  "startup": "NOT pulse-qualified: ideal5.25V step into4.7uF yields~1.27Winitial/65uJ, ~102usRC; actual supply ramp and capacitor bias reduce pulse. No pulse curve in manufacturer general RC specification. Must check actual turn-on or retain larger original.",
+  "status": "Library geometry and normal steady-state verified; startup pulse qualification not established for input-filter application."
+}
