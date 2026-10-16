@@ -1,0 +1,19 @@
+{
+  "source": "/Users/raph/Projects/kicad-shared-libs/Resistor_KSL/Resistor_KSL.pretty/R_0402_1005Metric_Receiver.kicad_mod",
+  "new": "/Users/raph/Projects/kicad-shared-libs/Resistor_KSL/Resistor_KSL.pretty/R_0402_1005Metric_Receiver_DenseFlexTail.kicad_mod",
+  "source_sha256": "f318a304f596f8e9079dddf4c61a65a319b2ebd499e05672e508aa8bcc07baa6",
+  "new_sha256": "9bacfc97e92cc7922a0b13ef156a09a41f65b299e8db29c26f20d942d3ac5beb",
+  "changed": "Only footprint identity,description and courtyardY +-0.47 to+-0.365mm; pads,paste,mask,model and properties exact",
+  "max_body_mm": [
+    1.1,
+    0.55
+  ],
+  "courtyard_centerline_mm": [
+    1.86,
+    0.73
+  ],
+  "courtyard_stroke_mm": 0.05,
+  "topbottom_pad_to_courtyard_outer_mm": 0.07,
+  "topbottom_maxbody_to_courtyard_inner_mm": 0.065,
+  "supplier_acceptance": "not yet obtained"
+}

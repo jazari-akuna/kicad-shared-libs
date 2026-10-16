@@ -1,0 +1,30 @@
+0402WGF4704TCE / C474132 — R1009 tail courtyard variant
+
+Reuse Resistor_KSL:R_0402_1005Metric_Receiver. New application footprint:
+Resistor_KSL:R_0402_1005Metric_Receiver_DenseFlexTail.
+Only identity, description and courtyard Y change: +/-0.470 to +/-0.365 mm.
+Courtyard stroke0.05mm; outer envelope1.91x0.78mm instead of1.91x0.99mm.
+Numbered copper, paste, mask, body graphics, properties and 3D model are exact copies.
+No new part, symbol, component value or supplier code; existing symbol default unchanged.
+The consuming project's R1009 instance explicitly selects this variant.
+
+Source: local English datasheets/0402WGF4704TCE.pdf, Uniroyal Feb12 2019V3,
+page4 dimensions: body1.00+/-0.10 x0.50+/-0.05mm, height0.35+/-0.05mm.
+Maximum body1.10x0.55mm remains inside the new courtyard, with0.065mm clearance
+to its inner stroke in Y. This is an application assembly envelope, not IPC nominal.
+Actual surrounding body, land, coverlay and component clearances must be checked
+in the consuming layout. Supplier assembly/fixture acceptance remains required.
+
+Checked: native different-net fixture DRC0; pad/model/property byte parity;
+common-scale before/after copper/courtyard render; native top/front 3D inspection.
+Unchanged model is centered and seated at the pads. No new model was generated.
+Global KSL gates: NDA all-scope PASS; model units/seating have no new regression.
+Global model gate retains a pre-existing reports/0603WAF820JT5E/downloaded-footprint
+relative-model-path failure. Datasheet gate has pre-existing missing/verdict/URL
+findings in other parts (full logs included); this part's local English PDF resolves.
+No blanket all-library clean pass is claimed. No library registration needed:
+this adds one footprint to an existing registered Resistor_KSL library.
+
+Visuals: courtyard-comparison.png shows the exact change in mm; top.png and
+front.png show unchanged model alignment. Current complete-board DRC and
+schematic/board identity checks are owned by the consuming LED-strip project.
