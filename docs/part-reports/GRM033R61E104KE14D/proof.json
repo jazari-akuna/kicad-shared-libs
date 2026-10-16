@@ -1,0 +1,44 @@
+{
+  "part": "GRM033R61E104KE14D",
+  "LCSC": "C76939",
+  "datasheet_source": "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588955008071315456",
+  "datasheet_revision": "GRM033R61E104KE14-01A, Nov19 2017",
+  "datasheet_sha256": "e0782aa1cba8d038aade8a75966cc079aaad04e5ba5e1d498cddfb0a89344c87",
+  "exact_variant_pages": [
+    1,
+    25
+  ],
+  "land_mm": {
+    "gap": 0.2,
+    "pad_length": 0.3,
+    "pad_width": 0.32,
+    "centers": [
+      -0.25,
+      0.25
+    ]
+  },
+  "manufacturer_land_ranges_mm": {
+    "gap": [
+      0.2,
+      0.25
+    ],
+    "pad_length": [
+      0.2,
+      0.3
+    ],
+    "pad_width": [
+      0.25,
+      0.35
+    ]
+  },
+  "source_model_identical_sha256": "6cbf12b78243820a9dc1b493ca5e4efd722e2f94ba8023cbdb967c539d9b2c23",
+  "model_verification_reused_from": "docs/part-reports/2026-10-16-receiver-0201",
+  "model_transform_mm": [
+    0,
+    0,
+    0.15
+  ],
+  "symbol": "Passive pins1/2; verified existing capacitor symbol drafting reused instead of imported input pins",
+  "JLC_stock_snapshot": "2026-10-16 C76939:1753019; recheck at order",
+  "scope": "Only new symbol and localdatasheet; canonical footprint/model unchanged; flex assembly acceptance and effective C at5.25V not established"
+}
