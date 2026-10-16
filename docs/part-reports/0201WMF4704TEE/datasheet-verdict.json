@@ -1,0 +1,10 @@
+[
+  {
+    "slug": "0201WMF4704TEE",
+    "mpn": "0201WMF4704TEE",
+    "action": "local-file",
+    "path": "/Users/raph/Documents/ChatGPT/led-strip-mothership/work/oct16-blackstar/r1009-uniohm/0201WMF4704TEE.pdf",
+    "verdict": "en",
+    "note": "Exact JLC-linked manufacturer English family PDF, Feb12 2019 V3: ordering p2, dimension/rating p4,p5. 0201=0603metric;WM=1/20W;F=1%;4704=470\u00d710^4ohm;T=tape;E=15000;E=leadfree"
+  }
+]

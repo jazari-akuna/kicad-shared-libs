@@ -1,0 +1,25 @@
+{
+  "part": "0201WMF4704TEE",
+  "lcsc": "C778408",
+  "stock": 7222,
+  "date": "2026-10-17",
+  "source": "Exact JLC-linked manufacturer English family PDF, Feb12 2019 V3: ordering p2, dimension/rating p4,p5.",
+  "source_url": "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590910637931376640",
+  "variant_decode": "0201=0603metric;WM=1/20W;F=1%;4704=470\u00d710^4ohm;T=tape;E=15000;E=leadfree",
+  "body_max_mm": [
+    0.63,
+    0.33,
+    0.26
+  ],
+  "rating70C_W": 0.05,
+  "voltage_max_V": 25,
+  "temperature_C": [
+    -55,
+    155
+  ],
+  "worst5V_resistor_W": 5.372877713303245e-06,
+  "raw_model_sha256": "340557b6687e9bf9418d4966954d8428734dd064f7fb31db1c22a761bdeece4d",
+  "geometry": "Exact C778408 downloaded lands and STEP identical to previously checked shared0201 asset; same model/body envelope. Explicit reuse of fixture DRC and rendered geometry, independently rendered new symbol.",
+  "corrections": "Imported legacy model X\u2212.070553 corrected to0 using qualified common geometry; simplepasteonly. No geometryscaled.",
+  "limits": "Land pattern sourced from JLC, not claimed manufacturer recommended; dense flex assembly supplier acceptance outstanding."
+}
