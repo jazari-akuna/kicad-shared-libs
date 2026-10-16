@@ -1,0 +1,48 @@
+{
+  "part": "0402WGF499JTCE",
+  "lcsc": "C25120",
+  "observation_utc": "2026-10-16T12:16:52.363432+00:00",
+  "jlc_stock": 1251880,
+  "jlc_presale": 1054924,
+  "library_id": "Resistor_KSL:0402WGF499JTCE",
+  "default_footprint": "Resistor_KSL:R_0402_1005Metric_Receiver",
+  "placed_footprint": "Resistor_KSL:R_0402_1005Metric_Receiver_DenseFlexTail",
+  "power_rating_W_at70C": 0.0625,
+  "linear_derated_rating_W_at100C": 0.04044117647058824,
+  "resistance_min_ohm": 49.400999999999996,
+  "driver_step_peak_upper_A_ignoring_driver_impedance": 0.10627315236533674,
+  "step_peak_resistor_W": 0.5579340499180179,
+  "steady_pulldown_loss_W_max": 1.3754996272778613e-05,
+  "Q1_Qg_typical_C": 8.9e-09,
+  "Q1_Qg_typical_condition": "VDS10V,VGS4.5V,ID6.3A; HottechIRLML6244page1. NoQgmax guaranteed.",
+  "typical_charge_energy_estimate_W_at40kHz": 0.0018690000000000002,
+  "conditional_screen": {
+    "assumed_max_actual_charge_per_edge_C": 5e-08,
+    "frequency_Hz": 40000,
+    "twice_VQf_upper_W": 0.020999999999999998,
+    "rating_fraction_at100C": 0.5192727272727272,
+    "nature": "Engineering acceptance envelope, not datasheetguaranteedQgmax. Requires actual waveform/charge/pulse validation."
+  },
+  "limitations": [
+    "50V catalogue is limiting voltage, not continuous5V across49.9ohm; powerlimitedworkingvoltage sqrt(P*R)~1.76V.",
+    "Datasheet shortoverload2.5sqrt(P*R)~4.39V for5s is not a repetitive submicrosecondpulse rating; initial5.25V theoretical resistorstep exceeds it. No published repetitivepulsecurve identified.",
+    "0402 dense footprint uses existing verified familybody/model; lands .54x.64 centered\u00b1.51 differ from manufacturer nominalrecommended pattern; JLCdenseassemblyprocess approval retained.",
+    "Switching loss/driver capability and permissible IRcarrier rate also requireQ1waveform check; average resistor screening does not qualify fullpowerstage."
+  ],
+  "native_erc_violations": 0,
+  "checks": {
+    "symbol_pin_numbers": [
+      "1",
+      "2"
+    ],
+    "footprint_pad_numbers": [
+      "1",
+      "2"
+    ],
+    "native_symbol_parse": "PASS",
+    "3D_top_front_iso": "rendered and inspected; body sits abovepads, simplified generic0402model",
+    "nda_gate": "PASS allscope",
+    "datasheets_gate": "newpartlocalEnglishfamilyPASSED; global unrelated existing failures retained",
+    "models_gate": "no new seating issues; one existing reportdownload relativeSTEPpath failure outside this part"
+  }
+}
