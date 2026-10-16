@@ -1,0 +1,74 @@
+{
+  "GRM0335C1E102FA01D": {
+    "LCSC": "C1864327",
+    "datasheet_sha256": "3f00fe5d1fb69b72f6cc13d1994b5ab2ad21c2a59710203de476351544ab25b0",
+    "source": "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8551363098247520256"
+  },
+  "CL03C100JB3GNNC": {
+    "LCSC": "C2991796",
+    "datasheet_sha256": "c668a627887493b0fd5f9f14e8544873096e4b63b432ff2695109c6849a53378",
+    "source": "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590226064456265728"
+  },
+  "model": {
+    "source": "Identical JLC/EasyEDA generic C0201 STEP downloaded for both exact SKUs; nominal envelope not manufacturer assembly model.",
+    "transformed_bounds_mm": [
+      -0.3,
+      -0.1500001000000004,
+      -1.0000000005838672e-07,
+      0.3,
+      0.15000010000000039,
+      0.3050001
+    ],
+    "offset_mm": [
+      0,
+      0,
+      0.15
+    ],
+    "seating_at_z0_within_1um": true
+  },
+  "lands": {
+    "centers_mm": [
+      -0.25,
+      0.25
+    ],
+    "size_mm": [
+      0.3,
+      0.32
+    ],
+    "gap_mm": 0.2,
+    "Murata_reflow_a_b_c_ranges": [
+      [
+        0.2,
+        0.3
+      ],
+      [
+        0.2,
+        0.35
+      ],
+      [
+        0.2,
+        0.4
+      ]
+    ],
+    "Samsung_0603_0p03_reflow_a_b_c_ranges": [
+      [
+        0.16,
+        0.2
+      ],
+      [
+        0.24,
+        0.32
+      ],
+      [
+        0.3,
+        0.35
+      ]
+    ],
+    "within_both": true
+  },
+  "native_fixture": {
+    "electrical_or_geometry_errors": 0,
+    "unconnected": 0,
+    "warning": "Only reference text height0.5mm vs fixture defaultsilkminimum0.8mm; no assemblygeometry defect."
+  }
+}
