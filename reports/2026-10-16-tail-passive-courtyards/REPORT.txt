@@ -6,7 +6,7 @@ body graphics and model remain exact. Existing symbols and default footprints
 remain unchanged; the two consuming instances explicitly choose this variant.
 Source: local English Samsung MLCC November2015 catalog, physical page6,
 CL05 size / thickness5:1.00+/-0.05 x0.50+/-0.05 x0.50+/-0.05 mm.
-Both named local part PDFs contain this catalog; page13 lists CL05C102 J B5NNN.
+Both named local part PDFs contain this catalog; physical page14 lists CL05C102 J B5NNN.
 Package maximum1.05x0.55x0.55mm fits the revised courtyard with0.065mm margin
 to the inside of its0.05mm stroke across the body width. Copper extends to
 +/-0.310mm; the courtyard outer edge is+/-0.390mm.
