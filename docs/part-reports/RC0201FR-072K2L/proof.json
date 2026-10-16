@@ -1,0 +1,26 @@
+{
+  "part": "RC0201FR-072K2L",
+  "lcsc": "C142018",
+  "JLC_stock_observed": 1119844,
+  "power_at70C_W": 0.05,
+  "worst_1p8V_plus10pct_1pctR_W": 0.0018,
+  "body_max_mm": [
+    0.63,
+    0.33,
+    0.26
+  ],
+  "lands_mm": [
+    0.303124,
+    0.324003
+  ],
+  "pad_centers_x_mm": [
+    -0.241554,
+    0.241554
+  ],
+  "STEP_sha256": "340557b6687e9bf9418d4966954d8428734dd064f7fb31db1c22a761bdeece4d",
+  "source": "Exact Yageo orderable-part English specsheet generated2026-10-16 page1",
+  "source_url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0201FR-072K2L",
+  "geometry_evidence": "ExactC142018 downloaded footprint lands and STEP match qualified RC0201 family assets. Shared native fixture DRC and top/front/iso images reused explicitly because the footprint/model are unchanged.",
+  "corrections": "Use standard passive symbol anchors, corrected model0/0/0 instead of imported\u2212.070553 legacyX. Remove duplicate imported paste artwork by reusing corrected shared footprint.",
+  "limits": "JLC downloaded land pattern, not claimed manufacturer recommended. Dense flex assembly/coverlay remains supplier acceptance hold."
+}

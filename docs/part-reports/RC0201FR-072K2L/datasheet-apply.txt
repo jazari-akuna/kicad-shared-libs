@@ -1,0 +1,2 @@
+  local-file   RC0201FR-072K2L                    -> en
+apply: 1/1 applied
