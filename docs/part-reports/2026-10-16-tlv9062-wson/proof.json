@@ -1,0 +1,50 @@
+{
+  "part": "TLV9062IDSGR",
+  "LCSC": "C2058009",
+  "stock_count": 2079,
+  "checked_date": "2026-10-16",
+  "datasheet_sha256": "7a5517d7f74bedddf4b8404fce93e21100d2833a6f4ae16a93f934eaf0c6477c",
+  "pin9": "Exposed thermal pad toV-; boardGND",
+  "lands_mm": {
+    "signal": [
+      0.5,
+      0.25
+    ],
+    "row_centers": 1.9,
+    "pitch": 0.5,
+    "EP": [
+      0.9,
+      1.6
+    ]
+  },
+  "paste": {
+    "EP_windows": 2,
+    "size_mm": [
+      0.9,
+      0.7
+    ],
+    "centers_y_mm": [
+      -0.45,
+      0.45
+    ],
+    "coverage": 0.875,
+    "stencil_source_thickness_mm": 0.125
+  },
+  "thermal_vias": "None; manufacturer optional",
+  "model_bounds_mm": [
+    -1.01,
+    -1.0000001,
+    -1e-07,
+    1.01,
+    1.0000001,
+    0.8110001
+  ],
+  "model_limitation": "GenericJLC2x2WSON. Body/markingheight.811mm vsdatasheet0.8mmmax; use source drawingforheight clearances. Terminals/seating visually checked; not manufacturer exact CAD.",
+  "native_fixture": {
+    "opens": 0,
+    "findings": {
+      "silk_edge_clearance": 1,
+      "text_height": 1
+    }
+  }
+}
