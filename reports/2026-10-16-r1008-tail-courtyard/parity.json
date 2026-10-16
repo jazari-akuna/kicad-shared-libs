@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "source_sha256": "25cc49c6dfe34cf89e8744a55c192d36ea4445266f5f073970fc1be165bd5821",
+  "variant_sha256": "88f082937a962b0398a68f756982d0dfe2230024749a612590ee031adf34774a",
+  "part": "RC0402FR-0747KL",
+  "lcsc": "C93943",
+  "datasheet": "datasheets/RC0402FR-0747KL.pdf",
+  "datasheet_generated_date": "2026-09-12",
+  "maximum_body_mm": [
+    1.05,
+    0.55,
+    0.4
+  ],
+  "body_to_inner_courtyard_y_mm": 0.06499999999999995,
+  "pad_to_outer_courtyard_y_mm": 0.07,
+  "unchanged": [
+    "numbered copper",
+    "paste",
+    "mask",
+    "body graphics",
+    "3D model URI/transform"
+  ],
+  "changed": [
+    "footprint identity",
+    "description",
+    "Value identity",
+    "courtyard Y\u00b1.47 to\u00b1.365"
+  ],
+  "qualification": "Application assembly envelope, not IPC nominal; consuming actual spacing and supplier acceptance required."
+}

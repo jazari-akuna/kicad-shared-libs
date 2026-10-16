@@ -1,0 +1,28 @@
+RC0402FR-0747KL / C93943 — R1008 tail courtyard variant
+
+Reuse existing Resistor_KSL:R_0402_Yageo_RT, already used by this RC0402 part.
+New application footprint: Resistor_KSL:R_0402_Yageo_RT_DenseFlexTail.
+Change only identity, description and courtyard Y±0.470 to±0.365mm.
+Outer courtyard1.91×0.78mm; numbered copper, paste, mask, body graphics and
+model URI/transforms are unchanged. No MPN/value/symbol-master change.
+R1008 instance selects the variant; original library default remains unchanged.
+
+Exact local English source: datasheets/RC0402FR-0747KL.pdf, Yageo generated
+2026-09-12, page1: body1.00±.05 ×.50±.05 ×.35±.05mm.
+Maximum body1.05×.55mm fits the inner courtyard with.065mm Ymargin.
+Application assembly envelope, not IPC nominal. Assembly acceptance required.
+Existing simplified gray model is nominal1.00×.50×.30mm; its height is the
+source tolerance minimum, not the maximum mechanical clearance envelope.
+
+Checked: exact copper/model parity; native different-net fixture DRC0/opens0;
+common-scale courtyard comparison; native top/front model seating inspection.
+Consuming candidate native PCB has0copper/edge/courtyard errors; supplier
+qualification remains separate. Model simplified cosmetics are unchanged.
+
+Global gates: NDA all-scope PASS. Model units/seating no new regression;
+one pre-existing downloaded-report missing-model reference remains.
+Datasheet audit retains59pre-existing source/URL/language findings elsewhere;
+this exact part has its local English source. No blanket clean-library claim.
+
+Visuals: courtyard-comparison.png (exact modified envelope), top.png/front.png
+(unchanged model, independently fitted views). Full logs and parity.json included.
