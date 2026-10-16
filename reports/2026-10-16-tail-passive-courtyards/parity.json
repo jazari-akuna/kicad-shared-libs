@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "only_identity_description_value_and_courtyard_changed": true,
+  "numbered_copper_paste_mask_body_and_model_exact": true,
+  "previous_courtyard_centerline_y_mm": [
+    -0.46,
+    0.46
+  ],
+  "new_courtyard_centerline_y_mm": [
+    -0.365,
+    0.365
+  ],
+  "maximum_package_mm": [
+    1.05,
+    0.55,
+    0.55
+  ],
+  "source": "Samsung MLCC November2015 physicalpage6 CL05/thickness5; local English CL05C102JB5NNNC.pdf and CL05C100JB5NNNC.pdf",
+  "courtyard_inner_stroke_to_max_body_y_mm": 0.065,
+  "courtyard_outer_width_mm": 0.78,
+  "manufacturing_acceptance": "Application-specific courtyard; supplier fixture/assembly acceptance remains open"
+}

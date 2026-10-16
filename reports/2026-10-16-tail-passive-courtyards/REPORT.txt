@@ -1,0 +1,36 @@
+C1006 / CL05C102JB5NNNC / C307441 and C1007 / CL05C100JB5NNNC / C32949
+Reuse Capacitor_KSL:C_0402_1005Metric_Receiver; new application footprint
+C_0402_1005Metric_Receiver_DenseFlexTail. Only courtyard local Y changes from
++/-0.460 to +/-0.365 mm, with identity/description updated. Copper, paste, mask,
+body graphics and model remain exact. Existing symbols and default footprints
+remain unchanged; the two consuming instances explicitly choose this variant.
+Source: local English Samsung MLCC November2015 catalog, physical page6,
+CL05 size / thickness5:1.00+/-0.05 x0.50+/-0.05 x0.50+/-0.05 mm.
+Both named local part PDFs contain this catalog; page13 lists CL05C102 J B5NNN.
+Package maximum1.05x0.55x0.55mm fits the revised courtyard with0.065mm margin
+to the inside of its0.05mm stroke across the body width. Copper extends to
++/-0.310mm; the courtyard outer edge is+/-0.390mm.
+
+R1010 / 0402WGF2201TCE / C25879
+Reuse the previously verified Resistor_KSL:R_0402_1005Metric_Receiver_DenseFlexTail
+courtyard variant. Local English Uniroyal PDF, Feb12 2019V3, page4 gives0402
+body1.00+/-0.10 x0.50+/-0.05mm, height0.35+/-0.05mm, matching the prior R1009
+package envelope. No new resistor footprint/model/symbol is generated.
+
+Native different-net two-component fixture: zero DRC findings and zero opens.
+Common-scale capacitor before/after visual inspected; native top/front models
+remain centered and seated on their lands. These are simplified existing
+package models, not exact vendor mechanical CAD. No model transforms changed.
+The combined consuming placement R11 passes native copper/edge/courtyard
+checks; schematic0ERC and960parts/2561nodes/532nets preserved. Routing is
+not complete at this library-check stage. Full final board checks are separate.
+
+Application-specific assembly envelopes, not IPC nominal. The retained TI
+U1001 courtyard was NOT reduced: the proposed reduction would exclude allowed
+mold flash. Current placement has at least0.195mm nominal-center maximum-body
+clearance to the amplifier including its stated mold flash. Supplier assembly
+and flex fixture acceptance remain required.
+Global model/datasheet coverage was checked earlier in the same session;
+this courtyard-only addition preserves exact previously checked model bytes.
+The documented pre-existing library coverage findings are not waived.
+Visuals: courtyard-comparison.png, top.png, front.png.
