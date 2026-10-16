@@ -1,0 +1,25 @@
+{
+  "part": "RC0201FR-0710KL",
+  "lcsc": "C106225",
+  "stock_observed_2026_10_16": 1802554,
+  "package_max_mm": [
+    0.63,
+    0.33,
+    0.26
+  ],
+  "rating_W_70C": 0.05,
+  "rating_W_100C": 0.022727272727272728,
+  "worst_dissipation_W_5p25V_1pct_R": 0.0027840909090909092,
+  "voltage_limit_V": 25,
+  "datasheet": "Yageo RC L 2021 V.8, PDF page4 dimensions, page5 RC0201 ratings, page7 derating",
+  "lands": "Original C106225 JLC CAD .303124x.324003 at +/- .241554 retained; not claimed manufacturer recommended land pattern",
+  "model": "Downloaded exact part STEP bbox [-.30,-.15,0]..[.30,.151,.24]mm; removed erroneous imported X=-.070553 legacy offset, centered0/0/0. Rounded nominal body, source max dimensions checked separately",
+  "symbol": "Standard KSL two-pin passive resistor geometry retained for stable schematic anchors; downloaded symbol was nonstandard oversized unspecified-pin geometry",
+  "native_model": "Top and iso rendered and inspected; CAD-kernel solid bounds and corrected0/0/0 transform verify board seating.",
+  "native_fixture_DRC": "0 copper/pad/edge/courtyard violations with actualproject .15mm clearance; one .5mm reference text height warning",
+  "gates": {
+    "nda": "all scope PASS",
+    "models": "no new failures; one pre-existing unrelated missing ./R0603.step in reports/0603WAF820JT5E",
+    "datasheet": "exact local English source registered and verifies; unrelated global pre-existing failures retained"
+  }
+}
