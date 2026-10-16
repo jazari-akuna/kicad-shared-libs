@@ -1,0 +1,9 @@
+C1005 / Samsung CL05C220JB5NNNC / LCSC C70464 — compact bend courtyard
+
+Existing verified CL05 footprint reused; no new electrical part. New DenseFlexBend variant reduces only courtyard terminal-axis half-span 0.91 to 0.81mm. Numbered copper, mask, paste, body drawing and model remain byte-equivalent after identity normalization. Value22pF/C0G and pins1/2 unchanged.
+
+Source: local public English Samsung CL05C220JB5NNNC.pdf, CL05 dimensions 1.00±0.05×0.50±0.05mm. Original lands .56×.62mm at±.48mm; terminal extent±.76mm. Courtyard innerstroke±.785mm leaves .025mm beyond lands. This is a custom dense assembly envelope, NOT an IPC courtyard or manufacturer assembly approval.
+
+Board C1005 moves+0.10mm Y to−7.756796. Pads remain96.796µm and courtyard21.796µm outside the no-component bend startingY−6.9. Native detachedboard check has no copper, edge, courtyard-overlap or bendkeepout findings. Soldermask/library/silkscreen findings retained separately.
+
+courtyard-comparison.png is equal-scale before/after. top.png/front.png are copied from the prior CL05 family verification: exact unchanged model/pads/body, illustrative standalone body seating, not a new routedboard render. Geometric model fidelity is unchanged; source footprint uses simplified generic0402STEP. Dense assembly and repeated-bending acceptance still require supplier/prototype qualification.

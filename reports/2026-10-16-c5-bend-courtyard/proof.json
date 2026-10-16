@@ -1,0 +1,18 @@
+{
+  "part": "CL05C220JB5NNNC",
+  "LCSC": "C70464",
+  "source_footprint": "C_0402_1005Metric_Receiver_DenseFlexTail",
+  "new_footprint": "C_0402_1005Metric_Receiver_DenseFlexBend",
+  "change": "Courtyard long-axis half-span .91 to .81mm only; unchanged pads, masks, paste, model, body, symbol pins, capacitance22pF and C0G dielectric. C1005 Y+0.10mm requested local route accommodation.",
+  "body_max_mm": [
+    1.05,
+    0.55
+  ],
+  "land_outer_halfspan_mm": 0.76,
+  "courtyard_inner_halfspan_mm": 0.785,
+  "land_to_inner_courtyard_mm": 0.025,
+  "actual_pad_to_bend_mm": 0.096796,
+  "courtyard_to_bend_mm": 0.021796,
+  "qualification": "Geometric acceptance only. Nonstandard dense assembly envelope; supplier assembly and bend-fatigue qualification pending.",
+  "numbered_lands_mask_paste_body_model_exact": true
+}
