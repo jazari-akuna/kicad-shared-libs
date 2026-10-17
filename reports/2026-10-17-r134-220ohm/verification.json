@@ -1,0 +1,11 @@
+{
+  "source_existing_verified_series_pdf": "0402WGF1002TCE.pdf",
+  "datasheet_sha256": "11cd644d5d8a34a6d12775afb80bf58d8fc11f0c3b700dbd0f7a59942ceaa5ef",
+  "pin_numbers": [
+    "1",
+    "2"
+  ],
+  "all_previous_symbols_unchanged": true,
+  "stock_snapshot": "C25091-jlc.json",
+  "no_existing_footprint_model_changes": true
+}
