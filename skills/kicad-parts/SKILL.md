@@ -611,6 +611,17 @@ hook that refuses publication, which must not happen.
   unverified details under "Evidence and provisional parts" above.
 - Render SVGs (below) and *look* at them; compare against the datasheet
   land pattern drawing.
+- Distinguish a manufacturer's **paste area percentage** from a linear pad
+  shrink. KiCad's local paste ratio adds a margin on **each side**, so a
+  rectangular aperture retaining area fraction `a` needs ratio
+  `(sqrt(a) - 1) / 2`, not `sqrt(a) - 1`. If an export supports only a
+  uniform scalar margin `d`, solve `(w + 2*d)*(h + 2*d) = a*w*h` for the
+  original land width/height; preserve any separately specified signal/power
+  aperture rules. Probe the installed native API and measure exported paste
+  geometry after rounding. Numeric field equality across CAD formats does
+  not establish equal aperture size. Keep assembly-specific overrides separate
+  from copper geometry, and retain the source's stencil thickness and reflow
+  conditions with the manufacturing variant.
 - If you modify a footprint or symbol, render **before and after** images
   and flag the change prominently in the report.
 
