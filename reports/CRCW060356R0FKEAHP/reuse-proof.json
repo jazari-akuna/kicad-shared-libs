@@ -1,0 +1,10 @@
+{
+  "part": "CRCW060356R0FKEAHP",
+  "lcsc": "C2078109",
+  "downloaded_CAD": "JLC2KiCadLib C2078109 succeeded 2026-10-17; archived in project work/oct17-release-root/part-C2078109",
+  "canonical_geometry": "Reused the verified same-family CRCW-HP resistor symbol, footprint and simplified0603 model. No physical geometry or numbering change.",
+  "symbol_geometry_identical": true,
+  "footprint": "Resistor_KSL:R_0603_Vishay_CRCW_HP",
+  "datasheet_sha256": "cbe3abd6f7da4333a2f534090a6f7b8b8c42e60859caaa5a02add904e772fe19",
+  "model_limitation": "Simplified0603 model reused; bodywidth0.80 versus nominal0.85mm. Project retains existing DenseFlex land override."
+}
