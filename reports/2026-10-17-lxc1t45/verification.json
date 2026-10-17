@@ -1,0 +1,50 @@
+{
+  "manufacturer_datasheet": "https://www.ti.com/lit/ds/symlink/sn74lxc1t45.pdf",
+  "datasheet_sha256": "4737f9c02d562bd3688b8753d6161a24ce870a3841505debfdbc110e02420179",
+  "old_library_sha256": "3eb3987053ae63f50a5fe7ab836475607214b95ae9c851e3fe65906b9178f9a3",
+  "reused_verified_DCK0006A_footprint": "Interface_KSL/Interface_KSL.pretty/SC-70-6_L2.2-W1.3-P0.65-LS2.2-BR.kicad_mod",
+  "footprint_sha256_unchanged": "df6598dc4369d8714d28e975126af5f85a734953a410ab30faf37c4dbb6fbdba",
+  "pin_mapping": {
+    "1": "VCCA",
+    "2": "GND",
+    "3": "A",
+    "4": "B",
+    "5": "DIR",
+    "6": "VCCB"
+  },
+  "CAD_import_correction": "Raw downloaded symbol linked unrelated C470893 PDF; replaced with exact local public TI English SCES934A. Reused verified existing DCK0006A symbol pin placement, footprint and model; only identity/electrical description changed.",
+  "all_other_library_symbols_unchanged": true,
+  "symbol_label_positions": "Moved default reference/value outside body to avoid pin-label overlap; electrical geometry unchanged",
+  "native_integration_proof": {
+    "part": "U900",
+    "old": "SN74LVC1T45DCKR",
+    "new": "SN74LXC1T45DCKR",
+    "LCSC": "C5217888",
+    "symbol_master_sha256": "4fd71058f95dced2ddb67517d872bf192a5fe549af1a9bfd2c29435f2302ddbd",
+    "footprint_pose_pads_tracks_vias_zones_unchanged": true,
+    "symbol_pin_geometry_unchanged": true,
+    "wires_junctions_and_other_instances_unchanged": true,
+    "files": [
+      {
+        "file": "LED-strip-1010.kicad_sch",
+        "before": "008599a0b71ff41078990154f6ee3e4b5025ee59c4d143f04203fba65823859b",
+        "after": "ed13f342ce2234582e7c67a5c207c89bae5d43429fe6464032f508c3321883a3"
+      },
+      {
+        "file": "LED-strip-1010.kicad_pcb",
+        "before": "1edfc14ebbb643f061aa6f7de0b134d2bf790899367f5e2e8d54fbfd0057e843",
+        "after": "2abba01d8d95e2416158e3ab6cfcf8e1c09e9abc06410d44684b8e3715ffbf01"
+      }
+    ],
+    "native_XML_all_pin_nets_unchanged": true,
+    "pin_net_count": 2562,
+    "native_ERC_no_U900_or_connectivity_violations": true,
+    "unrelated_existing_symbol_mismatches": 18
+  },
+  "gates": {
+    "NDA": "PASS all scope",
+    "model_seating": "0 new; reused footprint/model unchanged",
+    "global_model_result": "4 unrelated report-import units/transform failures",
+    "datasheet": "new part English verified; 57 unrelated global records unresolved"
+  }
+}
