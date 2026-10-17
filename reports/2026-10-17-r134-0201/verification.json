@@ -1,0 +1,9 @@
+{
+  "datasheet_source": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+  "datasheet_sha256": "7b6f0ae72708ca4b38126f84b5407a3e970a94cb60bc1a0afdaeb25a23d839bb",
+  "existing_symbol_basis": "RC0201FR-07100KL",
+  "existing_footprint": "Resistor_KSL:R_0201_Yageo_RC",
+  "downloaded_lands_match_canonical": true,
+  "all_previous_symbols_unchanged": true,
+  "no_existing_footprint_model_changes": true
+}

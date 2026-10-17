@@ -1,0 +1,15 @@
+kicad-shared-libs: 217 footprints
+
+units      71 legacy / 146 modern footprints; 60 carry a legacy (at ...) node, 59 of them below 0.005 mm (rounding noise)
+transform  206 footprints reference a 3D model
+
+TRANSFORM reports/0603WAF820JT5E/downloaded-footprint.kicad_mod
+          - model file missing: ./R0603.step
+TRANSFORM reports/2026-10-17-fan-control/imported/SC-70-6_L2.0-W1.3-P0.65-LS2.1-BL.kicad_mod
+          - model file missing: ./SC-70-6_L2.0-W1.3-P0.65-LS2.1-BL.step
+TRANSFORM reports/2026-10-17-fan-control/imported/SOT-553-5_L1.6-W1.2-P0.50-LS1.6-TL.kicad_mod
+          - model file missing: ./SOT-553-5_L1.6-W1.2-P0.50-LS1.6-TL.step
+UNITS     reports/2026-10-17-fan-control/imported/SOT-553-5_L1.6-W1.2-P0.50-LS1.6-TL.kicad_mod
+          - (at (xyz -4e-06 -0.001177 0.0)) is read as INCHES = (-0.000, -0.030, 0.000) mm, not (-0.000, -0.001, 0.000) mm
+
+4 violation(s)
