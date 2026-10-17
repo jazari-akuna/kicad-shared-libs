@@ -1,0 +1,12 @@
+{
+  "lib_id": "Resistor_KSL:RC0201FR-072K2L",
+  "default_footprint": "Resistor_KSL:R_0201_Yageo_RC",
+  "before": "RC0201FR-072K2L_*",
+  "after": "RC0201FR-072K2L_* R_0201_Yageo_RC",
+  "native_svg_unchanged_except_title_timestamp": true,
+  "source": "Existing canonical symbol default footprint and canonical matching footprint file",
+  "checked": "All nonfilter symbol records unchanged; native render geometry identical; source-bound consuming project ERC/parity zero",
+  "before_image": "before.png",
+  "after_image": "after.png",
+  "qualification": "Metadata correction only; existing part geometry unchanged"
+}

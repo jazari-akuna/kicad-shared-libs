@@ -790,7 +790,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "0402WGF1002TCE_*"
+		(property "ki_fp_filters" "0402WGF1002TCE_* R_0402_1005Metric_Receiver"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1679,7 +1679,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "0402WGF499JTCE_*"
+		(property "ki_fp_filters" "0402WGF499JTCE_* R_0402_1005Metric_Receiver"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1825,7 +1825,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "RC0201FR-0710KL_*"
+		(property "ki_fp_filters" "RC0201FR-0710KL_* R_0201_Yageo_RC"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1968,7 +1968,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "RC0201FR-072K2L_*"
+		(property "ki_fp_filters" "RC0201FR-072K2L_* R_0201_Yageo_RC"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2111,7 +2111,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "RC0201FR-0733KL_*"
+		(property "ki_fp_filters" "RC0201FR-0733KL_* R_0201_Yageo_RC"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2254,7 +2254,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "RC0201FR-071KL_*"
+		(property "ki_fp_filters" "RC0201FR-071KL_* R_0201_Yageo_RC"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2397,7 +2397,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "RC0201FR-0747KL_*"
+		(property "ki_fp_filters" "RC0201FR-0747KL_* R_0201_Yageo_RC"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2540,7 +2540,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "0201WMF4704TEE_*"
+		(property "ki_fp_filters" "0201WMF4704TEE_* R_0201_Uniroyal_WM"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2683,7 +2683,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "RC0201FR-0722RL_*"
+		(property "ki_fp_filters" "RC0201FR-0722RL_* R_0201_Yageo_RC"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2826,7 +2826,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "RC0201FR-07100KL_*"
+		(property "ki_fp_filters" "RC0201FR-07100KL_* R_0201_Yageo_RC"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)

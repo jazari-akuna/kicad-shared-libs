@@ -1,0 +1,12 @@
+{
+  "lib_id": "Resistor_KSL:0201WMF4704TEE",
+  "default_footprint": "Resistor_KSL:R_0201_Uniroyal_WM",
+  "before": "0201WMF4704TEE_*",
+  "after": "0201WMF4704TEE_* R_0201_Uniroyal_WM",
+  "native_svg_unchanged_except_title_timestamp": true,
+  "source": "Existing canonical symbol default footprint and canonical matching footprint file",
+  "checked": "All nonfilter symbol records unchanged; native render geometry identical; source-bound consuming project ERC/parity zero",
+  "before_image": "before.png",
+  "after_image": "after.png",
+  "qualification": "Metadata correction only; existing part geometry unchanged"
+}
