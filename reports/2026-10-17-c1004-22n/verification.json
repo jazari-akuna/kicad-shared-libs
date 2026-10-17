@@ -1,0 +1,16 @@
+{
+  "manufacturer_exact_variant_url": "https://fhcomp.com/zh-cn/product_info/?prod_code=0402B223K500NT",
+  "manufacturer_catalog_source": "https://fenghua.nt-rt.ru/images/manuals/kondensator1.pdf",
+  "datasheet_is_bilingual_FH_family_catalog": true,
+  "local_pdf_sha256": "0ed1db4ce5a1ebd309b17df2d89d82ed36fd54aac2749662f2f9a552ef145ff2",
+  "downloaded_CAD_pin_numbers": [
+    "1",
+    "2"
+  ],
+  "preserved_footprint": "Capacitor_KSL/Capacitor_KSL.pretty/C_0402_1005Metric_Receiver.kicad_mod",
+  "preserved_footprint_sha256": "49cd26a6919cc7506c4739de3aad2bf40d1e0c04c0fd0736d1bbf3ea0a17f520",
+  "all_previous_symbols_unchanged": true,
+  "nominal_model": "Reused generic1.0x0.5x0.5mm MLCC model; envelope, not manufacturer CAD",
+  "stock_fetch_UTC": "2026-10-17T12:36:46.857448+00:00",
+  "english_reference": "Explicitly labelled engineer summary precedes original bilingual manufacturer catalog"
+}
