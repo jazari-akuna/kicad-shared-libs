@@ -1,0 +1,7 @@
+SN74LVC1T45DCKR / C9382: add missing courtyard and body outline.
+
+Source: TI DCK0006A, drawing4214835/D (11/2024), local datasheet page39. Maximumbody1.4×2.15mm excludes up to0.15mm/side moldflash.
+
+Courtyard covers1.7×2.45mm physicalbody envelope and all six lands, with at least0.10mm assemblymargin. It does not certify supplierplacementcapability. The consumer mustcheckcourtyardoverlaps againstadjacentparts.
+
+Exactpadrecords, pin numbers and model transformremain unchanged. Native footprintSVGexportpassed; before-after.png shows the difference. NativefinalboardDRC isstillrequiredafterintegration.

@@ -1,0 +1,37 @@
+{
+  "part": "SN74LVC1T45DCKR",
+  "lcsc": "C9382",
+  "source": "${KSL_ROOT}/datasheets/SN74LVC1T45DCKR.pdf, page39, TI DCK0006A drawing4214835/D 11/2024, note3",
+  "max_body_without_flash_mm": [
+    1.4,
+    2.15
+  ],
+  "mold_flash_allowance_each_side_mm": 0.15,
+  "physical_body_envelope_mm": [
+    1.7,
+    2.45
+  ],
+  "courtyard_local_bounds_mm": [
+    -1.47,
+    -1.325,
+    1.47,
+    1.325
+  ],
+  "courtyard_margin_minimum_mm": 0.1,
+  "pad_copper_records_identical": true,
+  "model_records_identical": true,
+  "checked": [
+    "Source drawing visually inspected",
+    "Unchanged exact six copper lands and pad numbers",
+    "Footprint SVG export succeeded"
+  ],
+  "not_checked": [
+    "Supplier acceptance of overall assembly",
+    "Unchanged model fidelity (not modified)"
+  ],
+  "modifications": [
+    "Add maximum-body F.Fab rectangle",
+    "Add missing courtyard including mold flash and at least0.10mm margin around lands/body"
+  ],
+  "footprint_sha256": "df6598dc4369d8714d28e975126af5f85a734953a410ab30faf37c4dbb6fbdba"
+}
