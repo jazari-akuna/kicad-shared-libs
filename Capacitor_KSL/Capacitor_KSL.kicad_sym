@@ -552,7 +552,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "CL05B104KO5NNNC_*"
+		(property "ki_fp_filters" "CL05B104KO5NNNC_* C_0402_1005Metric_Receiver"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -708,7 +708,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "CL05A105KA5NQNC_*"
+		(property "ki_fp_filters" "CL05A105KA5NQNC_* C_0402_1005Metric_Receiver"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -864,7 +864,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "CL05C220JB5NNNC_*"
+		(property "ki_fp_filters" "CL05C220JB5NNNC_* C_0402_1005Metric_Receiver"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1332,7 +1332,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "CL05A475MP5NRNC_*"
+		(property "ki_fp_filters" "CL05A475MP5NRNC_* C_0402_1005Metric_Receiver"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)

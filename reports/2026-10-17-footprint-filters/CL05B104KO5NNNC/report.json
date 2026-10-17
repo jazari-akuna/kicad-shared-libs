@@ -1,0 +1,12 @@
+{
+  "lib_id": "Capacitor_KSL:CL05B104KO5NNNC",
+  "default_footprint": "Capacitor_KSL:C_0402_1005Metric_Receiver",
+  "before": "CL05B104KO5NNNC_*",
+  "after": "CL05B104KO5NNNC_* C_0402_1005Metric_Receiver",
+  "native_svg_unchanged_except_title_timestamp": true,
+  "source": "Existing canonical symbol default footprint and canonical matching footprint file",
+  "checked": "All nonfilter symbol records unchanged; native render geometry identical; source-bound consuming project ERC/parity zero",
+  "before_image": "before.png",
+  "after_image": "after.png",
+  "qualification": "Metadata correction only; existing part geometry unchanged"
+}

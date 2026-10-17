@@ -344,6 +344,15 @@ library update silently reverts it. Mirror every such edit into the
 `<Lib>.kicad_sym` master (or edit the master and re-sync the sheet), and say
 which one you did in the report.
 
+Keep `ki_fp_filters` consistent with the symbol's real default and explicitly
+validated footprint variants. A renamed canonical land pattern can leave a
+stale vendor-name filter even though the assigned footprint is correct. Retain
+existing useful patterns and add the exact validated footprint names; do not
+waive these easy metadata warnings. Keep project-specific aliases in a local
+symbol master and synchronized embedded caches rather than widening installed
+generic-library filters. Prove that every other symbol, pin, net and assignment
+record is unchanged, then rerun native ERC and PCB schematic-parity checks.
+
 ## The three gates
 
 For part-artifact changes, run these checks when the tools are available and

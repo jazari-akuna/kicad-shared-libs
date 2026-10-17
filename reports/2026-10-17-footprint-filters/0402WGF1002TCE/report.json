@@ -1,0 +1,12 @@
+{
+  "lib_id": "Resistor_KSL:0402WGF1002TCE",
+  "default_footprint": "Resistor_KSL:R_0402_1005Metric_Receiver",
+  "before": "0402WGF1002TCE_*",
+  "after": "0402WGF1002TCE_* R_0402_1005Metric_Receiver",
+  "native_svg_unchanged_except_title_timestamp": true,
+  "source": "Existing canonical symbol default footprint and canonical matching footprint file",
+  "checked": "All nonfilter symbol records unchanged; native render geometry identical; source-bound consuming project ERC/parity zero",
+  "before_image": "before.png",
+  "after_image": "after.png",
+  "qualification": "Metadata correction only; existing part geometry unchanged"
+}
