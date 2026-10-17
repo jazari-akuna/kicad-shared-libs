@@ -1,0 +1,51 @@
+{
+  "status": "valid drawing-derived simplified STEP; not manufacturer CAD",
+  "source": "datasheets/50208-0040N-001.pdf",
+  "source_sha256": "dd6577d456089d239c20839a62f4d65409be3884325b5148f9924005a5167869",
+  "source_revision": "AA, page1, four-circuit table",
+  "source_dimensions_mm": {
+    "A_contact_span": 2.4,
+    "B_mating_width_datum": 3.5,
+    "C_body_width": 5.38,
+    "D_nail_center_span": 4.64,
+    "body_depth": 2.7,
+    "overall_height": 1.7,
+    "pitch": 0.8,
+    "terminal_stock": 0.15,
+    "nail_stock": 0.2
+  },
+  "model_bounds_mm": [
+    -2.6900001,
+    -2.7000001,
+    -1e-07,
+    2.6900001,
+    0.4500001000000002,
+    1.7000001
+  ],
+  "footprint_model_transform": {
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotate": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ]
+  },
+  "frame": "footprintX=modelX; footprintY=-modelY; pin1x=-1.2; opening toward footprint+y;terminalplaneZ=0",
+  "solid_count_expected": 7,
+  "step_sha256": "0c114d0ff88fde6717ed796658768a137ce8ee12dc325240cd1b7e32c452b479",
+  "assumptions": [
+    "Simplified cavity uses B datum but internal width/walls/roof are not independently dimensioned.",
+    "Contact width0.25mm, straight spring form, nail width0.50mm and length1.30mm are visual approximations.",
+    "No mating plug, wire, latch travel or insertion-envelope qualification.",
+    "Manufacturerdownloadterms were not accepted and its ZIP was not downloaded."
+  ]
+}

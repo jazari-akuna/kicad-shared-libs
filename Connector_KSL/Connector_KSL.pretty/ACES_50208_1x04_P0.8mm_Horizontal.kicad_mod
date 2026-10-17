@@ -16,4 +16,6 @@
 (pad "4" smd roundrect (at 1.2 0) (size 0.5 1.0) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1))
 (pad "" smd rect (at -2.5 2) (size 1.2 1.7) (layers "F.Cu" "F.Paste" "F.Mask"))
 (pad "" smd rect (at 2.5 2) (size 1.2 1.7) (layers "F.Cu" "F.Paste" "F.Mask"))
+(model "${KSL_ROOT}/Connector_KSL/Connector_KSL.3dshapes/ACES_50208-0040N-001_DrawingDerived.step"
+ (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
 )
