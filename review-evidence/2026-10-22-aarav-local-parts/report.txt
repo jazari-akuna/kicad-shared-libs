@@ -12,4 +12,8 @@ The verdicts live in the git-ignored datasheets/.state.json, so they are recorde
   datasheets.py triage && datasheets.py apply --results review-evidence/2026-10-22-aarav-local-parts/datasheet-verdicts.json
 After that, verify reports no finding for any of these parts; the remaining 54 problems are pre-existing on main.
 
-Open: CONN-TH_XT30PW-M30-G-Y fails check_models seating (new finding). These 63 parts have not had the full per-part Step 2 footprint/3D review that new KSL parts normally get; they were built for the Audio Board and are offered for Raph's review.
+XT30PW-M30.G.Y 3D model: the imported offset (0, -1.005, -2.000) mm sank the housing 2 mm into the board and put both pins 2.5 mm off their holes (xt30-before-front.png). Re-derived with FreeCAD from the STEP: power pins at (±2.5, 8.5), locating pegs at (±5.5, -1.5), housing seating face at Z 0; footprint pins at (±2.5, -5.0), pegs at (±5.5, +5.0). New offset (0, -3.5, 0) mm; check_models seating now clean (xt30-after-*.png). The STEP is Amass's generic XT30PW-M body with 2.0 mm tails; the -M30 variant has 3.0 mm tails, so tail length in renders is illustrative.
+
+Footprint format: C1210, CONN-SMD_2P-P2.00_SM02B-ULHK-1TA1-ETB, HDR-TH_6P-P2.54-H-M-W10.4, TSOT-23-8_L2.9-W1.6-P0.65-LS2.8-BR, VQFN-HR-10_RPW0010A_TPS25947, WQFN-38_REF0038A_TPS25730D and WQFN-20_L3.0-W3.0-P0.40-TL-EP1.7 were legacy (module ...) files; re-saved with kicad-cli fp upgrade. Pads, drills, model transforms and graphics compare identical as loaded by KiCad before and after.
+
+Open: These 63 parts have not had the full per-part Step 2 footprint/3D review that new KSL parts normally get; they were built for the Audio Board and are offered for Raph's review.

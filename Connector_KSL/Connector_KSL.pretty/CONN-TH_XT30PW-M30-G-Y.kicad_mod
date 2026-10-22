@@ -466,9 +466,7 @@
 	)
 	(embedded_fonts no)
 	(model "${KSL_ROOT}/Connector_KSL/Connector_KSL.3dshapes/CONN-TH_XT30PW-M.step"
-		(offset
-			(xyz -0.0001269999981 -1.005027185 -1.99999597)
-		)
+		(offset (xyz 0 -3.5 0))
 		(scale
 			(xyz 1 1 1)
 		)
