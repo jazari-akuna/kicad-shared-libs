@@ -1,0 +1,75 @@
+[
+ {
+  "slug": "B3U-1000P",
+  "mpn": "B3U-1000P",
+  "action": "keep",
+  "url": "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3u.pdf",
+  "verdict": "en",
+  "note": "Replaced Chinese edition with Omron's English B3U datasheet (omronfs.omron.com en-b3u.pdf); names B3U-1000P; ratings, dimensions and PCB layout in English."
+ },
+ {
+  "slug": "HC-JN254-2-03-W",
+  "mpn": "HC-JN254-2-03-W",
+  "action": "keep",
+  "url": "https://atta.szlcsc.com/upload/public/pdf/source/20230314/29278A24539954283B80828B9C32CD4C.pdf",
+  "verdict": "en",
+  "note": "Huacan Tianlu family drawing HC-JN254-2-N-W-8.8-XX, public LCSC copy. Bilingual: specs, dimensions, PCB layout and ordering code in English; only title (2.54 mm box header, dual row, right-angle) and maker name Chinese."
+ },
+ {
+  "slug": "PM254-2-10-W-8_5",
+  "mpn": "PM254-2-10-W-8_5",
+  "action": "keep",
+  "url": "https://atta.szlcsc.com/upload/public/pdf/source/20211012/642A10508B34AD7BE7B9895A6BFCAF0F.pdf",
+  "verdict": "en",
+  "note": "Huacan Tianlu family drawing PM254-2-N-W-8.5, public LCSC copy. Specs, dimensions and recommended PCB layout in English; only maker name Chinese."
+ },
+ {
+  "slug": "XT30PW-M30.G.Y",
+  "mpn": "XT30PW-M30.G.Y",
+  "action": "keep",
+  "verdict": "en",
+  "note": "Amass product specification, image-only PDF read by reviewer: English model code, ratings (500 V DC, 15 A), materials and outline; covers XT30PW20/30-M.G.*."
+ },
+ {
+  "slug": "S2B-PH-SM4-TB_LF_SN_",
+  "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+  "action": "keep",
+  "verdict": "en",
+  "note": "JST PH series English catalogue page; names S2B-PH-SM4-TB, includes ratings and PC board layout."
+ },
+ {
+  "slug": "V103K0105X5R100NZT",
+  "mpn": "V103K0105X5R100NZT",
+  "action": "keep",
+  "verdict": "en",
+  "note": "Unofficial English companion translation (2026-10-02) of VIIYONG spec SVEX-CBG201908 with the original Chinese pages appended, per kicad-parts rule 6."
+ },
+ {
+  "slug": "FXL0630-4R7-M",
+  "mpn": "FXL0630-4R7-M",
+  "action": "keep",
+  "verdict": "en",
+  "note": "Cjiang specification, bilingual: inductance, DCR, saturation/rated current, dimensions and recommended land in English (5.7% CJK, headers and company name)."
+ },
+ {
+  "slug": "YI453215U121-8R0T",
+  "mpn": "YI453215U121-8R0T",
+  "action": "keep",
+  "verdict": "en",
+  "note": "YJYCOIN ferrite bead specification: English features, impedance, rated current, DCR and dimensions; Chinese limited to the company name (12 glyphs)."
+ },
+ {
+  "slug": "FRC0402F0000TS",
+  "mpn": "FRC0402F0000TS",
+  "action": "keep",
+  "verdict": "en",
+  "note": "Fosan FRC series thick-film family spec, Chinese/English side by side: rated power, jumper (0 ohm) ratings, dimensions and temperature data legible in English."
+ },
+ {
+  "slug": "AFC01-S05FCA-00",
+  "mpn": "AFC01-S05FCA-00",
+  "action": "keep",
+  "verdict": "en",
+  "note": "Jushuo specification for approval, identical (sha256) to the public LCSC copy for C262654; bilingual headings, English ratings, notes, dimensions and tape drawing."
+ }
+]
