@@ -52,8 +52,8 @@
 	(attr smd)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
-		(start -2.999873 -1.289992)
-		(end -2.089992 -1.289992)
+		(start -2.99987 -1.28999)
+		(end -2.15 -1.28999)
 		(stroke
 			(width 0.1016)
 			(type solid)
@@ -92,8 +92,8 @@
 		(uuid "8ccead54-3bf1-43ef-b197-2fb15a6e6f7f")
 	)
 	(fp_line
-		(start -2.498882 1.54953)
-		(end -2.498882 1.750191)
+		(start -2.35 1.54953)
+		(end -2.35 1.75019)
 		(stroke
 			(width 0.1016)
 			(type solid)
@@ -102,8 +102,8 @@
 		(uuid "9b123f0c-e0b9-4c4c-9f36-59813acdb385")
 	)
 	(fp_line
-		(start -2.498882 1.750191)
-		(end 2.499492 1.750191)
+		(start -2.35 1.75019)
+		(end 2.35 1.75019)
 		(stroke
 			(width 0.1016)
 			(type solid)
@@ -142,8 +142,8 @@
 		(uuid "ed9cc8fe-9eac-4880-91db-74dfc7df0cb0")
 	)
 	(fp_line
-		(start 2.499492 1.54953)
-		(end -2.498882 1.54953)
+		(start 2.35 1.54953)
+		(end -2.35 1.54953)
 		(stroke
 			(width 0.1016)
 			(type solid)
@@ -152,8 +152,8 @@
 		(uuid "a3e53502-d381-4fe9-9fc2-641aeb0a4875")
 	)
 	(fp_line
-		(start 2.500686 1.549682)
-		(end 2.500686 1.749657)
+		(start 2.35 1.54968)
+		(end 2.35 1.74966)
 		(stroke
 			(width 0.1016)
 			(type solid)
@@ -162,8 +162,8 @@
 		(uuid "6771d62a-9a57-4056-9449-7ec6c1ebded4")
 	)
 	(fp_line
-		(start 3.000686 -1.249987)
-		(end 2.059995 -1.249987)
+		(start 3.00069 -1.24999)
+		(end 2.15 -1.24999)
 		(stroke
 			(width 0.1016)
 			(type solid)

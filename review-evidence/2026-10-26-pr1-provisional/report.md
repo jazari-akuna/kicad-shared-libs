@@ -91,3 +91,13 @@ pin names or the silk.
 - `check_models.py`: identical violation list to main (stash comparison); no new findings.
 - `check_nda.py --scope all`: clean; `--self-test` passes.
 - `kicad-cli` parses all three footprints and the XT30 symbol; TLV3502 fixture DRC 0.
+
+## Added: silkscreen fixes found on the Wheel Adapter
+
+- **Harting 09231486921:** the housing outline was drawn past the board edge (5.3 in front of row a),
+  so DRC reported `silk_edge_clearance` on every board using it. Silk now stops 0.2 inside the edge;
+  the part beyond it is clipped by the fab anyway. Pads, courtyard and the pin-1 mark are unchanged.
+- **FH34SRJ-8S:** the rear outline ended on the fitting pads (`silk_over_copper`). Its ends now stop
+  at ±2.35 (pads start at ±2.55), and the front ticks beside pads 1 and 8 start at ±2.15. Pads unchanged.
+
+On the Wheel Adapter, ERC, DRC and schematic parity now read 0 / 0 / 0.
