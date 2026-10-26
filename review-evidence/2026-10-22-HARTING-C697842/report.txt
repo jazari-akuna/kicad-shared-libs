@@ -21,3 +21,5 @@ Checks:
 Status: usable for the CAPTIVATE-FR2633 wheel adapter. Not manufacturer-verified: obtain Harting's 09 23 148 6921 drawing to confirm drill/land sizes and the board-edge dimension, and dry-fit a physical part on a 1:1 print before ordering boards.
 
 Visuals: compare before-footprint.png with after-footprint.png; before-front.png/before-iso.png with after-front.png/after-iso.png; also after-symbol.png, after-top.png and after-right.png.
+
+Update 2026-10-26: A1 marker added on silk and fab; datasheet verdict now recorded in review-evidence/2026-10-22-aarav-local-parts/datasheet-verdicts.json. See review-evidence/2026-10-26-pr1-review/report.md.

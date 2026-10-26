@@ -17,3 +17,5 @@ XT30PW-M30.G.Y 3D model: the imported offset (0, -1.005, -2.000) mm sank the hou
 Footprint format: C1210, CONN-SMD_2P-P2.00_SM02B-ULHK-1TA1-ETB, HDR-TH_6P-P2.54-H-M-W10.4, TSOT-23-8_L2.9-W1.6-P0.65-LS2.8-BR, VQFN-HR-10_RPW0010A_TPS25947, WQFN-38_REF0038A_TPS25730D and WQFN-20_L3.0-W3.0-P0.40-TL-EP1.7 were legacy (module ...) files; re-saved with kicad-cli fp upgrade. Pads, drills, model transforms and graphics compare identical as loaded by KiCad before and after.
 
 Open: These 63 parts have not had the full per-part Step 2 footprint/3D review that new KSL parts normally get; they were built for the Audio Board and are offered for Raph's review.
+
+Update 2026-10-26: several parts above were fixed, renamed or removed during review (the _Functional duplicates, the TPS25947 footprint copy, USB4120-03-C_Verified, the SLW4010S footprint, TLV3502 moved to Amplifier_Comparator_KSL). See review-evidence/2026-10-26-pr1-review/report.md.
