@@ -71,5 +71,19 @@
   "action": "keep",
   "verdict": "en",
   "note": "Jushuo specification for approval, identical (sha256) to the public LCSC copy for C262654; bilingual headings, English ratings, notes, dimensions and tape drawing."
+ },
+ {
+  "slug": "09231486921",
+  "mpn": "09231486921",
+  "action": "keep",
+  "verdict": "en",
+  "note": "Harting DIN Signal male connector family sheet (doc 09031200201 rev B), English, image-only scan; covers type 2C male. Read by reviewer; does not give the 09 23 148 6921 land pattern (see the part's report)."
+ },
+ {
+  "slug": "SM02B-ULHK-1TA1-ETB_HF_",
+  "mpn": "SM02B-ULHK-1TA1-ETB(HF)",
+  "action": "keep",
+  "verdict": "en",
+  "note": "JST ULH connector catalog, English text layer: features, ratings (5 A), dimensions and PCB layout in English."
  }
 ]
