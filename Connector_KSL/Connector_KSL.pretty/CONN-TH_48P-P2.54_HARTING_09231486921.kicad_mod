@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(descr "Harting 09 23 148 6921 DIN 41612 type 2C (C/2) male, 48 pos (rows a,b,c x 16), 2.54 mm, angled, wave solder, fixing flange; LCSC C697842. Board edge 5.3 mm in front of row a. Source: JLC/EasyEDA C697842; model offset re-derived from STEP geometry 2026-10-22")
+	(descr "Harting 09 23 148 6921 DIN 41612 type 2C (C/2) male, 48 pos (rows a,b,c x 16), 2.54 mm, angled, wave solder, fixing flange; LCSC C697842. Board edge 5.3 mm in front of row a")
 	(tags "DIN41612 2C C/2 48P Harting 09231486921 C697842")
 	(property "Reference" "REF**"
 		(at 0.01505 -5.810008 0)
@@ -331,6 +331,41 @@
 			(font
 				(size 1 1)
 				(thickness 0.15)
+			)
+		)
+	)
+	(fp_poly
+		(pts
+			(xy 20.35 1.27) (xy 20.85 0.97) (xy 20.85 1.57)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "6cf08d1f-be97-47a8-9b07-4f086f5a1688")
+	)
+	(fp_poly
+		(pts
+			(xy 20.35 1.27) (xy 20.85 0.97) (xy 20.85 1.57)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "895a7913-51d3-42a8-a474-cf5c62e0e119")
+	)
+	(fp_text user "A1"
+		(at 19.05 2.55 0)
+		(layer "F.Fab")
+		(uuid "5361efe4-c7eb-445d-8d00-4f66754e2f8e")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
 			)
 		)
 	)

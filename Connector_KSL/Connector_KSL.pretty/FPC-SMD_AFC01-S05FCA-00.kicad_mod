@@ -3,8 +3,8 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(descr "FPC-SMD_AFC01-S05FCA-00 footprint")
-	(tags "FPC-SMD_AFC01-S05FCA-00 footprint C262654")
+	(descr "JUSHUO AFC01-S05FCA-00 5-pin 0.5 mm FPC connector; land pattern per datasheet Recommended PCB Pattern Layout (signal 0.30x1.30, mounting 2.00x1.60)")
+	(tags "FPC FFC 0.5mm 5-pin AFC01 C262654")
 	(property "Reference" "REF**"
 		(at 0 -3.999975 0)
 		(layer "F.SilkS")
@@ -63,7 +63,7 @@
 	)
 	(fp_line
 		(start -3.5 -1.999975)
-		(end -1.380899 -1.999975)
+		(end -1.45 -1.999975)
 		(stroke
 			(width 0.254001)
 			(type solid)
@@ -92,7 +92,7 @@
 		(uuid "28c97ede-f356-4caf-94e4-55016e38a2a1")
 	)
 	(fp_line
-		(start 1.381153 -1.999975)
+		(start 1.45 -1.999975)
 		(end 3.5 -1.999975)
 		(stroke
 			(width 0.254001)
@@ -164,8 +164,8 @@
 		(uuid "a7161eed-f433-4b53-8edd-a4b3e31a03a0")
 	)
 	(fp_line
-		(start -4.23 -2.26)
-		(end -4.23 2.87)
+		(start -3.95 -2.25)
+		(end -3.95 4.75)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -174,8 +174,8 @@
 		(uuid "d7bb4fc0-8727-486e-b477-ffb0ee11b568")
 	)
 	(fp_line
-		(start -4.23 2.87)
-		(end 4.23 2.87)
+		(start -3.95 4.75)
+		(end 3.95 4.75)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -184,8 +184,8 @@
 		(uuid "6006b27c-b1f7-4ce8-a412-a55708b77259")
 	)
 	(fp_line
-		(start 4.23 -2.26)
-		(end -4.23 -2.26)
+		(start 3.95 -2.25)
+		(end -3.95 -2.25)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -194,14 +194,54 @@
 		(uuid "9f89e72e-15c0-48be-95ec-4ca36c615843")
 	)
 	(fp_line
-		(start 4.23 2.87)
-		(end 4.23 -2.26)
+		(start 3.95 4.75)
+		(end 3.95 -2.25)
 		(stroke
 			(width 0.05)
 			(type solid)
 		)
 		(layer "F.CrtYd")
 		(uuid "f8a9ca50-a425-4954-a17c-c118dff84a37")
+	)
+	(fp_line
+		(start -3.45 -0.97)
+		(end 3.45 -0.97)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4be1424c-f6f0-46dc-bdf8-2b4102cfa569")
+	)
+	(fp_line
+		(start 3.45 -0.97)
+		(end 3.45 4.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c7f6b4d6-e5a0-4327-9da3-2fc9535587b0")
+	)
+	(fp_line
+		(start 3.45 4.35)
+		(end -3.45 4.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2cc64ce4-b6ab-4625-8ea7-fce5d2b3363d")
+	)
+	(fp_line
+		(start -3.45 4.35)
+		(end -3.45 -0.97)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e7d07e2b-23ed-4daa-ad80-78678abce00f")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 1.28603 0)
@@ -246,13 +286,13 @@
 	)
 	(pad "6" smd rect
 		(at 2.700025 1.33998)
-		(size 1.6 2)
+		(size 2 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "b4dba710-56d0-4926-81ab-8e87e09a80c7")
 	)
 	(pad "7" smd rect
 		(at -2.700025 1.33998)
-		(size 1.6 2)
+		(size 2 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "e38d0703-147b-4f82-897b-cb77f81546ea")
 	)

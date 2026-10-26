@@ -3,8 +3,8 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(descr "CONN-TH_XT30PW-M footprint")
-	(tags "CONN-TH_XT30PW-M footprint C431092")
+	(descr "Amass XT30PW-M30.G.Y right-angle 2-pin THT plug; holes per Amass spec p.3 Installation Hole Diagram (contacts 2x D1.90 at 5.00 pitch, pegs 2x D1.00 at 11.00, rows 10.00 apart)")
+	(tags "XT30 XT30PW Amass connector right-angle C431092")
 	(property "Reference" "REF**"
 		(at -0.000127 -7 0)
 		(layer "F.SilkS")
@@ -93,7 +93,7 @@
 	)
 	(fp_line
 		(start -5.080137 6.480823)
-		(end -5.049657 8.149606)
+		(end -5.080137 8.15)
 		(stroke
 			(width 0.254001)
 			(type solid)
@@ -112,8 +112,8 @@
 		(uuid "403d5c1f-cfde-4390-8d80-ce4083b3d7dc")
 	)
 	(fp_line
-		(start -5.049657 8.149606)
-		(end 5.079883 8.091186)
+		(start -5.080137 8.15)
+		(end 5.079883 8.15)
 		(stroke
 			(width 0.254001)
 			(type solid)
@@ -302,7 +302,7 @@
 		(uuid "788be3f4-3a2f-4954-ac38-daaf198956fd")
 	)
 	(fp_line
-		(start 5.079883 8.091186)
+		(start 5.079883 8.15)
 		(end 5.079883 6.549403)
 		(stroke
 			(width 0.254001)
@@ -343,8 +343,8 @@
 		(uuid "0224f8cd-e3b9-405b-a672-5bd0c2f8537d")
 	)
 	(fp_line
-		(start -7.02 -7.02)
-		(end -7.02 6.52)
+		(start -6.9 -6.5)
+		(end -6.9 8.4)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -353,8 +353,8 @@
 		(uuid "dce511c3-e0f4-43c4-814a-58c21a0309a2")
 	)
 	(fp_line
-		(start -7.02 6.52)
-		(end 7.02 6.52)
+		(start -6.9 8.4)
+		(end 6.9 8.4)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -363,8 +363,8 @@
 		(uuid "ea099d31-a848-4e84-b35c-e6420cfca3f2")
 	)
 	(fp_line
-		(start 7.02 -7.02)
-		(end -7.02 -7.02)
+		(start 6.9 -6.5)
+		(end -6.9 -6.5)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -373,8 +373,8 @@
 		(uuid "8ac7fca0-edf8-47c7-871a-c99f425d2cc4")
 	)
 	(fp_line
-		(start 7.02 6.52)
-		(end 7.02 -7.02)
+		(start 6.9 8.4)
+		(end 6.9 -6.5)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -406,15 +406,15 @@
 	)
 	(pad "" np_thru_hole circle
 		(at -5.5 5)
-		(size 1.1 1.1)
-		(drill 1.1)
+		(size 1 1)
+		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(uuid "7562b540-410c-42fd-ae13-9b645be3b854")
 	)
 	(pad "" np_thru_hole circle
 		(at 5.5 5)
-		(size 1.1 1.1)
-		(drill 1.1)
+		(size 1 1)
+		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(uuid "017b7a93-b2bb-49c8-bd44-0635a9f998cc")
 	)
