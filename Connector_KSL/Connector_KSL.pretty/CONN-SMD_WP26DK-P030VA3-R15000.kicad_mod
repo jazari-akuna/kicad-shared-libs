@@ -2,7 +2,7 @@
   (version 20240108)
   (generator "gen_wp26dk")
   (layer "F.Cu")
-  (descr "JAE WP26DK-P030VA3-R15000, Plug, 30 contacts + 2 power hold-downs, 0.35 mm pitch, 0.6 mm stacking. Land pattern: PROVISIONAL: G-Switch GT-B0351MSV05 PCB reference diagram (WP26DK-P compatible), agrees with LCSC footprints for JAE P010/P024/P040; JAE SJ121275 not yet seen. Pad numbering follows the BM28 footprints in this library.")
+  (descr "JAE WP26DK-P030VA3-R15000, Plug, 30 contacts + 2 power hold-downs, 0.35 mm pitch, 0.6 mm stacking. Land pattern: JAE SJ121275 rev 6 (2024-03-12), applicable PCB dimension (same pattern as G-Switch GT-B0351MSV05). Pad numbering follows the BM28 footprints in this library.")
   (tags "WP26DK WP26DK-P030VA3-R15000 board-to-board 0.35mm")
   (attr smd)
   (property "Reference" "REF**" (at 0 -2.15 0) (layer "F.SilkS") (effects (font (size 0.8 0.8) (thickness 0.12))))

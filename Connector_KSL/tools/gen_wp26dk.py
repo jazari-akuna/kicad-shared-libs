@@ -2,7 +2,7 @@
 """Generate JAE WP26DK land patterns (0.35 mm pitch, 0.6 mm stacking, 2 power hold-downs).
 
 Receptacle (WP26DK-S***VA3): JAE drawing SJ121277 rev 6, "Applicable P.C.B dimension (ref.)".
-Plug (WP26DK-P***VA3): see PLUG below and its source note.
+Plug (WP26DK-P***VA3): JAE drawing SJ121275 rev 6, "Applicable P.C.B dimension (ref.)".
 
 Pad numbering is not defined by JAE. It follows the BM28 footprints in this library so a BM28 can be swapped
 for a WP26DK without touching the schematic: row +y holds 1..n/2 left to right, row -y holds n/2+1..n right to
@@ -27,8 +27,7 @@ PLUG = dict(
     sig=(0.17, 0.54), row_y=0.83,                      # inner edges 1.12 apart, outer 2.20
     corner=(0.28, 0.65), corner_dx=0.42, corner_y=0.575,   # 4 hold-down pads, inner edges 0.5 apart, outer 1.8
     end=None,
-    source="PROVISIONAL: G-Switch GT-B0351MSV05 PCB reference diagram (WP26DK-P compatible), agrees with LCSC "
-           "footprints for JAE P010/P024/P040; JAE SJ121275 not yet seen",
+    source="JAE SJ121275 rev 6 (2024-03-12), applicable PCB dimension (same pattern as G-Switch GT-B0351MSV05)",
 )
 
 
