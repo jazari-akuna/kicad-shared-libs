@@ -166,42 +166,6 @@
 		(layer "Cmts.User")
 		(uuid "99e19857-d5d5-446c-8292-937e06818e03")
 	)
-	(fp_poly
-		(pts
-			(xy -0.5 0.250013) (xy -0.5 -0.250013) (xy -0.250013 -0.250013) (xy -0.250013 0.250013)
-		)
-		(stroke
-			(width 0.15)
-			(type solid)
-		)
-		(fill yes)
-		(layer "Cmts.User")
-		(uuid "883b2be7-5c38-4d6d-9d9e-20654d808902")
-	)
-	(fp_poly
-		(pts
-			(xy -0.5 0.250013) (xy -0.5 -0.250013) (xy 0.5 -0.250013) (xy 0.5 0.250013)
-		)
-		(stroke
-			(width 0.15)
-			(type solid)
-		)
-		(fill yes)
-		(layer "Cmts.User")
-		(uuid "87942856-dedf-4ff5-8692-40240fbca6e5")
-	)
-	(fp_poly
-		(pts
-			(xy 0.5 0.250013) (xy 0.5 -0.250013) (xy 0.250013 -0.250013) (xy 0.250013 0.250013)
-		)
-		(stroke
-			(width 0.15)
-			(type solid)
-		)
-		(fill yes)
-		(layer "Cmts.User")
-		(uuid "1d2ac3d0-f88a-41ae-a37f-9f5e79a772b1")
-	)
 	(fp_line
 		(start -1.04 -0.62)
 		(end -1.04 0.62)
@@ -248,8 +212,8 @@
 		(uuid "66be45a4-c56a-47fd-b84b-18abf933d338")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.5 0.5)
+				(thickness 0.1)
 			)
 		)
 	)
