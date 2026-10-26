@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(descr "Harting 09 23 148 6921 DIN 41612 type 2C (C/2) male, 48 pos (rows a,b,c x 16), 2.54 mm, angled, wave solder, fixing flange; LCSC C697842. Board edge 5.3 mm in front of row a")
+	(descr "Harting 09 23 148 6921 DIN 41612 type 2C (C/2) male, 48 pos (rows a,b,c x 16), 2.54 mm, angled, wave solder, fixing flange; LCSC C697842. Board edge 5.3 mm in front of row a. Land pattern verified 2026-10-26 against Harting DIN 41612 catalogue type 2C board drillings (p. 01.30): holes D1.0 +/-0.1 on 2.54 x 2.54, fixing holes D2.8 +0.1 at 48.26 +/-0.05 and 2.54 +/-0.1 from row a, board edge 5.3 +/-0.1 from row a, position 1 right / row a at edge seen from the mounting side.")
 	(tags "DIN41612 2C C/2 48P Harting 09231486921 C697842")
 	(property "Reference" "REF**"
 		(at 0.01505 -5.810008 0)
