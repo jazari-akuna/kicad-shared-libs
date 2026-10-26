@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(descr "Amass XT30PW-M30.G.Y right-angle 2-pin THT plug; holes per Amass spec p.3 Installation Hole Diagram (contacts 2x D1.90 at 5.00 pitch, pegs 2x D1.00 at 11.00, rows 10.00 apart)")
+	(descr "Amass XT30PW-M30.G.Y right-angle 2-pin THT plug; holes per Amass spec p.3 Installation Hole Diagram (contacts 2x D1.90 at 5.00 pitch, pegs 2x D1.00 at 11.00, rows 10.00 apart). Polarity PROVISIONAL: the Amass spec (3 pp.) marks no + or -; the symbol's +/- pin names (2/1) are unverified, so confirm against the mating cable before use.")
 	(tags "XT30 XT30PW Amass connector right-angle C431092")
 	(property "Reference" "REF**"
 		(at -0.000127 -7 0)

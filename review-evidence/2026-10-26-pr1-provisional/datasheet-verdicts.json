@@ -1,0 +1,11 @@
+[
+ {
+  "slug": "09231486921",
+  "mpn": "09231486921",
+  "action": "local-file",
+  "url": "https://b2b.harting.com/files/livebooks/en/PRD0200000100063/downloads/livebook.pdf",
+  "verdict": "en",
+  "note": "Harting DIN 41612 catalogue (public, no login), pp. 01.29-01.30 (PDF pp. 57-58): part-number table listing 09 23 148 6921 (type 2C male, 48 contacts, angled solder pins, performance level 2) and the type 2C dimension drawing with board drillings; followed by the previous file, the DIN Signal male family sheet (doc 09031200201 rev B) for ratings and materials. English. Footprint verified against the board-drilling drawing on 2026-10-26.",
+  "path": "datasheets/09231486921.pdf (catalogue pp. 57-58 + previous family sheet)"
+ }
+]

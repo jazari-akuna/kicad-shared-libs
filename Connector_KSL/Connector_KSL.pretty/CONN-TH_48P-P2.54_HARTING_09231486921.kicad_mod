@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(descr "Harting 09 23 148 6921 DIN 41612 type 2C (C/2) male, 48 pos (rows a,b,c x 16), 2.54 mm, angled, wave solder, fixing flange; LCSC C697842. Board edge 5.3 mm in front of row a")
+	(descr "Harting 09 23 148 6921 DIN 41612 type 2C (C/2) male, 48 pos (rows a,b,c x 16), 2.54 mm, angled, wave solder, fixing flange; LCSC C697842. Board edge 5.3 mm in front of row a. Land pattern verified 2026-10-26 against Harting DIN 41612 catalogue type 2C board drillings (p. 01.30): holes D1.0 +/-0.1 on 2.54 x 2.54, fixing holes D2.8 +0.1 at 48.26 +/-0.05 and 2.54 +/-0.1 from row a, board edge 5.3 +/-0.1 from row a, position 1 right / row a at edge seen from the mounting side.")
 	(tags "DIN41612 2C C/2 48P Harting 09231486921 C697842")
 	(property "Reference" "REF**"
 		(at 0.01505 -5.810008 0)
@@ -62,34 +62,14 @@
 		(uuid "76ce1d4d-418c-4fff-8a50-3029bfd42f2a")
 	)
 	(fp_line
-		(start -26.940005 1.750038)
-		(end -26.940005 9.050038)
+		(start -26.94 1.75004)
+		(end -26.94 6.37)
 		(stroke
 			(width 0.254001)
 			(type solid)
 		)
 		(layer "F.SilkS")
 		(uuid "bcc81534-921a-40d3-97be-d2713abfce5d")
-	)
-	(fp_line
-		(start -26.940005 9.050038)
-		(end -23.510008 9.050038)
-		(stroke
-			(width 0.254001)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "7f527b62-c437-4673-9433-23c76b765365")
-	)
-	(fp_line
-		(start -23.510008 9.050038)
-		(end -23.510008 13.750038)
-		(stroke
-			(width 0.254001)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "fa6e2983-8a8a-4e35-bc3c-216689bb1c49")
 	)
 	(fp_line
 		(start -21.269952 1.020015)
@@ -142,48 +122,8 @@
 		(uuid "828e28c3-0aaa-469f-959c-be548568c70f")
 	)
 	(fp_line
-		(start 23.522606 9.110033)
-		(end 26.989992 9.110033)
-		(stroke
-			(width 0.254001)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "4ef42178-462c-467b-bce8-2b12db45a891")
-	)
-	(fp_line
-		(start 23.522606 13.797435)
-		(end -23.510008 13.797435)
-		(stroke
-			(width 0.254001)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "7581a630-90d0-49dc-bd13-4e54a521d64f")
-	)
-	(fp_line
-		(start 23.522606 13.797435)
-		(end 23.522606 9.110033)
-		(stroke
-			(width 0.254001)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "89cc88de-2c91-44af-9e87-22acefc7e322")
-	)
-	(fp_line
-		(start 23.522606 13.79746)
-		(end -23.510008 13.79746)
-		(stroke
-			(width 0.254001)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "9cbdc0aa-1df2-41dd-842c-ce067e850105")
-	)
-	(fp_line
-		(start 26.989992 9.110033)
-		(end 26.990043 0.920015)
+		(start 26.99 6.37)
+		(end 26.99 0.920015)
 		(stroke
 			(width 0.254001)
 			(type solid)
