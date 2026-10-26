@@ -1,0 +1,25 @@
+09231486921 (C697842) → Connector_KSL — 2026-10-22
+
+Source: fresh JLC2KiCadLib download of C697842 (symbol, footprint, STEP). Step 0 found no existing 0923148 part in KSL, KNL, _attic or git history. Harting's part page (harting.com, "DIN-Signal 2C048MS-1C1-2", article 09 23 148 6921) confirms: male, angled, 48 contacts in rows a/b/c positions 1-16, wave solder, fixing flange. Harting's part-specific drawing was not obtained: the site's Downloads panel did not load under automation. Geometry was instead cross-checked against KiCad's stock Connector_DIN:DIN41612_C2_3x16_Male_Horizontal_THT (built from Harting's DIN 41612 livebook) and against TI's CAPTIVATE-METAL panel (SLAR140A), which uses this exact part.
+
+Symbol: Connector_KSL:09231486921; pins A1-A16, B1-B16, C1-C16 plus 49/50 for the two plated fixing-flange holes. Changed Reference U → J?, retyped all 50 imported unspecified pins to passive, linked Footprint to Connector_KSL, added Description and the local Datasheet property. Pin numbers match pad names exactly (50/50).
+
+Footprint: Connector_KSL:CONN-TH_48P-P2.54_HARTING_09231486921. Contacts: 2.54 mm pitch, 3 rows 2.54 mm apart, Ø1.0 mm drills on 1.5 mm pads; row a nearest the board edge. Fixing holes: Ø2.8 mm plated, ±24.13 mm (48.26 mm apart), 2.54 mm in front of row a. All agree with the KiCad stock footprint (which is this footprint rotated 180°) and with Harting's published 48.26 mm flange spacing. Re-saved from the legacy (module ...) format into the modern format. Added a Cmts.User "Board edge" line at 5.3 mm in front of row a, as in KiCad's stock footprint. The measured housing step is at 6.14 mm, so a board edge anywhere up to that line clears the housing overhang. No A1 silkscreen marker; the housing's overhang direction keys orientation.
+
+Datasheet property: ${KSL_ROOT}/datasheets/09231486921.pdf. Harting "DIN Signal male connector" family sheet (doc 09031200201 rev B, 2018-05-18), English, public, served by LCSC without login. Image-only PDF (triage verdict "scanned"); read by reviewer and recorded via datasheets.py apply as English. It covers types B/2B/3B/C/2C/3C male (2.54 mm, 2 A, -55..+125 °C, 48-pole insertion force max 45 N) but does not name 09 23 148 6921 or give its land pattern: geometry evidence is the cross-check above.
+
+3D: the JLC STEP (SolidWorks 2020 export) is kept. The converter's legacy offset (at (xyz 0 -0.190946 -0.11811)) is in inches, i.e. (0, -4.85, -3.00) mm, and placed the housing mostly under the board (before-front.png, before-iso.png). Re-derived with FreeCAD from the STEP itself: 48 tails at X ±19.05, Y 2.34/4.88/7.42 in model frame; housing seating face over the board at Z -4.10; flanges centred at X ±24.15. New offset (0, -3.61, 4.10) mm puts every tail on its pad, the flanges on holes 49/50, the housing on the board surface and the tails 3.0 mm below the top surface (1.4 mm through a 1.6 mm board). See after-top/front/iso/right.png.
+
+Checks:
+- Pin/pad parity: 50/50, no mismatches. PASS.
+- Distinct-net fixture DRC (each pad on its own net, board edge at 5.3 mm): 0 shorting_items, 0 padstack_invalid, 0 unconnected; 2 silk_edge_clearance warnings from the housing outline overhanging the fixture edge (expected; fab clips). PASS. fixture-drc.json.
+- datasheets.py verify: no finding for 09231486921. Repository-wide result exit 1 from 54 pre-existing problems unrelated to this part.
+- check_models.py units: no finding for this part. transform: no finding for this part. seating: FLAGGED - housing overhang solids at z=-0.3 around footprint y=+10.7 "in solid board". That volume lies beyond the board edge (overhang spans y +7.41..+13.91; edge at +6.57), which the checker does not model. Not baselined; left visible here.
+- check_nda.py --scope all: exit 0; self-test exit 0. Hash layer only - pdftotext not installed, so the content layer did not run.
+- Symbol and footprint SVG exports parse; library diff is additive only.
+
+Status: usable for the CAPTIVATE-FR2633 wheel adapter. Not manufacturer-verified: obtain Harting's 09 23 148 6921 drawing to confirm drill/land sizes and the board-edge dimension, and dry-fit a physical part on a 1:1 print before ordering boards.
+
+Visuals: compare before-footprint.png with after-footprint.png; before-front.png/before-iso.png with after-front.png/after-iso.png; also after-symbol.png, after-top.png and after-right.png.
+
+Update 2026-10-26: A1 marker added on silk and fab; datasheet verdict now recorded in review-evidence/2026-10-22-aarav-local-parts/datasheet-verdicts.json. See review-evidence/2026-10-26-pr1-review/report.md.

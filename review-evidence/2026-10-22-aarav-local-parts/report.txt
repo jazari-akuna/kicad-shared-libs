@@ -1,0 +1,21 @@
+Aarav's local-only parts (Audio Board set) → 12 existing *_KSL libraries — 2026-10-22
+
+Source: additive merge from local branch backup/aarav-local-wip-2026-10-22 (Aarav's unmaintained checkout, 76 commits behind origin/main). 63 symbols whose names do not exist on main, plus 121 footprint, model and datasheet files main does not have. No existing symbol, footprint, model or datasheet on main was modified; the diff against origin/main deletes zero lines.
+
+Integrity: all 12 libraries load in kicad-cli; every added symbol's Footprint, 3D model and Datasheet path resolves; symbol pin numbers match footprint pads for all 63. check_models units/transform: no new findings. check_nda --scope all: clean.
+
+Datasheets: 10 of the added parts initially failed datasheets.py verify. Fixed 2026-10-22:
+- B3U-1000P: Chinese edition replaced with Omron's English datasheet.
+- HC-JN254-2-03-W, PM254-2-10-W-8_5: were LCSC URLs; PDFs stored locally and properties relinked by hand (not datasheets.py relink, which would also rewrite unrelated URL-linked parts on main).
+- XT30PW-M30.G.Y, S2B-PH-SM4-TB(LF)(SN), V103K0105X5R100NZT, FXL0630-4R7-M, YI453215U121-8R0T, FRC0402F0000TS, AFC01-S05FCA-00: reviewed as English or acceptable bilingual (English ratings, dimensions and layouts), per kicad-parts Step 2 items 3-6.
+The verdicts live in the git-ignored datasheets/.state.json, so they are recorded here too. To reproduce them on another checkout:
+  datasheets.py triage && datasheets.py apply --results review-evidence/2026-10-22-aarav-local-parts/datasheet-verdicts.json
+After that, verify reports no finding for any of these parts; the remaining 54 problems are pre-existing on main.
+
+XT30PW-M30.G.Y 3D model: the imported offset (0, -1.005, -2.000) mm sank the housing 2 mm into the board and put both pins 2.5 mm off their holes (xt30-before-front.png). Re-derived with FreeCAD from the STEP: power pins at (±2.5, 8.5), locating pegs at (±5.5, -1.5), housing seating face at Z 0; footprint pins at (±2.5, -5.0), pegs at (±5.5, +5.0). New offset (0, -3.5, 0) mm; check_models seating now clean (xt30-after-*.png). The STEP is Amass's generic XT30PW-M body with 2.0 mm tails; the -M30 variant has 3.0 mm tails, so tail length in renders is illustrative.
+
+Footprint format: C1210, CONN-SMD_2P-P2.00_SM02B-ULHK-1TA1-ETB, HDR-TH_6P-P2.54-H-M-W10.4, TSOT-23-8_L2.9-W1.6-P0.65-LS2.8-BR, VQFN-HR-10_RPW0010A_TPS25947, WQFN-38_REF0038A_TPS25730D and WQFN-20_L3.0-W3.0-P0.40-TL-EP1.7 were legacy (module ...) files; re-saved with kicad-cli fp upgrade. Pads, drills, model transforms and graphics compare identical as loaded by KiCad before and after.
+
+Open: These 63 parts have not had the full per-part Step 2 footprint/3D review that new KSL parts normally get; they were built for the Audio Board and are offered for Raph's review.
+
+Update 2026-10-26: several parts above were fixed, renamed or removed during review (the _Functional duplicates, the TPS25947 footprint copy, USB4120-03-C_Verified, the SLW4010S footprint, TLV3502 moved to Amplifier_Comparator_KSL). See review-evidence/2026-10-26-pr1-review/report.md.

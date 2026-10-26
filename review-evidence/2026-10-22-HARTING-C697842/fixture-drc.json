@@ -1,0 +1,84 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-22T16:08:56",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "fixture.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 6.57
+                    },
+                    "uuid": "1373721f-976c-4af3-8ea4-bf07ebcb445a"
+                },
+                {
+                    "description": "Segment of REF** on F.Silkscreen",
+                    "pos": {
+                        "x": -26.940005,
+                        "y": 1.750038
+                    },
+                    "uuid": "cd31254d-b9e2-4533-8338-cbc625e7ca61"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 6.57
+                    },
+                    "uuid": "1373721f-976c-4af3-8ea4-bf07ebcb445a"
+                },
+                {
+                    "description": "Segment of REF** on F.Silkscreen",
+                    "pos": {
+                        "x": 26.989992,
+                        "y": 9.110033
+                    },
+                    "uuid": "95163f1c-2fc1-48f3-b47b-67fa52a2ceb4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        }
+    ]
+}
