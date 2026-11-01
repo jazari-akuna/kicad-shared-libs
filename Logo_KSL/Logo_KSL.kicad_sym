@@ -1,0 +1,141 @@
+(kicad_symbol_lib
+	(version 20241209)
+	(generator "kicad_symbol_editor")
+	(generator_version "10.0")
+	(symbol "Blackstar_Logo"
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "LOGO?"
+			(at 0 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Blackstar_Logo"
+			(at 0 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Logo_KSL:Blackstar_Logo"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Blackstar logo (8-point starburst and BLACKSTAR wordmark), 22.6 x 4.0 mm, silkscreen only. Place it from the schematic to get it on the board: no pins, no copper, not in the BOM or position file."
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Blackstar logo starburst wordmark silkscreen graphic"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Blackstar_Logo"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Blackstar_Logo_0_1"
+			(rectangle
+				(start -11.43 2.54)
+				(end 11.43 -2.54)
+				(stroke
+					(width 0.254)
+					(type dash)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -6.900 0.000)
+					(xy -8.084 0.172)
+					(xy -7.369 1.131)
+					(xy -8.328 0.416)
+					(xy -8.500 1.600)
+					(xy -8.672 0.416)
+					(xy -9.631 1.131)
+					(xy -8.916 0.172)
+					(xy -10.100 0.000)
+					(xy -8.916 -0.172)
+					(xy -9.631 -1.131)
+					(xy -8.672 -0.416)
+					(xy -8.500 -1.600)
+					(xy -8.328 -0.416)
+					(xy -7.369 -1.131)
+					(xy -8.084 -0.172)
+					(xy -6.900 -0.000)
+					(xy -8.084 0.172)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(text "BLACKSTAR"
+				(at 2.54 0 0)
+				(effects
+					(font
+						(size 1.778 1.778)
+						(bold yes)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+)

@@ -86,6 +86,9 @@
     },
     {
       "path": "Amplifier_Comparator_KSL/metadata.json"
+    },
+    {
+      "path": "Logo_KSL/metadata.json"
     }
   ]
 }

@@ -9497,4 +9497,532 @@
 			)
 			(embedded_fonts no)
 		)
+(symbol "FPC_Fingers_10P_P0.50"
+		(pin_names
+			(offset 0.508)
+			(hide yes)
+		)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J?"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FPC_Fingers_10P_P0.50"
+			(at 0 -26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_KSL:FPC_Fingers_10P_P0.50"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Gold fingers on the end of a flex tail (0.50 pitch, 10 positions) that plug into a Hirose AFC01-S10FCA-00 / 0.5 mm 10P FPC socket. Printed copper on the flex, not a purchased part: excluded from the BOM and position file. Pin 1 is pad 1."
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "FPC fingers flex tail gold 0.5mm 10P AFC01"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "FPC_Fingers_10P_P0.50"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "FPC_Fingers_10P_P0.50_0_1"
+			(rectangle
+				(start -1.27 1.27)
+				(end 1.27 -24.13)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "FPC_Fingers_10P_P0.50_1_1"
+			(pin passive line
+				(at -3.81 0.00 0)
+				(length 2.54)
+				(name "1"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+				(number "1"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+			)
+			(pin passive line
+				(at -3.81 -2.54 0)
+				(length 2.54)
+				(name "2"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+				(number "2"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+			)
+			(pin passive line
+				(at -3.81 -5.08 0)
+				(length 2.54)
+				(name "3"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+				(number "3"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+			)
+			(pin passive line
+				(at -3.81 -7.62 0)
+				(length 2.54)
+				(name "4"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+				(number "4"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+			)
+			(pin passive line
+				(at -3.81 -10.16 0)
+				(length 2.54)
+				(name "5"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+				(number "5"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+			)
+			(pin passive line
+				(at -3.81 -12.70 0)
+				(length 2.54)
+				(name "6"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+				(number "6"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+			)
+			(pin passive line
+				(at -3.81 -15.24 0)
+				(length 2.54)
+				(name "7"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+				(number "7"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+			)
+			(pin passive line
+				(at -3.81 -17.78 0)
+				(length 2.54)
+				(name "8"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+				(number "8"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+			)
+			(pin passive line
+				(at -3.81 -20.32 0)
+				(length 2.54)
+				(name "9"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+				(number "9"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+			)
+			(pin passive line
+				(at -3.81 -22.86 0)
+				(length 2.54)
+				(name "10"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+				(number "10"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "FPC_Fingers_8P_P0.50_FH34SRJ"
+		(pin_names
+			(offset 0.508)
+			(hide yes)
+		)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J?"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FPC_Fingers_8P_P0.50_FH34SRJ"
+			(at 0 -21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_KSL:FPC_Tail_FH34SRJ_8P_P0.5"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Gold fingers on the end of a 0.11 mm flex tail (0.50 pitch, 8 positions, 4.5 mm wide, R0.2 tip corners) to Hirose's recommended FPC for the FH34SRJ-8S-0.5SH (t 0.30 with a PI stiffener). Printed copper, not a purchased part: excluded from the BOM and position file. FH34SRJ is top and bottom contact; pin numbering mirrors between the two."
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "FPC fingers flex tail gold 0.5mm 8P FH34SRJ C88372"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "FPC_Tail_FH34SRJ_8P_P0.5"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "FPC_Fingers_8P_P0.50_FH34SRJ_0_1"
+			(rectangle
+				(start -1.27 1.27)
+				(end 1.27 -19.05)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "FPC_Fingers_8P_P0.50_FH34SRJ_1_1"
+			(pin passive line
+				(at -3.81 0.00 0)
+				(length 2.54)
+				(name "1"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+				(number "1"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+			)
+			(pin passive line
+				(at -3.81 -2.54 0)
+				(length 2.54)
+				(name "2"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+				(number "2"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+			)
+			(pin passive line
+				(at -3.81 -5.08 0)
+				(length 2.54)
+				(name "3"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+				(number "3"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+			)
+			(pin passive line
+				(at -3.81 -7.62 0)
+				(length 2.54)
+				(name "4"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+				(number "4"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+			)
+			(pin passive line
+				(at -3.81 -10.16 0)
+				(length 2.54)
+				(name "5"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+				(number "5"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+			)
+			(pin passive line
+				(at -3.81 -12.70 0)
+				(length 2.54)
+				(name "6"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+				(number "6"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+			)
+			(pin passive line
+				(at -3.81 -15.24 0)
+				(length 2.54)
+				(name "7"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+				(number "7"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+			)
+			(pin passive line
+				(at -3.81 -17.78 0)
+				(length 2.54)
+				(name "8"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+				(number "8"
+					(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 )
