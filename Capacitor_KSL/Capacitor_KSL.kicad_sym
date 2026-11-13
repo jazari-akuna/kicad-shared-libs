@@ -1446,4 +1446,215 @@
 (symbol "CA55-H035M686TE070" (pin_numbers (hide yes)) (pin_names (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property "Reference" "C?" (at 4 1.27 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.05 1.05)) (justify left))) (property "Value" "CA55-H035M686TE070" (at 4 -1.27 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.05 1.05)) (justify left))) (property "Footprint" "Capacitor_KSL:CA55-H035M686TE070" (at 0 -10.16 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27) (italic yes)))) (property "Datasheet" "${KSL_ROOT}/datasheets/CA55-H035M686TE070.pdf" (at -2.286 0.127 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) (property "Description" "68uF +/-20% 35V polymer tantalum, 70mOhm; H-case 7.3x4.3x2.1mm, 2.4mm max height. Exact variant datasheet confirmation pending." (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "LCSC" "C51822205" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "MPN" "CA55-H035M686TE070" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Manufacturer Part" "CA55-H035M686TE070" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Manufacturer" "Hunan Xiangyee Electronic Technology" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Supplier Part" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "ki_keywords" "C51822205" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol "CA55-H035M686TE070_0_1" (rectangle (start -2.54 1.524) (end -1.524 1.499) (stroke (width 0) (type default)) (fill (type background))) (polyline (pts (xy -2.54 0.762) (xy 2.54 0.762)) (stroke (width 0) (type default)) (fill (type none))) (rectangle (start -2.032 2.032) (end -2.007 1.016) (stroke (width 0) (type default)) (fill (type background))) (arc (start -2.54 -1.016) (mid -1.333 -0.426) (end 0 -0.254) (stroke (width 0) (type default)) (fill (type none))) (arc (start 0 -0.254) (mid 1.334 -0.423) (end 2.54 -1.016) (stroke (width 0) (type default)) (fill (type none))) (pin passive line (at 0 5.08 270) (length 4.318) (name "1" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1))))) (pin passive line (at 0 -5.08 90) (length 4.826) (name "2" (effects (font (size 1 1)))) (number "2" (effects (font (size 1 1)))))) (embedded_fonts no))
 (symbol "CL05B103KB5NNNC" (pin_numbers (hide yes)) (pin_names (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property "Reference" "C?" (at 0 1.27 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Value" "CL05B103KB5NNNC" (at 0 -2.54 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "Capacitor_KSL:C0402" (at 0 -10.16 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27) (italic yes)))) (property "Datasheet" "${KSL_ROOT}/datasheets/CL05B103KB5NNNC.pdf" (at -2.286 0.127 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) (property "Description" "10nF 50V +/-10% X7R 0402 Samsung; 0.55mm maximum height" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1 1)))) (property "LCSC" "C15195" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "MPN" "CL05B103KB5NNNC" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1 1)))) (property "ki_keywords" "C15195" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol "CL05B103KB5NNNC_0_1" (polyline (pts (xy -1.27 0) (xy -0.508 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -0.508 2.032) (xy -0.508 -2.032)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0.508 2.032) (xy 0.508 -2.032)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0.508 0) (xy 1.27 0)) (stroke (width 0) (type default)) (fill (type none))) (pin passive line (at -3.81 0 0) (length 2.54) (name "1" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1))))) (pin passive line (at 3.81 0 180) (length 2.54) (name "2" (effects (font (size 1 1)))) (number "2" (effects (font (size 1 1)))))) (embedded_fonts no))
 (symbol "CL31B475KBHNNNE" (pin_numbers (hide yes)) (pin_names (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property "Reference" "C?" (at 0 1.27 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Value" "CL31B475KBHNNNE" (at 0 -2.54 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "Capacitor_KSL:C1206" (at 0 -10.16 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27) (italic yes)))) (property "Datasheet" "${KSL_ROOT}/datasheets/CL31B475KBHNNNE.pdf" (at -2.286 0.127 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) (property "Description" "4.7uF 50V X7R +/-10% 1206" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1 1)))) (property "LCSC" "C51205" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "MPN" "CL31B475KBHNNNE" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1 1)))) (property "ki_keywords" "C51205" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol "CL31B475KBHNNNE_0_1" (polyline (pts (xy -1.27 0) (xy -0.508 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -0.508 2.032) (xy -0.508 -2.032)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0.508 2.032) (xy 0.508 -2.032)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0.508 0) (xy 1.27 0)) (stroke (width 0) (type default)) (fill (type none))) (pin passive line (at -3.81 0 0) (length 2.54) (name "1" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1))))) (pin passive line (at 3.81 0 180) (length 2.54) (name "2" (effects (font (size 1 1)))) (number "2" (effects (font (size 1 1)))))) (embedded_fonts no))
+  (symbol "PA35V1000M10X15"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.254)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "C?"
+			(at 3.81 1.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PA35V1000M10X15"
+			(at 3.81 -1.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_KSL:CP_Radial_D10.0mm_P5.00mm_SMD-FormedLead"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "${KSL_ROOT}/datasheets/PA35V1000M10X15.pdf"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1000uF 35V +/-20% aluminium polymer (solid) capacitor, JIERR PA series, radial D10 x L15 (D10.5 / L16.0 max), F 5.0, lead d 0.6; ESR 16 mOhm @100 kHz, ripple 4100 mA @100 kHz/105C, LC 1000 uA (2 min), 2000 h @105C. Default footprint mounts it upright with formed SMD feet (no holes)."
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "JIERR"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "PA35V1000M10X15"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C46550434"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "C46550434 PA35V1000M10x15 1000uF 35V polymer solid capacitor radial D10 L15"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "CP_Radial_D10.0mm_P5.00mm* CP*Radial*D10*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "PA35V1000M10X15_0_1"
+			(rectangle
+				(start -2.286 1.016)
+				(end 2.286 0.508)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.286 -0.508)
+				(end 2.286 -1.016)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 2.286) (xy -0.762 2.286)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 2.794) (xy -1.27 1.778)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "PA35V1000M10X15_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.794)
+				(name "+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.794)
+				(name "-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 )

@@ -1,0 +1,145 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-13T15:20:48",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "drc_VQFN-HR-21_L5.0-W3.0-P0.50_RYQ0021A.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1772 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [N_1] of REF** on F.Cu",
+                    "pos": {
+                        "x": -2.4,
+                        "y": -0.75
+                    },
+                    "uuid": "153a17a0-2387-4544-913a-45b8bf60f29b"
+                },
+                {
+                    "description": "Pad 21 [N_21] of REF** on F.Cu",
+                    "pos": {
+                        "x": -2.04,
+                        "y": -1.375
+                    },
+                    "uuid": "7ad2db85-eb02-4fe9-950f-a23ff2af8405"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1772 mm)",
+            "items": [
+                {
+                    "description": "Pad 4 [N_4] of REF** on F.Cu",
+                    "pos": {
+                        "x": -2.4,
+                        "y": 0.75
+                    },
+                    "uuid": "a22028ae-d740-472b-b866-b978399b27f6"
+                },
+                {
+                    "description": "Pad 5 [N_5] of REF** on F.Cu",
+                    "pos": {
+                        "x": -2.04,
+                        "y": 1.375
+                    },
+                    "uuid": "95967f86-1239-4d7c-a1c3-3bb8024424bd"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1772 mm)",
+            "items": [
+                {
+                    "description": "Pad 13 [N_13] of REF** on F.Cu",
+                    "pos": {
+                        "x": 2.04,
+                        "y": 1.375
+                    },
+                    "uuid": "c304d8da-ff64-4679-a970-48f8c4bcb6e8"
+                },
+                {
+                    "description": "Pad 14 [N_14] of REF** on F.Cu",
+                    "pos": {
+                        "x": 2.4,
+                        "y": 0.75
+                    },
+                    "uuid": "2adba60c-4b5c-4f89-84e6-edb783cd2cbe"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1772 mm)",
+            "items": [
+                {
+                    "description": "Pad 17 [N_17] of REF** on F.Cu",
+                    "pos": {
+                        "x": 2.4,
+                        "y": -0.75
+                    },
+                    "uuid": "d1432a04-53d7-40c8-8ec6-a7b1218e450e"
+                },
+                {
+                    "description": "Pad 18 [N_18] of REF** on F.Cu",
+                    "pos": {
+                        "x": 2.04,
+                        "y": -1.375
+                    },
+                    "uuid": "1fe759ec-f70f-49bb-b0af-f8a9fb6b20ea"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Board has malformed outline (no edges found on Edge.Cuts layer)",
+            "items": [
+                {
+                    "description": "PCB",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "0ca41457-5b6b-4f04-8abf-82b4bf1c9845"
+                }
+            ],
+            "severity": "error",
+            "type": "invalid_outline"
+        }
+    ]
+}
