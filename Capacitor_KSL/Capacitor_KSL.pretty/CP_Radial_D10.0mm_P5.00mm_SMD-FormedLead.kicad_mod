@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(descr "Radial polarised capacitor D10 x L15 (JIERR PA series 10X10-21 row: D10.5 max, L+1 max, F 5.0, d 0.6) mounted UPRIGHT with SMD formed leads: leads trimmed and bent 90 deg outward into ~1.5 mm flat feet lapped onto 2.5 x 1.3 pads; no holes (nothing reaches the opposite board face). Pad 1 = +. Courtyard/fab sized for D10.5 max; model is the max envelope (16.0 body + 1.0 assumed forming standoff).")
+	(descr "Radial polarised capacitor D10 x L15 (JIERR PA series 10X10-21 row: D10.5 max, L+1 max, F 5.0, d 0.6) mounted UPRIGHT with SMD formed leads: leads trimmed and bent 90 deg outward into ~1.5 mm flat feet lapped onto 2.5 x 1.3 pads; no holes (nothing reaches the opposite board face). Pad 1 = +. Courtyard/fab sized for D10.5 max; model is the nominal part D10.0 x L15.0 (code 10X15) on a 1.0 assumed forming standoff; max D10.5 x L16.0.")
 	(tags "CP radial upright SMD formed lead lap joint no-hole D10 P5.00 polymer PA35V1000M10X15")
 	(property "Reference" "REF**"
 		(at 0 -6.6 0)
