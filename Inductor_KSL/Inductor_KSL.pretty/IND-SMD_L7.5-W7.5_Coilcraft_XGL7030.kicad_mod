@@ -1,0 +1,242 @@
+(footprint "IND-SMD_L7.5-W7.5_Coilcraft_XGL7030"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Coilcraft XGL7030 shielded molded power inductor, 7.50 x 7.50 (+/-0.50) x 3.1 max mm. Land pattern per Coilcraft Doc 1736-3 recommended land pattern: 2 x 1.78 x 6.50 pads at 4.72 centre-to-centre (3.12 terminal gap). Pad 1 = start (short) lead, the side of the body marking; Coilcraft: connect high dV/dt here for lowest EMI. Model: Coilcraft XGL7030.STEP (body at the +0.5 max, 8.0 x 8.0), Y-up, rotated -90 about X (KiCad sign) and lifted 0.1 so the terminals seat on the board.")
+	(tags "inductor power shielded molded Coilcraft XGL7030")
+	(property "Reference" "REF**"
+		(at 0 -5.2 0)
+		(layer "F.SilkS")
+		(uuid "5fa7ce0f-b432-477e-8cdd-d7a78c42f2c9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "IND-SMD_L7.5-W7.5_Coilcraft_XGL7030"
+		(at 0 5.2 0)
+		(layer "F.Fab")
+		(uuid "4702090e-f5eb-47c7-9725-81b1c23de187")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4209fa13-3f22-4187-8606-1d5580c53ed3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6f868de7-3c25-4e1a-bacc-e809dd4e598a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -3.75 -3.75)
+		(end 3.75 -3.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f79cb9d1-311c-4449-b564-98989c32a171")
+	)
+	(fp_line
+		(start 3.75 -3.75)
+		(end 3.75 3.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "15c0e32a-1b5e-4d81-8149-477b84e62a35")
+	)
+	(fp_line
+		(start 3.75 3.75)
+		(end -3.75 3.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9ed67c20-2641-42ed-83e0-c184321d8f99")
+	)
+	(fp_line
+		(start -3.75 3.75)
+		(end -3.75 -3.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ba962dc9-8244-428d-8db9-f70997e3bc77")
+	)
+	(fp_line
+		(start -4.25 -4.25)
+		(end 4.25 -4.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "655bc0d8-3468-4eff-9f4e-6bfbe670a3f7")
+	)
+	(fp_line
+		(start 4.25 -4.25)
+		(end 4.25 4.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "fa3e7b94-779d-49e9-a058-c20957fa89a3")
+	)
+	(fp_line
+		(start 4.25 4.25)
+		(end -4.25 4.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ecaf7ba9-009d-4735-a20c-b6e1a726f8a4")
+	)
+	(fp_line
+		(start -4.25 4.25)
+		(end -4.25 -4.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "2d690912-78f8-4bb5-a6b7-61eed3768691")
+	)
+	(fp_line
+		(start -4.1 -4.1)
+		(end 4.1 -4.1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1bd1b60c-7642-423d-b8e8-f0d23a99197c")
+	)
+	(fp_line
+		(start -4.1 4.1)
+		(end 4.1 4.1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bc2c25eb-d8a0-4fb8-8aec-8c20e8c79f37")
+	)
+	(fp_line
+		(start -4.1 -4.1)
+		(end -4.1 -3.55)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e4e2ca8f-aa2b-4b0c-bb30-eacf5b193eb2")
+	)
+	(fp_line
+		(start -4.1 4.1)
+		(end -4.1 3.55)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7c73a858-58cc-4618-b2ad-eea4480863ba")
+	)
+	(fp_line
+		(start 4.1 -4.1)
+		(end 4.1 -3.55)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ad7881b8-8d22-468f-997e-e5bb859f3e3f")
+	)
+	(fp_line
+		(start 4.1 4.1)
+		(end 4.1 3.55)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fd13da80-c1ba-4cb7-afef-f30590557b0a")
+	)
+	(fp_circle
+		(center -4.6 -3.2)
+		(end -4.45 -3.2)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "b6b42dde-ad0b-402e-b29a-9fc7a69fe9ea")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "7ed341c3-e8f9-453b-aea3-2540cbb82437")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -2.36 0)
+		(size 1.78 6.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "0fca4668-4646-4a4b-8351-5675071ace64")
+	)
+	(pad "2" smd rect
+		(at 2.36 0)
+		(size 1.78 6.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "23ebaefc-d142-4b9d-b63d-f3efdb34ba05")
+	)
+	(embedded_fonts no)
+	(model "${KSL_ROOT}/Inductor_KSL/Inductor_KSL.3dshapes/IND-SMD_L7.5-W7.5_Coilcraft_XGL7030.step"
+		(offset
+			(xyz 0 0 0.1)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

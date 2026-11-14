@@ -65,3 +65,26 @@ the parts as follows:
 2. **PA cap forming:** the 1.0 mm standoff and the 1.5 mm feet are Blackstar's assembly choice, not the maker's.
    Confirm them with the assembler.
 3. **Audio Board repoint (done in the Cube repo):** TLV3502AIDCNR now uses `Amplifier_Comparator_KSL`.
+
+## Added later on 2026-11-13: XGL7030-472MEC (Coilcraft 4.7 µH) → Inductor_KSL
+
+- **Why:** replaces FXL0630-4R7-M as the TPS552872 inductor. It has more saturation margin over the chip's 6.5 A (typ) peak
+  current limit: 10.6 A vs 7.5 A, both at a 30 % inductance drop. DCR roughly halves, 17.8 vs 33 mΩ max.
+- **Source:** Coilcraft Doc 1736-1/-3 (rev 02/19/26), stored as `datasheets/XGL7030-472MEC.pdf`, English. The STEP is
+  Coilcraft's own `XGL7030.STEP`, unmodified.
+- **Footprint `IND-SMD_L7.5-W7.5_Coilcraft_XGL7030`:**
+  - Pads per Coilcraft's recommended land pattern: 1.78 × 6.50 mm at 4.72 mm centre-to-centre.
+  - Cross-checked against the STEP: terminals are 1.60 × 6.0 mm centred at ±2.36 mm, with a 3.12 mm gap.
+  - Pad 1 is the start (marked) lead. Coilcraft says to put it on the high-dV/dt node; on the Audio Board that is SW1.
+- **Model placement:** the STEP is Y-up at the 8.0 × 8.0 mm body maximum, with terminals 0.1 mm below the body. It is
+  placed with rotate x = −90 (KiCad sign) and offset z = +0.1. The renders show it seated, with the start-lead bar over pad 1.
+- **Checks:**
+  - Symbol parses.
+  - Pin/pad parity 1–2.
+  - Pad-net DRC fixture passes.
+  - `check_models` seats it cleanly (225/244; the 8 violations are pre-existing and unchanged).
+  - `check_nda` is clean.
+  - `datasheets.py verify` is OK for this part.
+- **Sourcing:** not stocked at LCSC, so JLC assembly needs global sourcing or consigned parts. The `LCSC` field is left empty.
+
+![](fp_IND-SMD_L7.5-W7.5_Coilcraft_XGL7030.png) ![](3d_iso_IND-SMD_L7.5-W7.5_Coilcraft_XGL7030.png) ![](3d_front_IND-SMD_L7.5-W7.5_Coilcraft_XGL7030.png)
