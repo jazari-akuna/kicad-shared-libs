@@ -1,0 +1,61 @@
+(footprint "MountingHole_M2_Post_D3.7_GND_Ring_D5.0"
+	(version 20260206)
+	(generator "pcbnew")
+	(layer "F.Cu")
+	(uuid "c4abbf9b-4390-47ff-bd15-a9118c6d9eb4")
+	(property "Reference" "REF**"
+		(at -0.804 3.28 0)
+		(layer "F.SilkS")
+		(uuid "6948c4d6-f78c-4dc5-aad8-8d560946fb6f")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.13)
+			)
+		)
+	)
+	(property "Value" "M2 post hole, GND ring"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f32436c2-025d-4d7b-b5ff-3ae03f3885bf")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" "~"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "802683d5-7b4d-44e7-86fa-346d18c595dc")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Plated M2 post hole with ground ring"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "02db4ede-3409-487f-a826-35a9abfb970f")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 5 5)
+		(drill 3.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5f2b4c33-d742-4eba-a5be-a131a1be6600")
+	)
+	(embedded_fonts no)
+)

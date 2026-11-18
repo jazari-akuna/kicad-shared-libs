@@ -1,0 +1,146 @@
+(footprint "L4532_YI453215_Dense"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "IND-SMD_L4.5-W3.2-CBW453215U800T footprint")
+	(tags "IND-SMD_L4.5-W3.2-CBW453215U800T footprint C2858475")
+	(property "Reference" "REF**"
+		(at 0 -3.9566 0)
+		(layer "F.SilkS")
+		(uuid "25aeb7ce-68b1-437d-8e70-7c9a09ac7769")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "YI453215U121-8R0T"
+		(at 0 3.9566 0)
+		(layer "F.Fab")
+		(uuid "1c2c80b2-db6a-47f7-b8ff-d88d5266a2e9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "33c84d27-e380-4f33-aab6-48017d610e05")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6c44c714-3859-4130-b879-daad67c30d14")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_circle
+		(center -2.2499 1.5999)
+		(end -2.22 1.5999)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "059bfd13-16c2-46d9-912a-5e1ab2ffdb6e")
+	)
+	(fp_poly
+		(pts
+			(xy -2.25 1.6) (xy -1.75 1.6) (xy -1.75 -1.6)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill yes)
+		(layer "Cmts.User")
+		(uuid "62381457-f88e-44b7-ae11-86064c2d77c1")
+	)
+	(fp_poly
+		(pts
+			(xy -2.25 1.6) (xy 2.25 1.6) (xy 2.25 -1.6)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill yes)
+		(layer "Cmts.User")
+		(uuid "b913d9e2-b6e0-4b5a-a567-bf5b463a40d8")
+	)
+	(fp_poly
+		(pts
+			(xy 1.75 1.6) (xy 2.25 1.6) (xy 2.25 -1.6)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill yes)
+		(layer "Cmts.User")
+		(uuid "cd4673ee-d12c-4565-b399-392bd4111f68")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "bc330e6b-8af3-426e-9f2c-fbdb3a7bbc28")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_rect
+		(start -3.000 -1.800)
+		(end 3.000 1.800)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+	)
+	(pad "1" smd rect
+		(at -1.95 0)
+		(size 1.9 3.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c58e7a04-2a81-402c-97a8-517963c627d2")
+	)
+	(pad "2" smd rect
+		(at 1.95 0)
+		(size 1.9 3.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "32819d16-33af-486a-b05e-2140dd1879a0")
+	)
+	(embedded_fonts no)
+	(model "${KSL_ROOT}/Inductor_KSL/Inductor_KSL.3dshapes/L4532_YI453215.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
